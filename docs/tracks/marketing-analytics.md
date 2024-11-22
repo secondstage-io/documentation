@@ -77,6 +77,14 @@ In your Google Ads account, click the Admin icon.
 
 ![Reddit Ads Setup](/assets/marketinganalytics_reddit.png)
 
+#### DV360 Integration
+
+1. In DV360, navigate to "Select User Management and Email Preferences", then select "User Management" from the upper-right corner of Display & Video 360.
+2. Click "New User" and invite analytics@secondstage.io, assigning the Standard Role.
+3. Next, click "Add Partners or advertisers" and select the relevant Ad Account to be integrated.
+
+![DV360 Ads Setup](/assets/marketinganalytics_dv360.png)
+
 ### Web Analytics Integration (Landing page)
 
 #### Google Tag Manager Integration & Access
