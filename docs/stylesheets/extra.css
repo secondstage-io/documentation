@@ -8,26 +8,6 @@
   columns: 2 auto;
 }
 
-
-.grid cards  {
-  border-radius: 16px; /* Adjust the value to control the roundness */
-	padding: 10px 10px 15px 15px; /* Top, right, bottom, left */
-  background-color: #fff; /* Adjust box background color */
-	border: 1px solid #d3d3d3; /* change box border color */
-box-shadow: 0px 8px 16px rgba(158, 172, 188, 0.1);
-}
-
-.box-icon [class^="ti-"], .box-icon [class*=" ti-"] {
-        font-size: 2.5rem;
-    opacity: 0.7;
-    }
-
-.grid cards:hover {
-    transform: scale(1.05); /* Slight zoom effect */
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.05); /* Enhanced shadow on hover */
-	 border-color: #666666; /* Highlight border color */
-}
-
 /* Modify images with round border */
 
 img {
