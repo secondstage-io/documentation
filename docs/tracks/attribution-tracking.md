@@ -547,6 +547,21 @@ This one-time setup for each media platform allows TRACKS to implement the Conve
 
 Editor access for the Data Source Asset to analytics@secondstage.io is required.
 
+To set up a Meta Postback Token, follow these steps using a Business Manager Admin login:
+
+1. In Meta Business Manager, navigate to Data Sources. If you haven’t already, create a new data source.
+2. Go to the Settings tab of your data source and note down the Data Set ID.
+3. Scroll down to the Conversion API section.
+4. Click Generate Access Token. Copy the token and send it to the Second Stage team to enable Meta install postbacks.
+
+Once complete, ensure the data source asset is shared with the active Ad Account so your campaigns can access and utilize the data.
+
+![Meta Capi 1](/assets/Meta_capi_doc1.png)
+
+![Meta Capi 2](/assets/Meta_capi_doc2.png)
+
+![Meta Capi 3](/assets/Meta_capi_doc3.png)
+
 **Google Conversion API Guide:**
 
 [→ Conversions API Setup Guide for Google](https://developers.google.com/google-ads/api/docs/get-started/dev-token)
