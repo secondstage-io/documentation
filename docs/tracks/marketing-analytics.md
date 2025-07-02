@@ -106,7 +106,7 @@ Review the invitation, then click on "Send invitation".
 
 #### Google Tag Manager Integration & Access
 
-In Google Tag Manager, please grant Editor access to analytics@secondstage.io. TRACKS will implement events and conversion pixels on your website to optimize landing page interactions and improve media platform targeting algorithms, as detailed above.
+In Google Tag Manager, please grant Publish access to analytics@secondstage.io. TRACKS will implement events and conversion pixels on your website to optimize landing page interactions and improve media platform targeting algorithms, as detailed above.
 
 For guidance on installing GTM, refer to the documentation [here](https://support.google.com/tagmanager/answer/14842164).
 Below is an sample image of the Google Tag Manager integration code that needs to be implemented on your landing page. 
