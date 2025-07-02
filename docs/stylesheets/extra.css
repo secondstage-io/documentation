@@ -12,5 +12,6 @@
 
 img {
     border: 1px solid black;
-    border-radius: 10px; /* Rounds the corners same as boxes */
+    border-radius: 16px; /* Rounds the corners same as boxes */
+    box-shadow: 2px 2px 8px lightgrey;
 }
