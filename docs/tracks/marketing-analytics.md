@@ -37,27 +37,27 @@ In your Google Ads account, click the Admin icon.
 
 #### Meta Ads Integration
 
-1. Go to Meta Business Manager and navigate to the Users section. Add the email address analytics@secondstage.io and click "Next".
+Go to Meta Business Manager and navigate to the Users section. Add the email address analytics@secondstage.io and click "Next".
 
 ![Meta Ads Setup](/assets/marketinganalytics_meta_1.png)
 
-2. Assign Partial (Basic) Access to the user and click "Next".
+Assign Partial (Basic) Access to the user and click "Next".
 
 ![Meta Ads Setup](/assets/marketinganalytics_meta_2.png)
 
-3.1. Select your business page and provide Partial access (business tools and Facebook), then click "Next".
+Select your business page and provide Partial access (business tools and Facebook), then click "Next".
 
 ![Meta Ads Setup](/assets/marketinganalytics_meta_3-1.png)
 
-3.2. Select your ad account and provide Manage campaigns (ads) access, then click "Next". 
+Select your ad account and provide Manage campaigns (ads) access, then click "Next". 
 
 ![Meta Ads Setup](/assets/marketinganalytics_meta_3-2.png)
 
-3.3. Select pixels if any exists, and assign access. Then click "Next"
+Select pixels if any exists, and assign access. Then click "Next"
 
 ![Meta Ads Setup](/assets/marketinganalytics_meta_3-3.png)
 
-4. Review the invitation, then click on "Send invitation".
+Review the invitation, then click on "Send invitation".
 
 ![Meta Ads Setup](/assets/marketinganalytics_meta_4.png)
 
