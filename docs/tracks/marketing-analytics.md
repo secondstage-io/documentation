@@ -37,12 +37,29 @@ In your Google Ads account, click the Admin icon.
 
 #### Meta Ads Integration
 
-1. Invite analytics@secondstage.io to your Ad Account and Business Manager with `Reader` permissions (ads reporting).
-2. Share your Ad Account ID and Business Manager ID with the Second Stage team.
-3. Follow the Campaign, Ad Set, and Ad naming conventions provided in the builder sheet shared by the Second Stage team.
-4. Ensure your ad creatives use a UTM-tagged link template.
+1.  Go to Meta Business Manager and navigate to the Users section. Add the email address analytics@secondstage.io and click "Next".
 
-![Meta Ads Setup](/assets/marketinganalytics_meta.png)
+![Meta Ads Setup](/assets/marketinganalytics_meta_1.png)
+
+2.  Assign Partial (Basic) Access to the user and click "Next".
+
+![Meta Ads Setup](/assets/marketinganalytics_meta_2.png)
+
+3.1.  Select your business page and provide Partial access (business tools and Facebook), then click "Next".
+
+![Meta Ads Setup](/assets/marketinganalytics_meta_3-1.png)
+
+3.2.  Select your ad account and provide Manage campaigns (ads) access, then click "Next". 
+
+![Meta Ads Setup](/assets/marketinganalytics_meta_3-2.png)
+
+3.3.  Select pixels if any exists, and assign access. Then click "Next"
+
+![Meta Ads Setup](/assets/marketinganalytics_meta_3-3.png)
+
+3.3.  Review the invitation, then click on "Send invitation".
+
+![Meta Ads Setup](/assets/marketinganalytics_meta_3-4.png)
 
 #### TikTok Ads Integration
 
