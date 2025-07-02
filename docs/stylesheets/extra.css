@@ -8,16 +8,18 @@
   columns: 2 auto;
 }
 
-/* Modify images with round border */
+/* Modify images with round border 
 
 img {
     border: 1px solid black;
-    border-radius: 16px; /* Rounds the corners same as boxes */
+    border-radius: 16px; 
     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
-}
+} 
 
 img:not([alt="logo"]) {
     border: 1px solid black;
     border-radius: 16px;
     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
 }
+
+*/
