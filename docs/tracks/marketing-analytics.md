@@ -57,9 +57,9 @@ In your Google Ads account, click the Admin icon.
 
 ![Meta Ads Setup](/assets/marketinganalytics_meta_3-3.png)
 
-3.3.  Review the invitation, then click on "Send invitation".
+4.  Review the invitation, then click on "Send invitation".
 
-![Meta Ads Setup](/assets/marketinganalytics_meta_3-4.png)
+![Meta Ads Setup](/assets/marketinganalytics_meta_4.png)
 
 #### TikTok Ads Integration
 
