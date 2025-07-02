@@ -231,17 +231,13 @@ This approach has been streamlined by the Second Stage team to maximize the effe
 
 ![Deplyoment](/assets/attribution_deployment-1.png)
 
+We do not recommend integrating the attribution measuement solution if your game lacks a backend server for telemetry and event logging, whether planned or currently in use.
+However, if you do have a telemetry backend server but are unable to use Google Cloud Platform for deployment, the Second Stage team can assist by hosting the attribution solution in a dedicated cloud environment for you.
 
-*Branded Domain*
+#### Branded Domain
 
 Once the TRACKS backend is deployed in your Google Cloud Platform instance, you'll have the option to whitelabel the Measurement API endpoint domain. This feature is not only for branding purposes but also provides greater control over privacy and compliance with client-side CORS (Cross-Origin Resource Sharing) policies.
-To enable your branded domain, the Second Stage team will provide a CNAME record for you to add through your DNS provider. The default suggested domain is a subdomain: tracks./[mygame/].com.
-
-#### Managed Service Approach
- 
-We do not recommend integrating the attribution measuement solution if your game lacks a backend server for telemetry and event logging, whether planned or currently in use. In such cases, instead of implementing TRACKS Attribution Measurement API or any other vendor's solution, we suggest leveraging our attribution modeling.
-
-However, if you do have a telemetry backend server but are unable to use Google Cloud Platform for deployment, the Second Stage team can assist by hosting the attribution solution in a dedicated cloud environment for you.
+To enable your branded domain, the Second Stage team will provide a CNAME record for you to add through your DNS provider. The default suggested domain is a subdomain: tracks./[mygame]/.com..
 
 
 ### TRACKS Attribution Measurement API
