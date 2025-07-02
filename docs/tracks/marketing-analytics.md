@@ -149,8 +149,7 @@ For guidance on integrating additional ad platforms not mentioned above, such as
 
 ### Direct Buy Campaigns / Media Houses
 
-For media houses and branded/direct buy campaigns like IGN, Gamespot, Gamerant, Loots, Fandom, etc., the reporting process is manual. You will receive a UTM tracking link builder spreadsheet for each activation. Regardless of attribution tracking, please report these activations' performance in the Awareness Reporting Suite rather than lower funnel tracking.
-
+For media houses and branded/direct buy campaigns like IGN, Gamespot, Gamerant, Loots, Fandom, etc., the reporting process is manual. You will receive a UTM tracking link builder spreadsheet for each activation. 
 Media cost reporting for direct buy activations can be done via data imports. Contact the Second Stage team to obtain the media cost sheet format.
 
 ### Influencer Campaigns
