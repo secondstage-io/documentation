@@ -20,7 +20,7 @@ Metrics that measure the effectiveness of marketing efforts in generating awaren
 ## B
 
 **Brand Health Metrics**  
-Metrics that assess the overall health and perception of a brand, including aspects such as brand sentiment and brand equity.
+Metrics that assess the overall health and perception of a brand, including aspects such as brand sentiment or brand equity.
 
 ## C
 
