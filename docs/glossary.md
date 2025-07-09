@@ -33,6 +33,21 @@ The day an ad is shown to a user. If a table is sorted by Campaign Date, the ins
 **Channel**  
 The medium through which marketing messages are delivered, such as gaming websites or social media platforms.
 
+**CPA**  
+Cost Per Action; the average amount spent to drive one user to complete a desired action on the website — such as clicking the 'Buy Now' button or completing a sign-up. Calculated as campaign cost divided by number of conversions.
+
+**CPC**  
+Cost Per Click; the amount an advertiser pays each time a user clicks on their ad. It reflects the efficiency of driving traffic to a destination (such as a website or store page) through paid media.
+
+**CPI**  
+Cost Per Install; the amount an advertiser pays to acquire one user who installs the game generated through the campaign. It is calculated by dividing the advertising cost by the number of installs.
+
+**CPM**  
+Cost Per Mille (or Cost Per Thousand) represents the amount an advertiser pays for 1,000 ad impressions.
+
+**CPQ**  
+Cost Per Quality represents the cost an advertiser pays for 1,000 impressions shown to users who meet a predefined quality threshold (e.g., engaged users or those with a higher likelihood to convert).
+
 **Creative (Ad)**  
 The actual content of the advertisement, including the visual and textual elements.
 
@@ -40,6 +55,9 @@ The actual content of the advertisement, including the visual and textual elemen
 The percentage of users who complete a desired action, such as making a purchase or signing up for a newsletter, compared to the total number of users exposed to the ad.
 
 ## D
+
+**Direct**  
+A user who was not exposed to any advertising campaign and has no referrer, but accessed the store directly (e.g., by typing the URL or using a bookmark).
 
 **DLC Installs**  
 The number of installs of downloadable content (DLC) for a game.
@@ -50,7 +68,7 @@ The estimated cost per install of a game, calculated based on various data sourc
 ## E
 
 **eCPI**  
-Effective Cost Per Install; the average cost incurred to acquire a user who installs a game, adjusted for various factors.
+Effective Cost Per Install; the average cost per install including direct and organic installs. It helps assess campaign efficiency across all sources, even those without precise attribution.
 
 **Event Timestamp**  
 The specific time at which an event or action, such as a user interaction or conversion, occurs.
@@ -69,8 +87,14 @@ A computing environment that combines private and public cloud services to provi
 
 ## I
 
+**Impressions**  
+The number of times an advertisement is displayed to users, regardless of whether it was clicked or not. One impression is counted each time the ad appears on a user’s screen.
+
 **Influencer / Streamer Analytics Metrics**  
 Metrics related to the performance and impact of content created by influencers or streamers, such as engagement rates and audience reach.
+
+**Install CVR%**  
+The percentage of website visitors who ultimately installed or purchased the game — calculated as installs divided by website visitors.
 
 **IP Address**  
 A unique string of numbers separated by periods (IPv4) or colons (IPv6) that identifies a device on a network.
@@ -102,6 +126,9 @@ Estimates of the number of installs based on predictive models, which may use hi
 
 ## O
 
+**Organic Installs**  
+Game installs that occur without being driven by paid advertising. These installs typically result from users discovering the game through search, word of mouth, platform features (e.g., Steam discovery) or other unpaid sources.
+
 ## P
 
 **Platform**  
@@ -110,6 +137,9 @@ The system on which a game is played, such as PC, PlayStation or Xbox.
 ## Q
 
 ## R
+
+**Referrer**  
+The source (such as a website, ad, or platform) that directed a user to a particular page or store, typically captured via HTTP headers or URL parameters.
 
 **ROAS (Return on Ad Spend)**  
 A metric that measures the revenue generated from advertising campaigns relative to the amount spent on those campaigns.
@@ -152,6 +182,16 @@ Urchin Tracking Module; parameters added to URLs to track the performance of mar
 
 ## V
 
+**View**  
+An instance in which a user sees content such as a video ad, page, or media asset. A 'view' typically implies that the content was rendered and visible on the user’s screen, and in the case of video, often meets minimum playtime and audibility criteria: 
+- Dv360: 25% video watched
+- Gateway: 25% video watched
+- Google: 5 sec video plays"
+- Meta: 3 sec video plays
+- Reddit: 3 sec video plays
+- TikTok: 2 sec video plays
+- YouTube: At least 10 sec of the video watched
+ 
 ## W
 
 **Web Analytics Metrics**  
@@ -159,6 +199,9 @@ Metrics used to evaluate the performance of a website, including metrics such as
 
 **Web Conversions**  
 The number of completed actions on a website that align with marketing goals, such as purchases or sign-ups.
+
+**Web Conversions CVR%**  
+The percentage of website visitors who completed a desired action, such as clicking a 'Buy Now' button or signing up — calculated as conversions divided by total website visitors.
 
 ## X
 
