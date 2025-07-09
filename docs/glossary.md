@@ -27,6 +27,9 @@ Metrics that assess the overall health and perception of a brand, including aspe
 **Campaign**  
 A coordinated series of marketing activities aimed at achieving specific goals, such as promoting a new game or feature.
 
+**Campaign Date**  
+The day an ad is shown to a user. If a table is sorted by Campaign Date, the install is attributed to the last day the user was exposed to the ad.
+
 **Channel**  
 The medium through which marketing messages are delivered, such as gaming websites or social media platforms.
 
