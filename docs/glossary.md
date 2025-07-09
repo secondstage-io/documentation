@@ -184,6 +184,7 @@ Urchin Tracking Module; parameters added to URLs to track the performance of mar
 
 **View**  
 An instance in which a user sees content such as a video ad, page, or media asset. A 'view' typically implies that the content was rendered and visible on the user’s screen, and in the case of video, often meets minimum playtime and audibility criteria: 
+
 * Dv360: 25% video watched
 * Gateway: 25% video watched
 * Google: 5 sec video plays
