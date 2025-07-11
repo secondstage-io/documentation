@@ -2,6 +2,9 @@
 
 ## A
 
+**Ad Fatigue**  
+A decline in user engagement and effectiveness of an advertisement due to repeated exposure. When users see the same ad too often, they tend to ignore it or react negatively, leading to lower click-through and conversion rates.
+
 **Ad Format**  
 The structure or layout of an advertisement, such as static ads or video ads.
 
@@ -20,7 +23,14 @@ Metrics that measure the effectiveness of marketing efforts in generating awaren
 ## B
 
 **Brand Health Metrics**  
-Metrics that assess the overall health and perception of a brand, including aspects such as brand sentiment or brand equity.
+Metrics that assess the overall health and perception of a brand, including aspects such as brand sentiment or brand equity. These metrics are categorized by source:
+
+- Videos: Mentions in video content on platforms like YouTube or Twitch.
+- Facebook, TikTok, Facebook, Twitter, Reddit: Mentions from major social media platforms.
+- Podcasts: Mentions within podcast episodes on platforms like Spotify or Apple iTunes.  
+- Blogs: Mentions from personal and professional blog articles.
+- News: Mentions in online news articles and press releases.
+- Web: Mentions from web-based sources like newsletters that don’t fit other categories.
 
 ## C
 
@@ -30,6 +40,12 @@ A coordinated series of marketing activities aimed at achieving specific goals, 
 **Campaign Date**  
 The day an ad is shown to a user. If a table is sorted by Campaign Date, the install is attributed to the last day the user was exposed to the ad.
 
+**Campaign Objective**  
+The specific measurable outcome a campaign is aiming to achieve, such as generating installs, purchases, leads, or website visits. Objectives define what success looks like and are used to measure performance.
+
+**Campaign Startegy**  
+The overarching approach used to guide an ad campaign toward its objective. Most strategies fall into three categories: Awareness (maximizing visibility), Consideration (encouraging users to engage or learn more), and Conversion (driving users to take specific actions like installing or purchasing).
+
 **Channel**  
 The medium through which marketing messages are delivered, such as gaming websites or social media platforms.
 
@@ -38,6 +54,9 @@ Cost Per Action; the average amount spent to drive one user to complete a desire
 
 **CPC**  
 Cost Per Click; the amount an advertiser pays each time a user clicks on their ad. It reflects the efficiency of driving traffic to a destination (such as a website or store page) through paid media.
+
+**CPCV**  
+Cost Per Completed View; the average cost an advertiser pays for each completed view of a video ad, where a 'completed view' means the viewer watched the video ad to its end or to a predefined threshold.
 
 **CPI**  
 Cost Per Install; the amount an advertiser pays to acquire one user who installs the game generated through the campaign. It is calculated by dividing the advertising cost by the number of installs.
@@ -55,6 +74,12 @@ The actual content of the advertisement, including the visual and textual elemen
 The percentage of users who complete a desired action, such as making a purchase or signing up for a newsletter, compared to the total number of users exposed to the ad.
 
 ## D
+
+**D0 Install**  
+The number of installs attributed to the same day (within the first 24 hours) when a user engaged with an ad or campaign. It reflects immediate conversions occurring on the day of initial exposure.
+
+**D1, D3, D7, D14, D30 Install**  
+The number of installs attributed to the period from day 0 (day of first ad engagement) up to day N (1, 3, 7, 14, or 30). It includes installs that happen immediately or within the respective number of days after the user first engaged with the ad or campaign.
 
 **Direct**  
 A user who was not exposed to any advertising campaign and has no referrer, but accessed the store directly (e.g., by typing the URL or using a bookmark).
@@ -132,7 +157,13 @@ Game installs that occur without being driven by paid advertising. These install
 ## P
 
 **Platform**  
-The system on which a game is played, such as PC, PlayStation or Xbox.
+The system on which a game is played, such as PC, PlayStation, Xbox or Switch.
+
+**Pixel Lead**  
+A user who was tracked and attributed through a pixel-based tracking method, usually by placing a tracking pixel on a webpage or in an ad to record actions such as clicks, views, or conversions.
+
+**Pixel Purchase**  
+A purchase event triggered through the TRACKS platform by sending a postback. This allows accurate attribution of user purchases to the corresponding advertising campaign and helps the platform in the learning process.
 
 ## Q
 
