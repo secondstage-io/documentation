@@ -315,7 +315,7 @@ The integration process involves the following steps:
 
 ##### Step 2: Set Up Google Cloud Platform (GCP) Environment
 
-1. Go to [Google Cloud Console](https://console.cloud.google.com/), sign in with your email address. Create a new Project named "TRACKS $yourgame" (replace "$yourgame" with the title or a unique identifier of your game, e.g. "TRACKS Urban Brawl").
+1. Go to [Google Cloud Console](https://console.cloud.google.com/), sign in with your email address. Create a new Project named "TRACKS - yourgame" (replace "yourgame" with the title or a unique identifier of your game, e.g. "TRACKS - Urban Brawl").
 If your organization does not use Google Workspace (Gsuite email account), you can link your email following these steps: https://support.google.com/accounts/answer/176347)
 
 ![Google Cloud Access](/assets/attribution_GCP.png)
