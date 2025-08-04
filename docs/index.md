@@ -25,7 +25,7 @@ We use marketing intelligence to unlock your potential through our platforms [TR
 
     [:octicons-arrow-right-24: Use attribution tracking with TRACKS](/tracks/attribution-tracking/)
 
--   :material-post:{ .lg .middle } __GATEWAY Platform__
+-   :material-post:{ .lg .middle } __Data Handling & Security__
 
     ---
 
@@ -34,7 +34,7 @@ We use marketing intelligence to unlock your potential through our platforms [TR
     [:octicons-arrow-right-24: Learn more](/tracks/data-security/)
 
 
--   :material-information:{ .lg .middle } __Data Handling & Security__
+-   :material-information:{ .lg .middle } __Second Stage GATEWAY__
 
     ---
 
