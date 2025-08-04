@@ -194,6 +194,103 @@
   background-color: rgba(0, 0, 0, 0.05);
 }
 
+/* ADJUST GRID CARDS */
+
+/* Grid container improvements */
+.grid.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Individual card styling */
+.grid.cards > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Each card (from list item) */
+.grid.cards li {
+  background: #fff5f9; /* light TRACK tone */
+  border: 1px solid #ffccd9;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Card hover effect */
+.grid.cards li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+/* Icon sizing and color */
+.grid.cards .material-symbols,
+.grid.cards .md-icon {
+  font-size: 2rem;
+  color: #ff0249;
+  margin-bottom: 0.5rem;
+}
+
+/* Card title */
+.grid.cards strong,
+.grid.cards b {
+  font-size: 1.05rem;
+  color: #90030C;
+}
+
+/* Card description */
+.grid.cards p {
+  font-size: 0.85rem;
+  color: #333;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Links inside card */
+.grid.cards a {
+  display: block;
+  font-size: 0.8rem;
+  color: #ff0249;
+  margin-top: 0.3rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.grid.cards a:hover {
+  text-decoration: underline;
+  color: #90030C;
+}
+
+@media (prefers-color-scheme: dark) {
+  .grid.cards li {
+    background: #2a0e14;
+    border: 1px solid #90030C;
+  }
+
+  .grid.cards strong,
+  .grid.cards b {
+    color: #ffb8ca;
+  }
+
+  .grid.cards p,
+  .grid.cards a {
+    color: #ffdce6;
+  }
+
+  .grid.cards a:hover {
+    color: #ffffff;
+  }
+}
+
+
 /* ADJUST INFO BOXES */
 
 /* Full box with border */
