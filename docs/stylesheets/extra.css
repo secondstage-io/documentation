@@ -202,63 +202,14 @@
 /* ADJUST GRID CARDS */
 /* ========================================================================= */
 
-.grid.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
 
-/* Light mode card styling */
+/* Card styling */
 .grid.cards li {
-  background: var(--md-primary-bg-color);
   border: 1px solid var(--md-primary-fg-color);
   border-radius: 15px;
   padding: 1.5rem;
 }
-.grid.cards li strong,
-.grid.cards li h3,
-.grid.cards li h4 {
-  color: #000000;
-}
-.grid.cards li hr,
-.grid.cards li > :first-of-type + hr {
-  border-top: 1px solid var(--md-primary-fg-color--light);
-}
-.grid.cards li a {
-  color: var(--md-primary-fg-color);
-}
-.grid.cards li a:hover {
-  color: var(--md-primary-fg-color--dark);
-}
 
-/* Dark mode card styling */
-[data-md-color-scheme="dark"] .grid.cards li {
-  background: var(--md-primary-bg-color);
-  border: 1px solid var(--md-primary-fg-color--light);
-}
-[data-md-color-scheme="dark"] .grid.cards li strong,
-[data-md-color-scheme="dark"] .grid.cards li h3,
-[data-md-color-scheme="dark"] .grid.cards li h4 {
-  color: var(--md-default-fg-color--light);
-}
-[data-md-color-scheme="dark"] .grid.cards li hr,
-[data-md-color-scheme="dark"] .grid.cards li > :first-of-type + hr {
-  border-top: 1px solid var(--md-primary-fg-color--light);
-}
-[data-md-color-scheme="dark"] .grid.cards li a {
-  color: var(--md-primary-fg-color--light);
-}
-
-/* Hover effects */
-.grid.cards li:hover {
-  border-color: var(--md-primary-fg-color--dark);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
-}
-[data-md-color-scheme="dark"] .grid.cards li:hover {
-  border-color: var(--md-primary-fg-color);
-  box-shadow: 0 4px 12px rgba(255, 2, 73, 0.2);
-}
 
 
 /* ========================================================================= */
@@ -339,66 +290,6 @@
 }
 
 .md-typeset .admonition.info a:hover {
-  color: var(--md-primary-fg-color--dark);
-}
-
-
-/* ========================================================================= */
-/* ADJUST QUESTION BOXES */
-/* ========================================================================= */
-
-/* Restoring default MkDocs admonition styling for question boxes */
-.md-typeset .admonition.question,
-.md-typeset details.admonition.question {
-  border-left: var(--md-admonition-border-width) solid;
-  border-radius: var(--md-admonition-radius);
-  background-color: var(--md-admonition-color--question);
-  color: var(--md-admonition-color--question-text);
-  box-shadow: none;
-  margin: 1.5em 0;
-  padding: 0;
-  overflow: hidden;
-}
-/* Revert title bar styles to default behavior */
-.md-typeset .admonition.question > .admonition-title,
-.md-typeset details.admonition.question > summary.admonition-title {
-  background-color: transparent;
-  color: currentColor;
-  font-weight: 600;
-  padding: 0.75em 1em;
-  position: relative;
-  border-radius: 0;
-  margin: 0;
-  cursor: pointer;
-}
-/* Revert icon styles to default behavior */
-.md-typeset .admonition.question .admonition-title .admonition-icon,
-.md-typeset details.admonition.question summary.admonition-title .admonition-icon {
-  fill: currentColor;
-  position: static;
-  transform: none;
-  width: 1em;
-  height: 1em;
-  margin-right: 0.3em;
-}
-.md-typeset .admonition.question .admonition-title::before,
-.md-typeset details.admonition.question summary.admonition-title::before {
-  content: none;
-}
-
-/* Inner content */
-.md-typeset .admonition.question > :not(.admonition-title),
-.md-typeset details.admonition.question > :not(summary.admonition-title) {
-  padding: 1em 1.5em;
-}
-
-/* Links inside question box */
-.md-typeset .admonition.question a {
-  color: var(--md-primary-fg-color);
-  text-decoration: underline;
-}
-
-.md-typeset .admonition.question a:hover {
   color: var(--md-primary-fg-color--dark);
 }
 
