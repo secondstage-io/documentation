@@ -196,8 +196,6 @@
 
 /* ADJUST INFO BOXES */
 
-/* === TRACK-Style '!!! info' Callout === */
-
 /* Full box with border */
 .md-typeset .admonition.info,
 .md-typeset details.admonition.info {
@@ -217,54 +215,35 @@
   background-color: #ff0249;
   color: white;
   font-weight: 600;
-  padding: 0.75em 1em 0.75em 2.5em;
+  padding: 0.75em 1em 0.75em 3rem; /* padding-left increased for icon space */
   position: relative;
   border-radius: 6px 6px 0 0;
   margin: 0;
 }
 
-/* Position and recolor SVG icon and override ::before pseudo-element */
+/* Hide default blue icon (SVG and ::before) */
 .md-typeset .admonition.info .admonition-title .admonition-icon svg,
 .md-typeset details.admonition.info summary.admonition-title .admonition-icon svg,
-.md-typeset .admonition.info .admonition-title .admonition-icon svg path,
-.md-typeset details.admonition.info summary.admonition-title .admonition-icon svg path {
-  fill: white !important;
-  stroke: white !important;
-  color: white !important;
-  background: none !important;
-  opacity: 1 !important;
-  filter: none !important;
-  width: 1.25rem;
-  height: 1.25rem;
-  position: absolute;
-  left: 1em;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-/* Override the info box icon from ::before and force brand color */
 .md-typeset .admonition.info .admonition-title::before,
 .md-typeset details.admonition.info summary.admonition-title::before {
-  content: "\f05a"; /* info icon from Material Icons font */
-  font-family: "Material Icons" !important;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 1.25rem;
-  line-height: 1;
-  color: white !important; /* TRACK brand white icon */
-  position: absolute;
-  left: 1em;
-  top: 50%;
-  transform: translateY(-50%);
-  opacity: 1 !important;
-  filter: none !important;
+  display: none !important;
 }
 
-
-/* Hide the default SVG icon if any */
-.md-typeset .admonition.info .admonition-title .admonition-icon svg,
-.md-typeset details.admonition.info summary.admonition-title .admonition-icon svg {
-  display: none !important;
+/* Add custom white info icon as a background using ::after */
+.md-typeset .admonition.info .admonition-title::after,
+.md-typeset details.admonition.info summary.admonition-title::after {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7h2v2h-2V7zm0 4h2v6h-2v-6zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  pointer-events: none;
 }
 
 /* Inner content (after title) */
@@ -282,22 +261,6 @@
 .md-typeset .admonition.info a:hover {
   color: #90030C;
 }
-
-/* Remove default thick border */
-.md-typeset .admonition.info::before,
-.md-typeset details.admonition.info::before {
-  content: none !important;
-  display: none !important;
-}
-
-/* Force white icon */
-.md-typeset .admonition.info .admonition-title .admonition-icon svg,
-.md-typeset details.admonition.info summary.admonition-title .admonition-icon svg {
-  fill: white !important;
-  stroke: none !important;
-  background: none !important;
-}
-
 
 
 
