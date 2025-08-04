@@ -227,12 +227,24 @@
 .md-typeset .admonition.info .admonition-title .admonition-icon svg,
 .md-typeset details.admonition.info summary.admonition-title .admonition-icon svg {
   fill: white !important;
+  stroke: white !important;
+  color: white !important;
+  background: none !important;
+  /* Remove any inherited opacity or filters */
+  opacity: 1 !important;
+  filter: none !important;
   width: 1.25rem;
   height: 1.25rem;
   position: absolute;
   left: 1em;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.md-typeset .admonition.info .admonition-title .admonition-icon svg path,
+.md-typeset details.admonition.info summary.admonition-title .admonition-icon svg path {
+  fill: white !important;
+  stroke: white !important;
 }
 
 /* Inner content (after title) */
