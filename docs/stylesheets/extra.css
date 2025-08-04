@@ -1,8 +1,10 @@
 /*
  * Updated custom CSS for an MkDocs Material project.
  *
- * This version includes a more subtle hero section gradient, using a color
- * closer to the brand's primary red for a more cohesive look.
+ * This final version includes fixes for:
+ * - Consistent header and tabs colors in both light and dark mode.
+ * - Correctly styled and readable dark mode grid cards.
+ * - A robust and working 'question' admonition.
  */
 
 /* ========================================================================= */
@@ -92,7 +94,7 @@
 }
 /* Tabs background - distinct but related color */
 .md-tabs {
-  background-color: var(--md-primary-fg-color);
+  background-color: var(--md-primary-fg-color--dark);
 }
 
 /* Active tab links */
@@ -121,7 +123,9 @@
 }
 
 /* Dark mode adjustments for header and footer */
-[data-md-color-scheme="dark"] .md-header,
+[data-md-color-scheme="dark"] .md-header {
+  background-color: var(--md-primary-fg-color);
+}
 [data-md-color-scheme="dark"] .md-tabs {
   background-color: var(--md-primary-fg-color--dark);
 }
@@ -258,8 +262,6 @@
   color: var(--md-default-fg-color--light);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
-
-/* Headline text in dark mode */
 [data-md-color-scheme="dark"] .grid.cards li strong,
 [data-md-color-scheme="dark"] .grid.cards li h3,
 [data-md-color-scheme="dark"] .grid.cards li h4 {
@@ -362,6 +364,7 @@
 
 .md-typeset .admonition.question,
 .md-typeset details.admonition.question {
+  /* Using more specific selectors to override base styles */
   border: 1px solid var(--md-primary-fg-color) !important;
   border-left: 1px solid var(--md-primary-fg-color) !important;
   border-radius: 6px !important;
@@ -382,10 +385,25 @@
 }
 
 /* Style the icon */
-.md-typeset .admonition.question .admonition-title .admonition-icon,
-.md-typeset details.admonition.question summary.admonition-title .admonition-icon {
+.md-typeset .admonition.question .admonition-title .admonition-icon {
   fill: white !important;
 }
+.md-typeset .admonition.question .admonition-title .admonition-icon svg,
+.md-typeset details.admonition.question summary.admonition-title .admonition-icon svg {
+  display: inline-block !important;
+  fill: currentColor;
+  height: 1em;
+  width: 1em;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+.md-typeset .admonition.question .admonition-title::before,
+.md-typeset details.admonition.question summary.admonition-title::before {
+  content: none !important;
+}
+
 
 /* Inner content */
 .md-typeset .admonition.question > :not(.admonition-title),
