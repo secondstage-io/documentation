@@ -8,6 +8,16 @@
   columns: 2 auto;
 }
 
+/* Adjust base font size for normal text */
+.md-typeset {
+  font-size: 0.95rem; /* Default is 1rem; you can set 0.9rem, 1.05rem, etc. */
+}
+
+/* Optional: change code font size */
+.md-typeset code {
+  font-size: 0.9rem;
+}
+
 
 /* Modify images with round border 
 
