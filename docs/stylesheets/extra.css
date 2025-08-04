@@ -64,52 +64,30 @@
 
 /* HEADER STYLING */
 
-/* Top navbar background */
+/* Top navbar */
 .md-header {
   background-color: var(--md-primary-fg-color);
   color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-/* Optional: Ensure logo/title contrast */
 .md-header__title,
 .md-header__topic {
   color: white;
 }
 
-/* Optional: Navbar shadow effect */
-.md-header {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-
-/* Optional: Link Highlight */
+/* Active tab links */
 .md-tabs__link--active,
 .md-tabs__link:hover {
-  color: #fff;
+  color: white;
   border-bottom: 2px solid white;
 }
 
-/* Slightly lighter tab background below the header */
+/* Tabs background — light mode */
 .md-tabs {
-  background-color: #cc0140 /* Lightened TRACK pink (10% lighter) */
+  background-color: #cc0140; /* darker color */
 }
 
-@media (prefers-color-scheme: dark) {
-  .md-tabs {
-    background-color: #cc0140; /* Darker TRACK pink */
-  }
-}
-
-
-/* Optional: keep tab text color consistent */
-.md-tabs__link {
-  color: white;
-}
-
-.md-tabs__link--active,
-.md-tabs__link:hover {
-  color: white;
-  border-bottom: 2px solid white;
-}
 
 
 
