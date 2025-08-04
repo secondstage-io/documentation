@@ -1,9 +1,91 @@
+/* Apply TRACK brand color globally via `:root`, used when `primary: root` */
 :root {
+  /* Primary brand color (TRACK pink) */
   --md-primary-fg-color:        #ff0249;
-  --md-primary-fg-color--light: #ECB7B7;
-  --md-primary-fg-color--dark:  #90030C;
+  --md-primary-fg-color--light: #ff4e7d; /* brighter version */
+  --md-primary-fg-color--dark:  #cc0140; /* darker version */
+
+  /* Optional: improve contrast for elements like buttons, hovers */
+  --md-primary-bg-color:        #fff;
+  --md-primary-bg-color--light: #fafafa;
 }
 
+/* Override accent color when palette accent is set to "red" */
+[data-md-color-accent="red"] {
+  --md-accent-fg-color:              #ff0249;
+  --md-accent-fg-color--transparent: rgba(255, 2, 73, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --md-primary-fg-color: #ff4e7d; /* slightly brighter for dark mode */
+  }
+}
+
+/* HEADER STYLING */
+
+/* Top navbar background */
+.md-header {
+  background-color: var(--md-primary-fg-color);
+  color: white;
+}
+
+/* Optional: Ensure logo/title contrast */
+.md-header__title,
+.md-header__topic {
+  color: white;
+}
+
+/* Optional: Navbar shadow effect */
+.md-header {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Optional: Link Highlight */
+.md-tabs__link--active,
+.md-tabs__link:hover {
+  color: #fff;
+  border-bottom: 2px solid white;
+}
+
+
+/* FOOTER STYLING */
+.md-footer {
+  background-color: var(--md-primary-fg-color);
+  color: white;
+}
+
+.md-footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+.md-footer a:hover {
+  color: #ffe3ec; /* light hover effect */
+}
+
+.md-footer__inner {
+  padding: 1rem 0;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+/* Darkmode Adjustments */
+@media (prefers-color-scheme: dark) {
+  .md-header,
+  .md-footer {
+    background-color: #cc0140; /* darker TRACK variant for contrast */
+  }
+
+  .md-header__title,
+  .md-footer,
+  .md-footer a {
+    color: white;
+  }
+}
+
+
+/* Define columns */
 .mdx-columns {
   columns: 2 auto;
 }
