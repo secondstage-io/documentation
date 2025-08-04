@@ -91,9 +91,13 @@
 }
 
 /* Base font size for body text */
-.md-typeset {
-  font-size: 0.875rem; /* slightly smaller than default */
-  line-height: 1.5;   /* increase line height for better legibility */
+.md-typeset, 
+.md-typeset p, 
+.md-typeset li, 
+.md-typeset blockquote, 
+.md-typeset td {
+  font-size: 0.875rem !important;
+  line-height: 1.5 !important;
 }
 
 /* Improved codeblock styling */
