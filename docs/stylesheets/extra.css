@@ -1,6 +1,6 @@
-/* Apply TRACK brand color globally via `:root`, used when `primary: root` */
+/* Apply TRACKS brand color globally via `:root`, used when `primary: root` */
 :root {
-  /* Primary brand color (TRACK pink) */
+  /* Primary brand color (TRACKS red) */
   --md-primary-fg-color:        #ff0249;
   --md-primary-fg-color--light: #ff4e7d; /* brighter version */
   --md-primary-fg-color--dark:  #ff0249; /* darker version */
@@ -12,13 +12,13 @@
 
 /* Override accent color when palette accent is set to "red" */
 [data-md-color-accent="red"] {
-  --md-accent-fg-color:              #ff0249;
+  --md-accent-fg-color:         #ff0249;
   --md-accent-fg-color--transparent: rgba(255, 2, 73, 0.1);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --md-primary-fg-color: #ff4e7d; /* slightly brighter for dark mode */
+    --md-primary-fg-color: #ff0249; /* adjust here for dark mode */
   }
 }
 
@@ -196,7 +196,6 @@
 
 /* ADJUST GRID CARDS */
 
-/* === Grid Cards Styling for TRACKS === */
 .grid.cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -208,7 +207,7 @@
 .grid.cards li {
   background: #fff5f9; /* Light TRACK background */
   border: 1px solid #ff0249; /* Brand color outline */
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -221,7 +220,7 @@
 .grid.cards li strong,
 .grid.cards li h3,
 .grid.cards li h4 {
-  color: #ff0249;
+  color: #000000;
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 0.25rem;
@@ -251,6 +250,39 @@
 .grid.cards li:hover {
   border-color: #90030C;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+/* dark mode grid cards */ 
+@media (prefers-color-scheme: dark) {
+  .grid.cards li {
+    background: #2a1c1f; /* muted dark pinkish background */
+    border: 1px solid #ff4e7d; /* lighter TRACK pink for contrast */
+    color: #fceef1; /* soft light text */
+  }
+
+  .grid.cards li strong,
+  .grid.cards li h3,
+  .grid.cards li h4 {
+    color: #ff4e7d; /* maintain visibility in dark mode */
+  }
+
+  .grid.cards li hr,
+  .grid.cards li > :first-of-type + hr {
+    border-top: 1px solid #ff799b;
+  }
+
+  .grid.cards li a {
+    color: #ff91ae;
+  }
+
+  .grid.cards li a:hover {
+    color: #fff; /* brighter hover contrast */
+  }
+
+  .grid.cards li:hover {
+    border-color: #ff0249;
+    box-shadow: 0 4px 12px rgba(255, 2, 73, 0.2);
+  }
 }
 
 
@@ -391,6 +423,7 @@
   content: none !important;
   display: none !important;
 }
+
 
 
 
