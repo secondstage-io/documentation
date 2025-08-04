@@ -8,15 +8,52 @@
   columns: 2 auto;
 }
 
-/* Adjust base font size for normal text */
+/* Base font size for body text */
 .md-typeset {
-  font-size: 0.95rem; /* Default is 1rem; you can set 0.9rem, 1.05rem, etc. */
+  font-size: 0.95rem; /* slightly smaller than default */
+  line-height: 1.6;   /* increase line height for better legibility */
 }
 
-/* Optional: change code font size */
+/* Improved codeblock styling */
+
+/* Inline code */
 .md-typeset code {
+  background-color: #f5f7fa;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
   font-size: 0.9rem;
 }
+
+/* Code blocks */
+.md-typeset pre {
+  background-color: #f5f7fa;
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-x: auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* Lightened blockquotes */
+.md-typeset blockquote {
+  color: #555;
+  border-left: 4px solid #d0d7de;
+  background-color: #f9f9f9;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+
+/* Slightly round sidebar links */
+.md-nav__link {
+  border-radius: 4px;
+  padding: 0.3rem 0.6rem;
+}
+
+.md-nav__link:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+
 
 
 /* Modify images with round border 
