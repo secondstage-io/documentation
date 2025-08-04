@@ -8,6 +8,9 @@ theme:
   name: material
   logo: assets/2s-logo.png
   favicon: assets/favicon.png
+  font:
+    text: Roboto
+    code: Roboto Mono
   features:
     - navigation.tabs
     - navigation.sections
