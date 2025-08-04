@@ -139,6 +139,42 @@
   background-color: rgba(0, 0, 0, 0.05);
 }
 
+/* ADJUST INFO BOXES */
+
+/* Info admonition wrapper */
+.md-typeset .admonition.info {
+  border-left: 4px solid #ff0249;           /* TRACK pink border */
+  background-color: #ffe3ec;                 /* very light pink background */
+  color: #90030C;                            /* dark pink text for contrast */
+  padding: 1rem 1.2rem;
+  border-radius: 6px;
+}
+
+/* Info admonition title bar */
+.md-typeset .admonition.info > .admonition-title {
+  background-color: #ff0249;                 /* TRACK pink background */
+  color: white;
+  font-weight: 600;
+  border-radius: 4px 4px 0 0;
+  padding: 0.3rem 0.8rem;
+  margin: 0 -1.2rem 1rem -1.2rem;
+}
+
+/* Info admonition icon */
+.md-typeset .admonition.info > .admonition-title > .admonition-icon svg {
+  fill: white;                              /* white icon on pink */
+}
+
+/* Adjust links inside info admonition */
+.md-typeset .admonition.info a {
+  color: #ff0249;
+  text-decoration: underline;
+}
+
+.md-typeset .admonition.info a:hover {
+  color: #90030C;
+}
+
 
 
 
