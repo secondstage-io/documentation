@@ -469,6 +469,22 @@ hr.section-divider {
   width: 60%;
 }
 
+/* Remove left nav and expand content for homepage */
+[data-md-page="index"] .md-sidebar,
+[data-md-page="index"] .md-sidebar--primary,
+[data-md-page="index"] .md-sidebar--secondary {
+  display: none;
+}
+
+[data-md-page="index"] .md-main__inner {
+  grid-template-columns: 1fr !important;
+}
+
+[data-md-page="index"] .md-content {
+  max-width: 100%;
+  padding: 0 2rem;
+}
+
 /* Modify images with round border 
 
 img {
