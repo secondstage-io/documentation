@@ -50,8 +50,15 @@
 
 /* Slightly lighter tab background below the header */
 .md-tabs {
-  background-color: #ff3e6f; /* Lightened TRACK pink (~5–10% lighter) */
+  background-color: #ff5a83; /* Lightened TRACK pink (10% lighter) */
 }
+
+@media (prefers-color-scheme: dark) {
+  .md-tabs {
+    background-color: #cc0140; /* Darker TRACK pink */
+  }
+}
+
 
 /* Optional: keep tab text color consistent */
 .md-tabs__link {
@@ -63,6 +70,7 @@
   color: white;
   border-bottom: 2px solid white;
 }
+
 
 
 /* FOOTER STYLING */
