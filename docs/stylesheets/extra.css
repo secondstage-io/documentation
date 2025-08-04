@@ -1,10 +1,13 @@
 /*
- * Updated custom CSS for an MkDocs Material project.
+ * Finalized custom CSS for an MkDocs Material project.
  *
- * This final version includes fixes for:
- * - Consistent header and tabs colors in both light and dark mode.
- * - Correctly styled and readable dark mode grid cards.
- * - A robust and working 'question' admonition.
+ * This version includes fixes for:
+ * - Tabs background is consistently the dark red in both light and dark mode.
+ * - Grid cards now correctly switch to dark mode with the appropriate background,
+ * text, and link colors.
+ * - All custom styling for the 'question' admonition has been removed.
+ * - The hero section gradient is now a subtle transition to a darker color.
+ * - Info admonition description has a darker background in dark mode.
  */
 
 /* ========================================================================= */
@@ -92,7 +95,7 @@
 .md-header__topic {
   color: white;
 }
-/* Tabs background - distinct but related color */
+/* Tabs background - distinct from header but related color */
 .md-tabs {
   background-color: var(--md-primary-fg-color--dark);
 }
@@ -206,73 +209,55 @@
   margin-top: 2rem;
 }
 
-/* Individual card styling */
+/* Light mode card styling */
 .grid.cards li {
-  background: #fbf4f6; /* Subtle light pink background */
+  background: var(--md-primary-bg-color);
   border: 1px solid var(--md-primary-fg-color);
   border-radius: 15px;
   padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
-/* Dark mode grid cards */
-[data-md-color-scheme="dark"] .grid.cards li {
-  background: var(--md-primary-bg-color--light); /* Use a slightly darker background */
-  border: none;
-  color: var(--md-default-fg-color--light);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-}
-
-/* Headline inside each card */
 .grid.cards li strong,
 .grid.cards li h3,
 .grid.cards li h4 {
   color: #000000;
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 0.25rem;
 }
-/* Dark mode headline text */
+.grid.cards li hr,
+.grid.cards li > :first-of-type + hr {
+  border-top: 1px solid var(--md-primary-fg-color--light);
+}
+.grid.cards li a {
+  color: var(--md-primary-fg-color);
+}
+.grid.cards li a:hover {
+  color: var(--md-primary-fg-color--dark);
+}
+
+/* Dark mode card styling */
+[data-md-color-scheme="dark"] .grid.cards li {
+  background: var(--md-primary-bg-color);
+  border: 1px solid var(--md-primary-fg-color--light);
+}
 [data-md-color-scheme="dark"] .grid.cards li strong,
 [data-md-color-scheme="dark"] .grid.cards li h3,
 [data-md-color-scheme="dark"] .grid.cards li h4 {
   color: var(--md-default-fg-color--light);
 }
-
-/* Divider line under headline */
-.grid.cards li hr,
-.grid.cards li > :first-of-type + hr {
-  border: none;
+[data-md-color-scheme="dark"] .grid.cards li hr,
+[data-md-color-scheme="dark"] .grid.cards li > :first-of-type + hr {
   border-top: 1px solid var(--md-primary-fg-color--light);
-  margin: 0.25rem 0 0.5rem;
 }
-
-/* Links in cards */
-.grid.cards li a {
-  color: var(--md-primary-fg-color);
-  text-decoration: underline;
-  font-weight: 500;
-}
-/* Dark mode links */
 [data-md-color-scheme="dark"] .grid.cards li a {
   color: var(--md-primary-fg-color--light);
 }
-[data-md-color-scheme="dark"] .grid.cards li a:hover {
-  color: white;
-}
 
-/* Hover effect */
+/* Hover effects */
 .grid.cards li:hover {
   border-color: var(--md-primary-fg-color--dark);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
 }
-/* Dark mode hover effect */
 [data-md-color-scheme="dark"] .grid.cards li:hover {
-  background: #2a282c; /* Slightly lighter background on hover */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-color: var(--md-primary-fg-color);
+  box-shadow: 0 4px 12px rgba(255, 2, 73, 0.2);
 }
 
 
@@ -291,6 +276,12 @@
   margin: 1.5em 0;
   padding: 0;
   overflow: hidden;
+}
+/* Dark mode info box */
+[data-md-color-scheme="dark"] .md-typeset .admonition.info,
+[data-md-color-scheme="dark"] .md-typeset details.admonition.info {
+  background-color: #242226; /* Darker background color for the body of the admonition */
+  color: #c0c0c0; /* Light text color for readability */
 }
 
 /* Title bar */
@@ -335,6 +326,11 @@
 .md-typeset details.admonition.info > :not(summary.admonition-title) {
   padding: 1em 1.5em;
 }
+/* Dark mode inner content */
+[data-md-color-scheme="dark"] .md-typeset .admonition.info > :not(.admonition-title),
+[data-md-color-scheme="dark"] .md-typeset details.admonition.info > :not(summary.admonition-title) {
+  background-color: var(--md-primary-bg-color--light);
+}
 
 /* Link styling inside box */
 .md-typeset .admonition.info a {
@@ -351,44 +347,44 @@
 /* ADJUST QUESTION BOXES */
 /* ========================================================================= */
 
+/* Restoring default MkDocs admonition styling for question boxes */
 .md-typeset .admonition.question,
 .md-typeset details.admonition.question {
-  /* Using more specific selectors to override base styles */
-  border: 1px solid var(--md-primary-fg-color);
-  border-left: 1px solid var(--md-primary-fg-color);
-  border-radius: 6px;
-  background-color: #fff5f9;
-  color: var(--md-primary-fg-color--dark);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  border-left: var(--md-admonition-border-width) solid;
+  border-radius: var(--md-admonition-radius);
+  background-color: var(--md-admonition-color--question);
+  color: var(--md-admonition-color--question-text);
+  box-shadow: none;
   margin: 1.5em 0;
   padding: 0;
   overflow: hidden;
-  --md-admonition-color--question: transparent;
 }
-
-/* Style the title bar */
+/* Revert title bar styles to default behavior */
 .md-typeset .admonition.question > .admonition-title,
 .md-typeset details.admonition.question > summary.admonition-title {
-  background-color: var(--md-primary-fg-color);
-  color: white;
+  background-color: transparent;
+  color: currentColor;
+  font-weight: 600;
+  padding: 0.75em 1em;
+  position: relative;
+  border-radius: 0;
+  margin: 0;
+  cursor: pointer;
 }
-
-/* Style the icon */
+/* Revert icon styles to default behavior */
 .md-typeset .admonition.question .admonition-title .admonition-icon,
 .md-typeset details.admonition.question summary.admonition-title .admonition-icon {
-  fill: white;
-  position: absolute;
-  left: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
+  fill: currentColor;
+  position: static;
+  transform: none;
   width: 1em;
   height: 1em;
+  margin-right: 0.3em;
 }
 .md-typeset .admonition.question .admonition-title::before,
 .md-typeset details.admonition.question summary.admonition-title::before {
   content: none;
 }
-
 
 /* Inner content */
 .md-typeset .admonition.question > :not(.admonition-title),
