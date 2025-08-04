@@ -9,7 +9,7 @@ theme:
   logo: assets/2s-logo.png
   favicon: assets/favicon.png
   font:
-    text: Roboto
+    text: Open Sans
     code: Roboto Mono
   features:
     - navigation.tabs
