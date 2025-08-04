@@ -264,14 +264,14 @@
 
 /* ADJUST QUESTION BOXES */
 
-/* Full box with border */
+/* Full box styling for question admonition */
 .md-typeset .admonition.question,
 .md-typeset details.admonition.question {
   border: 1px solid #ff0249;
   border-radius: 6px;
-  background-color: #fff1f6;
+  background-color: #fff5f9;
   color: #90030C;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
   margin: 1.5em 0;
   padding: 0;
   overflow: hidden;
@@ -283,29 +283,26 @@
   background-color: #ff0249;
   color: white;
   font-weight: 600;
-  padding: 0.75em 1em 0.75em 2.25em;
+  padding: 0.65em 1em 0.65em 2.3em;
   position: relative;
   border-radius: 6px 6px 0 0;
   margin: 0;
   cursor: pointer;
 }
 
-/* Hide default SVG icon */
-.md-typeset .admonition.question .admonition-title .admonition-icon,
-.md-typeset details.admonition.question summary.admonition-title .admonition-icon {
-  display: none !important;
-}
-
-/* Insert custom Material icon */
-.md-typeset .admonition.question > .admonition-title::before,
-.md-typeset details.admonition.question > summary.admonition-title::before {
-  content: "help"; /* Material Icons keyword */
-  font-family: "Material Icons";
-  font-size: 1.1rem;
-  line-height: 1;
-  color: white;
+/* Icon styling — smaller and white */
+.md-typeset .admonition.question .admonition-title .admonition-icon svg,
+.md-typeset details.admonition.question summary.admonition-title .admonition-icon svg {
+  fill: white !important;
+  stroke: white !important;
+  color: white !important;
+  background: none !important;
+  opacity: 1 !important;
+  filter: none !important;
+  width: 1rem;        /* smaller icon */
+  height: 1rem;
   position: absolute;
-  left: 0.75em;
+  left: 1em;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -316,7 +313,7 @@
   padding: 1em 1.5em;
 }
 
-/* Links inside box */
+/* Links inside question box */
 .md-typeset .admonition.question a {
   color: #ff0249;
   text-decoration: underline;
@@ -326,12 +323,13 @@
   color: #90030C;
 }
 
-/* Remove thick left border */
+/* Remove default thick left border */
 .md-typeset .admonition.question::before,
 .md-typeset details.admonition.question::before {
   content: none !important;
   display: none !important;
 }
+
 
 
 /* Modify images with round border 
