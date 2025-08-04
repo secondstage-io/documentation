@@ -251,6 +251,21 @@
   color: #90030C;
 }
 
+/* Remove default thick border */
+.md-typeset .admonition.info::before,
+.md-typeset details.admonition.info::before {
+  content: none !important;
+  display: none !important;
+}
+
+/* Force white icon */
+.md-typeset .admonition.info .admonition-title .admonition-icon svg,
+.md-typeset details.admonition.info summary.admonition-title .admonition-icon svg {
+  fill: white !important;
+  stroke: none !important;
+  background: none !important;
+}
+
 
 
 
