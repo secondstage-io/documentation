@@ -6,7 +6,7 @@
   --md-primary-fg-color--dark:  #ff0249; /* darker version */
 
   /* Optional: improve contrast for elements like buttons, hovers */
-  --md-primary-bg-color:        #fff;
+  --md-primary-bg-color:        #f9fbfd;
   --md-primary-bg-color--light: #fafafa;
 }
 
