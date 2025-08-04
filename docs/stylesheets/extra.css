@@ -361,9 +361,9 @@
 /* Full box styling for question admonition */
 .md-typeset .admonition.question,
 .md-typeset details.admonition.question {
-  border: 1px solid #ff0249;
-  border-radius: 6px;
-  background-color: #fff5f9;
+  border: 1px solid #ff0249 !important; 
+  border-radius: 6px !important; 
+  background-color: #fff5f9 !important;
   color: #90030C;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
   margin: 1.5em 0;
@@ -425,7 +425,48 @@
 }
 
 
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem 3rem;
+  background: linear-gradient(135deg, #ff0249 0%, #ff4e7d 100%);
+  color: white;
+  border-radius: 0.5rem;
+  margin-bottom: 3rem;
+}
 
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+}
+
+.hero .cta-button {
+  background: white;
+  color: #ff0249;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.75em 1.5em;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.hero .cta-button:hover {
+  background: #ffe4ec;
+  color: #90030C;
+}
+
+/* Section dividers */
+hr.section-divider {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 4rem auto;
+  width: 60%;
+}
 
 /* Modify images with round border 
 
