@@ -1,3 +1,10 @@
+/*
+ * Updated custom CSS for an MkDocs Material project.
+ *
+ * This version features a more subtle hero section gradient, using a color
+ * closer to the brand's primary red for a more cohesive look.
+ */
+
 /* ========================================================================= */
 /* GLOBAL COLOR VARIABLES */
 /* ========================================================================= */
@@ -431,7 +438,7 @@
   background: linear-gradient(
     135deg,
     var(--md-primary-fg-color),
-    #ff91ae 75%,
+    #b0023a 75%,
     var(--md-primary-bg-color) 100%
   );
   color: white;
