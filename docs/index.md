@@ -9,9 +9,8 @@ hide:
 <div class="hero">
 <h1>Welcome to the TRACKS Documentation</h1>
 
-  <p><strong>TRACKS</strong> is a marketing analytics and attribution platform built for PC and console games. Developed by <strong>Second Stage</strong>, it gives you clear insight into your marketing performance—without sacrificing user privacy or platform compliance.
-This guide will help you integrate and get the most out of TRACKS. It's designed to work as a managed service with full support from our team, so feel free to reach out if you need help along the way.
-  </p>
+  <p><strong>TRACKS</strong> is a marketing analytics and attribution platform built for PC and console games. Developed by <strong>Second Stage</strong>, it gives you clear insight into your marketing performance—without sacrificing user privacy or platform compliance.</p>
+  <p>This guide will help you integrate and get the most out of TRACKS. It's designed to work as a managed service with full support from our team, so feel free to reach out if you need help along the way.</p>
 
   <a href="https://tracks.secondstage.io/" target="_blank" class="cta-button">Access TRACKS platform</a>
 </div>
