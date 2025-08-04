@@ -182,41 +182,51 @@
 
 /* ADJUST INFO BOXES */
 
-/* Override default 'info' callout completely */
+/* Reset container */
 .md-typeset .admonition.info,
 .md-typeset details.admonition.info {
-  /* Reset base styles */
-  border-left: 4px solid #ff0249 !important;
-  background-color: #fff1f6 !important;
-  color: #90030C !important;
-  padding: 1rem 1.25rem;
+  border: none;
   border-radius: 6px;
-  box-shadow: none;
+  background-color: #fff1f6;
+  color: #90030C;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  margin: 1.5em 0;
+  padding: 1.25em;
+  position: relative;
 }
 
-/* Title bar (the header inside the info box) */
+/* Title bar */
 .md-typeset .admonition.info > .admonition-title,
 .md-typeset details.admonition.info > summary.admonition-title {
-  background-color: #ff0249 !important;
-  color: white !important;
+  background-color: #ff0249;
+  color: white;
   font-weight: 600;
-  border-radius: 4px 4px 0 0;
-  margin: -1rem -1.25rem 0.75rem -1.25rem;
-  padding: 0.5rem 1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  padding: 0.5em 1em 0.5em 2.5em;
+  border-radius: 4px;
+  margin: -1.25em -1.25em 1em -1.25em;
+  position: relative;
+  display: block;
 }
 
-/* Ensure icon is styled */
+/* Icon override */
 .md-typeset .admonition.info > .admonition-title .admonition-icon svg,
 .md-typeset details.admonition.info > summary.admonition-title .admonition-icon svg {
   fill: white !important;
-  width: 1.25rem;
-  height: 1.25rem;
+  position: absolute;
+  top: 50%;
+  left: 1em;
+  transform: translateY(-50%);
+  width: 1.2rem;
+  height: 1.2rem;
 }
 
-/* Optional: links inside the box */
+/* Remove the default border-left */
+.md-typeset .admonition.info::before,
+.md-typeset details.admonition.info::before {
+  content: none;
+}
+
+/* Links inside box */
 .md-typeset .admonition.info a {
   color: #ff0249;
   text-decoration: underline;
