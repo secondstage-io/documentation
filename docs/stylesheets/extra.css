@@ -89,7 +89,7 @@
 
 /* Slightly lighter tab background below the header */
 .md-tabs {
-  background-color: #ff5a83; /* Lightened TRACK pink (10% lighter) */
+  background-color: #cc0140 /* Lightened TRACK pink (10% lighter) */
 }
 
 @media (prefers-color-scheme: dark) {
