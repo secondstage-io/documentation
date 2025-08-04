@@ -3,7 +3,7 @@
   /* Primary brand color (TRACK pink) */
   --md-primary-fg-color:        #ff0249;
   --md-primary-fg-color--light: #ff4e7d; /* brighter version */
-  --md-primary-fg-color--dark:  #cc0140; /* darker version */
+  --md-primary-fg-color--dark:  #ff0249; /* darker version */
 
   /* Optional: improve contrast for elements like buttons, hovers */
   --md-primary-bg-color:        #fff;
