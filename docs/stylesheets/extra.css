@@ -48,6 +48,22 @@
   border-bottom: 2px solid white;
 }
 
+/* Slightly lighter tab background below the header */
+.md-tabs {
+  background-color: #ff3e6f; /* Lightened TRACK pink (~5–10% lighter) */
+}
+
+/* Optional: keep tab text color consistent */
+.md-tabs__link {
+  color: white;
+}
+
+.md-tabs__link--active,
+.md-tabs__link:hover {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
 
 /* FOOTER STYLING */
 .md-footer {
@@ -90,6 +106,7 @@
   columns: 2 auto;
 }
 
+/* FONT ADJUSTMENTS */
 /* Base font size for body text */
 .md-typeset, 
 .md-typeset p, 
@@ -99,6 +116,22 @@
   font-size: 0.875rem !important;
   line-height: 1.5 !important;
 }
+
+.md-typeset h1 { font-size: 2rem; }     /* 32px */
+.md-typeset h2 { font-size: 1.5rem; }   /* 24px */
+.md-typeset h3 { font-size: 1.25rem; }  /* 20px */
+.md-typeset h4 { font-size: 1.125rem; } /* 18px */
+.md-typeset h5,
+.md-typeset h6 {
+  font-size: 1rem;
+}
+
+.md-typeset code,
+.md-typeset pre {
+  font-size: 0.875rem; /* 14px */
+}
+
+
 
 /* Improved codeblock styling */
 
@@ -141,38 +174,40 @@
 
 /* ADJUST INFO BOXES */
 
-/* Info admonition wrapper */
-.md-typeset .admonition.info {
-  border-left: 4px solid #ff0249;           /* TRACK pink border */
-  background-color: #ffe3ec;                 /* very light pink background */
-  color: #90030C;                            /* dark pink text for contrast */
-  padding: 1rem 1.2rem;
+/* Stronger selector to override default info block styles */
+.md-typeset .admonition.info,
+.md-typeset details.admonition.info {
+  border-left: 4px solid #ff0249 !important;
+  background-color: #ffe3ec !important;
+  color: #90030C !important;
   border-radius: 6px;
+  padding: 1rem 1.2rem;
 }
 
-/* Info admonition title bar */
-.md-typeset .admonition.info > .admonition-title {
-  background-color: #ff0249;                 /* TRACK pink background */
-  color: white;
+/* Title bar (heading of the info block) */
+.md-typeset .admonition.info > .admonition-title,
+.md-typeset details.admonition.info > summary.admonition-title {
+  background-color: #ff0249 !important;
+  color: #fff !important;
   font-weight: 600;
   border-radius: 4px 4px 0 0;
-  padding: 0.3rem 0.8rem;
+  padding: 0.4rem 0.8rem;
   margin: 0 -1.2rem 1rem -1.2rem;
 }
 
-/* Info admonition icon */
-.md-typeset .admonition.info > .admonition-title > .admonition-icon svg {
-  fill: white;                              /* white icon on pink */
+/* Icon inside title */
+.md-typeset .admonition.info .admonition-title .admonition-icon svg {
+  fill: white !important;
 }
 
-/* Adjust links inside info admonition */
+/* Links inside info */
 .md-typeset .admonition.info a {
-  color: #ff0249;
+  color: #ff0249 !important;
   text-decoration: underline;
 }
 
 .md-typeset .admonition.info a:hover {
-  color: #90030C;
+  color: #90030C !important;
 }
 
 
