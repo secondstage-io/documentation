@@ -233,15 +233,16 @@
 /* dark mode grid cards */ 
 @media (prefers-color-scheme: dark) {
   .grid.cards li {
-    background: #2a1c1f; /* muted dark pinkish background */
+    background: #1a1013; /* darker muted pinkish background */
     border: 1px solid #ff4e7d; /* lighter TRACK pink for contrast */
     color: #fceef1; /* soft light text */
   }
 
+  /* Make headline text same as normal text in dark mode */
   .grid.cards li strong,
   .grid.cards li h3,
   .grid.cards li h4 {
-    color: #ff4e7d; /* maintain visibility in dark mode */
+    color: #fceef1; /* same soft light text color as card text */
   }
 
   .grid.cards li hr,
