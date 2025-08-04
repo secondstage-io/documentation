@@ -22,6 +22,45 @@
   }
 }
 
+/* FONT ADJUSTMENTS */
+/* Base font size for body text */
+.md-typeset, 
+.md-typeset p, 
+.md-typeset li, 
+.md-typeset blockquote, 
+.md-typeset td {
+  font-size: 0.8rem !important;
+  line-height: 1.5 !important;
+}
+
+.md-typeset h1 {
+  font-size: 1.6rem;
+  margin: 2rem 0 1rem;
+}
+
+.md-typeset h2 {
+  font-size: 1.3rem;
+  margin: 1.6rem 0 0.75rem;
+}
+
+.md-typeset h3 {
+  font-size: 1.1rem;
+  margin: 1.2rem 0 0.5rem;
+}
+
+.md-typeset h4 {
+  font-size: 1rem;
+  margin: 1rem 0 0.5rem;
+}
+
+
+.md-typeset code,
+.md-typeset pre {
+  font-size: 0.75rem; /* 14px */
+}
+
+
+
 /* HEADER STYLING */
 
 /* Top navbar background */
@@ -113,32 +152,6 @@
 .mdx-columns {
   columns: 2 auto;
 }
-
-/* FONT ADJUSTMENTS */
-/* Base font size for body text */
-.md-typeset, 
-.md-typeset p, 
-.md-typeset li, 
-.md-typeset blockquote, 
-.md-typeset td {
-  font-size: 0.875rem !important;
-  line-height: 1.5 !important;
-}
-
-.md-typeset h1 { font-size: 2rem; }     /* 32px */
-.md-typeset h2 { font-size: 1.5rem; }   /* 24px */
-.md-typeset h3 { font-size: 1.25rem; }  /* 20px */
-.md-typeset h4 { font-size: 1.125rem; } /* 18px */
-.md-typeset h5,
-.md-typeset h6 {
-  font-size: 1rem;
-}
-
-.md-typeset code,
-.md-typeset pre {
-  font-size: 0.875rem; /* 14px */
-}
-
 
 
 /* Improved codeblock styling */
