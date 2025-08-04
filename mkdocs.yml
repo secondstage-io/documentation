@@ -9,8 +9,8 @@ theme:
   logo: assets/2s-logo.png
   favicon: assets/favicon.png
   font:
-    text: Open Sans
-    code: Roboto Mono
+    text: Work Sans
+    code: Fira Code
   features:
     - navigation.tabs
     - navigation.sections
