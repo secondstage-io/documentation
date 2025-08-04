@@ -1,3 +1,4 @@
+
 /* ========================================================================= */
 /* GLOBAL COLOR VARIABLES */
 /* ========================================================================= */
@@ -7,7 +8,7 @@
   /* Primary brand color (TRACKS red) */
   --md-primary-fg-color:        #ff0249;
   --md-primary-fg-color--light: #ffc2d1; /* Softer, more elegant light pink */
-  --md-primary-fg-color--dark:  #90030C; /* Deeper burgundy for high contrast */
+  --md-primary-fg-color--dark:  #ff3902; /* New dark orange for high contrast */
   /* Optional: improve contrast for elements like buttons, hovers */
   --md-primary-bg-color:        #fdfdfd; /* Clean, subtle off-white */
   --md-primary-bg-color--light: #f7f7f7; /* Lighter off-white */
@@ -359,31 +360,15 @@
   margin: 0;
   cursor: pointer;
 }
-
-/* Hide default icon and border */
-.md-typeset .admonition.question .admonition-title::before,
-.md-typeset .admonition.question .admonition-title .admonition-icon,
-.md-typeset details.admonition.question summary.admonition-title::before,
-.md-typeset details.admonition.question summary.admonition-title .admonition-icon {
-  content: none;
-  display: none;
-}
-
-/* Add custom white question icon using ::after */
-.md-typeset .admonition.question .admonition-title::after,
-.md-typeset details.admonition.question summary.admonition-title::after {
-  content: "";
+/* Style the default MkDocs question icon */
+.md-typeset .admonition.question .admonition-title .admonition-icon svg {
+  fill: white;
+  width: 1rem;
+  height: 1rem;
   position: absolute;
   left: 1rem;
   top: 50%;
   transform: translateY(-50%);
-  width: 1rem;
-  height: 1rem;
-  background-image: url('data:image/svg+xml;utf8,<svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.07 15.07c-.12-.25-.26-.48-.4-.7-.16-.24-.33-.48-.5-.73-.5-.75-.85-1.46-.85-2.22 0-1.11.83-2 1.94-2 1.22 0 2.21.98 2.21 2.22h.01c0 .28.22.5.5.5h.01c.28 0 .5-.22.5-.5 0-1.49-1.25-2.71-2.73-2.71-1.6 0-2.88 1.14-2.88 2.58 0 1.05.51 1.95 1.5 3.19.14.18.28.37.42.56.2.27.4.55.59.82.26.37.52.74.74 1.15.22.41.33.85.33 1.34 0 .28-.22.5-.5.5h-.01c-.28 0-.5-.22-.5-.5 0-.6-.16-1.16-.48-1.7zm-2.07 7.93c-5.52 0-10-4.48-10-10s4.48-10 10-10 10 4.48 10 10-4.48 10-10 10zm-9-10c0 4.97 4.03 9 9 9s9-4.03 9-9-4.03-9-9-9-9 4.03-9 9z"/></svg>');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  pointer-events: none;
 }
 
 /* Inner content */
@@ -410,29 +395,29 @@
 /* Hero Section */
 .hero {
   text-align: center;
-  padding: 4rem 2rem; /* Adjusted padding to create a more balanced look */
-  background: linear-gradient(135deg, var(--md-primary-fg-color) 0%, var(--md-primary-fg-color--light) 100%);
+  padding: 3rem 2rem 2.5rem; /* Reduced padding for a more subtle look */
+  background: linear-gradient(135deg, var(--md-primary-fg-color) 0%, #ffedf2 100%); /* Softer gradient */
   color: white;
   border-radius: 0.5rem;
-  margin-bottom: 2rem; /* Reduced bottom margin to bring content closer */
+  margin-bottom: 2rem;
 }
 
 /* Responsive padding for smaller screens */
 @media (max-width: 768px) {
   .hero {
-    padding: 2rem 1rem;
+    padding: 2rem 1rem 1.5rem;
     margin-bottom: 1.5rem;
   }
 }
 .hero h1 {
-  font-size: 2.25rem; /* Increased font size for a bolder title */
+  font-size: 1.75rem; /* Smaller font size for a less intrusive title */
   color: white;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 .hero p {
-  font-size: 1.125rem;
-  margin-bottom: 2rem;
-  opacity: 0.9; /* Slightly reduced opacity for a softer look */
+  font-size: 1rem; /* Smaller font size for body text */
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
 }
 .hero .cta-button {
   background: white;
