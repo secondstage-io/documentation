@@ -29,17 +29,18 @@ We use marketing intelligence to unlock your potential through our platforms [TR
 
     ---
 
-    Learn more about GATEWAY, our ad platform for gaming environments.
+    For more details on data handling and security, see our comprehensive documentation.
 
-    [:octicons-arrow-right-24: Get started with GATEWAY](/gateway/overview/)
+    [:octicons-arrow-right-24: Learn more](/tracks/data-security/)
+
 
 -   :material-information:{ .lg .middle } __Data Handling & Security__
 
     ---
 
-    For more details on data handling and security, see our comprehensive documentation.
+    Learn more about GATEWAY, our co-pilot for games marketing.
 
-    [:octicons-arrow-right-24: Learn more](/tracks/data-security/)
+    [:octicons-arrow-right-24: Get started with GATEWAY](https://secondstage.io/gateway)
 
 </div>
 
