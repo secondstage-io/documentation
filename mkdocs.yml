@@ -102,8 +102,6 @@ nav:
     - Marketing Analytics: tracks/marketing-analytics.md
     - Attribution Tracking: tracks/attribution-tracking.md
     - Data Handling & Security: tracks/data-security.md
-  - GATEWAY: 
-    - Platform Overview: gateway/overview.md
   - Reference:
     - Glossary: glossary.md 
     - Further Reading: resources.md
