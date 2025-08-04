@@ -223,14 +223,15 @@
   margin: 0;
 }
 
-/* Position icon properly and recolor it */
+/* Position and recolor SVG icon and override ::before pseudo-element */
 .md-typeset .admonition.info .admonition-title .admonition-icon svg,
-.md-typeset details.admonition.info summary.admonition-title .admonition-icon svg {
+.md-typeset details.admonition.info summary.admonition-title .admonition-icon svg,
+.md-typeset .admonition.info .admonition-title .admonition-icon svg path,
+.md-typeset details.admonition.info summary.admonition-title .admonition-icon svg path {
   fill: white !important;
   stroke: white !important;
   color: white !important;
   background: none !important;
-  /* Remove any inherited opacity or filters */
   opacity: 1 !important;
   filter: none !important;
   width: 1.25rem;
@@ -241,10 +242,29 @@
   transform: translateY(-50%);
 }
 
-.md-typeset .admonition.info .admonition-title .admonition-icon svg path,
-.md-typeset details.admonition.info summary.admonition-title .admonition-icon svg path {
-  fill: white !important;
-  stroke: white !important;
+/* Override the info box icon from ::before and force brand color */
+.md-typeset .admonition.info .admonition-title::before,
+.md-typeset details.admonition.info summary.admonition-title::before {
+  content: "\f05a"; /* info icon from Material Icons font */
+  font-family: "Material Icons" !important;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.25rem;
+  line-height: 1;
+  color: white !important; /* TRACK brand white icon */
+  position: absolute;
+  left: 1em;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+
+/* Hide the default SVG icon if any */
+.md-typeset .admonition.info .admonition-title .admonition-icon svg,
+.md-typeset details.admonition.info summary.admonition-title .admonition-icon svg {
+  display: none !important;
 }
 
 /* Inner content (after title) */
