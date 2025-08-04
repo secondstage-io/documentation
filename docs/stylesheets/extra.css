@@ -218,6 +218,13 @@
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
+/* Dark mode grid cards */
+[data-md-color-scheme="dark"] .grid.cards li {
+  background: var(--md-primary-bg-color--light); /* Use a slightly darker background */
+  border: none;
+  color: var(--md-default-fg-color--light);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
 
 /* Headline inside each card */
 .grid.cards li strong,
@@ -227,6 +234,12 @@
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 0.25rem;
+}
+/* Dark mode headline text */
+[data-md-color-scheme="dark"] .grid.cards li strong,
+[data-md-color-scheme="dark"] .grid.cards li h3,
+[data-md-color-scheme="dark"] .grid.cards li h4 {
+  color: var(--md-default-fg-color--light);
 }
 
 /* Divider line under headline */
@@ -243,10 +256,12 @@
   text-decoration: underline;
   font-weight: 500;
 }
-
-.grid.cards li a:hover {
-  text-decoration: underline;
-  color: var(--md-primary-fg-color--dark);
+/* Dark mode links */
+[data-md-color-scheme="dark"] .grid.cards li a {
+  color: var(--md-primary-fg-color--light);
+}
+[data-md-color-scheme="dark"] .grid.cards li a:hover {
+  color: white;
 }
 
 /* Hover effect */
@@ -254,33 +269,7 @@
   border-color: var(--md-primary-fg-color--dark);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
 }
-
-/* Dark mode grid cards */
-[data-md-color-scheme="dark"] .grid.cards li {
-  background: var(--md-primary-bg-color--light); /* Use a slightly darker background */
-  border: none;
-  color: var(--md-default-fg-color--light);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-}
-[data-md-color-scheme="dark"] .grid.cards li strong,
-[data-md-color-scheme="dark"] .grid.cards li h3,
-[data-md-color-scheme="dark"] .grid.cards li h4 {
-  color: var(--md-default-fg-color--light);
-}
-
-[data-md-color-scheme="dark"] .grid.cards li hr,
-[data-md-color-scheme="dark"] .grid.cards li > :first-of-type + hr {
-  border-top: 1px solid var(--md-primary-fg-color--light);
-}
-
-[data-md-color-scheme="dark"] .grid.cards li a {
-  color: var(--md-primary-fg-color--light);
-}
-
-[data-md-color-scheme="dark"] .grid.cards li a:hover {
-  color: white;
-}
-
+/* Dark mode hover effect */
 [data-md-color-scheme="dark"] .grid.cards li:hover {
   background: #2a282c; /* Slightly lighter background on hover */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -364,7 +353,9 @@
 
 .md-typeset .admonition.question,
 .md-typeset details.admonition.question {
+  /* Using more specific selectors to override base styles */
   border: 1px solid var(--md-primary-fg-color);
+  border-left: 1px solid var(--md-primary-fg-color);
   border-radius: 6px;
   background-color: #fff5f9;
   color: var(--md-primary-fg-color--dark);
@@ -372,19 +363,17 @@
   margin: 1.5em 0;
   padding: 0;
   overflow: hidden;
+  --md-admonition-color--question: transparent;
 }
 
+/* Style the title bar */
 .md-typeset .admonition.question > .admonition-title,
 .md-typeset details.admonition.question > summary.admonition-title {
   background-color: var(--md-primary-fg-color);
   color: white;
-  font-weight: 600;
-  padding: 0.75em 1em 0.75em 3rem;
-  position: relative;
-  border-radius: 6px 6px 0 0;
-  margin: 0;
-  cursor: pointer;
 }
+
+/* Style the icon */
 .md-typeset .admonition.question .admonition-title .admonition-icon,
 .md-typeset details.admonition.question summary.admonition-title .admonition-icon {
   fill: white;
@@ -395,6 +384,11 @@
   width: 1em;
   height: 1em;
 }
+.md-typeset .admonition.question .admonition-title::before,
+.md-typeset details.admonition.question summary.admonition-title::before {
+  content: none;
+}
+
 
 /* Inner content */
 .md-typeset .admonition.question > :not(.admonition-title),
