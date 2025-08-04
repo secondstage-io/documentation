@@ -9,13 +9,11 @@ hide:
 <div class="hero">
 <h1>Welcome to the TRACKS Documentation</h1>
 
-  <p><strong>TRACKS</strong> is a flexible and privacy-first analytics and attribution platform built specifically for PC & console games. Created by 
-   <strong>Second Stage</strong>, TRACKS gives you complete visibility into your marketing performance - without compromising on user privacy or platform compliance. This documentation is your guide to integrating, configuring, and maximizing the value of TRACKS for your game. 
+  <p><strong>TRACKS</strong> is a marketing analytics and attribution platform built for PC and console games. Developed by <strong>Second Stage</strong>, it gives you clear insight into your marketing performance—without sacrificing user privacy or platform compliance.
+This guide will help you integrate and get the most out of TRACKS. It's designed to work as a managed service with full support from our team, so feel free to reach out if you need help along the way.
   </p>
 
-  <p>TRACKS is designed to work seamlessly as a managed service, with full support from our team. Use this guide to get started quickly, or get feel free to reach out for custom support!
-  </p>
-    <a href="https://tracks.secondstage.io/" class="cta-button">Access TRACKS platform</a>
+  <a href="https://tracks.secondstage.io/" target="_blank" class="cta-button">Access TRACKS platform</a>
 </div>
 
 <!-- Features Grid -->
@@ -36,7 +34,7 @@ hide:
 
     ---
 
-    Check out our comprehensive guide to the different attribution tracking solutions available out-of-the-box with TRACKS.
+    Check out our comprehensive guide to set up attribution tracking available out-of-the-box with TRACKS.
 
     [:octicons-arrow-right-24: Use attribution tracking with TRACKS](/tracks/attribution-tracking/)
 
