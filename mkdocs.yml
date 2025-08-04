@@ -9,7 +9,7 @@ theme:
   logo: assets/2s-logo.png
   favicon: assets/favicon.png
   font:
-    text: Work Sans
+    text: Inter
     code: Fira Code
   features:
     - navigation.tabs
