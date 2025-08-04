@@ -1,3 +1,7 @@
+hide:
+  - navigation
+  - toc
+    
 <!-- Hero Section -->
 
 <div class="hero">
