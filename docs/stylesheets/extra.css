@@ -23,40 +23,41 @@
 }
 
 /* FONT ADJUSTMENTS */
-/* Base font size for body text */
-.md-typeset, 
-.md-typeset p, 
-.md-typeset li, 
-.md-typeset blockquote, 
+/* Base font size for body text and common elements */
+.md-typeset,
+.md-typeset p,
+.md-typeset li,
+.md-typeset blockquote,
 .md-typeset td {
-  font-size: 0.8rem !important;
-  line-height: 1.5 !important;
+  font-size: 0.75rem !important;   /* ~12px */
+  line-height: 1.45 !important;
 }
 
+/* Headings – slightly smaller and tighter */
 .md-typeset h1 {
-  font-size: 1.6rem;
-  margin: 2rem 0 1rem;
+  font-size: 1.4rem;               /* ~22.4px */
+  margin: 1.8rem 0 1rem;
 }
 
 .md-typeset h2 {
-  font-size: 1.3rem;
-  margin: 1.6rem 0 0.75rem;
+  font-size: 1.15rem;              /* ~18.4px */
+  margin: 1.4rem 0 0.75rem;
 }
 
 .md-typeset h3 {
-  font-size: 1.1rem;
-  margin: 1.2rem 0 0.5rem;
+  font-size: 1rem;                 /* ~16px */
+  margin: 1.1rem 0 0.5rem;
 }
 
 .md-typeset h4 {
-  font-size: 1rem;
+  font-size: 0.9rem;               /* ~14.4px */
   margin: 1rem 0 0.5rem;
 }
 
-
+/* Code styles – clean and slightly smaller */
 .md-typeset code,
 .md-typeset pre {
-  font-size: 0.75rem; /* 14px */
+  font-size: 0.7rem;               /* ~11.2px */
 }
 
 
