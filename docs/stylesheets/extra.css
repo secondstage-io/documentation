@@ -470,21 +470,20 @@ hr.section-divider {
 }
 
 /* Remove left nav and expand content for homepage */
-[data-md-page="index"] .md-sidebar,
-[data-md-page="index"] .md-sidebar--primary,
-[data-md-page="index"] .md-sidebar--secondary {
-  display: none;
+/* Make homepage full-width */
+body[data-md-page="index"] .md-sidebar--primary,
+body[data-md-page="index"] .md-sidebar--secondary {
+  display: none !important;
 }
 
-[data-md-page="index"] .md-main__inner {
+body[data-md-page="index"] .md-main__inner {
   grid-template-columns: 1fr !important;
 }
 
-[data-md-page="index"] .md-content {
-  max-width: 100%;
-  padding: 0 2rem;
+body[data-md-page="index"] .md-content {
+  max-width: 100% !important;
+  padding: 0 2rem !important;
 }
-
 /* Modify images with round border 
 
 img {
