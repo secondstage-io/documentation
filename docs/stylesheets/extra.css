@@ -357,11 +357,11 @@ body[data-md-page="index"] .md-grid {
 /* IMAGE STYLING */
 /* ========================================================================= */
 
-.md-typeset img {
-  border: 1px solid var(--md-primary-fg-color);
-  border-radius: 5px;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 1rem auto;
+img {
+  border: 1px solid var(--md-primary-fg-color);
+  border-radius: 5px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
 }
