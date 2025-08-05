@@ -1,14 +1,3 @@
-/*
- * Finalized custom CSS for an MkDocs Material project.
- *
- * This version includes fixes for:
- * - Tabs background is consistently the dark red in both light and dark mode.
- * - Grid cards now correctly switch to dark mode with the appropriate background,
- * text, and link colors.
- * - All custom styling for the 'question' admonition has been removed.
- * - The hero section gradient is now a subtle transition to a darker color.
- * - Info admonition description has a darker background in dark mode.
- */
 
 /* ========================================================================= */
 /* GLOBAL COLOR VARIABLES */
@@ -362,4 +351,17 @@ hr.section-divider {
 body[data-md-page="index"] .md-main__inner.md-grid,
 body[data-md-page="index"] .md-grid {
   max-width: initial !important;
+}
+
+/* ========================================================================= */
+/* IMAGE STYLING */
+/* ========================================================================= */
+
+.md-typeset img {
+  border: 1px solid var(--md-primary-fg-color);
+  border-radius: 5px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
 }
