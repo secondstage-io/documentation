@@ -357,7 +357,7 @@ body[data-md-page="index"] .md-grid {
 /* IMAGE STYLING */
 /* ========================================================================= */
 
-img {
+img:not(.logo) {
   border: 1px solid var(--md-primary-fg-color);
   border-radius: 5px;
   max-width: 100%;
