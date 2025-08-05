@@ -328,6 +328,11 @@
   margin-bottom: 1.5rem;
   opacity: 0.9;
 }
+.cta-buttons-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 20px;
+}
 .hero .cta-button {
   background: white;
   color: var(--md-primary-fg-color);
@@ -336,20 +341,12 @@
   padding: 0.75em 1.5em;
   border-radius: 6px;
   transition: background 0.3s, color 0.3s;
-  flex-grow: 1; /* This is the key property */
+  flex: 1; /* This is the key property for equal width */
   text-align: center;
 }
 .hero .cta-button:hover {
   background: #ffe4ec;
   color: var(--md-primary-fg-color--dark);
-  flex-grow: 1; /* This is the key property */
-  text-align: center;
-}
-
-.cta-buttons-container {
-  display: flex;
-  gap: 1rem; /* Adjust the space between the buttons as needed */
-  margin-top: 20px; /* Add some space between the text and the buttons */
 }
 
 
