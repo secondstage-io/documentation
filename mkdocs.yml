@@ -114,7 +114,9 @@ nav:
     - GDPR API: attribution/gdprapi.md
   - Support:
     - Data Handling & Security: support/datasecurity.md
-    - Knowledge Base: support/knowledgebase.md
+    - Attribution Tracking: support/attribution.md
+    - Marketing Analytics: support/marketinganalytics.md
+    - Knowledge Base: support/furtherreading.md
   - Glossary: glossary.md
   - Changelog: changelog.md
 
