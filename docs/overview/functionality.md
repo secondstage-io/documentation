@@ -1,5 +1,7 @@
 # Platform Functionality
 
+## Overview 
+
 TRACKS delivers *marketing intelligence for gaming* by the process of gathering, analyzing, and applying data to optimize marketing strategies all within a single platform.
 
 TRACKS combines in-depth **marketing analytics** and **attribution tracking** to deliver actionable insights. By tracking user behavior, media performance, and campaign effectiveness at every stage of the funnel, gaming companies can identify high-impact audiences, optimize ad placements, and make data-driven decisions. This approach ensures that marketing efforts are not only measurable but also strategically targeted, maximizing Return on Ad Spend (ROAS) and overall campaign success. 
@@ -8,7 +10,7 @@ TRACKS combines in-depth **marketing analytics** and **attribution tracking** to
 
     By leveraging data-driven insights, TRACKS empowers publishers, developers, and advertisers to seamlessly integrate marketing intelligence into their gaming campaigns, driving superior results and enhancing overall marketing strategy.
 
-### Marketing Analytics
+## Marketing Analytics
 
 Marketing analytics refers to the process of collecting, measuring, and analyzing data from various marketing efforts to evaluate their effectiveness. For gaming companies, it provides a clear understanding of how well their campaigns are performing and where improvements can be made. In short, it enables gaming companies to run data-driven, highly effective marketing campaigns that maximize user acquisition and return on investment.
 
@@ -24,7 +26,7 @@ Marketing analytics refers to the process of collecting, measuring, and analyzin
 
     TRACKS provides customized dashboards for gaming campaigns that details media performance by GEO and channel, creative performance, awareness, brand health and more.
 
-### Attribution Tracking
+## Attribution Tracking
 
 Attribution tracking is the process of identifying and measuring which marketing efforts (such as ads, social media, or influencer campaigns) lead to specific actions, like game installs or in-game purchases. It helps gaming companies understand which channels, ads, or influencers are driving the most value, allowing them to optimize their marketing spend. It ultimately ensures that marketing budgets are used efficiently to drive installs and revenue growth.
 
@@ -40,7 +42,7 @@ Attribution tracking is the process of identifying and measuring which marketing
 
     Using TRACKS Attribution, our inhouse solution to track full-funnel attribution, we can measure Cost-per-Install and ROAS effectively and improve targeting algorithms towards valuable in-game activated segments.
 
-### Use Cases
+## Use Cases
 
 ![Timeline](/assets/overview_timeline.png "Marketing Timeline")
 
@@ -134,7 +136,7 @@ Once the form is submitted, our team will get back to you within 24 hours with a
 
 In an upcoming TRACKS update, you will be able to edit a game's title, change the cover image, and invite additional users to your dashboard. Until these features are available on the platform, please contact us directly to request any of these changes.
 
-### Customer Support
+## Customer Support
 
 Second Stage offers customer support through email or our contact form from Monday to Friday, excluding public holidays in Berlin. Customer support is provided from 9:00 a.m. to 6:00 p.m. (CET) at Second Stage business hours. Second Stage will respond by email within 24 hours.
 
