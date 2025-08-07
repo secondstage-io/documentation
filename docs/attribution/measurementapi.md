@@ -55,3 +55,103 @@ The Measurement API Endpoint requires the following parameters:
     ```
 
 For each game added, the Second Stage Analytics team provides comprehensive support for integration, deployment, and testing, starting with an onboarding call.
+
+## API Endpoints Setup
+
+To track media channel acquisition sources, you need to implement the API endpoint that records acquisition events.
+    
+=== "API endpoint `collect`"
+
+    *API Endpoint:* `/collect`
+
+    *Description:* This endpoint records web events, capturing details about the acquisition source.
+
+    *Method:* `POST`
+
+    *Endpoint URL:* `https://tracks.yourgame.com/v1/collect`
+
+    *Headers:*
+    `Authorization:` Bearer `<API_KEY>`
+    `Content-Type: application/json`
+
+    Here is an example of source code for your reference:
+
+    ```
+        # Example Python Code for web client-side
+        import config
+        import requests
+    
+    
+        def track_acquisition(data):
+           headers = {
+               'Authorization': f'Bearer {config.API_KEY}',
+               'Content-Type': 'application/json'
+           }
+           try:
+               response = requests.post(f"{https://tracks.yourgame.com/v1/collect", json=data, headers=headers)
+               response.raise_for_status()
+               print('Acquisition event recorded:', response.json())
+           except requests.exceptions.HTTPError as err:
+               print('Error recording acquisition event:', err.response.json())
+    
+    
+        acquisition_data = {
+           "event_name": "web_visit",
+           "timestamp": "2024-08-29T12:00:00Z",
+           "channel": "paid_search",
+           "campaign": "summer_sale",
+           "source": "google",
+           "medium": "cpc",
+           "term": "steamsale",
+           "content": "ad_1",
+           "clientId": "12345",
+           "sessionId": "abcdef123456",
+           "ip": "175.124.248.15",
+           "device": "mobile",
+           "browser": "chrome"
+        }
+    
+    
+        track_acquisition(acquisition_data)
+    ```
+
+=== "API Endpoint `measure`"
+    
+    *API Endpoint:* `/measure`
+
+    *Description:* This endpoint records web events, capturing details about the acquisition source.
+
+    *Method:* `POST`
+
+    *Endpoint URL:* `https://tracks.yourgame.com/v1/measure`
+
+    *Headers:*
+    `Authorization:` Bearer `<API_KEY>`
+    `Content-Type: application/json`
+
+    Here is an example of source code for your reference:
+    ```
+        # Example Python Code for server-side telemetry
+        import requests
+    
+        url = "https://tracks.yourgame.com/v1/measure" 
+    
+        payload = {
+         'user_id': '1a23fd44c21f8l5r',
+         'event_name': 'game_open',
+         'ip': '175.124.248.15',
+         'timestamp': '2024-08-29T12:00:00Z',
+         'platform': 'pc',
+         'storefront': 'steam'
+        }
+        headers = {
+          'Authorization': f'Bearer {config.API_KEY}',
+        }
+        response = requests.request("POST", url, headers=headers, data=payload)
+        print(response.text)
+    ```
+
+## Architecture 
+
+![Architecture](/assets/attribution_architecture.png)
+
