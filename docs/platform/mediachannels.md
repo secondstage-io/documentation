@@ -19,7 +19,7 @@ In your Google Ads account, click the Admin icon.
 
 ![Google Ads Setup](/assets/marketinganalytics_googleads.png)
 
-#### Meta Ads Integration
+## Meta Ads Integration
 
 Go to Meta Business Manager and navigate to the Users section. Add the email address analytics@secondstage.io and click "Next".
 
@@ -45,7 +45,7 @@ Review the invitation, then click on "Send invitation".
 
 ![Meta Ads Setup](/assets/marketinganalytics_meta_4.png)
 
-#### TikTok Ads Integration
+## TikTok Ads Integration
 
 1. Log in to your TikTok for Business account.
 2. Navigate to the Members tab and click Invite Member.
