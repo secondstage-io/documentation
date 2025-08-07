@@ -107,7 +107,6 @@ nav:
     - Steamworks Integration: platform/steamworks.md
     - Custom Domains: platform/domains.md
     - Postbacks: platform/postbacks.md
-    - Ad Ops Guide: support/adopshelper.md 
   - Attribution Integration: 
     - Cloud Setup: attribution/cloud.md
     - TRACKS Measurement API: attribution/measurementapi.md
