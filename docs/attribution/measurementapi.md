@@ -56,6 +56,10 @@ The Measurement API Endpoint requires the following parameters:
 
 For each game added, the Second Stage Analytics team provides comprehensive support for integration, deployment, and testing, starting with an onboarding call.
 
+## Architecture 
+
+![Architecture](/assets/attribution_architecture.png)
+
 ## API Endpoints Setup
 
 To track media channel acquisition sources, you need to implement the API endpoint that records acquisition events.
@@ -151,7 +155,21 @@ To track media channel acquisition sources, you need to implement the API endpoi
         print(response.text)
     ```
 
-## Architecture 
+## Test Environment 
 
-![Architecture](/assets/attribution_architecture.png)
+**Test the Integration:**
+
+- Click on a UTM-tagged test link and open the game for the first time.
+- Ensure your server is running and correctly configured to handle HTTP requests.
+- Trigger acquisition events manually or through your application to test the integration.
+- Check Cloud Run logging to confirm that the endpoint logs show no errors.
+- Verify on the attribution tool dashboard that acquisition events are tracked accurately.
+- Ensure that the data (channels, campaigns, sources) aligns with your expectations.
+  
+**Troubleshooting:**
+
+- Invalid Credentials: Confirm that your API key and secret are correct and have the necessary permissions.
+- Network Errors: Review your server’s network configuration and API base URL.
+- Data Mismatches: Ensure the event payload matches the required schema and that timestamp formats are correct.
+
 
