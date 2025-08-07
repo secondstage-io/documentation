@@ -14,6 +14,8 @@ After integrating an ad account, the Second Stage team will guide you through th
 
 ![Naming Conventions](/assets/marketinganalytics_namingconventions.png "Naming Conventions")
 
+If you already have a Campaign Naming Convention in place, you can provide your taxonomy to TRACKS for automatic mapping.
+
 ## UTM-tagged Links
 
 For each integrated media platform, UTM-tagged link templates will be provided through the Ad Ops guide. These templates will include copy-and-paste-ready UTM tracking landing pages for use in your ads and assets.
