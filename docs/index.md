@@ -22,33 +22,56 @@ hide:
 
 <div class="grid cards" markdown>
 
--   :material-poll:{ .lg .middle } __TRACKS Platform__
+-   :material-poll:{ .lg .middle } __TRACKS Overview__
 
     ---
 
-    Learn about the features, functionality and setup of TRACKS, Second Stage's marketing intelligence platform for gaming.
+    Learn about the core features, functionality, and setup of TRACKS, Second Stage's marketing intelligence platform for gaming.
 
-    [:octicons-arrow-right-24: Get Started with TRACKS](/tracks/overview/)
-    
-    [:octicons-arrow-right-24: Set Up Marketing Analytics](/tracks/marketing-analytics/)
+    [:octicons-arrow-right-24: Go to TRACKS Overview](/overview/functionality/)
 
--   :material-file:{ .lg .middle } __TRACKS Attribution__
+-   :material-link-variant:{ .lg .middle } __Platform Integration__
 
     ---
 
-    Check out our comprehensive guide to set up attribution tracking available out-of-the-box with TRACKS.
+    Set up TRACKS with your media channels, landing page or Steam to begin collecting actionable marketing data.
 
-    [:octicons-arrow-right-24: Use attribution tracking with TRACKS](/tracks/attribution-tracking/)
+    [:octicons-arrow-right-24: Integrate the Platform](/platform/mediachannels/)
 
--   :material-post:{ .lg .middle } __Data Handling & Security__
+-   :material-target-variant:{ .lg .middle } __Attribution Integration__
 
     ---
 
-    For more details on data handling and security, see our comprehensive documentation.
+    Implement TRACKS Attribution and connect your marketing campaigns to in-game actions.
 
-    [:octicons-arrow-right-24: Learn more](/tracks/data-security/)
+    [:octicons-arrow-right-24: Integrate Attribution](/attribution/cloud/)
+
+-   :material-book-open-page-variant:{ .lg .middle } __Knowledge Base__
+
+    ---
+
+    Browse helpful how-to guides on TRACKS and answers to common questions.
+
+    [:octicons-arrow-right-24: Explore the Knowledge Base](/support/datasecurity/)
+
+-   :material-bookmark-multiple:{ .lg .middle } __Glossary__
+
+    ---
+
+    Understand key terms and concepts used across TRACKS documentation.
+
+    [:octicons-arrow-right-24: View Glossary](/glossary/)
+
+-   :material-history:{ .lg .middle } __Changelog__
+
+    ---
+
+    Keep up with the latest updates, improvements, and feature releases.
+
+    [:octicons-arrow-right-24: See What's New](/changelog/)
 
 </div>
+
 
 ---
 
