@@ -1,6 +1,9 @@
 # Domain Verification & Branded Domain
 
+## Overview 
+
 Once the TRACKS backend is deployed in your Google Cloud Platform instance, you'll have the option to whitelabel the Measurement API endpoint domain. This feature is not only for branding purposes but also provides greater control over privacy and compliance with client-side CORS (Cross-Origin Resource Sharing) policies.
+
 To enable your branded domain, the Second Stage team will provide a CNAME record for you to add through your DNS provider. 
 
 ## Whitelabeling TRACKS API Endpoints
