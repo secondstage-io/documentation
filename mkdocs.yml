@@ -97,7 +97,7 @@ copyright: |
 # Page tree 
 nav:
   - Home: index.md
-  - Overview:
+  - Platform Overview:
     - Functionality: overview/functionality.md
     - Integration: overview/integration.md
     - Ad Ops Guide: overview/adopshelper.md 
@@ -112,7 +112,7 @@ nav:
     - TRACKS Measurement API: attribution/measurementapi.md
     - Telemetry Setup: attribution/telemetry.md
     - GDPR API: attribution/gdprapi.md
-  - Support:
+  - Knowledge Base:
     - Data Handling & Security: support/datasecurity.md
     - Attribution Tracking: support/attribution.md
     - Marketing Analytics: support/marketinganalytics.md
