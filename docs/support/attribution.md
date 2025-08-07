@@ -2,6 +2,10 @@
 
 ## Overview
 
+A proper attribution setup can shine a light into the "black box" of where valuable game purchases, activations or installs are coming from. Once an attribution solution is integrated, whether it's TRACKS or a third-party solution, the dashboard will display key lower-funnel metrics.
+
+If you're using TRACKS Attribution, the default dashboard will show install metrics, including Paid and Organic installs. It's important to note that "installs" refer to the first activation of the game (when the player starts the game for the first time), not purchases.
+
 With TRACKS Attribution, our proprietary full-funnel attribution tracking solution that is part of the TRACKS platform, we can provide valuable insight into your lower-funnel media campaigns. This solution consists of three components, all managed and supported by the Second Stage team.
 
 1. **Integration of the TRACKS Measurement API**: The first step is to integrate the TRACKS Measurement API with your telemetric/logging server. This instance will be deployed to your cloud account. If you don't already have a cloud server, we'll help you create one, with full ownership at your end.  
@@ -13,12 +17,6 @@ With TRACKS Attribution, our proprietary full-funnel attribution tracking soluti
     All aspects of using TRACKS Attribution are configurable and will be tailored during your onboarding call with the Second Stage team. This documentation outlines a standard best-practice approach to building an attribution and BI suite, based on years of expertise in user acquisition, media, BI, tracking, and attribution from the Second Stage team. 
 
 ---
-
-## Functionality
-
-A proper attribution setup can shine a light into the "black box" of where valuable game purchases, activations or installs are coming from. Once an attribution solution is integrated, whether it's TRACKS or a third-party solution, the dashboard will display key lower-funnel metrics.
-
-If you're using TRACKS Attribution, the default dashboard will show install metrics, including Paid and Organic installs. It's important to note that "installs" refer to the first activation of the game (when the player starts the game for the first time), not purchases.
 
 These install metrics can be further broken down by storefront or platform, such as CPI (Xbox), CPI (Steam), CPI (PS), CPI (Epic), and CPI (Nintendo), assuming the measurement API is provided with the appropriate parameters. Other install metrics we are providing in addition to CPI are eCPI and CR%.
 
