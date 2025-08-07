@@ -36,7 +36,7 @@ hide:
 
     Set up TRACKS with your media channels, landing page or Steam to begin collecting actionable marketing data.
 
-    [:octicons-arrow-right-24: Integrate the Platform](/platform/mediachannels/)
+    [:octicons-arrow-right-24: Integrate Media & Ad Platforms](/platform/mediachannels/)
 
 -   :material-target-variant:{ .lg .middle } __Attribution Integration__
 
@@ -44,7 +44,7 @@ hide:
 
     Implement TRACKS Attribution and connect your marketing campaigns to in-game actions.
 
-    [:octicons-arrow-right-24: Integrate Attribution](/attribution/cloud/)
+    [:octicons-arrow-right-24: Integrate TRACKS Attribution](/attribution/cloud/)
 
 -   :material-book-open-page-variant:{ .lg .middle } __Knowledge Base__
 
