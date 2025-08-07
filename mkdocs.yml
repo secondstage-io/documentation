@@ -97,7 +97,7 @@ copyright: |
 # Page tree 
 nav:
   - Home: index.md
-  - Platform Overview:
+  - TRACKS Overview:
     - Functionality: overview/functionality.md
     - Integration: overview/integration.md
     - Ad Ops Guide: overview/adopshelper.md 
@@ -116,7 +116,7 @@ nav:
     - Data Handling & Security: support/datasecurity.md
     - Attribution Tracking: support/attribution.md
     - Marketing Analytics: support/marketinganalytics.md
-    - Knowledge Base: support/furtherreading.md
+    - Further Reading: support/furtherreading.md
   - Glossary: glossary.md
   - Changelog: changelog.md
 
