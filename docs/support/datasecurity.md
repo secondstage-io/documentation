@@ -16,21 +16,26 @@ Under the GDPR, the roles of data controller and data processor are defined as f
 
 Both controllers and processors have specific responsibilities and obligations under GDPR, particularly regarding data protection, breach notifications, and agreements defining the scope of data processing.
 
-## Data Handling under GDPR regulations
+## GDPR Best Practices with TRACKS (Data Handling under GDPR regulations)
 
-Second Stage TRACKS is fully compliant with GDPR regulations. For the highest level of security and transparency, this is our recommended option:
+TRACKS follows GDPR best practices to protect user privacy and ensure legal compliance:
+
+- Limited data sharing: Built on a scalable, auto-managed cloud infrastructure designed like on-premises, Second Stage only receives the minimum data necessary for marketing attribution, always collected with explicit user consent.
+- Minimal data collection: IP addresses are salted and hashed, and data retention is temporary (e.g., 30 days). No user IDs or device identifiers are stored at this stage.
+- Consent-managed in-game telemetry: Any attribution or fingerprinting involving identifiable data occurs only within the game, where consent is explicitly obtained (e.g., via the EULA).
+- Consent for external tools: Google Analytics, pixels, or cookies on our website are used strictly under user consent through our consent manager.
+- No tracking cookies on your website: We do not set cookies or use client-side storage on your product landing page. Only minimal technical data—such as pseudonymized IP addresses via user-agent headers—is processed.
+- Right to be forgotten: TRACKS provides a GDPR-compliant “right to forget” API, enabling users or controllers to delete personal data upon request.
+
+This approach ensures that data collection is minimized, pseudonymized, and fully consent-managed, reflecting GDPR best practices.
 
 **On-premise hosting**
 
+For the highest level of security and transparency, TRACKS operates on a scalable, auto-managed cloud infrastructure built like on-prem, including data lake setup, without additional license fees - maximizing control, ensuring GDPR compliance, and minimizing data exposure.
+
 Data Sent to the customers’ server: In this method, all data is sent directly to the customer’s server at their location. TRACKS does not collect any data on its side. This means it is the customer’s responsibility to ensure that proper opt-in and opt-out mechanisms are in place. 
 
-Our suggested deployed method is to use publisher's or studio’s configured Google Cloud project.  Other Google Cloud microservices used include Cloud Storage, Cloud Run, Pub/Sub, Cloud Functions, Artifact Registry, and App Engine. The system user analytics@secondstage.io will be added as an Owner to your Google Cloud Project for operational and management purposes. Learn more about this solution in our [deployment guide](/tracks/attribution-tracking/#deployment).
-
-If you are unable to use GCP for deployment, Second Stage can support you in setting up an account. 
-
-Alternatively we are able to host TRACKS in an isolated environment. Here, the data is sent to TRACKS servers, which can be located in either the US or the EU. If the data is sent to the US, the client must update its privacy policy to reflect this and obtain user consent when the game is launched for the first time. This would require change in your EULA as Second Stage will need to host attribution data in the account. In this case, please consider:   
-
-*Data Transfer Compliance:* Transferring data from an EU client to the US requires a strict EULA agreement and user consent. TRACKS’ default cloud servers are located in the EU (Google Cloud Frankfurt). Per request, Second Stage can offer both EU-based and US-based cloud servers. 
+Our suggested deployed method is to use publisher's or studio’s configured Google Cloud project.  Other Google Cloud microservices used include Cloud Storage, Cloud Run, Pub/Sub, Cloud Functions, Artifact Registry, and App Engine. The system user analytics@secondstage.io will be added as an Owner to your Google Cloud Project for operational and management purposes.  If you are unable to use GCP for deployment, Second Stage can support you in setting up an account. 
 
 !!! info "PII Compliance"
 
@@ -47,8 +52,6 @@ However, granular log history of the attribution inserts, such as in-game events
 ## EULA information
 
 Your End User License Agreement (EULA) must clearly state what data will be tracked and why. Please consult your legal councel for further information.
-
-If you need assistance, we can provide examples of EULAs or privacy agreements.
 
 ## IP Truncation
 
