@@ -57,6 +57,10 @@ Your End User License Agreement (EULA) must clearly state what data will be trac
 
 We do not offer IP truncation, as it can result in inaccurate or poor data for Measured Attribution Tracking. In this case, we recommend using a Modeled Attribution Tracking solution instead.
 
+## Right to Forget
+
+TRACKS provides a GDPR-compliant “Right to Forget” API, allowing users or controllers to request the deletion of personal data. For detailed information and integration instructions, please refer to [this section](/attribution/gdprapi/).
+
 
 
 
