@@ -20,7 +20,7 @@ Both controllers and processors have specific responsibilities and obligations u
 
 TRACKS follows GDPR best practices to protect user privacy and ensure legal compliance:
 
-- Limited data sharing: Built on a scalable, auto-managed cloud infrastructure designed like on-premises, Second Stage only receives the minimum data necessary for marketing attribution, always collected with explicit user consent.
+- Limited data sharing: Built on a scalable, auto-managed cloud infrastructure designed like on-premises, Second Stage only receives the minimum data necessary for marketing attribution, always collected with explicit user consent, while all user data remains stored on the client side.
 - Minimal data collection: IP addresses are salted and hashed, and data retention is temporary (e.g., 30 days). No user IDs or device identifiers are stored at this stage.
 - Consent-managed in-game telemetry: Any attribution or fingerprinting involving identifiable data occurs only within the game, where consent is explicitly obtained (e.g., via the EULA).
 - Consent for external tools: Google Analytics, pixels, or cookies on our website are used strictly under user consent through our consent manager.
