@@ -40,7 +40,6 @@ Our suggested deployed method is to use publisher's or studio’s configured Goo
 !!! info "PII Compliance"
 
     TRACKS handles PII in a standard manner, similar to other telemetric data collection vendors. While data is collected at the user level, it is processed in a pseudonymized and aggregated form. The primary PII concern is the client IP, which is collected as a parameter through the API. This information is not stored openly but is instead hashed using a non-reversible method, with a 30-day data retention period. The reporting suite only provides aggregated data, not user-level data, ensuring that no PII is stored or accessible.
-
     For marketing campaigns involving a website, TRACKS distinguishes between marketing, analytics and necessary cookies and configures the required tags according to the cookie consent mechanism.
 
 ## Data Retention
