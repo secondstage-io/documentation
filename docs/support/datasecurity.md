@@ -16,7 +16,7 @@ Under the GDPR, the roles of data controller and data processor are defined as f
 
 Both controllers and processors have specific responsibilities and obligations under GDPR, particularly regarding data protection, breach notifications, and agreements defining the scope of data processing.
 
-## GDPR Best Practices with TRACKS (Data Handling under GDPR regulations)
+## Data Handling under GDPR regulations
 
 TRACKS follows GDPR best practices to protect user privacy and ensure legal compliance:
 
