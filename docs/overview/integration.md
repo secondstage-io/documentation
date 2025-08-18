@@ -23,7 +23,7 @@ The TRACKS Attribution data source collects granular data for each web visit and
 
 Once the ELT (Extract-Load-Transform) pipeline is deployed, all data sources will be consolidated into a Google Cloud BigQuery database.
 
-![Integration](/assets/attribution_integration-1.png)
+![Integration](/assets/attribution_flow-1.png)
 
 
 ## Integration Overview
