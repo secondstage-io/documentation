@@ -52,6 +52,14 @@ However, granular log history of the attribution inserts, such as in-game events
 
 Your End User License Agreement (EULA) must clearly state what data will be tracked and why. Please consult your legal councel for further information.
 
+## Consent
+
+Second Stage recommends explicit user consent as the lawful basis for processing telemetry data. On websites, this is handled through GA4 consent mode, and in games it must be implemented via an in-game consent dialog in line with GDPR best practices.
+
+- Lawful basis: Explicit consent is obtained in-game before any /measure call.
+- Pseudonymization: If consented, the user_id is salt-hashed; if declined, the user_id is fully anonymized (irreversible).
+- Transparency: The in-game consent dialog must clearly state that telemetry may link to prior website visits (see GDPR Recital 50).
+
 ## IP Truncation
 
 We do not offer IP truncation, as it can result in inaccurate or poor data for Measured Attribution Tracking. In this case, we recommend using a Modeled Attribution Tracking solution instead.
