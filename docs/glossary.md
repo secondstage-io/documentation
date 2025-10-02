@@ -87,13 +87,16 @@ A user who was not exposed to any advertising campaign and has no referrer, but 
 **DLC Installs**  
 The number of installs of downloadable content (DLC) for a game.
 
-**Estimated CPI**  
-The estimated cost per install of a game, calculated based on various data sources and predictive models.
-
 ## E
 
 **eCPI**  
 Effective Cost Per Install; the average cost per install including direct and organic installs. It helps assess campaign efficiency across all sources, even those without precise attribution.
+
+**Engaged Visits** 
+A visit of at least 10 seconds, or one that includes two or more page views, or triggers at least one event like button click or scroll down. It replaces bounce rate to provide a more accurate measure of meaningful user interactions on a website.
+
+**Estimated CPI**  
+The estimated cost per install of a game, calculated based on various data sources and predictive models.
 
 **Event Timestamp**  
 The specific time at which an event or action, such as a user interaction or conversion, occurs.
