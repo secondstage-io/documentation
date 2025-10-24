@@ -44,7 +44,7 @@ hide:
 
     Implement TRACKS Attribution and connect your marketing campaigns to in-game actions.
 
-    [:octicons-arrow-right-24: Integrate TRACKS Attribution](/attribution/cloud/)
+    [:octicons-arrow-right-24: Integrate TRACKS Attribution](/attribution/overview/)
 
 -   :material-book-open-page-variant:{ .lg .middle } __Knowledge Base__
 
