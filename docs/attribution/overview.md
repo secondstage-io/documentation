@@ -2,7 +2,7 @@
 
 <div class="grid cards" markdown>
 
--   :material-poll:{ .lg .middle } __Cloud Setup__
+-   :material-cloud-outline:{ .lg .middle } __Cloud Setup__
 
     ---
 
@@ -10,7 +10,7 @@
 
     [:octicons-arrow-right-24: Go to Cloud Setup](/attribution/cloud/)
 
--   :material-link-variant:{ .lg .middle } __TRACKS Mesaurement API__
+-   :material-api:{ .lg .middle } __TRACKS Measurement API__
 
     ---
 
@@ -18,7 +18,7 @@
 
     [:octicons-arrow-right-24: Integrate the Measurement API](/attribution/measurementapi/)
 
--   :material-target-variant:{ .lg .middle } __Telemetry Setup__
+-   :material-gamepad-variant-outline:{ .lg .middle } __Telemetry Setup__
 
     ---
 
@@ -26,7 +26,7 @@
 
     [:octicons-arrow-right-24: Set up a telemetry](/attribution/telemetry/)
 
--   :material-book-open-page-variant:{ .lg .middle } __GDPR API__
+-   :material-shield-account:{ .lg .middle } __GDPR API__
 
     ---
 
