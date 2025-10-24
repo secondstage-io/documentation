@@ -1,6 +1,7 @@
 # Integration TRACKS Attribution
 
 TRACKS Attribution integrates seamlessly with your game infrastructure through several components.  
+
 Use the resources below to configure your cloud environment, implement the Measurement API, set up telemetry, and ensure GDPR compliance.
 
 <!-- Overview Grid -->
