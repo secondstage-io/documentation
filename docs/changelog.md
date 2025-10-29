@@ -2,6 +2,10 @@
 
 Learn more about TRACKS iterations here.
 
+## V1.3 29th October 2025
+
+Added AI chatbot and customer support.
+
 ## V1.2 1st July 2025
 
 Organic, influencer and community tracking.
