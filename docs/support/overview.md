@@ -12,7 +12,7 @@ The Knowledge Base provides comprehensive guides, explanations, and best practic
 
     Understand how TRACKS measures and attributes user actions across campaigns, and learn the fundamentals of attribution tracking.
 
-    [:octicons-arrow-right-24: Go to Media Platform Access](/support/attribution/)
+    [:octicons-arrow-right-24: More about Attribution Tracking](/support/attribution/)
 
 -   :material-chart-line:{ .lg .middle } __Marketing Analytics__
 
@@ -20,7 +20,7 @@ The Knowledge Base provides comprehensive guides, explanations, and best practic
 
     Explore how TRACKS enables performance measurement across media channels and provides actionable marketing insights.
 
-    [:octicons-arrow-right-24: Landing Page Integration](/support/marketinganalytics/)
+    [:octicons-arrow-right-24: More about Markeitng Analytics](/support/marketinganalytics/)
 
 -   :material-database-cog:{ .lg .middle } __Data Collection__
 
@@ -28,7 +28,7 @@ The Knowledge Base provides comprehensive guides, explanations, and best practic
 
     Discover how TRACKS collects, processes, and structures data to ensure accurate analytics and reporting.
 
-    [:octicons-arrow-right-24: Data Collection](/support/datacollection/)
+    [:octicons-arrow-right-24: More about Data Collection](/support/datacollection/)
 
 -   :material-shield-lock:{ .lg .middle } __Data Handling & Security__
 
@@ -36,7 +36,7 @@ The Knowledge Base provides comprehensive guides, explanations, and best practic
 
     Learn about TRACKS’ approach to data security, privacy, and GDPR compliance.
 
-    [:octicons-arrow-right-24: Data Handling & Security](/support/datasecurity/)
+    [:octicons-arrow-right-24: More about Data Handling & Security](/support/datasecurity/)
 
 -   :material-book-open-page-variant:{ .lg .middle } __Further Reading__
 
@@ -44,4 +44,4 @@ The Knowledge Base provides comprehensive guides, explanations, and best practic
 
     Explore curated articles, research, and external resources on marketing analytics and game attribution.
 
-    [:octicons-arrow-right-24: Set up Postbacks](/support/furtherreading/)
+    [:octicons-arrow-right-24: Further Reading](/support/furtherreading/)
