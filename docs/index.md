@@ -52,7 +52,7 @@ hide:
 
     Browse helpful how-to guides on TRACKS and answers to common questions.
 
-    [:octicons-arrow-right-24: Explore the Knowledge Base](/support/datasecurity/)
+    [:octicons-arrow-right-24: Explore the Knowledge Base](/support/doverview/)
 
 -   :material-bookmark-multiple:{ .lg .middle } __Glossary__
 
