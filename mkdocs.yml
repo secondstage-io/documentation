@@ -102,6 +102,7 @@ nav:
     - Integration: overview/integration.md
     - Ad Ops Guide: overview/adopshelper.md 
   - Platform Integration: 
+    - Overview: platform/overview.md
     - Media Platform Access: platform/mediachannels.md
     - Landing Page Integration: platform/landingpages.md
     - Steamworks Integration: platform/steamworks.md
