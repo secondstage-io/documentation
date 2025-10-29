@@ -115,6 +115,7 @@ nav:
     - Telemetry Setup: attribution/telemetry.md
     - GDPR API: attribution/gdprapi.md
   - Knowledge Base:
+    - Overview: support/overview.md
     - Attribution Tracking: support/attribution.md
     - Marketing Analytics: support/marketinganalytics.md
     - Data Collection: support/datacollection.md
