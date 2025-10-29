@@ -28,7 +28,7 @@ hide:
 
     Learn about the core features, functionality, and setup of TRACKS, Second Stage's marketing intelligence platform for gaming.
 
-    [:octicons-arrow-right-24: Go to TRACKS Overview](/overview/functionality/)
+    [:octicons-arrow-right-24: Go to TRACKS Overview](/overview/overview/)
 
 -   :material-link-variant:{ .lg .middle } __Platform Integration__
 
@@ -52,7 +52,7 @@ hide:
 
     Browse helpful how-to guides on TRACKS and answers to common questions.
 
-    [:octicons-arrow-right-24: Explore the Knowledge Base](/support/doverview/)
+    [:octicons-arrow-right-24: Explore the Knowledge Base](/support/overview/)
 
 -   :material-bookmark-multiple:{ .lg .middle } __Glossary__
 
