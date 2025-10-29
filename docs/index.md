@@ -36,7 +36,7 @@ hide:
 
     Set up TRACKS with your media channels, landing page or Steam to begin collecting actionable marketing data.
 
-    [:octicons-arrow-right-24: Integrate Media & Ad Platforms](/platform/mediachannels/)
+    [:octicons-arrow-right-24: Integrate Media & Ad Platforms](/platform/overview/)
 
 -   :material-target-variant:{ .lg .middle } __Attribution Integration__
 
