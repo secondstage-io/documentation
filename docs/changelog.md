@@ -2,6 +2,10 @@
 
 Learn more about TRACKS iterations here.
 
+## V1.4 19th November 2025
+
+Added additional settings and manage user functionality.
+
 ## V1.3 29th October 2025
 
 Added AI chatbot and customer support.
