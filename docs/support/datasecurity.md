@@ -62,7 +62,9 @@ Second Stage recommends explicit user consent as the lawful basis for processing
 
 ## IP Truncation
 
-We do not offer IP truncation, as it can result in inaccurate or poor data for Measured Attribution Tracking. In this case, we recommend using a Modeled Attribution Tracking solution instead.
+TRACKS applies one-way hashing (SHA-256) to all user IP address information before storage, following best practices for attribution tracking even under strict privacy standards, given the minimal data collected by TRACKS, as outlined in the [Data Collection section](/support/datacollection/).
+
+If required, you can choose to truncate IP addresses in certain regions by removing the last octet (IP obfuscation or anonymization). To enable this option, please reach out to us. Please note that doing so will reduce the accuracy of attribution for your game.
 
 ## Right to Forget
 
