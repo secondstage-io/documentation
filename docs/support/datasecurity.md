@@ -4,72 +4,86 @@
 
     We do not provide legal advice. This page is designed to help game developers gain a better understanding of managing their players' rights when working with Second Stage. You should consult your legal counsel before making decisions about how your company complies with the evolving landscape of consumer privacy. 
     
-Second Stage is committed to providing our partners and clients with the highest level of transparency and governance, ensuring they comply with the GDPR and CCPA at all times. As a result, privacy is a fundamental principle of TRACKS.
+Second Stage is committed to providing our partners with the highest level of transparency and governance. **TRACKS** is designed to be a "privacy-first" marketing intelligence platform, enabling you to optimize your strategies while adhering to strict data protection standards like the GDPR.
 
-Tracks enhances privacy by minimizing data exposure through a smart and secure hybrid cloud setup. On top, TRACKS offers API-level access to GDPR compliance tools, enabling you to efficiently manage rights such as access requests, the right to be forgotten, and opt-outs. As a managed service provider, our team is always available to support you in maintaining GDPR compliance.
+TRACKS, in its standard configuration, operates on principles that support a consent-free model for basic attribution, relying instead on legitimate business interests and strict data minimization.
 
-Under the GDPR, the roles of data controller and data processor are defined as follows:
+---
 
-**Data Controller:** The data controller is the entity that determines the purposes and means of processing personal data. Essentially, the controller decides why and how personal data will be processed. They are responsible for ensuring GDPR compliance, handling data subjects' rights, and managing relationships with data processors.
+## Roles under GDPR
 
-**Data Processor:** The data processor acts on behalf of the data controller and processes personal data according to the controller's instructions. The processor doesn't own or control the data but is responsible for implementing appropriate technical and organizational measures to protect it. They must comply with the controller’s instructions and maintain records of processing activities.
+The architecture of TRACKS is unique in that it places the customer in full control of the data processing environment.
 
-Both controllers and processors have specific responsibilities and obligations under GDPR, particularly regarding data protection, breach notifications, and agreements defining the scope of data processing.
+* **You are the Sole Controller:** Because the software operates entirely on your own infrastructure and you determine the means of processing, you are the sole "Controller" under the GDPR.
+* **We are the Software Provider:** Second Stage GmbH does not process end-user data on its own servers and is therefore **not** classified as a "Processor" or "Controller" of your user data. We simply provide the code that runs in your environment.
 
-## Data Handling under GDPR regulations
+## Lawful Basis for Processing
 
-TRACKS follows GDPR best practices to protect user privacy and ensure legal compliance:
+TRACKS is built to enable data processing under **Article 6(1)(f) GDPR (Legitimate Interest)**.
 
-- Limited data sharing: Built on a scalable, auto-managed cloud infrastructure designed like on-premises, Second Stage only receives the minimum data necessary for marketing attribution, always collected with explicit user consent, while all user data remains stored on the client side.
-- Minimal data collection: IP addresses are salted and hashed, and data retention is temporary (e.g., 30 days). No user IDs or device identifiers are stored at this stage.
-- Consent-managed in-game telemetry: Any attribution or fingerprinting involving identifiable data occurs only within the game, where consent is explicitly obtained (e.g., via the EULA).
-- Consent for external tools: Google Analytics, pixels, or cookies on our website are used strictly under user consent through our consent manager.
-- No tracking cookies on your website: We do not set cookies or use client-side storage on your product landing page. Only minimal technical data—such as pseudonymized IP addresses via user-agent headers—is processed.
-- Right to be forgotten: TRACKS provides a GDPR-compliant “right to forget” API, enabling users or controllers to delete personal data upon request.
+* **Legitimate Interest:** TRACKS is designed to help you measure campaign success, analyze product performance, and optimize marketing spend. Independent legal analysis confirms that this constitutes a legitimate business interest. Because the data is pseudonymized, short-lived, and does not use persistent trackers, this interest typically outweighs the impact on user privacy.
+* **No Consent Required (Standard):** Consequently, you generally do not need to obtain explicit end-user consent (e.g., via a cookie banner) for standard attribution functions, provided you inform users in your privacy policy.
 
-This approach ensures that data collection is minimized, pseudonymized, and fully consent-managed, reflecting GDPR best practices.
+!!! info "Exception: Postback Functionality"
+    If you choose to activate the **Postback function** to send conversion signals back to third-party advertising channels, you must obtain **explicit user consent (Art. 6(1)(a) GDPR)** before doing so. This is typically handled through GA4 consent mechanisms on the landing page.
 
-**On-premise hosting**
+## Data Minimization & Retention
 
-For the highest level of security and transparency, TRACKS operates on a scalable, auto-managed cloud infrastructure built like on-prem, including data lake setup, without additional license fees - maximizing control, ensuring GDPR compliance, and minimizing data exposure.
+TRACKS adheres to the principle of data minimization by collecting only what is technically necessary and deleting it as soon as possible.
 
-Data Sent to the customers’ server: In this method, all data is sent directly to the customer’s server at their location. TRACKS does not collect any data on its side. This means it is the customer’s responsibility to ensure that proper opt-in and opt-out mechanisms are in place. 
+| Feature | Description |
+| :--- | :--- |
+| **No Cookies** | TRACKS does not set cookies, use LocalStorage, or place any persistent identifiers on the client device. |
+| **Hashed IP Addresses** | IP addresses are never stored in plain text. They are cryptographically salted and hashed immediately upon receipt. |
+| **Salt Rotation** | The "salt" used for hashing is rotated regularly, preventing long-term re-identification or cross-referencing of users. |
+| **30-Day Log Retention** | The raw logs used for attribution (`collect_logs` and `measure_logs`) are automatically deleted after 30 days. |
+| **Encryption** | All data is encrypted during transmission (TLS) and at rest on your servers. |
 
-Our suggested deployed method is to use publisher's or studio’s configured Google Cloud project.  Other Google Cloud microservices used include Cloud Storage, Cloud Run, Pub/Sub, Cloud Functions, Artifact Registry, and App Engine. The system user analytics@secondstage.io will be added as an Owner to your Google Cloud Project for operational and management purposes.  If you are unable to use GCP for deployment, Second Stage can support you in setting up an account. 
+## Infrastructure & Control
 
-!!! info "PII Compliance"
+For the highest level of security and transparency, TRACKS operates on a scalable, auto-managed cloud infrastructure built like an on-premise solution.
 
-    TRACKS handles PII in a standard manner, similar to other telemetric data collection vendors. While data is collected at the user level, it is processed in a pseudonymized and aggregated form. The primary PII concern is the client IP, which is collected as a parameter through the API. This information is not stored openly but is instead hashed using a non-reversible method, with a 30-day data retention period. The reporting suite only provides aggregated data, not user-level data, ensuring that no PII is stored or accessible.
-    For marketing campaigns involving a website, TRACKS distinguishes between marketing, analytics and necessary cookies and configures the required tags according to the cookie consent mechanism.
+* **Your Cloud Environment:** Our deployment method uses your own configured Google Cloud project. Services include Cloud Storage, Cloud Run, Pub/Sub, and Cloud Functions.
+* **Full Control:** You decide the server location (e.g., EU-only data centers), access rights, and security configurations.
+* **No External Transfer:** Personal data is sent directly to your server endpoints. TRACKS does not collect or mirror this data on Second Stage servers.
 
-## Data Retention
+## PII & Global Compliance (CCPA, CPRA)
 
-Event data retention is by default 18 months and resets with new activity. This period can be adjusted upon request. Event data tables will contain one-way SHA256 hashed user IPs, user_ids, event and other supplied parameters like os_platform, storefront, acquisition source etc.  
+The "privacy-by-design" architecture of TRACKS also supports compliance with US frameworks regarding Personally Identifiable Information (PII).
 
-However, granular log history of the attribution inserts, such as in-game events and web visits, have a 30-day data retention period and can not be increased for only logging, error handling and record keeping purposes and doesn’t get stored in any database.   
-
-## EULA information
-
-Your End User License Agreement (EULA) must clearly state what data will be tracked and why. Please consult your legal councel for further information.
-
-## Consent
-
-Second Stage recommends explicit user consent as the lawful basis for processing telemetry data. On websites, this is handled through GA4 consent mode, and in games it must be implemented via an in-game consent dialog in line with GDPR best practices.
-
-- Lawful basis: Explicit consent is obtained in-game before any /measure call.
-- Pseudonymization: If consented, the user_id is salt-hashed; if declined, the user_id is fully anonymized (irreversible).
-- Transparency: The in-game consent dialog must clearly state that telemetry may link to prior website visits (see GDPR Recital 50).
-
-## IP Truncation
-
-TRACKS applies one-way hashing (SHA-256) to all user IP address information before storage, following best practices for attribution tracking even under strict privacy standards, given the minimal data collected by TRACKS, as outlined in the [Data Collection section](/support/datacollection/).
-
-If required, you can choose to truncate IP addresses in certain regions by removing the last octet (IP obfuscation or anonymization). To enable this option, please reach out to us. Please note that doing so will reduce the accuracy of attribution for your game.
+* **No Sensitive PII:** TRACKS does not collect sensitive PII such as names, emails, phone numbers, or physical addresses.
+* **De-identification:** By hashing IP addresses and avoiding persistent storage, TRACKS reduces the risk associated with PII storage, supporting compliance with data minimization principles found in the CCPA and CPRA.
 
 ## Right to Forget
 
-TRACKS provides a GDPR-compliant “Right to Forget” API, allowing users or controllers to request the deletion of personal data. For detailed information and integration instructions, please refer to [this section](/attribution/gdprapi/).
+To support your obligations under the GDPR, TRACKS includes a specific **"Right to Forget" API**.
 
+This feature allows you to permanently delete all records associated with a specific `user_id` or `hash` upon a user's request. This ensures that you can fully comply with **Data Subject Access Requests (DSARs)** without manual database intervention.
 
+For integration instructions, please refer to the [GDPR API Documentation](/attribution/gdprapi/).
 
+---
 
+## Privacy Policy Disclosures
+
+To ensure transparency, you should disclose the use of TRACKS in your privacy policy to inform your users about the data processing.
+
+!!! quote "Example Policy Text"
+    *Please note that this text is provided as an example only and should be reviewed by your legal team.*
+
+    **Note on the use of the TRACKS analysis software**
+
+    **1. Scope of personal data processing**
+    We use the TRACKS analysis software from Second Stage GmbH, Roedernstr. 5, 13053 Berlin, on our website and game to evaluate page views and the use of our website and game. The API endpoints used for this purpose process, among other things, the URL accessed, referrer information, UTM parameters, the user agent used, and event data from our product (e.g., “first_game_open”). In addition, the IP address is processed exclusively in pseudonymized form (salt hash); complete IP addresses are not stored. No cookies, local storage elements, or other persistent identifiers are used.
+
+    **2. Legal basis for the processing of personal data**
+    Processing is carried out on the basis of **Art. 6 (1) lit. f GDPR**. We have a legitimate interest in evaluating the use of our website and our product range, measuring the effectiveness of our campaigns, and optimizing our services from a technical perspective. Due to the exclusively pseudonymous processing, the short storage period, and the absence of tracking technologies, we believe that there are no interests of the data subjects that are worthy of protection.
+
+    **3. Recipients**
+    Processing takes place entirely on servers controlled by us. No personal data is passed on to the software provider or other third parties, unless we ourselves use contract processors.
+
+    **4. Purpose of data processing**
+    The data is processed for the purpose of analyzing the use of our website and our products, optimizing our offering, and to evaluate the effectiveness of our marketing and sales channels. In addition, the pseudonymous linking of website visits and product usage events enables better technical control and error analysis of our offering.
+
+    **5. Duration of storage**
+    The data is stored pseudonymously and automatically deleted after 30 days at the latest.
