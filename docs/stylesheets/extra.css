@@ -7,267 +7,194 @@
   --md-primary-fg-color--light: #ffc2d1; 
   --md-primary-fg-color--dark:  #b0023a; 
   
-  /* Backgrounds: Keep them clean. Pure white or very subtle gray. */
+  /* Backgrounds: Clean white/gray for structure */
   --md-primary-bg-color:        #ffffff; 
-  --md-primary-bg-color--light: #f8f9fa; /* Slight contrast for code blocks */
+  --md-primary-bg-color--light: #f8f9fa; 
 
   /* Text Colors: Dark Gray is more readable than pure black */
   --md-text-color:              #24292f; 
+  --md-code-bg:                 rgba(0,0,0,0.04);
 }
 
-/* Dark Mode: High contrast pinks need deep backgrounds */
+/* Dark Mode: High contrast adjustments */
 [data-md-color-scheme="dark"] {
-  --md-primary-fg-color:        #ff4d7d; /* Slightly lighter pink for dark mode readability */
-  --md-primary-bg-color:        #0d1117; /* GitHub Dark Dim style */
+  --md-primary-fg-color:        #ff4d7d; /* Lighter pink for dark bg */
+  --md-primary-bg-color:        #0d1117; /* Deep charcoal (GitHub Dim) */
   --md-primary-bg-color--light: #161b22;
   --md-text-color:              #c9d1d9;
+  --md-code-bg:                 rgba(255,255,255,0.08);
 }
 
 /* ========================================================================= */
-/* 2. TYPOGRAPHY  */
+/* 2. TYPOGRAPHY (Inter & JetBrains Mono) */
 /* ========================================================================= */
 
-/* INCREASED SIZES: 
-   Professional docs are easy to scan. 
-   0.75rem was too small; 0.95rem to 1rem is standard.
-*/
-.md-typeset {
+/* Base Typography - Increased from 0.75rem to 0.95rem for professionalism */
+body, .md-typeset {
+  font-family: "Inter", sans-serif;
   font-size: 0.95rem; 
   line-height: 1.6;
   color: var(--md-text-color);
-}
-
-/* Headings: Darker, tighter, closer to content */
-.md-typeset h1 {
-  font-weight: 700;
-  color: var(--md-primary-fg-color--dark); /* Use darker brand shade for weight */
-  margin-bottom: 1.5rem;
-}
-[data-md-color-scheme="dark"] .md-typeset h1 {
-  color: var(--md-primary-fg-color);
-}
-
-.md-typeset h2 {
-  font-weight: 600;
-  margin-top: 2.5rem; /* More breathing room above new sections */
-  border-bottom: 1px solid rgba(0,0,0,0.05); /* Subtle divider */
-  padding-bottom: 0.5rem;
-}
-
-/* Code: Clean up */
-.md-typeset code {
-  background-color: rgba(0,0,0,0.05); /* Neutral background, not pink */
-  border-radius: 4px;
-  padding: 2px 5px;
-  font-size: 0.85em; /* Relative to text */
-  color: #d73a49; /* Standard syntax red, easier on eyes than neon */
-}
-[data-md-color-scheme="dark"] .md-typeset code {
-  background-color: rgba(255,255,255,0.1);
-  color: #ff7b72;
-}
-
-/* ========================================================================= */
-/* TYPOGRAPHY REFINEMENTS */
-/* ========================================================================= */
-
-/* Refine Inter settings for a premium feel */
-body, .md-typeset {
-  font-family: "Inter", sans-serif;
-  /* "cv11" gives you the simpler 'a' and 'l' which looks cleaner */
   font-feature-settings: "cv11", "kern"; 
-  -webkit-font-smoothing: antialiased; /* Crisper text on Mac */
-  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Tighten heading spacing slightly for a 'magazine' look */
+/* Headings: Darker, tighter, professionally spaced */
 .md-typeset h1, 
 .md-typeset h2, 
 .md-typeset h3 {
-  letter-spacing: -0.02em; 
   font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--md-text-color);
+  margin-top: 2rem;
 }
 
-/* Make code font slightly bolder and match body size */
-.md-typeset code, 
-.md-typeset pre code {
+/* Code: Clean, proportional size */
+.md-typeset code {
   font-family: "JetBrains Mono", monospace;
-  font-weight: 500; /* Regular code can look too thin */
-  font-size: 0.85em; /* 85% of body text size */
+  background-color: var(--md-code-bg);
+  border-radius: 4px;
+  padding: 2px 5px;
+  font-size: 0.85em; 
+  font-weight: 500;
+  color: #d73a49; /* Syntax Red */
+}
+[data-md-color-scheme="dark"] .md-typeset code {
+  color: #ff7b72;
 }
 
-/* Make navigation links (sidebar) slightly heavier */
-.md-nav__link {
-  font-weight: 500;
+.md-typeset pre {
+  background-color: var(--md-primary-bg-color--light);
+  border-radius: 8px;
+  font-size: 0.85em;
+  line-height: 1.5;
 }
 
 /* ========================================================================= */
 /* 3. HEADER & NAVIGATION */
 /* ========================================================================= */
 
-/* MODERN HEADER: 
-   Instead of a solid neon pink block, use a white header with 
-   pink text/logo. It feels much lighter and more modern (like Stripe/Vercel).
-*/
+/* Header: Clean White (Light Mode) or Dark (Dark Mode) */
 .md-header {
   background-color: var(--md-primary-bg-color);
   color: var(--md-text-color);
-  border-bottom: 1px solid rgba(0,0,0,0.08); /* Subtle border */
-  box-shadow: none; /* Flat design */
+  border-bottom: 1px solid rgba(0,0,0,0.06); 
+  box-shadow: none; 
 }
 [data-md-color-scheme="dark"] .md-header {
-  background-color: var(--md-primary-bg-color);
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
-/* Make the Title/Logo Brand Color */
+/* Brand the Logo and Text in Pink */
 .md-header__title, .md-header__button {
   color: var(--md-primary-fg-color) !important;
   font-weight: 700;
 }
 
-/* TABS (Navigation) */
+/* Navigation Tabs */
 .md-tabs {
   background-color: var(--md-primary-bg-color);
-  border-bottom: 1px solid rgba(0,0,0,0.08);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
   color: var(--md-text-color);
 }
 [data-md-color-scheme="dark"] .md-tabs {
-  background-color: var(--md-primary-bg-color);
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 .md-tabs__link {
-  color: var(--md-text-color);
-  opacity: 0.7;
+  color: #555;
+  opacity: 0.8;
+  font-weight: 500;
 }
+[data-md-color-scheme="dark"] .md-tabs__link {
+  color: #ccc;
+}
+
+/* Active/Hover Tab: Pink highlight */
 .md-tabs__link:hover, .md-tabs__link--active {
-  color: var(--md-primary-fg-color); /* Pink highlight only on active/hover */
+  color: var(--md-primary-fg-color);
   opacity: 1;
-  font-weight: 600;
 }
 
 /* ========================================================================= */
-/* 4. CARDS & GRID (The "SaaS" Look) */
+/* 4. CARDS & GRID (SaaS Style) */
 /* ========================================================================= */
 
-/* Instead of pink borders, use shadow and lift. 
-   This creates "depth" and looks high-end.
-*/
+/* Remove pink border, add shadow depth */
 .grid.cards li {
-  border: 1px solid rgba(0,0,0,0.08); /* Very faint border */
+  border: 1px solid rgba(0,0,0,0.08); 
   border-radius: 12px;
   background: var(--md-primary-bg-color);
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s;
   cursor: pointer;
 }
+[data-md-color-scheme="dark"] .grid.cards li {
+  border: 1px solid rgba(255,255,255,0.1);
+  background: var(--md-primary-bg-color--light);
+}
 
-/* Hover Effect: Lift up and add pink border */
+/* Hover Effect: Lift up + Pink Border */
 .grid.cards li:hover {
   transform: translateY(-4px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.05);
   border-color: var(--md-primary-fg-color);
 }
 
-/* Dark mode card adjustments */
-[data-md-color-scheme="dark"] .grid.cards li {
-  border: 1px solid rgba(255,255,255,0.1);
-  background: var(--md-primary-bg-color--light);
-}
-
 /* ========================================================================= */
 /* 5. ADMONITIONS (Info Boxes) */
 /* ========================================================================= */
 
-/* Clean, modern style. Less aggressive than the solid box. */
+/* Modern style: Left border only, faint background */
 .md-typeset .admonition, 
 .md-typeset details.admonition {
   border: none;
-  border-left: 4px solid var(--md-primary-fg-color); /* Only left border */
-  background-color: rgba(255, 2, 73, 0.03); /* Extremely faint pink fill */
+  border-left: 4px solid var(--md-primary-fg-color); 
+  background-color: rgba(255, 2, 73, 0.04); /* Very faint brand pink */
   border-radius: 0 8px 8px 0;
   box-shadow: none;
 }
-
-.md-typeset .admonition-title, 
-.md-typeset summary.admonition-title {
-  background-color: transparent; /* No solid header bar */
-  color: var(--md-primary-fg-color);
-  font-weight: 700;
-  padding-left: 1rem;
-  border-bottom: none;
+[data-md-color-scheme="dark"] .md-typeset .admonition {
+  background-color: rgba(255, 2, 73, 0.1);
 }
 
-/* Icon Color Override */
+/* Remove the solid title bar, make it clean text */
+.md-typeset .admonition-title, 
+.md-typeset summary.admonition-title {
+  background-color: transparent;
+  color: var(--md-primary-fg-color);
+  font-weight: 700;
+  border-bottom: none;
+  padding-left: 1rem;
+}
+
+/* Fix Icon Color */
 .md-typeset .admonition-title::before, 
 .md-typeset summary.admonition-title::before {
   background-color: var(--md-primary-fg-color);
-  -webkit-mask-image: var(--md-admonition-icon--info); /* Restore default icon */
-  mask-image: var(--md-admonition-icon--info);
 }
 
 /* ========================================================================= */
-/* 6. IMAGES & HERO */
+/* 6. HERO SECTION */
 /* ========================================================================= */
 
-/* Images: Subtle shadow, no pink border */
-img:not(.logo) {
-  border: 1px solid rgba(0,0,0,0.05);
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Nice lift */
-  display: block;
-  margin: 1.5rem auto;
-}
-
-/* Hero: Modern Gradient */
 .hero {
   text-align: center;
   padding: 4rem 1.5rem;
   background: linear-gradient(135deg, #1a1013 0%, var(--md-primary-fg-color) 100%);
   color: white;
-  border-radius: 16px;
+  border-radius: 16px; /* Modern rounded corners */
   margin-bottom: 3rem;
   box-shadow: 0 10px 30px rgba(255, 2, 73, 0.2);
 }
 
 .hero h1 {
   font-size: 2.2rem;
-  color: white !important; /* Force white on dark gradient */
+  color: white !important;
+  margin-bottom: 1rem;
 }
 
-/* Buttons in Hero */
-.hero .cta-button {
-  display: inline-block;
-  background: white;
-  color: var(--md-primary-fg-color);
-  font-weight: 700;
-  padding: 0.8rem 2rem;
-  border-radius: 50px; /* Pill shape is trendy */
-  text-decoration: none;
-  margin: 0.5rem;
-  transition: all 0.2s;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-.hero .cta-button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-  color: var(--md-primary-fg-color--dark);
-  background: white;
-}
-
-/* Fix navigation text contrast when using primary: white */
-
-[data-md-color-scheme="default"] .md-tabs {
-  background-color: white;
-  border-bottom: 1px solid rgba(0,0,0,0.05);
-}
-
-[data-md-color-scheme="default"] .md-tabs__link {
-  color: #555; /* Dark gray text */
-}
-
-[data-md-color-scheme="default"] .md-tabs__link:hover,
-[data-md-color-scheme="default"] .md-tabs__link--active {
-  color: var(--md-primary-fg-color); /* Your Brand Pink */
-  font-weight: bold;
-}
+.hero p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin:
