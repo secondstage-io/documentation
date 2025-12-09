@@ -45,7 +45,7 @@
 ::-webkit-scrollbar-thumb:hover { background-color: var(--md-primary-fg-color); }
 [data-md-color-scheme="dark"] ::-webkit-scrollbar-thumb { background-color: #444; }
 
-/* Selection & Search Highlights */
+/* Selection & Search */
 ::selection { background-color: rgba(255, 2, 73, 0.2); color: inherit; }
 .md-typeset mark {
   background-color: rgba(255, 2, 73, 0.25);
@@ -55,7 +55,7 @@
 }
 
 /* ========================================================================= */
-/* 3. TYPOGRAPHY (Compacted for High Density) */
+/* 3. TYPOGRAPHY */
 /* ========================================================================= */
 
 .md-typeset {
@@ -116,41 +116,17 @@
 }
 
 /* ========================================================================= */
-/* 4. HEADER & TABS (REWRITTEN: Clean White Professional Style) */
+/* 4. HEADER (RED) & TABS (WHITE) */
 /* ========================================================================= */
 
-/* Main Header Bar - White background, dark text */
+/* Main Header Bar - Back to Brand Red */
 .md-header {
-  background-color: #ffffff;
-  color: #24292f; /* Dark grey text */
-  box-shadow: none; /* Removed heavy shadow */
-  border-bottom: 1px solid #e0e0e0;
-}
-[data-md-color-scheme="dark"] .md-header {
-  background-color: #1a1b1e;
-  border-bottom: 1px solid #333;
-  color: #ffffff;
+  background-color: var(--md-primary-fg-color);
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Slight shadow to separate from white tabs */
 }
 
-/* Title & Topic */
-.md-header__title, .md-header__topic {
-  color: #24292f; /* Force dark text */
-  font-weight: 700;
-}
-[data-md-color-scheme="dark"] .md-header__title, 
-[data-md-color-scheme="dark"] .md-header__topic {
-  color: #ffffff;
-}
-
-/* Header Icons (Menu, Repo, Search) */
-.md-header__button.md-icon {
-  color: #24292f;
-}
-[data-md-color-scheme="dark"] .md-header__button.md-icon {
-  color: #ffffff;
-}
-
-/* LOGO RESET: No border, no shadow */
+/* Logo - No border */
 .md-header img, .md-header__button.md-logo img {
   border: none !important;
   box-shadow: none !important;
@@ -159,53 +135,66 @@
   padding: 0 !important;
 }
 
-/* Navigation Tabs (Below Header) - White with Red Accents */
+/* Icons & Text in Header -> White */
+.md-header__title, 
+.md-header__topic, 
+.md-header__button.md-icon {
+  color: white !important;
+}
+
+/* Search Bar - White/Translucent for Red background */
+.md-search__input {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: white;
+  caret-color: white;
+}
+.md-search__input:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.md-search__input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* --- TABS (The Menu) --- */
+
 .md-tabs {
-  background-color: #ffffff;
-  border-bottom: 1px solid #e0e0e0;
+  background-color: #ffffff; /* White background */
   color: #555;
+  border-bottom: 1px solid #e0e0e0;
 }
 [data-md-color-scheme="dark"] .md-tabs {
   background-color: #1a1b1e;
   border-bottom: 1px solid #333;
-  color: #aaa;
 }
 
-/* Inactive Tab Links */
+/* Inactive Link */
 .md-tabs__link {
-  color: #57606a; /* Medium grey */
-  opacity: 1; /* Override default opacity */
+  color: #57606a; /* Neutral Gray */
+  opacity: 1;
   font-weight: 500;
+  transition: all 0.2s;
 }
-[data-md-color-scheme="dark"] .md-tabs__link {
-  color: #a0a0a0;
-}
+[data-md-color-scheme="dark"] .md-tabs__link { color: #a0a0a0; }
 
-/* Active / Hover Tab Links -> BRAND RED */
-.md-tabs__link--active, .md-tabs__link:hover {
-  color: var(--md-primary-fg-color);
+/* ACTIVE & HOVER State */
+/* This matches your mouseover style perfectly */
+.md-tabs__link--active, 
+.md-tabs__link:hover {
+  color: var(--md-primary-fg-color); /* Brand Red */
   font-weight: 700;
+  opacity: 1;
 }
 
-/* Search Bar (needs to stand out on white) */
-.md-search__input {
-  background-color: #f6f8fa; /* Light grey bg */
-  border: 1px solid #d0d7de;
-  color: #24292f;
-  caret-color: var(--md-primary-fg-color);
-}
-.md-search__input:hover {
-  background-color: #eef1f4;
-}
-[data-md-color-scheme="dark"] .md-search__input {
-  background-color: #2d2e32;
-  border-color: #444;
-  color: #fff;
+/* Optional: Adds a bottom border to the active tab to really lock it in */
+.md-tabs__link--active {
+   box-shadow: 0 -3px 0 var(--md-primary-fg-color) inset; /* CSS trick for clean border */
 }
 
 /* Footer */
 .md-footer { background-color: #1a1b1e; color: #e0e0e0; }
 .md-footer a { color: white; }
+
 
 /* ========================================================================= */
 /* 5. SIDEBAR NAVIGATION */
