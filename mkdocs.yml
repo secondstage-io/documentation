@@ -1,22 +1,28 @@
-site_name: Documentation
+site_name: TRACKS Documentation
 site_url: https://documentation.secondstage.io
+
+# 1. Update version number to force new CSS to load
 extra_css:
-  - stylesheets/extra.css?v=2
+  - stylesheets/extra.css?v=3 
+
 extra_javascript:
   - javascripts/extra.js
+
 theme:
   name: material
   logo: assets/2s-logo.png
   favicon: assets/favicon.png
   font:
-    text: Inter
-    code: JetBrains Mono
+    text: Inter          # Perfect choice for modern SaaS look
+    code: JetBrains Mono # Excellent readability
   features:
     - navigation.tabs
     - navigation.sections
     - navigation.expand
     - navigation.top
     - navigation.instant
+    # 2. Add 'tracking' so the sidebar highlights as you scroll (Gamesight style)
+    - navigation.tracking 
     - navigation.path
     - navigation.indexes
     - search.suggest
@@ -27,32 +33,31 @@ theme:
   language: en
 
 palette:
+  # Palette toggle for automatic mode
+  - media: "(prefers-color-scheme)"
+    toggle:
+      icon: material/brightness-auto
+      name: Switch to light mode
+    primary: root  # KEEP THIS: Crucial for our custom CSS variables
+    accent: red
 
-    # Palette toggle for automatic mode
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/brightness-auto
-        name: Switch to light mode
-      primary: root
-      accent: red
+  # Palette toggle for light mode
+  - media: "(prefers-color-scheme: light)"
+    scheme: default 
+    toggle:
+      icon: material/weather-sunny 
+      name: Switch to dark mode
+    primary: root
+    accent: red
 
-    # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default 
-      toggle:
-        icon: material/weather-sunny 
-        name: Switch to dark mode
-      primary: root
-      accent: red
-
-    # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      toggle:
-        icon: material/weather-night
-        name: Switch to system preference
-      primary: root
-      accent: red
+  # Palette toggle for dark mode
+  - media: "(prefers-color-scheme: dark)"
+    scheme: slate
+    toggle:
+      icon: material/weather-night
+      name: Switch to system preference
+    primary: root
+    accent: red
       
 extra:
   social:
@@ -67,6 +72,8 @@ markdown_extensions:
   - admonition
   - pymdownx.highlight:
       anchor_linenums: true
+      line_spans: __span  # Helps with CSS line highlighting
+      pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.arithmatex:
@@ -74,15 +81,15 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.mark
-  - attr_list
+  - attr_list # Critical for the "Grid Cards" styling to work
   - md_in_html
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - toc:
-      permalink: true
+      permalink: "#"      # Clean anchor link
       title: Table of contents
-      permalink: true
+      # Fixed: You had 'permalink: true' listed twice here previously
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
@@ -125,5 +132,3 @@ nav:
     - Further Reading: support/furtherreading.md
   - Glossary: glossary.md
   - Changelog: changelog.md
-
-
