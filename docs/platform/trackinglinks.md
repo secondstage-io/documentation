@@ -33,10 +33,10 @@ Use this tab for influencer marketing campaigns where you are sending links to s
     * **Creator Name:** The name of the influencer.
     * **Platform:** Where the link will be shared (e.g., YouTube, Twitch).
     * **Content Type:** The format (e.g., Video, Short, Stream).
-    * **Beat / Phase:** The campaign phase (e.g., Maiden Voyage).
+    * **Beat / Phase:** The campaign phase (e.g., Announce Beat).
 
 3.  **Create the Short Key (Mandatory)**
-    In **Column J**, enter a unique name for the link (e.g., the creator's name like `Noiz` or `Raptor`).
+    In **Column J**, enter a unique name for the link (e.g., the creator's name like `Pokimane` or `Shroud`).
     !!! warning "Important"
         Do not use special characters or spaces in the Short Key.
 
@@ -89,7 +89,7 @@ Use this tab for your own marketing channels (Social Media, Dev Blogs, Newslette
     Locate **Column F (Green Column): Target URL**. Paste the exact destination where you want the user to land for this specific link (e.g., a specific blog post URL or a store page).
 
 3.  **Create the Short Key**
-    In **Column G**, give your link a name (e.g., `mvblog1`, `announce`, `twitter_bio`).
+    In **Column G**, give your link a name (e.g., `blog_article`, `announce`, `steam_news`).
 
 4.  **Get Your Link**
     Copy the **Short Link** from the column on the far right. Using these links in your press releases or social bio ensures that users who click through and eventually install the game are tracked correctly.
