@@ -217,3 +217,158 @@
 
 .md-typeset pre {
   background-color: var(--md-primary-bg-color--light);
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  padding: 0.8rem;
+  line-height: 1.4;
+  font-size: 0.8rem; 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+[data-md-color-scheme="dark"] .md-typeset pre { border-color: #333; }
+
+/* Admonitions - Styling */
+.md-typeset .admonition.info, .md-typeset details.admonition.info {
+  border: 1px solid rgba(255, 2, 73, 0.2);
+  border-left: 4px solid var(--md-primary-fg-color);
+  border-radius: 4px;
+  background-color: #fffbfd;
+  box-shadow: none;
+  margin: 1.2em 0;
+  font-size: 0.85rem;
+}
+.md-typeset .admonition.info > .admonition-title, .md-typeset details.admonition.info > summary.admonition-title {
+  background-color: transparent;
+  color: var(--md-primary-fg-color);
+  font-weight: 700;
+  border-bottom: 1px solid rgba(255, 2, 73, 0.1);
+  padding: 0.4rem 0.8rem 0.4rem 2.5rem;
+  position: relative; 
+}
+
+/* === ADMONITION ICON FIX (The Nuclear Option) === */
+
+/* 1. Hide the container wrapper if it exists */
+.md-typeset .admonition.info .admonition-title .admonition-icon,
+.md-typeset details.admonition.info summary.admonition-title .admonition-icon {
+    display: none !important;
+}
+
+/* 2. Hide the raw SVG if it sits directly in the title (common in some setups) */
+.md-typeset .admonition.info .admonition-title > svg,
+.md-typeset details.admonition.info summary.admonition-title > svg {
+    display: none !important;
+}
+
+/* 3. Hide any default ::before content */
+.md-typeset .admonition.info .admonition-title::before,
+.md-typeset details.admonition.info summary.admonition-title::before {
+    display: none !important;
+    content: none !important;
+}
+
+/* Add Custom Red Icon */
+.md-typeset .admonition.info .admonition-title::after, .md-typeset details.admonition.info summary.admonition-title::after {
+  content: "";
+  position: absolute;
+  left: 1rem; top: 50%; transform: translateY(-50%);
+  width: 1rem; height: 1rem;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23ff0249" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7h2v2h-2V7zm0 4h2v6h-2v-6zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>');
+  background-repeat: no-repeat; background-size: contain;
+}
+[data-md-color-scheme="dark"] .md-typeset .admonition.info { background-color: rgba(255, 2, 73, 0.05); }
+
+/* ========================================================================= */
+/* 8. IMAGES & GRID CARDS */
+/* ========================================================================= */
+
+/* Content Images ONLY */
+.md-content img {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  max-width: 100%;
+  display: block;
+  margin: 1rem auto;
+}
+
+/* Grid Cards (Home Page) */
+.md-typeset .grid.cards > ul > li {
+  border: 1px solid #eaeaea;
+  border-radius: 12px;
+  padding: 1.2rem;
+  background-color: var(--md-primary-bg-color);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+.md-typeset .grid.cards > ul > li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+  border-color: var(--md-primary-fg-color);
+}
+.md-typeset .grid.cards > ul > li hr + strong {
+  color: var(--md-primary-fg-color);
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+/* ========================================================================= */
+/* 9. SEARCH BAR, HERO & BUTTONS */
+/* ========================================================================= */
+
+.md-search__input { caret-color: var(--md-primary-fg-color); }
+.md-search-result__link:hover, .md-search-result__link[data-md-state="active"] {
+    background-color: rgba(255, 2, 73, 0.05);
+    border-left: 3px solid var(--md-primary-fg-color);
+    color: var(--md-primary-fg-color);
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 3rem 2rem 2.5rem;
+  background: linear-gradient(135deg, var(--md-primary-fg-color), #b0023a 75%);
+  color: white;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+.hero h1 { color: white; margin-top: 0; font-size: 1.8rem; } 
+
+/* Buttons Container */
+.cta-buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* Primary Button */
+.hero .cta-button {
+  background: white;
+  color: var(--md-primary-fg-color);
+  font-weight: bold;
+  padding: 0.6em 1.2em; /* Compact padding */
+  border-radius: 6px;
+  display: inline-block;
+  text-decoration: none;
+  transition: background 0.3s;
+  font-size: 0.9rem;
+}
+.hero .cta-button:hover {
+  background: #ffe4ec;
+  color: var(--md-primary-fg-color--dark);
+}
+
+/* Secondary Ghost Button */
+.hero .secondary-cta-button {
+  background: transparent; 
+  color: white;
+  border: 2px solid rgba(255,255,255, 0.8);
+  box-shadow: none;
+}
+.hero .secondary-cta-button:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  border-color: white;
+}
