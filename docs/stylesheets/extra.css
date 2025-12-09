@@ -203,14 +203,13 @@
   color: var(--md-primary-fg-color);
 }
 
-/* ACTIVE STATE (FIXED) */
-/* We target both the link class AND the parent item class to guarantee it works */
+/* ACTIVE STATE (FIXED: RED & BOLD, NO UNDERLINE) */
 .md-tabs__link--active,
 .md-tabs__item--active .md-tabs__link {
   color: var(--md-primary-fg-color) !important; /* Force Red */
   font-weight: 700 !important;                  /* Force Bold */
   opacity: 1 !important;
-  box-shadow: 0 -3px 0 var(--md-primary-fg-color) inset; /* Red top border/underline */
+  box-shadow: none !important;                  /* REMOVED Underline */
 }
 
 /* 2. Left Sidebar Navigation */
@@ -249,7 +248,7 @@
 }
 [data-md-color-scheme="dark"] .md-nav--secondary .md-nav__title { color: #fff; }
 
-/* 4. FOOTER STYLING (Fixed: Uniform Light Grey) */
+/* 4. FOOTER STYLING (Fixed: Visible Text & Uniform Light Grey) */
 .md-footer {
   margin-top: 4rem; 
   background-color: #f5f7f9 !important; /* Force Light Grey */
@@ -257,7 +256,7 @@
   border-top: 1px solid #e0e0e0;
 }
 
-/* FIX: Force inner containers to be transparent (removes dark grey bar) */
+/* FIX: Force inner containers to be transparent */
 .md-footer__inner, 
 .md-footer__meta, 
 .md-footer__meta-inner {
@@ -265,12 +264,18 @@
   color: #444 !important;
 }
 
-/* Footer Links & Icons */
+/* Footer Links & Social Icons */
 .md-footer a, 
 .md-footer__link,
 .md-social__link {
   color: #444 !important; /* Dark Grey Icons/Text */
   font-weight: 600;
+}
+
+/* COPYRIGHT TEXT FIX */
+.md-copyright, 
+.md-copyright__highlight {
+  color: #444 !important; /* Forces the (c) 2025 to be dark grey */
 }
 
 .md-footer a:hover, 
@@ -286,7 +291,8 @@
   border-top: 1px solid #333;
 }
 [data-md-color-scheme="dark"] .md-footer a,
-[data-md-color-scheme="dark"] .md-social__link {
+[data-md-color-scheme="dark"] .md-social__link,
+[data-md-color-scheme="dark"] .md-copyright {
   color: white !important;
 }
 
