@@ -26,37 +26,33 @@ theme:
     - content.code.copy
   language: en
 
-  palette:
-    # 1. Automatic (System) Preference
-    # Falls back to white/pink if system preference is unknown
+palette:
+
+    # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
       toggle:
         icon: material/brightness-auto
         name: Switch to light mode
-      primary: white 
-      accent: pink
+      primary: root
+      accent: red
 
-    # 2. Light Mode
-    # "primary: white" gives you the clean, white header (Stripe-style)
-    # The CSS we added earlier will color the Logo and Active Links pink.
+    # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default 
       toggle:
-        icon: material/weather-sunny
+        icon: material/weather-sunny 
         name: Switch to dark mode
-      primary: white
-      accent: pink
+      primary: root
+      accent: red
 
-    # 3. Dark Mode
-    # "primary: black" ensures the header matches the dark background
+    # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       toggle:
         icon: material/weather-night
         name: Switch to system preference
-      primary: black
-      accent: pink
-
+      primary: root
+      accent: red
       
 extra:
   social:
