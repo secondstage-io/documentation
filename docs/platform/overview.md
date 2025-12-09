@@ -52,4 +52,4 @@ This section outlines the integration of media channels, landing pages, and Stea
 
     Generate branded tracking links for influencers, media buys, and organic content.
 
-    [:octicons-arrow-right-24: Set up Postbacks](/platform/trackinglinks/)
+    [:octicons-arrow-right-24: Set up Tracking Links](/platform/trackinglinks/)
