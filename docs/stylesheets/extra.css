@@ -18,6 +18,13 @@
   
   /* UNIFIED NAV FONT SIZE (Top, Left, Right) */
   --nav-item-font-size:         0.8rem; 
+
+  /* --- FOOTER VARIABLES (The Magic Bullet for Dark Bars) --- */
+  /* This forces the theme to use Light Grey for ALL footer parts */
+  --md-footer-bg-color:         #f5f7f9;
+  --md-footer-meta-bg-color:    #f5f7f9; /* This kills the dark grey bar */
+  --md-footer-fg-color:         #444444; /* Text color */
+  --md-footer-meta-fg-color:    #444444; /* Copyright text color */
 }
 
 /* Dark Mode Adjustments */
@@ -30,6 +37,12 @@
   --md-default-fg-color--light: #e0e0e0;
   --md-text-color:              #e6e6e6;
   --md-code-fg-color:           #ff5c8a;
+  
+  /* Dark Mode Footer Vars */
+  --md-footer-bg-color:         #1a1b1e;
+  --md-footer-meta-bg-color:    #1a1b1e;
+  --md-footer-fg-color:         #e0e0e0;
+  --md-footer-meta-fg-color:    #e0e0e0;
 }
 
 [data-md-color-accent="red"] {
@@ -38,7 +51,7 @@
 }
 
 /* ========================================================================= */
-/* 2. SMART LAYOUT (The "Gamesight" Logic) */
+/* 2. SMART LAYOUT */
 /* ========================================================================= */
 
 /* 1. EXPAND PAGE CONTAINER */
@@ -248,34 +261,25 @@
 }
 [data-md-color-scheme="dark"] .md-nav--secondary .md-nav__title { color: #fff; }
 
-/* 4. FOOTER STYLING (Fixed: Visible Text & Uniform Light Grey) */
+/* 4. FOOTER STYLING (Fixed via Variables in Section 1 + Classes here) */
 .md-footer {
   margin-top: 4rem; 
-  background-color: #f5f7f9 !important; /* Force Light Grey */
-  color: #444; 
   border-top: 1px solid #e0e0e0;
 }
 
-/* FIX: Force inner containers to be transparent */
+/* Safety Override: Ensure backgrounds are transparent so variables take effect */
 .md-footer__inner, 
 .md-footer__meta, 
 .md-footer__meta-inner {
   background-color: transparent !important;
-  color: #444 !important;
 }
 
-/* Footer Links & Social Icons */
+/* Footer Links & Icons */
 .md-footer a, 
 .md-footer__link,
-.md-social__link {
+.md-social__link,
+.md-copyright { /* Added Copyright Class */
   color: #444 !important; /* Dark Grey Icons/Text */
-  font-weight: 600;
-}
-
-/* COPYRIGHT TEXT FIX */
-.md-copyright, 
-.md-copyright__highlight {
-  color: #444 !important; /* Forces the (c) 2025 to be dark grey */
 }
 
 .md-footer a:hover, 
@@ -286,8 +290,6 @@
 
 /* Dark Mode Footer Override */
 [data-md-color-scheme="dark"] .md-footer {
-  background-color: #1a1b1e !important;
-  color: #e0e0e0;
   border-top: 1px solid #333;
 }
 [data-md-color-scheme="dark"] .md-footer a,
@@ -442,27 +444,27 @@
 
 
 /* ========================================================================= */
-/* 8. LANDING PAGE STYLING (Modern Best Practices) */
+/* 8. LANDING PAGE STYLING (Compact & Modern) */
 /* ========================================================================= */
 
 .landing-page {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem; /* Reduced margin */
 }
 
 /* --- Hero Banner --- */
 .landing-hero {
   background: linear-gradient(135deg, var(--md-primary-fg-color), #d6003b); 
-  padding: 3.5rem 1.5rem;
+  padding: 3rem 1.5rem; /* Reduced padding */
   border-radius: 8px;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem; /* Reduced margin */
   box-shadow: 0 4px 12px rgba(255, 2, 73, 0.15); 
 }
 
 .landing-hero h1 {
   color: white !important;
   margin: 0 !important;
-  font-size: 2.2rem !important;
+  font-size: 2rem !important; /* Slightly smaller title */
   font-weight: 800 !important;
   letter-spacing: -0.02em;
   text-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -470,20 +472,20 @@
 
 /* --- Intro Text --- */
 .landing-intro {
-  max-width: 800px;
-  margin: 0 auto 2.5rem auto;
+  max-width: 1000px; /* INCREASED WIDTH */
+  margin: 0 auto 2rem auto;
   text-align: center;
 }
 
 .lead-text {
-  font-size: 1.15rem;
+  font-size: 1rem; /* REDUCED SIZE (was 1.15rem) */
   line-height: 1.6;
   color: var(--md-text-color);
-  margin-bottom: 1.5rem !important;
+  margin-bottom: 1rem !important;
 }
 
 .sub-text {
-  font-size: 1rem;
+  font-size: 0.9rem; /* REDUCED SIZE (was 1rem) */
   line-height: 1.6;
   color: #555; 
   opacity: 0.9;
@@ -495,16 +497,16 @@
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem; /* Reduced margin */
   flex-wrap: wrap;
 }
 
 /* Base Button Style */
 .btn {
   display: inline-block;
-  padding: 0.8rem 2rem;
+  padding: 0.6rem 1.8rem; /* Compact padding */
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   border-radius: 6px;
   text-decoration: none !important;
   transition: all 0.2s ease;
