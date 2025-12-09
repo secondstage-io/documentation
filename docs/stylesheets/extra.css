@@ -24,7 +24,7 @@
 }
 
 /* ========================================================================= */
-/* 2. TYPOGRAPHY (Crucial for Professionalism) */
+/* 2. TYPOGRAPHY  */
 /* ========================================================================= */
 
 /* INCREASED SIZES: 
@@ -219,4 +219,21 @@ img:not(.logo) {
   box-shadow: 0 6px 12px rgba(0,0,0,0.2);
   color: var(--md-primary-fg-color--dark);
   background: white;
+}
+
+/* Fix navigation text contrast when using primary: white */
+
+[data-md-color-scheme="default"] .md-tabs {
+  background-color: white;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+[data-md-color-scheme="default"] .md-tabs__link {
+  color: #555; /* Dark gray text */
+}
+
+[data-md-color-scheme="default"] .md-tabs__link:hover,
+[data-md-color-scheme="default"] .md-tabs__link--active {
+  color: var(--md-primary-fg-color); /* Your Brand Pink */
+  font-weight: bold;
 }
