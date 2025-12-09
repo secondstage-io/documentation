@@ -35,44 +35,53 @@
 }
 
 /* ========================================================================= */
-/* 2. LAYOUT & SIDEBAR (Widescreen + Separator) */
+/* 2. LAYOUT & SIDEBAR (Fixed: Clean Border, No Floating BG) */
 /* ========================================================================= */
 
-/* 1. EXPAND SCREEN WIDTH (The "Gamesight" 90% feel) */
+/* 1. EXPAND PAGE WIDTH (The "Gamesight" 90% feel) */
 .md-grid {
   max-width: 90% !important;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* 2. LEFT SIDEBAR STYLING (Visual Separation) */
+/* 2. LEFT SIDEBAR SEPARATOR */
 @media screen and (min-width: 76.25em) {
   .md-sidebar--primary {
-    /* Add the separator line */
+    /* CLEAN FIX: Use border only, remove BG to stop "floating" look */
     border-right: 1px solid #e0e0e0;
     
-    /* Optional: Subtle background to distinguish the column */
-    background-color: #fafafa; 
+    /* Remove background color */
+    background-color: transparent; 
     
-    /* Add visual breathing room inside the column */
-    margin-right: 1rem; 
-    padding: 1rem 1rem 1rem 0;
-    
-    /* Ensure it stretches nicely */
-    height: 100%;
+    /* Adjust spacing: bring text closer to border, remove margin gaps */
+    margin-right: 0; 
+    padding-right: 1.5rem; /* Space between links and the line */
+    width: 14rem; /* Optional: Fix width to keep it consistent */
   }
   
-  /* Dark mode adjustment for the sidebar */
+  /* Dark mode separator */
   [data-md-color-scheme="dark"] .md-sidebar--primary {
     border-right: 1px solid #333;
-    background-color: rgba(255,255,255,0.02);
+  }
+  
+  /* 3. RESTRICT CONTENT TEXT WIDTH (Readable Column in Middle) */
+  /* This prevents the text from stretching 100% across the middle space */
+  .md-content {
+    padding-left: 2rem; /* Add breathing room from the left sidebar line */
+  }
+  
+  .md-typeset {
+    max-width: 900px; /* Restrict reading width (Gamesight style) */
+    /* margin: 0 auto;  <-- Uncomment this if you want text centered in the whitespace */
   }
 }
 
-/* Sidebar Navigation Text */
+/* Sidebar Header Text */
 .md-nav--primary .md-nav__title {
   color: var(--md-primary-fg-color);
   font-weight: 700;
+  white-space: normal; /* Allow title to wrap if needed */
 }
 
 /* ========================================================================= */
