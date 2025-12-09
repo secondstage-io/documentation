@@ -16,8 +16,8 @@
   --md-text-color:              #2c3e50; 
   --md-code-fg-color:           #d6003b; 
   
-  /* Unified Font Size for ALL Navigation (Top, Left, Right) */
-  --nav-item-font-size:         0.85rem; /* Consistent size for all menus */
+  /* UNIFIED NAV FONT SIZE (Top, Left, Right) */
+  --nav-item-font-size:         0.85rem; 
 }
 
 /* Dark Mode Adjustments */
@@ -38,34 +38,38 @@
 }
 
 /* ========================================================================= */
-/* 2. LAYOUT & SEPARATOR (Fixed for Full Height) */
+/* 2. SMART LAYOUT (The "Gamesight" Logic) */
 /* ========================================================================= */
 
-/* 1. EXPAND PAGE WIDTH */
+/* 1. EXPAND PAGE CONTAINER */
 .md-grid {
   max-width: 90% !important;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* 2. VERTICAL SEPARATOR LINE */
-/* Applied to Content (Left Border) so it stretches full height */
+/* 2. TEXT AREA CENTERING */
+/* This centers the content if menus are hidden, and restricts width for readability */
+.md-typeset {
+  max-width: 1000px; /* Comfortable reading width (wider than before) */
+  margin: 0 auto;    /* Centers the block if sidebars are gone */
+  font-size: 0.85rem; 
+  line-height: 1.6;
+  color: var(--md-text-color);
+}
+
+/* 3. VERTICAL SEPARATOR LINE (Conditional) */
+/* Only apply the border if the Primary Sidebar exists and is NOT hidden */
 @media screen and (min-width: 76.25em) {
-  .md-content {
-    /* This creates the vertical line to the left of the content */
+  .md-main__inner:has(.md-sidebar--primary:not([hidden])) .md-content {
     border-left: 1px solid #e0e0e0;
-    padding-left: 2rem; /* Spacing between line and text */
-    margin-left: 1rem;  /* Spacing between menu and line */
+    padding-left: 2rem; 
+    margin-left: 1rem;  
   }
   
-  /* Dark Mode Separator */
-  [data-md-color-scheme="dark"] .md-content {
+  /* Dark Mode Line Color */
+  [data-md-color-scheme="dark"] .md-main__inner:has(.md-sidebar--primary:not([hidden])) .md-content {
     border-left-color: #333;
-  }
-
-  /* Restrict text width for readability while keeping layout wide */
-  .md-typeset {
-    max-width: 900px; 
   }
 }
 
@@ -90,16 +94,9 @@
 }
 
 /* ========================================================================= */
-/* 4. TYPOGRAPHY */
+/* 4. TYPOGRAPHY & HEADINGS */
 /* ========================================================================= */
 
-.md-typeset {
-  font-size: 0.85rem; 
-  line-height: 1.6;
-  color: var(--md-text-color);
-}
-
-/* Headings */
 .md-typeset h1 {
   font-weight: 700;
   color: var(--md-text-color);
@@ -181,7 +178,7 @@
 .md-search__input:hover { background-color: rgba(255, 255, 255, 0.25); }
 .md-search__input::placeholder { color: rgba(255, 255, 255, 0.7); }
 
-/* --- UNIFIED NAVIGATION STYLING (Top, Left, Right) --- */
+/* --- UNIFIED NAVIGATION (Fonts & Colors) --- */
 
 /* 1. Top Tabs */
 .md-tabs {
@@ -244,7 +241,7 @@
 
 
 /* ========================================================================= */
-/* 6. TABLES */
+/* 6. CONTENT ELEMENTS */
 /* ========================================================================= */
 
 .md-typeset table:not([class]) {
@@ -271,17 +268,58 @@
 }
 .md-typeset table:not([class]) tr:nth-child(even) { background-color: #fcfcfc; }
 
-/* Dark Mode Tables */
-[data-md-color-scheme="dark"] .md-typeset table:not([class]) { box-shadow: 0 0 0 1px #444; }
-[data-md-color-scheme="dark"] .md-typeset table:not([class]) th {
-  background-color: #2c2d30; color: #fff; border-bottom: 2px solid #444;
+/* Admonitions */
+.md-typeset .admonition.info, .md-typeset details.admonition.info {
+  border: 1px solid rgba(255, 2, 73, 0.2);
+  border-left: 4px solid var(--md-primary-fg-color);
+  border-radius: 4px;
+  background-color: #fffbfd;
+  box-shadow: none;
+  margin: 1.2em 0;
+  font-size: 0.85rem;
 }
-[data-md-color-scheme="dark"] .md-typeset table:not([class]) td { border-bottom: 1px solid #333; }
-[data-md-color-scheme="dark"] .md-typeset table:not([class]) tr:nth-child(even) { background-color: #25262b; }
+.md-typeset .admonition.info > .admonition-title, .md-typeset details.admonition.info > summary.admonition-title {
+  background-color: transparent;
+  color: var(--md-primary-fg-color);
+  font-weight: 700;
+  border-bottom: 1px solid rgba(255, 2, 73, 0.1);
+  padding: 0.4rem 0.8rem 0.4rem 2.5rem;
+  position: relative; 
+}
+
+/* Hide Default Icons */
+.md-typeset .admonition.info .admonition-title .admonition-icon,
+.md-typeset details.admonition.info summary.admonition-title .admonition-icon,
+.md-typeset .admonition.info .admonition-title > svg,
+.md-typeset details.admonition.info summary.admonition-title > svg,
+.md-typeset .admonition.info .admonition-title::before,
+.md-typeset details.admonition.info summary.admonition-title::before {
+    display: none !important;
+    content: none !important;
+}
+/* Custom Red Icon */
+.md-typeset .admonition.info .admonition-title::after, .md-typeset details.admonition.info summary.admonition-title::after {
+  content: "";
+  position: absolute;
+  left: 1rem; top: 50%; transform: translateY(-50%);
+  width: 1rem; height: 1rem;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23ff0249" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7h2v2h-2V7zm0 4h2v6h-2v-6zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>');
+  background-repeat: no-repeat; background-size: contain;
+}
+[data-md-color-scheme="dark"] .md-typeset .admonition.info { background-color: rgba(255, 2, 73, 0.05); }
 
 /* ========================================================================= */
-/* 7. CONTENT ELEMENTS: CODE & ADMONITIONS */
+/* 7. HERO & IMAGES */
 /* ========================================================================= */
+
+.md-content img {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  max-width: 100%;
+  display: block;
+  margin: 1rem auto;
+}
 
 .md-typeset code {
   background-color: rgba(255, 2, 73, 0.08);
@@ -302,57 +340,6 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 [data-md-color-scheme="dark"] .md-typeset pre { border-color: #333; }
-
-/* Admonitions */
-.md-typeset .admonition.info, .md-typeset details.admonition.info {
-  border: 1px solid rgba(255, 2, 73, 0.2);
-  border-left: 4px solid var(--md-primary-fg-color);
-  border-radius: 4px;
-  background-color: #fffbfd;
-  box-shadow: none;
-  margin: 1.2em 0;
-  font-size: 0.85rem;
-}
-.md-typeset .admonition.info > .admonition-title, .md-typeset details.admonition.info > summary.admonition-title {
-  background-color: transparent;
-  color: var(--md-primary-fg-color);
-  font-weight: 700;
-  border-bottom: 1px solid rgba(255, 2, 73, 0.1);
-  padding: 0.4rem 0.8rem 0.4rem 2.5rem;
-  position: relative; 
-}
-/* Icon Fixes */
-.md-typeset .admonition.info .admonition-title .admonition-icon,
-.md-typeset details.admonition.info summary.admonition-title .admonition-icon,
-.md-typeset .admonition.info .admonition-title > svg,
-.md-typeset details.admonition.info summary.admonition-title > svg,
-.md-typeset .admonition.info .admonition-title::before,
-.md-typeset details.admonition.info summary.admonition-title::before {
-    display: none !important;
-    content: none !important;
-}
-.md-typeset .admonition.info .admonition-title::after, .md-typeset details.admonition.info summary.admonition-title::after {
-  content: "";
-  position: absolute;
-  left: 1rem; top: 50%; transform: translateY(-50%);
-  width: 1rem; height: 1rem;
-  background-image: url('data:image/svg+xml;utf8,<svg fill="%23ff0249" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7h2v2h-2V7zm0 4h2v6h-2v-6zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>');
-  background-repeat: no-repeat; background-size: contain;
-}
-[data-md-color-scheme="dark"] .md-typeset .admonition.info { background-color: rgba(255, 2, 73, 0.05); }
-
-/* ========================================================================= */
-/* 8. HERO & BUTTONS */
-/* ========================================================================= */
-
-.md-content img {
-  border: 1px solid #eee;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  max-width: 100%;
-  display: block;
-  margin: 1rem auto;
-}
 
 .md-search-result__link:hover, .md-search-result__link[data-md-state="active"] {
     background-color: rgba(255, 2, 73, 0.05);
