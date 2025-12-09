@@ -37,10 +37,11 @@ Use this tab for influencer marketing campaigns where you are sending links to s
 
 3.  **Create the Short Key (Mandatory)**
     In **Column J**, enter a unique name for the link (e.g., the creator's name like `Pokimane` or `Shroud`).
-    !!! warning "Important"
-        Do not use special characters or spaces in the Short Key.
+    
+!!! warning "Important"
+    Do not use special characters or spaces in the Short Key.
 
-4.  **Get Your Link**
+5.  **Get Your Link**
     The sheet will generate a **Short Link** in the black column on the right. This is the branded link you should send to the influencer.
 
 ---
