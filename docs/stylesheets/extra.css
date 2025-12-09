@@ -17,7 +17,7 @@
   --md-code-fg-color:           #d6003b; 
   
   /* UNIFIED NAV FONT SIZE (Top, Left, Right) */
-  --nav-item-font-size:         0.8rem; 
+  --nav-item-font-size:         0.85rem; 
 }
 
 /* Dark Mode Adjustments */
@@ -188,6 +188,7 @@
 }
 [data-md-color-scheme="dark"] .md-tabs { background-color: #1a1b1e; border-color: #333; }
 
+/* Inactive Links */
 .md-tabs__link {
   color: #57606a; 
   font-size: var(--nav-item-font-size); /* Unified Size */
@@ -197,10 +198,16 @@
 }
 [data-md-color-scheme="dark"] .md-tabs__link { color: #a0a0a0; }
 
-.md-tabs__link--active, .md-tabs__link:hover {
-  color: var(--md-primary-fg-color); 
-  font-weight: 700;
-  box-shadow: 0 -3px 0 var(--md-primary-fg-color) inset;
+/* Hover State */
+.md-tabs__link:hover {
+  color: var(--md-primary-fg-color);
+}
+
+/* Active State (Red & Bold) */
+.md-tabs__link--active {
+  color: var(--md-primary-fg-color) !important; 
+  font-weight: 700 !important;
+  box-shadow: 0 -3px 0 var(--md-primary-fg-color) inset; /* Red top border/underline */
 }
 
 /* 2. Left Sidebar Navigation */
