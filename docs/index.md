@@ -4,36 +4,31 @@ hide:
   - toc
 ---
 
-<div class="hero" style="margin-bottom: 3rem; padding: 3rem 1rem;">
-  <h1 style="margin: 0; font-size: 2.2rem; color: white;">Welcome to the TRACKS Documentation</h1>
-</div>
+<div class="landing-page">
 
-<div style="max-width: 900px; margin: 0 auto; text-align: center;">
+  <section class="landing-hero">
+    <h1>Welcome to the TRACKS Documentation</h1>
+  </section>
 
-  <div style="font-size: 1.1rem; line-height: 1.8; color: var(--md-text-color); margin-bottom: 2.5rem;">
-    <p style="margin-bottom: 1.5rem;">
+  <section class="landing-intro">
+    <p class="lead-text">
       <strong>TRACKS</strong> is a marketing analytics and attribution platform built for PC and console games. Developed by <strong>Second Stage</strong>, it gives you clear insight into your marketing performance—without sacrificing user privacy or platform compliance.
     </p>
-    <p style="opacity: 0.85;">
-      <strong>This guide will help you integrate TRACKS into your game and marketing campaign. It's designed to work as a managed service with full support from our team, so feel free to reach out if you need help along the way.</strong>
+    <p class="sub-text">
+      This guide will help you integrate TRACKS into your game and marketing campaign. It's designed to work as a managed service with full support from our team, so feel free to reach out if you need help along the way.
     </p>
-  </div>
+  </section>
 
-  <div class="cta-buttons-container" style="gap: 1.5rem; margin-bottom: 4rem;">
-    
-    <a href="/overview/overview/" class="cta-button" style="background-color: var(--md-primary-fg-color); color: white; border: 2px solid var(--md-primary-fg-color);">
+  <section class="landing-actions">
+    <a href="/overview/overview/" class="btn btn-primary">
       Start Here: Overview
     </a>
-
-    <a href="https://tracks.secondstage.io/" target="_blank" class="cta-button" style="background-color: transparent; color: var(--md-primary-fg-color); border: 2px solid var(--md-primary-fg-color);">
+    <a href="https://tracks.secondstage.io/" target="_blank" class="btn btn-secondary">
       Access Platform
     </a>
+  </section>
 
-  </div>
-
-</div>
-
-<div class="grid cards" markdown>
+  <div class="grid cards" markdown>
 
 -   :material-link-variant:{ .lg } __Platform Integration__
 
@@ -67,10 +62,10 @@ hide:
 
     [:octicons-arrow-right-24: Glossary](/glossary/) &nbsp; [:octicons-arrow-right-24: Changelog](/changelog/)
 
+  </div>
+
 </div>
 
----
-
-<div style="text-align: center; opacity: 0.8; font-size: 0.85rem; margin-top: 2rem;">
+<div class="landing-footer">
   For more information visit <a href="https://secondstage.io">secondstage.io</a> or <a href="https://secondstage.io/contact/">get in touch</a>.
 </div>
