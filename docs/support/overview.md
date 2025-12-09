@@ -20,7 +20,7 @@ The Knowledge Base provides comprehensive guides, explanations, and best practic
 
     Explore how TRACKS enables performance measurement across media channels and provides actionable marketing insights.
 
-    [:octicons-arrow-right-24: More about Markeitng Analytics](/support/marketinganalytics/)
+    [:octicons-arrow-right-24: More about Marketing Analytics](/support/marketinganalytics/)
 
 -   :material-database-cog:{ .lg .middle } __Data Collection__
 
