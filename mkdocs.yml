@@ -109,6 +109,7 @@ nav:
     - Steamworks Integration: platform/steamworks.md
     - Custom Domains: platform/domains.md
     - Postbacks: platform/postbacks.md
+    - Tracking Links: platform/trackinglinks.md
   - Attribution Integration: 
     - Overview: attribution/overview.md
     - Cloud Setup: attribution/cloud.md
