@@ -17,7 +17,7 @@ There are three distinct builders available, depending on your campaign type:
 
 ---
 
-## 1. Influencer Link Builder
+## Influencer Link Builder
 
 Use this tab for influencer marketing campaigns where you are sending links to specific creators to share with their audience.
 
@@ -45,7 +45,7 @@ Use this tab for influencer marketing campaigns where you are sending links to s
 
 ---
 
-## 2. Media Houses (Direct Buy)
+## Media Houses (Direct Buy) Link Builder
 
 Use this tab for paid media placements that are not programmatic. This includes direct buys on gaming websites (e.g., IGN, Polygon), banner ads, or Digital Out-of-Home (DOOH) displays.
 
@@ -72,7 +72,7 @@ Use this tab for paid media placements that are not programmatic. This includes 
 
 ---
 
-## 3. Organic Media (Owned & Earned)
+## Organic Media (Owned & Earned) Link Builder
 
 Use this tab for your own marketing channels (Social Media, Dev Blogs, Newsletters) or PR efforts.
 
