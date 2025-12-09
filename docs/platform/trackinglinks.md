@@ -67,8 +67,9 @@ Use this tab for paid media placements that are not programmatic. This includes 
 
 * **Branded Short Link:** Use this for static placements (e.g., a sponsored article) where the URL is visible to users.
 * **Long Link (for Dynamic Ad Ops):** If the publisher requires a raw URL to inject their own dynamic macros (such as dynamic country codes or timestamps), provide them with the **Long Link**.
-    !!! tip
-        You can create multiple long URLs for different publisher activations if needed.
+  
+!!! tip
+    You can create multiple long URLs for different publisher activations if needed.
 
 ---
 
