@@ -12,10 +12,10 @@ hide:
 
   <section class="landing-intro">
     <p class="lead-text">
-      <strong>TRACKS</strong> is a marketing analytics and attribution platform built for PC and console games. Developed by <strong>Second Stage</strong>, it gives you clear insight into your marketing performance—without sacrificing user privacy or platform compliance.
+      <strong>TRACKS</strong> is a marketing analytics and attribution platform built for PC and console games. Created by <strong>Second Stage</strong>, it provides clear insight into campaign performance while maintaining user privacy and platform compliance.
     </p>
     <p class="sub-text">
-      This guide will help you integrate TRACKS into your game and marketing campaign. It's designed to work as a managed service with full support from our team, so feel free to reach out if you need help along the way.
+      This guide walks you through integrating TRACKS into your game and marketing workflow. TRACKS is delivered as a managed service, so if you need help at any step, our team is here to support you.
     </p>
   </section>
 
