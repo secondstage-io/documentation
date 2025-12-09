@@ -4,44 +4,33 @@ hide:
   - toc
 ---
 
-<div class="hero">
-  <div class="hero-inner">
-    
-    <div class="hero-text">
-      <h1>TRACKS Documentation</h1>
-      <p>
-        <strong>Marketing intelligence for gaming.</strong><br>
-        TRACKS gives you clear insight into your marketing performance without sacrificing user privacy.
-      </p>
-      <p style="font-size: 0.9rem; opacity: 0.9; margin-top: 1rem;">
-        This documentation is designed to guide you through the complete setup process, from platform integration to attribution measurement.
-      </p>
-    </div>
+<div class="hero" style="margin-bottom: 3rem; padding: 3rem 1rem;">
+  <h1 style="margin: 0; font-size: 2.2rem; color: white;">Welcome to the TRACKS Documentation</h1>
+</div>
 
-    <div class="hero-actions">
-      
-      <a href="/overview/overview/" class="hero-card">
-        <span class="hero-card-icon">
-          <svg style="width:24px;height:24px" viewBox="0 0 24 24"><path fill="currentColor" d="M19 1L14 6V17L19 12V1M21 5V18.5C19.9 18.15 18.7 18 17.5 18C15.8 18 13.35 18.65 12 19.5V6C10.55 4.9 8.45 4.5 6.5 4.5C4.55 4.5 2.45 4.9 1 6V20.65C1 20.9 1.25 21.15 1.5 21.15C1.6 21.15 1.65 21.1 1.75 21.05C3.1 20.45 5.05 20 6.5 20C8.45 20 10.55 20.4 12 21.15C13.35 20.65 15.8 20 17.5 20C19.15 20 20.85 20.3 22.25 21.05C22.35 21.1 22.4 21.15 22.5 21.15C22.75 21.15 23 20.9 23 20.65V6C22.5 5.55 21.75 5.25 21 5Z" /></svg>
-        </span>
-        <div class="hero-card-content">
-          <strong>Start Here: Overview</strong>
-          <span>Learn how TRACKS works.</span>
-        </div>
-      </a>
+<div style="max-width: 900px; margin: 0 auto; text-align: center;">
 
-      <a href="https://tracks.secondstage.io/" target="_blank" class="hero-card">
-        <span class="hero-card-icon">
-          <svg style="width:24px;height:24px" viewBox="0 0 24 24"><path fill="currentColor" d="M10,17V14H3V10H10V7L15,12L10,17M10,2H19A2,2 0 0,1 21,4V20A2,2 0 0,1 19,22H10A2,2 0 0,1 8,20V18H10V20H19V4H10V6H8V4A2,2 0 0,1 10,2Z" /></svg>
-        </span>
-        <div class="hero-card-content">
-          <strong>Access Platform</strong>
-          <span>Log in to your dashboard.</span>
-        </div>
-      </a>
-
-    </div>
+  <div style="font-size: 1.1rem; line-height: 1.8; color: var(--md-text-color); margin-bottom: 2.5rem;">
+    <p style="margin-bottom: 1.5rem;">
+      <strong>TRACKS</strong> is a marketing analytics and attribution platform built for PC and console games. Developed by <strong>Second Stage</strong>, it gives you clear insight into your marketing performance—without sacrificing user privacy or platform compliance.
+    </p>
+    <p style="opacity: 0.85;">
+      <strong>This guide will help you integrate TRACKS into your game and marketing campaign. It's designed to work as a managed service with full support from our team, so feel free to reach out if you need help along the way.</strong>
+    </p>
   </div>
+
+  <div class="cta-buttons-container" style="gap: 1.5rem; margin-bottom: 4rem;">
+    
+    <a href="/overview/overview/" class="cta-button" style="background-color: var(--md-primary-fg-color); color: white; border: 2px solid var(--md-primary-fg-color);">
+      Start Here: Overview
+    </a>
+
+    <a href="https://tracks.secondstage.io/" target="_blank" class="cta-button" style="background-color: transparent; color: var(--md-primary-fg-color); border: 2px solid var(--md-primary-fg-color);">
+      Access Platform
+    </a>
+
+  </div>
+
 </div>
 
 <div class="grid cards" markdown>
@@ -82,6 +71,6 @@ hide:
 
 ---
 
-<div style="text-align: center; opacity: 0.8; font-size: 0.85rem;">
-  Need help? <a href="mailto:hello@secondstage.io">Contact Support</a> or visit <a href="https://secondstage.io">secondstage.io</a>.
+<div style="text-align: center; opacity: 0.8; font-size: 0.85rem; margin-top: 2rem;">
+  For more information visit <a href="https://secondstage.io">secondstage.io</a> or <a href="https://secondstage.io/contact/">get in touch</a>.
 </div>
