@@ -30,7 +30,7 @@ hide:
 
 </div>
 
-<div class="grid cards" markdown>
+<div class="grid cards home-grid" markdown>
 
 -   :material-link-variant:{ .lg } __Platform Integration__
 
