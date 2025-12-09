@@ -1,367 +1,222 @@
-
 /* ========================================================================= */
-/* GLOBAL COLOR VARIABLES */
+/* 1. BRAND & COLOR PALETTE */
 /* ========================================================================= */
-
-/* Apply TRACKS brand color globally via `:root`, used when `primary: root` */
 :root {
-  /* Primary brand color (TRACKS red) */
+  /* Brand Colors */
   --md-primary-fg-color:        #ff0249;
-  --md-primary-fg-color--light: #ffc2d1; /* Softer, more elegant light pink */
-  --md-primary-fg-color--dark:  #b0023a; /* Darker, desaturated red */
-  /* Optional: improve contrast for elements like buttons, hovers */
-  --md-primary-bg-color:        #f9fbfd; /* Clean, subtle off-white */
-  --md-primary-bg-color--light: #f7f7f7; /* Lighter off-white */
+  --md-primary-fg-color--light: #ffc2d1; 
+  --md-primary-fg-color--dark:  #b0023a; 
+  
+  /* Backgrounds: Keep them clean. Pure white or very subtle gray. */
+  --md-primary-bg-color:        #ffffff; 
+  --md-primary-bg-color--light: #f8f9fa; /* Slight contrast for code blocks */
+
+  /* Text Colors: Dark Gray is more readable than pure black */
+  --md-text-color:              #24292f; 
 }
 
-/* Dark mode color adjustments for manual toggle and system preference */
+/* Dark Mode: High contrast pinks need deep backgrounds */
 [data-md-color-scheme="dark"] {
-  --md-primary-fg-color:        #ff0249;
-  --md-primary-fg-color--light: #ff91ae; /* Adjusted for dark mode contrast */
-  --md-primary-fg-color--dark:  #b0023a; /* Darker, desaturated red for dark mode */
-  --md-primary-bg-color:        #1a1013; /* Softer, slightly warm dark gray */
-  --md-primary-bg-color--light: #242226; /* Slightly darker for code/cards */
-  --md-default-fg-color--light: #fceef1; /* For main text in dark mode */
+  --md-primary-fg-color:        #ff4d7d; /* Slightly lighter pink for dark mode readability */
+  --md-primary-bg-color:        #0d1117; /* GitHub Dark Dim style */
+  --md-primary-bg-color--light: #161b22;
+  --md-text-color:              #c9d1d9;
 }
-
-/* Override accent color when palette accent is set to "red" */
-[data-md-color-accent="red"] {
-  --md-accent-fg-color:         #ff0249;
-  --md-accent-fg-color--transparent: rgba(255, 2, 73, 0.1);
-}
-
 
 /* ========================================================================= */
-/* FONT AND TYPOGRAPHY ADJUSTMENTS */
+/* 2. TYPOGRAPHY (Crucial for Professionalism) */
 /* ========================================================================= */
 
-/* Base font size for body text and common elements */
-.md-typeset,
-.md-typeset p,
-.md-typeset li,
-.md-typeset blockquote,
-.md-typeset td {
-  font-size: 0.75rem;
-  line-height: 1.45;
+/* INCREASED SIZES: 
+   Professional docs are easy to scan. 
+   0.75rem was too small; 0.95rem to 1rem is standard.
+*/
+.md-typeset {
+  font-size: 0.95rem; 
+  line-height: 1.6;
+  color: var(--md-text-color);
 }
 
-/* Headings – slightly smaller and tighter */
+/* Headings: Darker, tighter, closer to content */
 .md-typeset h1 {
-  font-size: 1.4rem;
-  margin: 1.8rem 0 1rem;
+  font-weight: 700;
+  color: var(--md-primary-fg-color--dark); /* Use darker brand shade for weight */
+  margin-bottom: 1.5rem;
 }
+[data-md-color-scheme="dark"] .md-typeset h1 {
+  color: var(--md-primary-fg-color);
+}
+
 .md-typeset h2 {
-  font-size: 1.15rem;
-  margin: 1.4rem 0 0.75rem;
-}
-.md-typeset h3 {
-  font-size: 1rem;
-  margin: 1.1rem 0 0.5rem;
-}
-.md-typeset h4 {
-  font-size: 0.9rem;
-  margin: 1rem 0 0.5rem;
+  font-weight: 600;
+  margin-top: 2.5rem; /* More breathing room above new sections */
+  border-bottom: 1px solid rgba(0,0,0,0.05); /* Subtle divider */
+  padding-bottom: 0.5rem;
 }
 
-/* Code styles – clean and slightly smaller */
-.md-typeset code,
-.md-typeset pre {
-  font-size: 0.7rem;
+/* Code: Clean up */
+.md-typeset code {
+  background-color: rgba(0,0,0,0.05); /* Neutral background, not pink */
+  border-radius: 4px;
+  padding: 2px 5px;
+  font-size: 0.85em; /* Relative to text */
+  color: #d73a49; /* Standard syntax red, easier on eyes than neon */
 }
-
+[data-md-color-scheme="dark"] .md-typeset code {
+  background-color: rgba(255,255,255,0.1);
+  color: #ff7b72;
+}
 
 /* ========================================================================= */
-/* HEADER & FOOTER STYLING */
+/* 3. HEADER & NAVIGATION */
 /* ========================================================================= */
 
-/* Top navbar background and text color */
+/* MODERN HEADER: 
+   Instead of a solid neon pink block, use a white header with 
+   pink text/logo. It feels much lighter and more modern (like Stripe/Vercel).
+*/
 .md-header {
-  background-color: var(--md-primary-fg-color);
-  color: white;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  background-color: var(--md-primary-bg-color);
+  color: var(--md-text-color);
+  border-bottom: 1px solid rgba(0,0,0,0.08); /* Subtle border */
+  box-shadow: none; /* Flat design */
 }
-.md-header__title,
-.md-header__topic {
-  color: white;
-}
-/* Tabs background - distinct from header but related color */
-.md-tabs {
-  background-color: var(--md-primary-fg-color--dark);
-}
-
-/* Active tab links */
-.md-tabs__link--active,
-.md-tabs__link:hover {
-  color: white;
-  border-bottom: 2px solid white;
-}
-
-/* FOOTER STYLING */
-.md-footer {
-  background-color: var(--md-primary-fg-color--dark);
-  color: white;
-}
-.md-footer a {
-  color: white;
-  text-decoration: underline;
-}
-.md-footer a:hover {
-  color: #ffe3ec; /* light hover effect */
-}
-.md-footer__inner {
-  padding: 1rem 0;
-  font-size: 0.875rem;
-  text-align: center;
-}
-
-/* Dark mode adjustments for header and footer */
 [data-md-color-scheme="dark"] .md-header {
-  background-color: var(--md-primary-fg-color);
+  background-color: var(--md-primary-bg-color);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Make the Title/Logo Brand Color */
+.md-header__title, .md-header__button {
+  color: var(--md-primary-fg-color) !important;
+  font-weight: 700;
+}
+
+/* TABS (Navigation) */
+.md-tabs {
+  background-color: var(--md-primary-bg-color);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  color: var(--md-text-color);
 }
 [data-md-color-scheme="dark"] .md-tabs {
-  background-color: var(--md-primary-fg-color--dark);
-}
-[data-md-color-scheme="dark"] .md-footer {
-  background-color: var(--md-primary-fg-color--dark);
-}
-[data-md-color-scheme="dark"] .md-header__title,
-[data-md-color-scheme="dark"] .md-footer,
-[data-md-color-scheme="dark"] .md-footer a {
-  color: white;
-}
-
-
-/* ========================================================================= */
-/* CONTENT ELEMENT STYLING */
-/* ========================================================================= */
-
-/* Define columns */
-.mdx-columns {
-  columns: 2 auto;
-}
-
-/* Improved codeblock styling */
-/* Inline code */
-.md-typeset code {
-  background-color: var(--md-primary-bg-color--light);
-  padding: 0.2em 0.4em;
-  border-radius: 4px;
-  font-size: 0.9rem;
-}
-/* Code blocks */
-.md-typeset pre {
-  background-color: var(--md-primary-bg-color--light);
-  border-radius: 8px;
-  padding: 1rem;
-  overflow-x: auto;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-}
-/* Dark mode code blocks */
-[data-md-color-scheme="dark"] .md-typeset code,
-[data-md-color-scheme="dark"] .md-typeset pre {
-  background-color: var(--md-primary-bg-color--light);
-}
-
-/* Lightened blockquotes */
-.md-typeset blockquote {
-  color: #555;
-  border-left: 4px solid #d0d7de;
   background-color: var(--md-primary-bg-color);
-  padding: 0.5rem 1rem;
-  margin: 1rem 0;
-  border-radius: 4px;
-}
-[data-md-color-scheme="dark"] .md-typeset blockquote {
-  color: #c0c0c0;
-  border-color: #555;
-  background-color: var(--md-primary-bg-color);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
-/* Slightly round sidebar links */
-.md-nav__link {
-  border-radius: 4px;
-  padding: 0.3rem 0.6rem;
+.md-tabs__link {
+  color: var(--md-text-color);
+  opacity: 0.7;
 }
-.md-nav__link:hover {
-  background-color: rgba(0, 0, 0, 0.05);
-}
-
-
-/* ========================================================================= */
-/* ADJUST GRID CARDS */
-/* ========================================================================= */
-
-
-/* Card styling */
-.grid.cards li {
-  border: 1px solid var(--md-primary-fg-color);
-  border-radius: 15px;
-  padding: 1.5rem;
-}
-
-
-
-/* ========================================================================= */
-/* ADJUST INFO BOXES (ADMONITIONS) */
-/* ========================================================================= */
-
-/* Full box with border */
-.md-typeset .admonition.info,
-.md-typeset details.admonition.info {
-  border: 1px solid var(--md-primary-fg-color);
-  border-radius: 6px;
-  background-color: #fff1f6;
-  color: var(--md-primary-fg-color--dark);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
-  margin: 1.5em 0;
-  padding: 0;
-  overflow: hidden;
-}
-/* Dark mode info box */
-[data-md-color-scheme="dark"] .md-typeset .admonition.info,
-[data-md-color-scheme="dark"] .md-typeset details.admonition.info {
-  background-color: #242226; /* Darker background color for the body of the admonition */
-  color: #c0c0c0; /* Light text color for readability */
-}
-
-/* Title bar */
-.md-typeset .admonition.info > .admonition-title,
-.md-typeset details.admonition.info > summary.admonition-title {
-  background-color: var(--md-primary-fg-color);
-  color: white;
+.md-tabs__link:hover, .md-tabs__link--active {
+  color: var(--md-primary-fg-color); /* Pink highlight only on active/hover */
+  opacity: 1;
   font-weight: 600;
-  padding: 0.75em 1em 0.75em 3rem;
-  position: relative;
-  border-radius: 6px 6px 0 0;
-  margin: 0;
 }
 
-/* Hide default blue icon (SVG and ::before) */
-.md-typeset .admonition.info .admonition-title .admonition-icon svg,
-.md-typeset details.admonition.info summary.admonition-title .admonition-icon svg,
-.md-typeset .admonition.info .admonition-title::before,
-.md-typeset details.admonition.info summary.admonition-title::before {
-  display: none;
+/* ========================================================================= */
+/* 4. CARDS & GRID (The "SaaS" Look) */
+/* ========================================================================= */
+
+/* Instead of pink borders, use shadow and lift. 
+   This creates "depth" and looks high-end.
+*/
+.grid.cards li {
+  border: 1px solid rgba(0,0,0,0.08); /* Very faint border */
+  border-radius: 12px;
+  background: var(--md-primary-bg-color);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s;
+  cursor: pointer;
 }
 
-/* Add custom white info icon as a background using ::after */
-.md-typeset .admonition.info .admonition-title::after,
-.md-typeset details.admonition.info summary.admonition-title::after {
-  content: "";
-  position: absolute;
-  left: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 1rem;
-  height: 1rem;
-  background-image: url('data:image/svg+xml;utf8,<svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7h2v2h-2V7zm0 4h2v6h-2v-6zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  pointer-events: none;
+/* Hover Effect: Lift up and add pink border */
+.grid.cards li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  border-color: var(--md-primary-fg-color);
 }
 
-/* Inner content (after title) */
-.md-typeset .admonition.info > :not(.admonition-title),
-.md-typeset details.admonition.info > :not(summary.admonition-title) {
-  padding: 1em 1.5em;
-}
-/* Dark mode inner content */
-[data-md-color-scheme="dark"] .md-typeset .admonition.info > :not(.admonition-title),
-[data-md-color-scheme="dark"] .md-typeset details.admonition.info > :not(summary.admonition-title) {
-  background-color: var(--md-primary-bg-color--light);
+/* Dark mode card adjustments */
+[data-md-color-scheme="dark"] .grid.cards li {
+  border: 1px solid rgba(255,255,255,0.1);
+  background: var(--md-primary-bg-color--light);
 }
 
-/* Link styling inside box */
-.md-typeset .admonition.info a {
+/* ========================================================================= */
+/* 5. ADMONITIONS (Info Boxes) */
+/* ========================================================================= */
+
+/* Clean, modern style. Less aggressive than the solid box. */
+.md-typeset .admonition, 
+.md-typeset details.admonition {
+  border: none;
+  border-left: 4px solid var(--md-primary-fg-color); /* Only left border */
+  background-color: rgba(255, 2, 73, 0.03); /* Extremely faint pink fill */
+  border-radius: 0 8px 8px 0;
+  box-shadow: none;
+}
+
+.md-typeset .admonition-title, 
+.md-typeset summary.admonition-title {
+  background-color: transparent; /* No solid header bar */
   color: var(--md-primary-fg-color);
-  text-decoration: underline;
+  font-weight: 700;
+  padding-left: 1rem;
+  border-bottom: none;
 }
 
-.md-typeset .admonition.info a:hover {
-  color: var(--md-primary-fg-color--dark);
+/* Icon Color Override */
+.md-typeset .admonition-title::before, 
+.md-typeset summary.admonition-title::before {
+  background-color: var(--md-primary-fg-color);
+  -webkit-mask-image: var(--md-admonition-icon--info); /* Restore default icon */
+  mask-image: var(--md-admonition-icon--info);
 }
 
-
 /* ========================================================================= */
-/* OTHER ELEMENTS */
+/* 6. IMAGES & HERO */
 /* ========================================================================= */
 
-/* Hero Section */
+/* Images: Subtle shadow, no pink border */
+img:not(.logo) {
+  border: 1px solid rgba(0,0,0,0.05);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Nice lift */
+  display: block;
+  margin: 1.5rem auto;
+}
+
+/* Hero: Modern Gradient */
 .hero {
   text-align: center;
-  padding: 3rem 2rem 2.5rem;
-  background: linear-gradient(
-    135deg,
-    var(--md-primary-fg-color),
-    #b0023a 75%
-  );
+  padding: 4rem 1.5rem;
+  background: linear-gradient(135deg, #1a1013 0%, var(--md-primary-fg-color) 100%);
   color: white;
-  border-radius: 0.5rem;
-  margin-bottom: 2rem;
+  border-radius: 16px;
+  margin-bottom: 3rem;
+  box-shadow: 0 10px 30px rgba(255, 2, 73, 0.2);
 }
-/* Responsive padding for smaller screens */
-@media (max-width: 768px) {
-  .hero {
-    padding: 2rem 1rem 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-}
+
 .hero h1 {
-  font-size: 1.5rem;
-  color: white;
-  margin-bottom: 0.75rem;
+  font-size: 2.2rem;
+  color: white !important; /* Force white on dark gradient */
 }
-.hero p {
-  font-size: 0.95rem;
-  margin-bottom: 1.5rem;
-  opacity: 0.9;
-}
-.cta-buttons-container {
-  display: flex;
-  gap: 1rem;
-  margin-top: 20px;
-}
+
+/* Buttons in Hero */
 .hero .cta-button {
+  display: inline-block;
   background: white;
   color: var(--md-primary-fg-color);
-  font-weight: bold;
+  font-weight: 700;
+  padding: 0.8rem 2rem;
+  border-radius: 50px; /* Pill shape is trendy */
   text-decoration: none;
-  padding: 0.75em 1.5em;
-  border-radius: 6px;
-  transition: background 0.3s, color 0.3s;
-  flex: 1; /* This is the key property for equal width */
-  text-align: center;
+  margin: 0.5rem;
+  transition: all 0.2s;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 .hero .cta-button:hover {
-  background: #ffe4ec;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
   color: var(--md-primary-fg-color--dark);
-}
-
-
-/* Section dividers */
-hr.section-divider {
-  border: none;
-  border-top: 1px solid #ddd;
-  margin: 4rem auto;
-  width: 60%;
-}
-
-/* Remove left nav and expand content for homepage */
-body[data-md-page="index"] .md-main__inner.md-grid,
-body[data-md-page="index"] .md-grid {
-  max-width: initial !important;
-}
-
-/* ========================================================================= */
-/* IMAGE STYLING */
-/* ========================================================================= */
-
-img:not(.logo) {
-  border: 1px solid var(--md-primary-fg-color);
-  border-radius: 5px;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 1rem auto;
+  background: white;
 }
