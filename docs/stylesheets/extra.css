@@ -17,7 +17,7 @@
   --md-code-fg-color:           #d6003b; 
   
   /* UNIFIED NAV FONT SIZE (Top, Left, Right) */
-  --nav-item-font-size:         0.85rem; 
+  --nav-item-font-size:         0.8rem; 
 }
 
 /* Dark Mode Adjustments */
@@ -48,10 +48,10 @@
   margin-right: auto;
 }
 
-/* 2. TEXT AREA CENTERING */
-/* This centers the content if menus are hidden, and restricts width for readability */
+/* 2. TEXT AREA CENTERING & WIDTH */
+/* Centers content if menus are hidden. Increased to 1200px for wider start page. */
 .md-typeset {
-  max-width: 1000px; /* Comfortable reading width (wider than before) */
+  max-width: 1200px; /* WIDENED from 1000px */
   margin: 0 auto;    /* Centers the block if sidebars are gone */
   font-size: 0.85rem; 
   line-height: 1.6;
@@ -309,7 +309,7 @@
 [data-md-color-scheme="dark"] .md-typeset .admonition.info { background-color: rgba(255, 2, 73, 0.05); }
 
 /* ========================================================================= */
-/* 7. HERO & IMAGES */
+/* 7. IMAGES & GRID CARDS */
 /* ========================================================================= */
 
 .md-content img {
@@ -347,49 +347,7 @@
     color: var(--md-primary-fg-color);
 }
 
-.hero {
-  text-align: center;
-  padding: 3rem 2rem 2.5rem;
-  background: linear-gradient(135deg, var(--md-primary-fg-color), #b0023a 75%);
-  color: white;
-  border-radius: 0.5rem;
-  margin-bottom: 2rem;
-}
-.hero h1 { color: white; margin-top: 0; font-size: 1.8rem; } 
-
-.cta-buttons-container {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 1.5rem;
-  flex-wrap: wrap;
-}
-
-.hero .cta-button {
-  background: white;
-  color: var(--md-primary-fg-color);
-  font-weight: bold;
-  padding: 0.6em 1.2em;
-  border-radius: 6px;
-  display: inline-block;
-  text-decoration: none;
-  transition: background 0.3s;
-  font-size: 0.9rem;
-}
-.hero .cta-button:hover { background: #ffe4ec; color: var(--md-primary-fg-color--dark); }
-
-.hero .secondary-cta-button {
-  background: transparent; 
-  color: white;
-  border: 2px solid rgba(255,255,255, 0.8);
-  box-shadow: none;
-}
-.hero .secondary-cta-button:hover {
-  background: rgba(255, 255, 255, 0.15);
-  color: white;
-  border-color: white;
-}
-
+/* Grid Cards (Clean Style) */
 .md-typeset .grid.cards > ul > li {
   border: 1px solid #eaeaea;
   border-radius: 12px;
@@ -408,4 +366,94 @@
   color: var(--md-primary-fg-color);
   font-weight: 700;
   font-size: 1.1em;
+}
+
+/* ========================================================================= */
+/* 8. NEW HERO STYLES (Split Layout & Glass Cards) */
+/* ========================================================================= */
+
+.hero {
+  text-align: center;
+  padding: 3rem 2rem 2.5rem;
+  background: linear-gradient(135deg, var(--md-primary-fg-color), #b0023a 75%);
+  color: white;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Hide the default hero h1 margin for better alignment inside flex */
+.hero-text h1 { margin-top: 0; }
+
+.hero-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: left;
+  align-items: center;
+}
+
+/* Desktop: Side-by-Side Layout */
+@media (min-width: 60em) {
+  .hero-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch; /* Makes boxes equal height */
+  }
+  .hero-text { flex: 1; padding-right: 2rem; display: flex; flex-direction: column; justify-content: center; }
+  .hero-actions { flex: 0 0 40%; display: flex; flex-direction: column; gap: 1rem; }
+}
+
+/* Hero Cards (The "Glass" Look) */
+.hero-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.15); /* Semi-transparent white */
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 1.2rem;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+}
+.hero-card:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: white;
+  transform: translateY(-2px);
+}
+
+.hero-card-icon { opacity: 0.9; }
+.hero-card-content strong { display: block; font-size: 1.05rem; line-height: 1.2; }
+.hero-card-content span { font-size: 0.85rem; opacity: 0.9; display: block; margin-top: 4px;}
+
+/* Standard Buttons (Legacy support just in case) */
+.cta-buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+.hero .cta-button {
+  background: white;
+  color: var(--md-primary-fg-color);
+  font-weight: bold;
+  padding: 0.6em 1.2em;
+  border-radius: 6px;
+  display: inline-block;
+  text-decoration: none;
+  transition: background 0.3s;
+  font-size: 0.9rem;
+}
+.hero .cta-button:hover { background: #ffe4ec; color: var(--md-primary-fg-color--dark); }
+.hero .secondary-cta-button {
+  background: transparent; 
+  color: white;
+  border: 2px solid rgba(255,255,255, 0.8);
+  box-shadow: none;
+}
+.hero .secondary-cta-button:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  border-color: white;
 }
