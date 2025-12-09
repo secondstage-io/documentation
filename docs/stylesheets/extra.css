@@ -35,7 +35,48 @@
 }
 
 /* ========================================================================= */
-/* 2. BASE STYLING & MICRO-INTERACTIONS */
+/* 2. LAYOUT & SIDEBAR (Widescreen + Separator) */
+/* ========================================================================= */
+
+/* 1. EXPAND SCREEN WIDTH (The "Gamesight" 90% feel) */
+.md-grid {
+  max-width: 90% !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 2. LEFT SIDEBAR STYLING (Visual Separation) */
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary {
+    /* Add the separator line */
+    border-right: 1px solid #e0e0e0;
+    
+    /* Optional: Subtle background to distinguish the column */
+    background-color: #fafafa; 
+    
+    /* Add visual breathing room inside the column */
+    margin-right: 1rem; 
+    padding: 1rem 1rem 1rem 0;
+    
+    /* Ensure it stretches nicely */
+    height: 100%;
+  }
+  
+  /* Dark mode adjustment for the sidebar */
+  [data-md-color-scheme="dark"] .md-sidebar--primary {
+    border-right: 1px solid #333;
+    background-color: rgba(255,255,255,0.02);
+  }
+}
+
+/* Sidebar Navigation Text */
+.md-nav--primary .md-nav__title {
+  color: var(--md-primary-fg-color);
+  font-weight: 700;
+}
+
+/* ========================================================================= */
+/* 3. BASE STYLING & MICRO-INTERACTIONS */
 /* ========================================================================= */
 
 /* Scrollbars */
@@ -45,7 +86,7 @@
 ::-webkit-scrollbar-thumb:hover { background-color: var(--md-primary-fg-color); }
 [data-md-color-scheme="dark"] ::-webkit-scrollbar-thumb { background-color: #444; }
 
-/* Selection & Search */
+/* Selection */
 ::selection { background-color: rgba(255, 2, 73, 0.2); color: inherit; }
 .md-typeset mark {
   background-color: rgba(255, 2, 73, 0.25);
@@ -55,7 +96,7 @@
 }
 
 /* ========================================================================= */
-/* 3. TYPOGRAPHY */
+/* 4. TYPOGRAPHY */
 /* ========================================================================= */
 
 .md-typeset {
@@ -69,7 +110,7 @@
   font-weight: 700;
   color: var(--md-text-color);
   margin-top: 1em;
-  font-size: 1.5rem; 
+  font-size: 1.6rem; 
   letter-spacing: -0.01em;
   line-height: 1.25;
 }
@@ -77,16 +118,16 @@
 .md-typeset h2 {
   font-weight: 600;
   color: var(--md-text-color);
-  margin-top: 1.25em;
+  margin-top: 1.5em;
   border-bottom: 1px solid #eaeaea;
   padding-bottom: 0.3em;
-  font-size: 1.25rem; 
+  font-size: 1.3rem; 
 }
 
 .md-typeset h3 {
   font-weight: 600;
   margin-top: 1.25em;
-  font-size: 1rem; 
+  font-size: 1.1rem; 
 }
 
 /* Anchor Links */
@@ -116,14 +157,14 @@
 }
 
 /* ========================================================================= */
-/* 4. HEADER (RED) & TABS (WHITE) */
+/* 5. HEADER (RED) & TABS (WHITE) */
 /* ========================================================================= */
 
-/* Main Header Bar - Back to Brand Red */
+/* Main Header Bar - Brand Red */
 .md-header {
   background-color: var(--md-primary-fg-color);
   color: white;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Slight shadow to separate from white tabs */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 /* Logo - No border */
@@ -142,7 +183,7 @@
   color: white !important;
 }
 
-/* Search Bar - White/Translucent for Red background */
+/* Search Bar */
 .md-search__input {
   background-color: rgba(255, 255, 255, 0.15);
   border: none;
@@ -159,7 +200,7 @@
 /* --- TABS (The Menu) --- */
 
 .md-tabs {
-  background-color: #ffffff; /* White background */
+  background-color: #ffffff;
   color: #555;
   border-bottom: 1px solid #e0e0e0;
 }
@@ -170,7 +211,7 @@
 
 /* Inactive Link */
 .md-tabs__link {
-  color: #57606a; /* Neutral Gray */
+  color: #57606a; 
   opacity: 1;
   font-weight: 500;
   transition: all 0.2s;
@@ -178,17 +219,16 @@
 [data-md-color-scheme="dark"] .md-tabs__link { color: #a0a0a0; }
 
 /* ACTIVE & HOVER State */
-/* This matches your mouseover style perfectly */
 .md-tabs__link--active, 
 .md-tabs__link:hover {
-  color: var(--md-primary-fg-color); /* Brand Red */
+  color: var(--md-primary-fg-color); 
   font-weight: 700;
   opacity: 1;
 }
 
-/* Optional: Adds a bottom border to the active tab to really lock it in */
+/* Bottom Border for Active Tab */
 .md-tabs__link--active {
-   box-shadow: 0 -3px 0 var(--md-primary-fg-color) inset; /* CSS trick for clean border */
+   box-shadow: 0 -3px 0 var(--md-primary-fg-color) inset;
 }
 
 /* Footer */
@@ -197,17 +237,19 @@
 
 
 /* ========================================================================= */
-/* 5. SIDEBAR NAVIGATION */
+/* 6. LEFT MENU STYLING (Specifics) */
 /* ========================================================================= */
 
 .md-nav__link {
-  padding: 4px 10px;
+  padding: 6px 12px;
   border-radius: 4px;
   transition: all 0.2s ease;
   font-size: 0.85rem; 
+  color: #555;
 }
+[data-md-color-scheme="dark"] .md-nav__link { color: #aaa; }
 
-/* Active State */
+/* Active Sidebar Link (Left Border Indicator) */
 .md-nav__item .md-nav__link--active {
   background-color: rgba(255, 2, 73, 0.05);
   color: var(--md-primary-fg-color);
@@ -215,10 +257,14 @@
   border-left: 3px solid var(--md-primary-fg-color);
   border-radius: 0 4px 4px 0;
 }
-.md-nav__link:hover { color: var(--md-primary-fg-color); }
+
+.md-nav__link:hover { 
+  color: var(--md-primary-fg-color);
+  background-color: rgba(0,0,0,0.02);
+}
 
 /* ========================================================================= */
-/* 6. TABLES (Clean & Compact) */
+/* 7. TABLES */
 /* ========================================================================= */
 
 .md-typeset table:not([class]) {
@@ -256,7 +302,7 @@
 [data-md-color-scheme="dark"] .md-typeset table:not([class]) tr:nth-child(even) { background-color: #25262b; }
 
 /* ========================================================================= */
-/* 7. CONTENT ELEMENTS: CODE & ADMONITIONS */
+/* 8. CONTENT ELEMENTS: CODE & ADMONITIONS */
 /* ========================================================================= */
 
 .md-typeset code {
@@ -321,7 +367,7 @@
 [data-md-color-scheme="dark"] .md-typeset .admonition.info { background-color: rgba(255, 2, 73, 0.05); }
 
 /* ========================================================================= */
-/* 8. IMAGES & GRID CARDS */
+/* 9. HERO & BUTTONS */
 /* ========================================================================= */
 
 .md-content img {
@@ -332,30 +378,6 @@
   display: block;
   margin: 1rem auto;
 }
-
-.md-typeset .grid.cards > ul > li {
-  border: 1px solid #eaeaea;
-  border-radius: 12px;
-  padding: 1.2rem;
-  background-color: var(--md-primary-bg-color);
-  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
-}
-.md-typeset .grid.cards > ul > li:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.08);
-  border-color: var(--md-primary-fg-color);
-}
-.md-typeset .grid.cards > ul > li hr + strong {
-  color: var(--md-primary-fg-color);
-  font-weight: 700;
-  font-size: 1.1em;
-}
-
-/* ========================================================================= */
-/* 9. SEARCH BAR, HERO & BUTTONS */
-/* ========================================================================= */
 
 .md-search-result__link:hover, .md-search-result__link[data-md-state="active"] {
     background-color: rgba(255, 2, 73, 0.05);
@@ -407,4 +429,24 @@
   background: rgba(255, 255, 255, 0.15);
   color: white;
   border-color: white;
+}
+
+.md-typeset .grid.cards > ul > li {
+  border: 1px solid #eaeaea;
+  border-radius: 12px;
+  padding: 1.2rem;
+  background-color: var(--md-primary-bg-color);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+.md-typeset .grid.cards > ul > li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+  border-color: var(--md-primary-fg-color);
+}
+.md-typeset .grid.cards > ul > li hr + strong {
+  color: var(--md-primary-fg-color);
+  font-weight: 700;
+  font-size: 1.1em;
 }
