@@ -49,10 +49,10 @@
 }
 
 /* 2. TEXT AREA CENTERING & WIDTH */
-/* Centers content if menus are hidden. Increased to 1200px for wider start page. */
+/* Centers content if menus are hidden (Homepage). Width 1200px. */
 .md-typeset {
   max-width: 1200px; 
-  margin: 0 auto;    /* Centers the block if sidebars are gone */
+  margin: 0 auto;    
   font-size: 0.85rem; 
   line-height: 1.6;
   color: var(--md-text-color);
@@ -148,7 +148,7 @@
 }
 
 /* ========================================================================= */
-/* 5. HEADER (RED) & TABS (WHITE) */
+/* 5. HEADER (RED), TABS (WHITE) & FOOTER */
 /* ========================================================================= */
 
 .md-header {
@@ -238,6 +238,31 @@
    color: #333;
 }
 [data-md-color-scheme="dark"] .md-nav--secondary .md-nav__title { color: #fff; }
+
+/* 4. FOOTER STYLING (Light Grey & Spaced) */
+.md-footer {
+  margin-top: 4rem; /* Add breathing room above footer */
+  background-color: #f5f7f9; /* Light Grey */
+  color: #444; /* Darker text for contrast */
+  border-top: 1px solid #e0e0e0;
+}
+.md-footer a {
+  color: var(--md-text-color);
+  font-weight: 600;
+}
+.md-footer a:hover {
+  color: var(--md-primary-fg-color);
+}
+
+/* Dark Mode Footer Override */
+[data-md-color-scheme="dark"] .md-footer {
+  background-color: #1a1b1e;
+  color: #e0e0e0;
+  border-top: 1px solid #333;
+}
+[data-md-color-scheme="dark"] .md-footer a {
+  color: white;
+}
 
 
 /* ========================================================================= */
@@ -347,30 +372,45 @@
     color: var(--md-primary-fg-color);
 }
 
-/* Grid Cards (Clean Style) */
+/* --- GRID CARD LAYOUT --- */
+
+/* 1. HOME PAGE ONLY: Force 2 Columns on Desktop */
+@media screen and (min-width: 60em) {
+  .md-typeset .grid.cards.home-grid > ul {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.5rem; 
+  }
+}
+
+/* 2. Styling for ALL cards (Home & Elsewhere) */
 .md-typeset .grid.cards > ul > li {
   border: 1px solid #eaeaea;
   border-radius: 12px;
-  padding: 1.2rem;
+  padding: 1.5rem; 
   background-color: var(--md-primary-bg-color);
   box-shadow: 0 4px 6px rgba(0,0,0,0.02);
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+  margin: 0; 
 }
+
 .md-typeset .grid.cards > ul > li:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 24px rgba(0,0,0,0.08);
   border-color: var(--md-primary-fg-color);
 }
+
 .md-typeset .grid.cards > ul > li hr + strong {
   color: var(--md-primary-fg-color);
   font-weight: 700;
   font-size: 1.1em;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 
 /* ========================================================================= */
-/* 8. LANDING PAGE STYLING (New Best Practices) */
+/* 8. LANDING PAGE STYLING (Modern Best Practices) */
 /* ========================================================================= */
 
 .landing-page {
@@ -380,11 +420,11 @@
 
 /* --- Hero Banner --- */
 .landing-hero {
-  background: linear-gradient(135deg, var(--md-primary-fg-color), #d6003b); /* Subtle gradient for depth */
+  background: linear-gradient(135deg, var(--md-primary-fg-color), #d6003b); 
   padding: 3.5rem 1.5rem;
   border-radius: 8px;
   margin-bottom: 3rem;
-  box-shadow: 0 4px 12px rgba(255, 2, 73, 0.15); /* Soft colored shadow */
+  box-shadow: 0 4px 12px rgba(255, 2, 73, 0.15); 
 }
 
 .landing-hero h1 {
@@ -413,7 +453,7 @@
 .sub-text {
   font-size: 1rem;
   line-height: 1.6;
-  color: #555; /* Slightly softer than black */
+  color: #555; 
   opacity: 0.9;
 }
 [data-md-color-scheme="dark"] .sub-text { color: #bbb; }
@@ -460,11 +500,11 @@
   border: 2px solid var(--md-primary-fg-color);
 }
 .btn-secondary:hover {
-  background-color: rgba(255, 2, 73, 0.05); /* Faint red tint */
+  background-color: rgba(255, 2, 73, 0.05); 
   transform: translateY(-2px);
 }
 
-/* Footer Styling */
+/* Footer Styling (Legacy Class if still used) */
 .landing-footer {
   text-align: center;
   font-size: 0.85rem;
