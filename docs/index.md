@@ -28,7 +28,9 @@ hide:
     </a>
   </section>
 
-  <div class="grid cards" markdown>
+</div>
+
+<div class="grid cards" markdown>
 
 -   :material-link-variant:{ .lg } __Platform Integration__
 
@@ -61,8 +63,6 @@ hide:
     Understand key terms used across the documentation and see the latest feature updates.
 
     [:octicons-arrow-right-24: Glossary](/glossary/) &nbsp; [:octicons-arrow-right-24: Changelog](/changelog/)
-
-  </div>
 
 </div>
 
