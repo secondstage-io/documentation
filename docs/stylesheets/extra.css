@@ -68,6 +68,40 @@
 }
 
 /* ========================================================================= */
+/* TYPOGRAPHY REFINEMENTS */
+/* ========================================================================= */
+
+/* Refine Inter settings for a premium feel */
+body, .md-typeset {
+  font-family: "Inter", sans-serif;
+  /* "cv11" gives you the simpler 'a' and 'l' which looks cleaner */
+  font-feature-settings: "cv11", "kern"; 
+  -webkit-font-smoothing: antialiased; /* Crisper text on Mac */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Tighten heading spacing slightly for a 'magazine' look */
+.md-typeset h1, 
+.md-typeset h2, 
+.md-typeset h3 {
+  letter-spacing: -0.02em; 
+  font-weight: 700;
+}
+
+/* Make code font slightly bolder and match body size */
+.md-typeset code, 
+.md-typeset pre code {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 500; /* Regular code can look too thin */
+  font-size: 0.85em; /* 85% of body text size */
+}
+
+/* Make navigation links (sidebar) slightly heavier */
+.md-nav__link {
+  font-weight: 500;
+}
+
+/* ========================================================================= */
 /* 3. HEADER & NAVIGATION */
 /* ========================================================================= */
 
