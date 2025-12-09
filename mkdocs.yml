@@ -10,7 +10,7 @@ theme:
   favicon: assets/favicon.png
   font:
     text: Inter
-    code: Fira Code
+    code: JetBrains Mono
   features:
     - navigation.tabs
     - navigation.sections
@@ -25,33 +25,37 @@ theme:
     - content.code.annotation
     - content.code.copy
   language: en
-  palette:
 
-    # Palette toggle for automatic mode
+  palette:
+    # 1. Automatic (System) Preference
+    # Falls back to white/pink if system preference is unknown
     - media: "(prefers-color-scheme)"
       toggle:
-        icon: material/link
+        icon: material/brightness-auto
         name: Switch to light mode
-      primary: root
-      accent: red
+      primary: white 
+      accent: pink
 
-    # Palette toggle for light mode
+    # 2. Light Mode
+    # "primary: white" gives you the clean, white header (Stripe-style)
+    # The CSS we added earlier will color the Logo and Active Links pink.
     - media: "(prefers-color-scheme: light)"
       scheme: default 
       toggle:
-        icon: material/toggle-switch 
+        icon: material/weather-sunny
         name: Switch to dark mode
-      primary: root
-      accent: red
+      primary: white
+      accent: pink
 
-    # Palette toggle for dark mode
+    # 3. Dark Mode
+    # "primary: black" ensures the header matches the dark background
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/weather-night
         name: Switch to system preference
-      primary: root
-      accent: red
+      primary: black
+      accent: pink
 
       
 extra:
