@@ -49,6 +49,12 @@ The overarching approach used to guide an ad campaign toward its objective. Most
 **Channel**  
 The medium through which marketing messages are delivered, such as gaming websites or social media platforms.
 
+**Churn 30d**
+The segment of Matured Installs who have not returned to play the game within the last 30 days.  
+
+**Cohort Matrix**
+A table tracking user retention by identifying specific groups (cohorts) based on their install date and monitoring their return rate over subsequent days (Day 0 to Day 12).
+
 **CPA**  
 Cost Per Action; the average amount spent to drive one user to complete a desired action on the website — such as clicking the 'Buy Now' button or completing a sign-up. Calculated as campaign cost divided by number of conversions.
 
@@ -81,6 +87,12 @@ The number of installs attributed to the same day (within the first 24 hours) wh
 **D1, D3, D7, D14, D30 Install**  
 The number of installs attributed to the period from day 0 (day of first ad engagement) up to day N (1, 3, 7, 14, or 30). It includes installs that happen immediately or within the respective number of days after the user first engaged with the ad or campaign.
 
+**D1 / D3 / D7 / D14 / D30 Retention**
+The percentage of players from a specific install cohort who returned to open the game exactly 1, 3, 7, 14, or 30 days after their initial installation.   
+
+**DAU (Daily Active Users)**
+The total number of unique players who opened the game on a specific day, consisting of both new installs and returning users.   
+
 **Direct**  
 A user who was not exposed to any advertising campaign and has no referrer, but accessed the store directly (e.g., by typing the URL or using a bookmark).
 
@@ -104,6 +116,9 @@ The specific time at which an event or action, such as a user interaction or con
 ## F
 
 ## G
+
+**Game Open Event**
+The specific user action defined as a "install" on TRACKS, used to verify active in-game engagement and link behavior back to media channels.
 
 **GCP**  
 Google Cloud Platform; a suite of cloud computing services offered by Google for building, testing, and deploying applications.
@@ -135,11 +150,17 @@ A unique string of numbers separated by periods (IPv4) or colons (IPv6) that ide
 
 ## M
 
+**Matured Installs 30d**
+The subset of total installs consisting of players who installed the game 30 days ago or longer, used as the baseline for calculating long-term churn and return rates.
+
 **Markov Chain**  
 A statistical model used to predict future events based on the probabilities of previous events, often applied in attribution modeling.
 
 **Marketing Mix Modelling**  
 A statistical technique used to estimate the impact of various marketing activities on sales and other business outcomes.
+
+**MAU (Monthly Active Users)**
+The total count of unique players who opened the game at least once within the current month.
 
 **Measured Installs (from Steamworks UTM Analytics)**  
 The number of installs tracked through Steamworks' UTM parameters, used to measure the effectiveness of marketing campaigns.
@@ -159,6 +180,9 @@ Game installs that occur without being driven by paid advertising. These install
 
 ## P
 
+**Paid Installs**
+New game installations that are directly attributed to a specific advertising or marketing campaign, measured and verified through Tracks Attribution.
+
 **Platform**  
 The system on which a game is played, such as PC, PlayStation, Xbox or Switch.
 
@@ -172,8 +196,14 @@ A purchase event triggered through the TRACKS platform by sending a postback. Th
 
 ## R
 
+**Reactivated Player**
+A player who has returned to the game after a period of inactivity lasting 30 days or more.  
+
 **Referrer**  
 The source (such as a website, ad, or platform) that directed a user to a particular page or store, typically captured via HTTP headers or URL parameters.
+
+**Return Rate % (30d Lookback)**
+The percentage of Matured Installs (users from 30+ days ago) who have successfully returned to play the game at least once in the last 30 days.
 
 **ROAS (Return on Ad Spend)**  
 A metric that measures the revenue generated from advertising campaigns relative to the amount spent on those campaigns.
@@ -202,6 +232,9 @@ The group of consumers that a marketing campaign is designed to engage, based on
 
 **Targeting**  
 The process of identifying and reaching specific segments of the audience that are most likely to respond to a marketing message.
+
+**Total Installs**
+The total count of players who downloaded and opened the game for the first time within the selected date range, accumulating both paid (attributed) and organic installs.
 
 ## U
 
@@ -237,6 +270,9 @@ The number of completed actions on a website that align with marketing goals, su
 
 **Web Conversions CVR%**  
 The percentage of website visitors who completed a desired action, such as clicking a 'Buy Now' button or signing up — calculated as conversions divided by total website visitors.
+
+**WAU (Weekly Active Users)**
+The total count of unique players who opened the game at least once within the last week.
 
 ## X
 
