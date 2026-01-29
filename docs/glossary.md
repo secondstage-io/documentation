@@ -81,10 +81,10 @@ The percentage of users who complete a desired action, such as making a purchase
 
 ## D
 
-**D0 Install**  
+**D0 Install**
 The number of installs attributed to the same day (within the first 24 hours) when a user engaged with an ad or campaign. It reflects immediate conversions occurring on the day of initial exposure.
 
-**D1, D3, D7, D14, D30 Install**  
+**D1, D3, D7, D14, D30 Install**
 The number of installs attributed to the period from day 0 (day of first ad engagement) up to day N (1, 3, 7, 14, or 30). It includes installs that happen immediately or within the respective number of days after the user first engaged with the ad or campaign.
 
 **D1 / D3 / D7 / D14 / D30 Retention**
