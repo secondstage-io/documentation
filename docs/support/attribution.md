@@ -115,7 +115,7 @@ TRACKS uses the UMM methodology to integrate three different data sources:
 
 !!! info "Further Reading"
 
-    For more information on Markov Chain Attribution, Marketing Mix Modeling, or Unified Marketing Measurement, please visit our [Further Reading](https://documentation.secondstage.io/resources/) section.
+    For more information on Markov Chain Attribution, Marketing Mix Modeling, or Unified Marketing Measurement, please visit our [Further Reading](https://documentation.secondstage.io/support/furtherreading/) section.
 
 Measured installs are tracked using the TRACKS Measurement API, which is based on a data streaming pipeline.
 
