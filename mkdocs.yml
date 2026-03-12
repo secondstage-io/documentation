@@ -129,6 +129,7 @@ nav:
     - Marketing Analytics: support/marketinganalytics.md
     - Data Collection: support/datacollection.md
     - Data Handling & Security: support/datasecurity.md
+    - Attribution Accuracy Scenarios: support/accuracy-scenarios.md
     - Further Reading: support/furtherreading.md
   - Glossary: glossary.md
   - Changelog: changelog.md
