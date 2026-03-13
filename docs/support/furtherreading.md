@@ -1,9 +1,5 @@
 # Further Reading
 
-## TRACKS Knowledge Base
-
-- [TRACKS Attribution Accuracy Scenarios](accuracy-scenarios.md) — How TRACKS handles real-world attribution across devices, networks, and timeframes, including confidence levels and a practical test simulation.
-
 ## Attribution Tracking
 
 - [The Ultimate Guide to Marketing Attribution for Gaming Studios](https://secondstage.io/2024/11/the-ultimate-guide-to-marketing-attribution-for-gaming-studios/)
