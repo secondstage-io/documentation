@@ -63,8 +63,20 @@ Each game will be assigned a unique token to replace "2S-XXXXX." After granting 
 
 In Google Tag Manager, please grant Publish access to analytics@secondstage.io. TRACKS will implement events and conversion pixels on your website to optimize landing page interactions and improve media platform targeting algorithms, as detailed above.
 
-For guidance on installing GTM, refer to the documentation [here](https://support.google.com/tagmanager/answer/14842164).
-Below is an sample image of the Google Tag Manager integration code that needs to be implemented on your landing page. 
+### Setting Up Google Tag Manager
+
+If you don't already have Google Tag Manager installed on your website, follow these steps to set it up. For the full official walkthrough, refer to the Google documentation [here](https://support.google.com/tagmanager/answer/14842164).
+
+1. **Create an Account:** Go to [tagmanager.google.com](https://tagmanager.google.com), sign in with your Google account, and click **Create Account**.
+2. **Set Up Container:** Enter a name (e.g., your business name), select the country, name your container (e.g., website domain), and choose **Web** as the target platform.
+3. **Accept Terms:** Agree to the Data Processing Terms.
+4. **Install the Code:** GTM will provide two code snippets.
+    - **Snippet 1:** Paste this into the `<head>` of your website as high as possible.
+    - **Snippet 2:** Paste this immediately after the opening `<body>` tag.
+5. **Verify Installation:** Use the **Preview** button in GTM to enter your website URL and confirm the container is loading correctly.
+6. **Publish:** Click **Submit** in the top right corner to publish your container, making the changes live.
+
+Below is a sample image of the Google Tag Manager integration code that needs to be implemented on your landing page.
 
 ![Google Tag Manager Setup](/assets/marketing-analytics_gtm.png "Google Tag Manager Setup")
 
@@ -75,4 +87,3 @@ In Google Analytics (GA4), please grant Editor access to analytics@secondstage.i
 ![Google Analytics Integration](/assets/marketinganalytics_g4access-1.png "Google Analytics Setup")
 
 ![Google Analytics Integration](/assets/marketinganalytics_g4access-2.png "Google Analytics Setup")
-
