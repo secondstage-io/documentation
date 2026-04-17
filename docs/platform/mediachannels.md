@@ -1,6 +1,58 @@
 # Media Platforms & Ad Networks Integration
 
-[TOC]
+Each ad platform integration is independent — jump straight to the one you need.
+
+<div class="grid cards" markdown>
+
+-   :fontawesome-brands-google:{ .lg .middle } &nbsp; __Google Ads__
+
+    ---
+
+    Invite at Admin → Access and Security
+
+    [:octicons-arrow-right-24: Setup](#google-ads-integration)
+
+-   :fontawesome-brands-meta:{ .lg .middle } &nbsp; __Meta Ads__
+
+    ---
+
+    Add a user in Business Manager
+
+    [:octicons-arrow-right-24: Setup](#meta-ads-integration)
+
+-   :fontawesome-brands-tiktok:{ .lg .middle } &nbsp; __TikTok Ads__
+
+    ---
+
+    Invite Member in Business Manager
+
+    [:octicons-arrow-right-24: Setup](#tiktok-ads-integration)
+
+-   :fontawesome-brands-x-twitter:{ .lg .middle } &nbsp; __X Ads__
+
+    ---
+
+    Edit account access → add user
+
+    [:octicons-arrow-right-24: Setup](#x-ads-integration)
+
+-   :fontawesome-brands-reddit:{ .lg .middle } &nbsp; __Reddit Ads__
+
+    ---
+
+    Grant Business Member access
+
+    [:octicons-arrow-right-24: Setup](#reddit-ads-integration)
+
+-   :fontawesome-brands-google:{ .lg .middle } &nbsp; __DV360__
+
+    ---
+
+    User Management in Display & Video 360
+
+    [:octicons-arrow-right-24: Setup](#dv360-integration)
+
+</div>
 
 ## Overview
 
