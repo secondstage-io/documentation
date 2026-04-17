@@ -136,6 +136,8 @@ Review the invitation, then click on "Send invitation".
 3. Use the UTM-tagged destination URLs provided by the Second Stage team in the Ad Ops Helper.
 4. Follow the campaign, ad squad, and ad naming conventions shared by the Second Stage team.
 
+![Snapchat Ads Setup](/assets/marketinganalytics_snapchat.jpg)
+
 ## Reddit Ads Integration
 
 1. Contact the Reddit team to have your ad account whitelisted for using the Reddit Ads API.
