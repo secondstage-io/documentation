@@ -1,5 +1,7 @@
 # Media Platforms & Ad Networks Integration
 
+[TOC]
+
 ## Overview
 
 This section outlines the integration of major media channels for media analytics reporting and ad operations. It is recommended that you complete the integration of each channel one at a time, in collaboration with the Second Stage team, to ensure proper attribution setup.
@@ -92,4 +94,3 @@ Note: Reddit automatically encodes special characters such as {{ }} into %7B %7D
 3. Next, click "Add Partners or advertisers" and select the relevant Ad Account to be integrated.
 
 ![DV360 Ads Setup](/assets/marketinganalytics_dv360.png)
-
