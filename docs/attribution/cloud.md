@@ -1,7 +1,5 @@
 # Cloud Environment
 
-## Overview
-
 TRACKS is designed to be deployed using a “hybrid-hosted” model, where all granular data processing and storage occur directly on the publisher’s or developer studio’s cloud environment. This setup functions like an enterprise-grade on-premise solution tailored for the video game industry. TRACKS supports the Google Cloud Platform for this purpose.
 
 ## Google Cloud Platform (GCP) Setup

@@ -1,7 +1,5 @@
 # Landing Page Integration
 
-## Overview
-
 !!! tip "Important:"
 
     Required for Modeled Attribution Tracking, Measured Attribution Tracking, Measured Attribution Tracking + Modeling.

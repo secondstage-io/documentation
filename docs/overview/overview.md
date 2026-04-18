@@ -1,31 +1,40 @@
-# TRACKS Overview
+# Get Started
 
-Explore the core features, setup, and capabilities of TRACKS, Second Stage's marketing intelligence platform designed for PC & console games.
+Explore the core features, setup, and capabilities of TRACKS, Second Stage's marketing-intelligence platform designed for PC and console games.
 
-<!-- Overview Grid -->
+<section class="docs-home__journeys" aria-label="Get started">
 
-<div class="grid cards" markdown>
+  <div class="journey-card">
+    <div class="journey-card__head">
+      <span class="journey-card__eyebrow">01 · Functionality</span>
+      <h2 class="journey-card__title"><a href="../functionality/">What TRACKS does</a></h2>
+      <p class="journey-card__audience">The core features, dashboards, and tools available in the platform.</p>
+    </div>
+    <div class="journey-card__foot">
+      <a class="journey-card__primary" href="../functionality/">Explore functionality →</a>
+    </div>
+  </div>
 
--   :material-rocket-launch-outline:{ .lg .middle } __Functionality__
+  <div class="journey-card">
+    <div class="journey-card__head">
+      <span class="journey-card__eyebrow">02 · Using TRACKS</span>
+      <h2 class="journey-card__title"><a href="../using-tracks/">Around the platform</a></h2>
+      <p class="journey-card__audience">Set up your account, navigate the dashboards, and register a game.</p>
+    </div>
+    <div class="journey-card__foot">
+      <a class="journey-card__primary" href="../using-tracks/">Open the walkthrough →</a>
+    </div>
+  </div>
 
-    ---
+  <div class="journey-card">
+    <div class="journey-card__head">
+      <span class="journey-card__eyebrow">03 · Integration</span>
+      <h2 class="journey-card__title"><a href="../integration/">How TRACKS fits in</a></h2>
+      <p class="journey-card__audience">The high-level integration flow, architecture, and data touchpoints across your stack.</p>
+    </div>
+    <div class="journey-card__foot">
+      <a class="journey-card__primary" href="../integration/">See the integration flow →</a>
+    </div>
+  </div>
 
-    Discover the main features, dashboards, and tools within TRACKS that help you analyze and optimize your marketing efforts.
-
-    [:octicons-arrow-right-24: Learn about the TRACKS platform](/overview/functionality/)
-
--   :material-puzzle-outline:{ .lg .middle } __Integration__
-
-    ---
-
-    Learn how we support you to connect TRACKS to your games, landing pages, and ad platforms for seamless data collection and reporting.
-
-    [:octicons-arrow-right-24: Learn how to integrate TRACKS](/overview/integration/)
-
--   :material-cog-outline:{ .lg .middle } __Ad Ops Guide__
-
-    ---
-
-    Understand how the TRACKS Ad Ops Helper simplifies campaign setup across media channels, campaigns, objectives and creatives.
-
-    [:octicons-arrow-right-24: Learn about the Ad Ops Helper](/overview/adopshelper/)
+</section>

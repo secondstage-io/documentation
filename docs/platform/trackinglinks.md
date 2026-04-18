@@ -1,7 +1,5 @@
 # Tracking Link Builders
 
-## Overview
-
 The **Tracking Link Builders** are a suite of tools located within your project's **Ad Ops Helper Sheet**. They allow you to generate branded, trackable URLs for every aspect of your marketing mix—from influencer partnerships to direct media buys and organic content.
 
 These builders serve two main purposes:

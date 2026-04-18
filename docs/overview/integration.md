@@ -86,3 +86,7 @@ To support your team during setup:
 - Meetings can be scheduled at any time for **direct support** from the TRACKS team.
 
 This plan ensures full visibility and coordination across technical and marketing teams during integration.
+
+## Customer Support
+
+Second Stage offers customer support through email or our contact form from Monday to Friday, excluding public holidays in Berlin. Customer support is provided from 9:00 a.m. to 6:00 p.m. (CET) at Second Stage business hours. Second Stage will respond by email within 24 hours.

@@ -1,6 +1,4 @@
-# Postbacks 
-
-## Overview 
+# Postbacks
 
 Postbacks are HTTP requests, typically GET or POST, sent to external servers. TRACKS can transmit installation and in-game event data back to advertising channels using a click ID as the key identifier. This enables platforms like Meta, Google, X, TikTok, and Reddit to identify users with similar behaviors. Instead of focusing solely on clicks, it's more effective to send postbacks for installs and in-game events to optimize campaign performance.
 

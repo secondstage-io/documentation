@@ -1,42 +1,50 @@
-# Integration TRACKS Attribution
+# Attribution Integration
 
-TRACKS Attribution integrates seamlessly with your game infrastructure through several components.  
+TRACKS Attribution integrates with your game infrastructure through a small number of components: a cloud environment, measurement endpoints, optional telemetry, and GDPR-compliant data handling. Follow the paths below in order, or jump to the piece you need.
 
-Use the resources below to configure your cloud environment, implement the Measurement API, set up telemetry, and ensure GDPR compliance.
+<section class="docs-home__journeys" aria-label="Attribution integration paths">
 
-<!-- Overview Grid -->
+  <div class="journey-card">
+    <div class="journey-card__head">
+      <span class="journey-card__eyebrow">01 · Infrastructure</span>
+      <h2 class="journey-card__title"><a href="../cloud/">Set up the environment</a></h2>
+      <p class="journey-card__audience">Provision the on-premise cloud project and connect telemetry so TRACKS can receive events.</p>
+    </div>
+    <ol class="journey-card__steps">
+      <li><a href="../cloud/">Cloud Setup</a></li>
+      <li><a href="../telemetry/">Telemetry Setup</a></li>
+    </ol>
+    <div class="journey-card__foot">
+      <a class="journey-card__primary" href="../cloud/">Start with Cloud Setup →</a>
+    </div>
+  </div>
 
-<div class="grid cards" markdown>
+  <div class="journey-card">
+    <div class="journey-card__head">
+      <span class="journey-card__eyebrow">02 · Measurement</span>
+      <h2 class="journey-card__title"><a href="../measurementapi/">Implement the endpoint</a></h2>
+      <p class="journey-card__audience">Wire in-game events to TRACKS through the Measurement API so conversions attribute to the correct media sources.</p>
+    </div>
+    <ol class="journey-card__steps">
+      <li><a href="../measurementapi/">TRACKS Measurement API</a></li>
+    </ol>
+    <div class="journey-card__foot">
+      <a class="journey-card__primary" href="../measurementapi/">Integrate the API →</a>
+    </div>
+  </div>
 
--   :material-cloud-outline:{ .lg .middle } __Cloud Setup__
+  <div class="journey-card">
+    <div class="journey-card__head">
+      <span class="journey-card__eyebrow">03 · Compliance</span>
+      <h2 class="journey-card__title"><a href="../gdprapi/">Stay GDPR-compliant</a></h2>
+      <p class="journey-card__audience">Give users the right to be forgotten and meet EU data-handling obligations through the GDPR API.</p>
+    </div>
+    <ol class="journey-card__steps">
+      <li><a href="../gdprapi/">GDPR API</a></li>
+    </ol>
+    <div class="journey-card__foot">
+      <a class="journey-card__primary" href="../gdprapi/">Integrate the GDPR API →</a>
+    </div>
+  </div>
 
-    ---
-
-    Learn about how to set up your on-premise cloud project for TRACKS.
-
-    [:octicons-arrow-right-24: Go to Cloud Setup](/attribution/cloud/)
-
--   :material-api:{ .lg .middle } __TRACKS Measurement API__
-
-    ---
-
-    Set up the TRACKS Measurement API to accurately attribute conversions to the correct media sources.
-
-    [:octicons-arrow-right-24: Integrate the Measurement API](/attribution/measurementapi/)
-
--   :material-gamepad-variant-outline:{ .lg .middle } __Telemetry Setup__
-
-    ---
-
-    Learn how to set up a telemetry for your game to work with TRACKS if required.
-
-    [:octicons-arrow-right-24: Set up a telemetry](/attribution/telemetry/)
-
--   :material-shield-account:{ .lg .middle } __GDPR API__
-
-    ---
-
-    Learn how to set up the GDPR API for TRACKS.
-
-    [:octicons-arrow-right-24: Integrate the GDPR API](/attribution/gdprapi/)
-
+</section>

@@ -1,47 +1,38 @@
-# Knowledge Base
+# Guides
 
-The Knowledge Base provides comprehensive guides, explanations, and best practices to help you understand and maximize the value of TRACKS.
+Narrative documentation explaining how TRACKS works: how attribution and analytics are modelled, how data is collected, and how the platform handles privacy and compliance.
 
-<!-- Overview Grid -->
+<section class="docs-home__journeys" aria-label="Guide paths">
 
-<div class="grid cards" markdown>
+  <div class="journey-card">
+    <div class="journey-card__head">
+      <span class="journey-card__eyebrow">01 · Understand the data</span>
+      <h2 class="journey-card__title"><a href="../attribution/">Read your numbers</a></h2>
+      <p class="journey-card__audience">Learn how TRACKS measures user actions, models attribution, and surfaces channel performance.</p>
+    </div>
+    <ol class="journey-card__steps">
+      <li><a href="../attribution/">Attribution Tracking</a></li>
+      <li><a href="../marketinganalytics/">Marketing Analytics</a></li>
+      <li><a href="../datacollection/">Data Collection</a></li>
+    </ol>
+    <div class="journey-card__foot">
+      <a class="journey-card__primary" href="../attribution/">Start with Attribution →</a>
+    </div>
+  </div>
 
--   :material-target-account:{ .lg .middle } __Attribution Tracking__
+  <div class="journey-card">
+    <div class="journey-card__head">
+      <span class="journey-card__eyebrow">02 · Stay compliant</span>
+      <h2 class="journey-card__title"><a href="../datasecurity/">Handle data responsibly</a></h2>
+      <p class="journey-card__audience">Understand TRACKS' approach to security, privacy, and GDPR — plus external references for further reading.</p>
+    </div>
+    <ol class="journey-card__steps">
+      <li><a href="../datasecurity/">Data Handling &amp; Security</a></li>
+      <li><a href="../furtherreading/">Further Reading</a></li>
+    </ol>
+    <div class="journey-card__foot">
+      <a class="journey-card__primary" href="../datasecurity/">Review security practices →</a>
+    </div>
+  </div>
 
-    ---
-
-    Understand how TRACKS measures and attributes user actions across campaigns, and learn the fundamentals of attribution tracking.
-
-    [:octicons-arrow-right-24: More about Attribution Tracking](/support/attribution/)
-
--   :material-chart-line:{ .lg .middle } __Marketing Analytics__
-
-    ---
-
-    Explore how TRACKS enables performance measurement across media channels and provides actionable marketing insights.
-
-    [:octicons-arrow-right-24: More about Marketing Analytics](/support/marketinganalytics/)
-
--   :material-database-cog:{ .lg .middle } __Data Collection__
-
-    ---
-
-    Discover how TRACKS collects, processes, and structures data to ensure accurate analytics and reporting.
-
-    [:octicons-arrow-right-24: More about Data Collection](/support/datacollection/)
-
--   :material-shield-lock:{ .lg .middle } __Data Handling & Security__
-
-    ---
-
-    Learn about TRACKS’ approach to data security, privacy, and GDPR compliance.
-
-    [:octicons-arrow-right-24: More about Data Handling & Security](/support/datasecurity/)
-
--   :material-book-open-page-variant:{ .lg .middle } __Further Reading__
-
-    ---
-
-    Explore curated articles, research, and external resources on marketing analytics and game attribution.
-
-    [:octicons-arrow-right-24: Further Reading](/support/furtherreading/)
+</section>
