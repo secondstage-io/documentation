@@ -32,34 +32,33 @@ theme:
     - content.code.annotation
     - content.code.copy
   language: en
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+      primary: root  # KEEP THIS: Crucial for our custom CSS variables
+      accent: red
 
-palette:
-  # Palette toggle for automatic mode
-  - media: "(prefers-color-scheme)"
-    toggle:
-      icon: material/brightness-auto
-      name: Switch to light mode
-    primary: root  # KEEP THIS: Crucial for our custom CSS variables
-    accent: red
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+      primary: root
+      accent: red
 
-  # Palette toggle for light mode
-  - media: "(prefers-color-scheme: light)"
-    scheme: default 
-    toggle:
-      icon: material/weather-sunny 
-      name: Switch to dark mode
-    primary: root
-    accent: red
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to system preference
+      primary: root
+      accent: red
 
-  # Palette toggle for dark mode
-  - media: "(prefers-color-scheme: dark)"
-    scheme: slate
-    toggle:
-      icon: material/weather-night
-      name: Switch to system preference
-    primary: root
-    accent: red
-      
 extra:
   social:
     - icon: fontawesome/brands/linkedin
