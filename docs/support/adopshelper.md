@@ -1,5 +1,7 @@
 # Ad Ops Helper
 
+<p class="docs-audience">For: Marketing / Ad ops</p>
+
 To simplify your campaign setup, **Second Stage** provides every client with an **Ad Ops Helper Sheet**. This resource is designed to support your marketing and UA teams in:
 
 - Establishing consistent **naming conventions** across campaigns
@@ -23,6 +25,8 @@ For each integrated media platform, UTM-tagged link templates will be provided t
 ``
 https://landingpage.mygame.com/?utm_source=2S_socialmedia&utm_medium=meta&utm_campaign={{campaign.name}}&utm_content={{adset.name}}&utm_term={{ad.name}}
 ``
+
+For influencer, media-house and organic campaigns, see the [Tracking Link Builders](trackinglinks.md) — sheet-based tools that generate branded vanity URLs (e.g. `connect.yourgame.com/creator`) alongside the standard UTM parameters.
 
 ## Other Media Platforms and Ad Networks
 

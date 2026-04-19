@@ -1,5 +1,7 @@
 # Snapchat Ads Integration
 
+<p class="docs-audience">For: Ad ops / platform admin</p>
+
 Grant Second Stage access to Snapchat Business Manager and the Snap Pixel so TRACKS can read campaign performance and pixel-level events.
 
 <ol class="setup-steps" markdown="1">

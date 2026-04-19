@@ -1,6 +1,12 @@
 # Reddit Ads Integration
 
+<p class="docs-audience">For: Ad ops / platform admin</p>
+
 Grant Second Stage access to your Reddit Ads account and configure UTM destination URLs so TRACKS can attribute conversions.
+
+!!! tip "Next"
+
+    Once access is in place, enable install + in-game event postbacks via the [Reddit Conversions API](../../attribution/postbacks/reddit/).
 
 <ol class="setup-steps" markdown="1">
 

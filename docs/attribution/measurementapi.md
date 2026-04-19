@@ -1,5 +1,7 @@
 # TRACKS Attribution Measurement API
 
+<p class="docs-audience">For: Backend engineer</p>
+
 The Measurement API tracks the customer acquisition source, enabling you to identify which channels, campaigns, ads drive install and other in-game events. By integrating with TRACKS Attribution, you can accurately attribute conversions to the correct media sources, helping you optimize your marketing efforts.
 
 ## Architecture
@@ -14,7 +16,7 @@ The Measurement API tracks the customer acquisition source, enabling you to iden
 Before you begin, please ensure the following:
 
 - A Google Cloud Platform account with billing enabled (Google Cloud Platform microservices will auto-scale as needed for your game).
-- Access to Measurement API credentials (API key and secret).
+- Access to Measurement API credentials (API key and secret — these are delivered to you via a setup email from Second Stage once your cloud project is provisioned).
 - A TRACKS account with the attribution package enabled and ready for integration.
 - Basic knowledge of server-side programming, cloud services, and API integrations.
 - A telemetry server capable of reading and collecting client IPs via HTTP headers or X-Forwarded-For (XFF).

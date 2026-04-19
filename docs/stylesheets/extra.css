@@ -1513,6 +1513,37 @@ body, .md-typeset { font-size-adjust: none; }
 }
 
 /* ========================================================================= */
+/* AUDIENCE TAG — small pill shown directly under an H1 to indicate who      */
+/* a reference page is primarily written for.                                 */
+/* ========================================================================= */
+
+.md-typeset p.docs-audience {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--md-text-color--muted);
+  background-color: var(--md-primary-bg-color--light);
+  border: 1px solid var(--md-rule-color);
+  padding: 3px 10px;
+  border-radius: 999px;
+  margin: -0.5rem 0 1.25rem !important;
+  max-width: none;
+}
+.md-typeset p.docs-audience::before {
+  content: "→";
+  opacity: 0.5;
+}
+[data-md-color-scheme="slate"] .md-typeset p.docs-audience {
+  background-color: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ========================================================================= */
 /* 9. GLOSSARY JUMP NAV                                                       */
 /* ========================================================================= */
 

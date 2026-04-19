@@ -80,26 +80,22 @@ Also, if you do have a telemetry backend server but are unable to use Google Clo
 
 Once the TRACKS backend is deployed in your Google Cloud Platform instance, you'll have the option to whitelabel the Measurement API endpoint domain. This feature is not only for branding purposes but also provides greater control over privacy and compliance with client-side CORS (Cross-Origin Resource Sharing) policies.
 
-## Roadmap
+## What Second Stage provides during integration
 
-Your **TRACKS Integration Plan** is a personalized roadmap that outlines all the key steps required to set up TRACKS, including **TRACKS attribution**. It’s designed to guide you through the process with clarity and confidence.
+During integration, Second Stage sets up and manages the following on your behalf so your team always knows what to expect:
 
-Each task in the plan includes:
+- **A personalized Integration Plan** — a live roadmap covering every setup task across attribution, media, and operations. For each task you'll see:
+    - **Task name**: what needs to be done
+    - **Status**: live progress
+    - **Owner**: who's responsible (your side or ours)
+    - **Category & section**: where the task fits in the overall setup
+    - **Due date**: when it's expected to be completed
+    - **Notes**: additional context or links
+- **Email notifications** when key milestones are completed.
+- **A shared Discord group** with all stakeholders (optional).
+- **Scheduled support meetings** — you can book time with the TRACKS team at any point during the integration.
 
-- **Task name**: What needs to be done  
-- **Status**: Live updates on progress  
-- **Owner**: Who is responsible  
-- **Category & section**: Where the task fits in the overall setup  
-- **Due date**: When it's expected to be completed  
-- **Notes**: Additional context or links
-
-To support your team during setup:
-
-- You’ll receive **email notifications** when key milestones are completed.  
-- We offer the option to join a **shared Discord group** with all stakeholders.  
-- Meetings can be scheduled at any time for **direct support** from the TRACKS team.
-
-This plan ensures full visibility and coordination across technical and marketing teams during integration.
+This gives your technical and marketing teams full visibility and coordination throughout.
 
 ## Customer Support
 

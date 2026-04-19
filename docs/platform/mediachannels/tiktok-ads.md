@@ -1,6 +1,12 @@
 # TikTok Ads Integration
 
+<p class="docs-audience">For: Ad ops / platform admin</p>
+
 Grant Second Stage access to your TikTok for Business account so TRACKS can collect campaign and ad-set performance data.
+
+!!! tip "Next"
+
+    Once access is in place, enable install + in-game event postbacks via the [TikTok Conversions API](../../attribution/postbacks/tiktok/).
 
 <ol class="setup-steps" markdown="1">
 

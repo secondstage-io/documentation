@@ -1,6 +1,12 @@
 # X Ads Integration
 
+<p class="docs-audience">For: Ad ops / platform admin</p>
+
 Grant Second Stage access to your X (Twitter) Ads account and share the details needed for attribution setup.
+
+!!! tip "Next"
+
+    Once access is in place, enable install + in-game event postbacks via the [X Ads Conversions API](../../attribution/postbacks/x/).
 
 <ol class="setup-steps" markdown="1">
 

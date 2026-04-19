@@ -1,5 +1,7 @@
 # TRACKS GDPR API
 
+<p class="docs-audience">For: Backend engineer / Privacy team</p>
+
 !!! note "Reference only — not yet actionable"
 
     The GDPR API is provisioned per-integration. Endpoint URLs and credentials are delivered **via a setup email once your overall TRACKS integration is complete and live in production**. Until then, this page is reference information only. See [Data Handling & Security → Right to Forget](../support/datasecurity/) for the underlying privacy rationale.

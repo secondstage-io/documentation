@@ -1,5 +1,7 @@
 # Steamworks Integration
 
+<p class="docs-audience">For: Steam marketing admin</p>
+
 Steamworks access is required to enable marketing attribution on Steam. It provides secure access to app-specific data (e.g., Steam App ID, user actions, transaction events) that can be used to match off-platform campaign metadata with on-platform conversions. This access is important for activating attribution pipelines and integrating with TRACKS.
 
 ## Steamworks Access

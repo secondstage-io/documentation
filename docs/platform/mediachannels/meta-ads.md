@@ -1,6 +1,12 @@
 # Meta Ads Integration
 
+<p class="docs-audience">For: Ad ops / platform admin</p>
+
 Grant the Second Stage analytics team access to your Meta Business Manager so TRACKS can read campaign, ad account, and pixel data. Follow the six steps below.
+
+!!! tip "Next"
+
+    Once access is in place, enable install + in-game event postbacks via the [Meta Conversions API](../../attribution/postbacks/meta/).
 
 <ol class="setup-steps" markdown="1">
 
