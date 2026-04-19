@@ -2,7 +2,7 @@
 
 <section class="docs-home__header">
   <h1>TRACKS Documentation</h1>
-  <p>Integration guides, API references, and operational playbooks for the TRACKS attribution and marketing-intelligence platform.</p>
+  <p>Integration guides, API references, and operational playbooks for the TRACKS attribution and marketing-intelligence platform for PC and console games.</p>
 </section>
 
 <h2 id="start-a-journey" class="docs-home__label">Start a journey</h2>
