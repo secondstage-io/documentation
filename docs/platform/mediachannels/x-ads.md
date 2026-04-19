@@ -6,7 +6,7 @@ Grant Second Stage access to your X (Twitter) Ads account and share the details 
 
 !!! tip "Next"
 
-    Once access is in place, enable install + in-game event postbacks via the [X Ads Conversions API](../../attribution/postbacks/x/).
+    Once access is in place, enable install + in-game event postbacks via the [X Ads Conversions API](../../attribution/postbacks/x.md).
 
 <ol class="setup-steps" markdown="1">
 

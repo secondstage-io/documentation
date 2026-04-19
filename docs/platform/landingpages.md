@@ -4,7 +4,7 @@
 
 !!! tip "Important:"
 
-    Required for Modeled Attribution Tracking, Measured Attribution Tracking, Measured Attribution Tracking + Modeling. See [Methodologies](../support/attribution/#methodologies) for what each tracking mode means.
+    Required for Modeled Attribution Tracking, Measured Attribution Tracking, Measured Attribution Tracking + Modeling. See [Methodologies](../support/attribution.md#methodologies) for what each tracking mode means.
     By linking TRACKS with Steamworks, Google Analytics 4 and Google Tag Manager access, you will be able to use the Modeled Installs reporting feature. Please note that postbacks only work if you are using the Measured Attribution Tracking or Measured Attribution Tracking + Modeling solution. 
 
 By embedding the TRACKS JavaScript code into your landing page, minimal technical data — such as IP address and user-agent — is passively collected as part of the standard HTTP request. No cookies, LocalStorage, or other client-side storage mechanisms are used. This data is pseudonymized (e.g., through salted hashing of IP addresses), retained temporarily (e.g., for 30 days), and only becomes relevant when the second measurement point is triggered. Any actual fingerprinting or attribution is based on the combination of both signals, with consent requirements potentially applying at that later stage, depending on the implementation and legal basis selected by the data controller.

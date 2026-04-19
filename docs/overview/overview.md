@@ -41,4 +41,4 @@ Explore the core features, setup, and capabilities of TRACKS, Second Stage's mar
 
 ## Ready to integrate?
 
-Once you've got the lay of the land, jump into the actual setup: **[Platform → Cloud Setup](../../platform/cloud/)** is the first practical step.
+Once you've got the lay of the land, jump into the actual setup: **[Platform → Cloud Setup](../platform/cloud.md)** is the first practical step.

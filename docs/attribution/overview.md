@@ -4,7 +4,7 @@ TRACKS Attribution integrates with your game infrastructure through three compon
 
 !!! note
 
-    This section assumes the cloud environment is already provisioned. If it isn't, start with [Platform → Cloud Setup](../platform/cloud/).
+    This section assumes the cloud environment is already provisioned. If it isn't, start with [Platform → Cloud Setup](../platform/cloud.md).
 
 <section class="docs-home__journeys" aria-label="Attribution integration paths">
 

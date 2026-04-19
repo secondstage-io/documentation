@@ -6,7 +6,7 @@ In your Google Ads account, click the **Admin** icon.
 
 !!! tip "Next"
 
-    Once access is in place, enable install + in-game event postbacks via the [Google Ads Conversions API](../../attribution/postbacks/google/).
+    Once access is in place, enable install + in-game event postbacks via the [Google Ads Conversions API](../../attribution/postbacks/google.md).
 
 <ol class="setup-steps" markdown="1">
 

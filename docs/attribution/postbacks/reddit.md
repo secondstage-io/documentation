@@ -6,7 +6,7 @@
 
 !!! note
 
-    Complete the [Reddit Ads access integration](../../platform/mediachannels/reddit-ads/) first.
+    Complete the [Reddit Ads access integration](../../platform/mediachannels/reddit-ads.md) first.
 
 Reddit access given prior would be sufficient for TRACKS to activate Conversion API for Reddit. Developer access token can be created through Reddit Events Manager.
 

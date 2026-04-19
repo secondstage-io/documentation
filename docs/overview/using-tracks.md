@@ -82,6 +82,6 @@ In an upcoming TRACKS update, you will be able to edit a game's title, change th
 
 ## Next
 
-- Start connecting ad platforms — see [Platform Integration](../../platform/overview/).
-- Understand what TRACKS reports — see [Attribution Tracking](../../support/attribution/) and [Marketing Analytics](../../support/marketinganalytics/).
-- Need hands-on support? Our team's hours and contact details are under [Integration → Customer Support](../integration/#customer-support).
+- Start connecting ad platforms — see [Platform Integration](../platform/overview.md).
+- Understand what TRACKS reports — see [Attribution Tracking](../support/attribution.md) and [Marketing Analytics](../support/marketinganalytics.md).
+- Need hands-on support? Our team's hours and contact details are under [Integration → Customer Support](integration.md#customer-support).

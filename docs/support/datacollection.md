@@ -5,7 +5,7 @@ This document describes how the Second Stage TRACKS platform collects and proces
 
 !!! tip "Related"
 
-    - **Integrating** the endpoints: see [Measurement API](../attribution/measurementapi/).
+    - **Integrating** the endpoints: see [Measurement API](../attribution/measurementapi.md).
     - **Privacy and security** posture: see [Data Handling & Security](datasecurity.md).
 
 ## Data Flow Overview

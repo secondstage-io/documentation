@@ -6,7 +6,7 @@ Grant Second Stage access to your Reddit Ads account and configure UTM destinati
 
 !!! tip "Next"
 
-    Once access is in place, enable install + in-game event postbacks via the [Reddit Conversions API](../../attribution/postbacks/reddit/).
+    Once access is in place, enable install + in-game event postbacks via the [Reddit Conversions API](../../attribution/postbacks/reddit.md).
 
 <ol class="setup-steps" markdown="1">
 

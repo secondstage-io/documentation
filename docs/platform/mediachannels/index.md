@@ -11,8 +11,8 @@ This section outlines the integration of major media channels for media analytic
     Every platform integration in this section assumes:
 
     - You have **admin-level access** to the ad account you're connecting.
-    - You have the **naming conventions sheet** from your [Ad Ops Helper](../../support/adopshelper/) (shared by the Second Stage team during kickoff).
-    - You use **UTM-tagged link templates** in your ad creatives — the [Tracking Link Builders](../../support/trackinglinks/) generate these for you.
+    - You have the **naming conventions sheet** from your [Ad Ops Helper](../../support/adopshelper.md) (shared by the Second Stage team during kickoff).
+    - You use **UTM-tagged link templates** in your ad creatives — the [Tracking Link Builders](../../support/trackinglinks.md) generate these for you.
 
 Each ad platform integration is independent — jump straight to the one you need. Most customers start with the one or two platforms that carry the majority of their spend; the Second Stage team will advise on the right order during your kickoff call.
 

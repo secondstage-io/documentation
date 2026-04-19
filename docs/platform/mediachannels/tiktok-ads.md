@@ -6,7 +6,7 @@ Grant Second Stage access to your TikTok for Business account so TRACKS can coll
 
 !!! tip "Next"
 
-    Once access is in place, enable install + in-game event postbacks via the [TikTok Conversions API](../../attribution/postbacks/tiktok/).
+    Once access is in place, enable install + in-game event postbacks via the [TikTok Conversions API](../../attribution/postbacks/tiktok.md).
 
 <ol class="setup-steps" markdown="1">
 

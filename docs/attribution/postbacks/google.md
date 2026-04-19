@@ -6,7 +6,7 @@
 
 !!! note
 
-    Complete the [Google Ads access integration](../../platform/mediachannels/google-ads/) first.
+    Complete the [Google Ads access integration](../../platform/mediachannels/google-ads.md) first.
 
 A manager account (MCC) is needed to enable Conversion API for Google ads. Follow the guide above to activate your API (Apply for access to the Google Ads API).
 Share the developer token from the “API Center” after you complete your API access process.

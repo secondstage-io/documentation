@@ -19,7 +19,7 @@ TRACKS using TRACKS Attribution consists of four primary data source components:
   
 Media platforms, Google Analytics (via Google Tag Manager), and Steamworks integrate by providing access to our service account. However, the TRACKS Attribution Measurement API must be deployed into your Google Cloud Platform (GCP) account (a new account will be created if one doesn't exist).
 
-The TRACKS Attribution data source collects granular data for each web visit and game open event. This data is funneled into the partitioned tracks_attribution dataset. More information regarding data retention, GDPR compliance, and the Data Processing Agreement is available in the [Data Handling & Security](../support/datasecurity/) section.
+The TRACKS Attribution data source collects granular data for each web visit and game open event. This data is funneled into the partitioned tracks_attribution dataset. More information regarding data retention, GDPR compliance, and the Data Processing Agreement is available in the [Data Handling & Security](../support/datasecurity.md) section.
 
 Once the ELT (Extract-Load-Transform) pipeline is deployed, all data sources will be consolidated into a Google Cloud BigQuery database.
 
@@ -35,9 +35,9 @@ Once the ELT (Extract-Load-Transform) pipeline is deployed, all data sources wil
 
     The TRACKS Attribution integration assumes three things are in place. Second Stage helps set each one up — but knowing the scope up front avoids surprises:
 
-    - **A Google Cloud Platform project** that will host the TRACKS backend services ([Cloud Setup](../platform/cloud/)).
-    - **A telemetry backend server** capable of logging game-open events and reaching the public internet ([Telemetry Setup](../attribution/telemetry/)).
-    - **Access to your Google Tag Manager and media-platform accounts** so TRACKS can deploy the web snippet and pull campaign data ([Landing Page Integration](../platform/landingpages/) and [Media Platform Access](../platform/mediachannels/)).
+    - **A Google Cloud Platform project** that will host the TRACKS backend services ([Cloud Setup](../platform/cloud.md)).
+    - **A telemetry backend server** capable of logging game-open events and reaching the public internet ([Telemetry Setup](../attribution/telemetry.md)).
+    - **Access to your Google Tag Manager and media-platform accounts** so TRACKS can deploy the web snippet and pull campaign data ([Landing Page Integration](../platform/landingpages.md) and [Media Platform Access](../platform/mediachannels/index.md)).
 
 **Integration TRACKS Attribution**
 

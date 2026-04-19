@@ -6,7 +6,7 @@
 
 !!! note
 
-    Complete the [Meta Ads access integration](../../platform/mediachannels/meta-ads/) first. The CAPI setup assumes the Second Stage analytics user already has the permissions granted there.
+    Complete the [Meta Ads access integration](../../platform/mediachannels/meta-ads.md) first. The CAPI setup assumes the Second Stage analytics user already has the permissions granted there.
 
 Editor access for the Data Source Asset to `analytics@secondstage.io` is required.
 

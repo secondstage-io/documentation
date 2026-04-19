@@ -6,7 +6,7 @@ Grant the Second Stage analytics team access to your Meta Business Manager so TR
 
 !!! tip "Next"
 
-    Once access is in place, enable install + in-game event postbacks via the [Meta Conversions API](../../attribution/postbacks/meta/).
+    Once access is in place, enable install + in-game event postbacks via the [Meta Conversions API](../../attribution/postbacks/meta.md).
 
 <ol class="setup-steps" markdown="1">
 

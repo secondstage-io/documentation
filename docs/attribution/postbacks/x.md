@@ -6,7 +6,7 @@
 
 !!! note
 
-    Complete the [X Ads access integration](../../platform/mediachannels/x-ads/) first.
+    Complete the [X Ads access integration](../../platform/mediachannels/x-ads.md) first.
 
 Use your company Twitter handle to create a developer account and apply to have Ads API access.
 

@@ -6,7 +6,7 @@ TRACKS combines in-depth **marketing analytics** and **attribution tracking** to
 
 !!! tip "Acronyms on this page"
 
-    Terms like CPI, ROAS, UTM, CAPI, and ELT are defined in the [Glossary](../../glossary/).
+    Terms like CPI, ROAS, UTM, CAPI, and ELT are defined in the [Glossary](../glossary.md).
 
 !!! info "Why use TRACKS"
 
@@ -81,8 +81,8 @@ TRACKS continues to analyze the effectiveness of media campaigns, providing insi
 
 ## Next
 
-- Ready to explore the product? See [Using TRACKS](../using-tracks/).
-- Ready to integrate? See [Integration](../integration/).
-- Need hands-on support? Our team's hours and contact details are under [Integration → Customer Support](../integration/#customer-support).
+- Ready to explore the product? See [Using TRACKS](using-tracks.md).
+- Ready to integrate? See [Integration](integration.md).
+- Need hands-on support? Our team's hours and contact details are under [Integration → Customer Support](integration.md#customer-support).
 
 

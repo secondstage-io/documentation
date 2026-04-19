@@ -2,7 +2,7 @@
 
 !!! tip "Do you need postbacks?"
 
-    Postbacks are recommended if you run **conversion-objective campaigns** (targeting ROAS, CPI, or install conversions). They're optional if you only run **awareness or traffic campaigns**. See [Attribution Tracking → Methodologies](../../support/attribution/#methodologies) for which attribution modes use postbacks.
+    Postbacks are recommended if you run **conversion-objective campaigns** (targeting ROAS, CPI, or install conversions). They're optional if you only run **awareness or traffic campaigns**. See [Attribution Tracking → Methodologies](../../support/attribution.md#methodologies) for which attribution modes use postbacks.
 
 Postbacks are HTTP requests, typically GET or POST, sent to external servers. TRACKS can transmit installation and in-game event data back to advertising channels using a click ID as the key identifier. This enables platforms like Meta, Google, X, TikTok, and Reddit to identify users with similar behaviors. Instead of focusing solely on clicks, it's more effective to send postbacks for installs and in-game events to optimize campaign performance.
 

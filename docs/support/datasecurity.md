@@ -60,7 +60,7 @@ To support your obligations under the GDPR, TRACKS includes a specific **"Right 
 
 This feature allows you to permanently delete all records associated with a specific `user_id` or `hash` upon a user's request. This ensures that you can fully comply with **Data Subject Access Requests (DSARs)** without manual database intervention.
 
-For integration instructions, please refer to the [GDPR API Documentation](../attribution/gdprapi/).
+For integration instructions, please refer to the [GDPR API Documentation](../attribution/gdprapi.md).
 
 ---
 

@@ -62,4 +62,4 @@ The Second Stage team will be notified after access is granted and TRACKS Attrib
 
 ## Next
 
-With the cloud environment set up, continue with the rest of [Platform Integration](overview.md) (media channels, landing page, storefronts). The [Attribution](../attribution/overview/) section then covers [Telemetry](../attribution/telemetry/) and the [Measurement API](../attribution/measurementapi/) that run on this cloud project.
+With the cloud environment set up, continue with the rest of [Platform Integration](overview.md) (media channels, landing page, storefronts). The [Attribution](../attribution/overview.md) section then covers [Telemetry](../attribution/telemetry.md) and the [Measurement API](../attribution/measurementapi.md) that run on this cloud project.

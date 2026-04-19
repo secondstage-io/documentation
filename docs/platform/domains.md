@@ -56,4 +56,4 @@ Once DNS is configured, please inform the TRACKS team so we can verify the domai
 
 ## Next
 
-Once the branded domain is live, update your [Measurement API](../attribution/measurementapi/) integration to use the new endpoint URL, and confirm the snippet deployed via [Landing Page Integration](landingpages.md) points at the branded subdomain.
+Once the branded domain is live, update your [Measurement API](../attribution/measurementapi.md) integration to use the new endpoint URL, and confirm the snippet deployed via [Landing Page Integration](landingpages.md) points at the branded subdomain.

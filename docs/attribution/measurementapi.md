@@ -69,7 +69,7 @@ To track media channel acquisition sources, you need to implement the API endpoi
 
 !!! note "Which endpoint do I implement?"
 
-    `/collect` is triggered client-side from your landing page. The Second Stage team deploys it for you via Google Tag Manager — see [Landing Page Integration](../platform/landingpages/). You do **not** need to call it from your backend.
+    `/collect` is triggered client-side from your landing page. The Second Stage team deploys it for you via Google Tag Manager — see [Landing Page Integration](../platform/landingpages.md). You do **not** need to call it from your backend.
 
     `/measure` is triggered server-side when a game-open (session start) event is logged. This is the endpoint you need to implement in your own telemetry backend using the pseudo-code example above.
 
@@ -184,4 +184,4 @@ To track media channel acquisition sources, you need to implement the API endpoi
 - **403** — Credentials are valid but don't have permission for this endpoint. Contact the Second Stage team to confirm API key scope.
 - **5xx** — Transient server-side error. Retry with exponential backoff; if it persists, contact the Second Stage team.
 
-If problems persist after checking the above, reach out via the [support channels](../overview/integration/#customer-support).
+If problems persist after checking the above, reach out via the [support channels](../overview/integration.md#customer-support).
