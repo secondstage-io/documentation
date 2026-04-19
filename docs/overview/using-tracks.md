@@ -20,7 +20,10 @@ This streamlined process enhances both security and user experience by avoiding 
 
 After logging in, you'll be directed to the main overview. Initially, you'll see our demo dashboard, along with an option to add your own game. After you've set up one or multiple games, they will be presented here as well.
 
-![Overview](/assets/overview_home.png "Overview")
+<figure class="browser-frame" markdown="span">
+  ![TRACKS home with demo dashboard and add-game option](/assets/overview_home.png)
+  <figcaption>TRACKS home — demo dashboard + Add a New Game option</figcaption>
+</figure>
 
 In the main menu under "Your Games," you'll find this overview. The "Attribution Tracking" section provides a high-level summary of our in-house attribution tracking solution and overall campaign setup. For more details, check out our FAQ, which addresses common questions.
 
@@ -28,15 +31,24 @@ By clicking on the profile icon or your email address/profile name, you'll find 
 
 The footer menu provides links to Imprint, Terms & Conditions and the Privacy Policy.
 
-![Navigation](/assets/overview_navigation.png "Navigation")
+<figure class="browser-frame" markdown="span">
+  ![TRACKS main navigation](/assets/overview_navigation.png)
+  <figcaption>Main menu — Your Games, Attribution Tracking section, profile + sign-out</figcaption>
+</figure>
 
 To view a demo of our campaign dashboards, please click on the demo tile.
 
-![Demo](/assets/overview_demo.png "Demo")
+<figure class="browser-frame" markdown="span">
+  ![TRACKS demo dashboard tile](/assets/overview_demo.png)
+  <figcaption>Click the demo tile to explore a sample campaign dashboard</figcaption>
+</figure>
 
 In the dashboard view, use the menu on the left to navigate between different analytics dashboards for your game. The available dashboards vary based on your plan.
 
-![Dashboards](/assets/overview_dashboards.png "Dashboards")
+<figure class="browser-frame" markdown="span">
+  ![TRACKS analytics dashboards](/assets/overview_dashboards.png)
+  <figcaption>Dashboard view — left menu switches between the dashboards available on your plan</figcaption>
+</figure>
 
 ## User Account Settings
 
@@ -44,13 +56,19 @@ In the user account option, you can add more information to your account, such a
 
 This information helps us to have more inisghts and get in touch with you if we need to, but is completely optional, as we deliberately try to collect as little personal information as possible.
 
-![User Account](/assets/overview_profile.png "User Account")
+<figure class="browser-frame" markdown="span">
+  ![TRACKS user account settings](/assets/overview_profile.png)
+  <figcaption>User account — optional profile picture, company, job title, LinkedIn</figcaption>
+</figure>
 
 ## Game / Campaign Setup
 
 To add a new game to your TRACKS account, select the "Add a New Game" option on the overview page.
 
-![Add a New Game](/assets/overview_addgame.png "Add a New Game")
+<figure class="browser-frame" markdown="span">
+  ![Add a New Game flow](/assets/overview_addgame.png)
+  <figcaption>Add a New Game — title, platforms, release date, Steam ID, cover image, plan</figcaption>
+</figure>
 
 In the next step, enter basic information such as the game's title, intended platforms, release date, and Steam ID, if available. You can also upload a cover image, such as keyart from the game. If no cover image is selected, TRACKS will temporarily display a placeholder image.
 

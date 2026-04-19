@@ -7,7 +7,10 @@ TRACKS is designed to be deployed using a “hybrid-hosted” model, where all g
 1. Go to [Google Cloud Console](https://console.cloud.google.com/), sign in with your email address. Create a new Project named "TRACKS - yourgame" (replace "yourgame" with the title or a unique identifier of your game, e.g. "TRACKS - Urban Brawl").
 If your organization does not use Google Workspace (Gsuite email account), you can link your email following these steps: https://support.google.com/accounts/answer/27441)
 
-![Google Cloud Access](/assets/attribution_GCP.png)
+<figure markdown="span">
+  ![Google Cloud Console — create new project](/assets/attribution_GCP.png)
+  <figcaption>Google Cloud Console → New Project → "TRACKS - yourgame"</figcaption>
+</figure>
 
 2. [Enable billing for your account and link to your Project](https://cloud.google.com/billing/docs/how-to/modify-project#how-to-change-ba)
     - Microservices enabled in your Google Cloud will autoscale depending on data ingestion volume.

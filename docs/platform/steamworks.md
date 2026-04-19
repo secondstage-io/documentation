@@ -8,4 +8,7 @@ If your game is available on Steam, please grant us access by sending an invitat
 
 You can find the "Invite New User" section in Steamworks by navigating to Steamworks → Users & Permissions → Invite New User.
 
-![Steamworks Setup](/assets/marketinganalytics_steamaccess.png "Steamworks Setup")
+<figure markdown="span">
+  ![Steamworks — Users & Permissions → Invite New User](/assets/marketinganalytics_steamaccess.png)
+  <figcaption>Steamworks → Users & Permissions → Invite New User (View Marketing Traffic Data)</figcaption>
+</figure>

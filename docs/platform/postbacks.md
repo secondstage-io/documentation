@@ -12,7 +12,10 @@ Below is an example postback guide template for mapping the Conversion API for v
 
 This one-time setup for each media platform allows TRACKS to implement the Conversion API for your ad accounts without consuming developer resources or relying on third-party solutions like Customer Data Platforms (CDPs).
 
-![Postbacks](/assets/attribution_postbacks.png)
+<figure markdown="span">
+  ![Postback flow from TRACKS to ad platforms](/assets/attribution_postbacks.png)
+  <figcaption>TRACKS backend → media-platform Conversion APIs (install + in-game events)</figcaption>
+</figure>
 
 ## Meta Conversion API Guide
 
@@ -29,11 +32,20 @@ To set up a Meta Postback Token, follow these steps using a Business Manager Adm
 
 Once complete, ensure the data source asset is shared with the active Ad Account so your campaigns can access and utilize the data.
 
-![Meta Capi 1](/assets/Meta_capi_doc1.png)
+<figure markdown="span">
+  ![Meta Events Manager — Conversions API configuration](/assets/Meta_capi_doc1.png)
+  <figcaption>Meta Events Manager → Conversions API setup</figcaption>
+</figure>
 
-![Meta Capi 2](/assets/Meta_capi_doc2.png)
+<figure markdown="span">
+  ![Meta Conversions API — system user assignment](/assets/Meta_capi_doc2.png)
+  <figcaption>Assign a system user to your ad account for CAPI access</figcaption>
+</figure>
 
-![Meta Capi 3](/assets/Meta_capi_doc3.png)
+<figure markdown="span">
+  ![Meta Conversions API — access token generation](/assets/Meta_capi_doc3.png)
+  <figcaption>Generate the CAPI access token for the Second Stage analytics user</figcaption>
+</figure>
 
 ## Google Conversion API Guide
 

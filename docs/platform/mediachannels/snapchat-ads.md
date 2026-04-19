@@ -5,4 +5,7 @@
 3. Use the UTM-tagged destination URLs provided by the Second Stage team in the Ad Ops Helper.
 4. Follow the campaign, ad squad, and ad naming conventions shared by the Second Stage team.
 
-![Snapchat Ads Setup](../../assets/marketinganalytics_snapchat.jpg)
+<figure markdown="span">
+  ![Snapchat Business Manager — Members → Invite](../../assets/marketinganalytics_snapchat.jpg)
+  <figcaption>Business Settings → Members → Ad Account Analyst + Pixel Editor</figcaption>
+</figure>

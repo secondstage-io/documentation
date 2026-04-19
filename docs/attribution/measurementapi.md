@@ -4,7 +4,10 @@ The Measurement API tracks the customer acquisition source, enabling you to iden
 
 ## Architecture
 
-![Architecture](/assets/attribution_architecture.png)
+<figure markdown="span">
+  ![TRACKS Measurement API architecture diagram](/assets/attribution_architecture.png)
+  <figcaption>Measurement API — backend webhook → Cloud Run → BigQuery</figcaption>
+</figure>
 
 ## Prerequisites
 

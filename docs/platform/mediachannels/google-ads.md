@@ -9,4 +9,7 @@ In your Google Ads account, click the Admin icon.
 
 [→ Google Ads Setup Guide](https://support.google.com/google-ads/answer/6372672)
 
-![Google Ads Setup](../../assets/marketinganalytics_googleads.png)
+<figure markdown="span">
+  ![Google Ads → Admin → Access and Security](../../assets/marketinganalytics_googleads.png)
+  <figcaption>Google Ads Admin → Access and Security → add user</figcaption>
+</figure>

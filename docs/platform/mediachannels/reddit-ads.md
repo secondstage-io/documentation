@@ -12,6 +12,12 @@ Note: Reddit automatically encodes special characters such as {{ }} into %7B %7D
 
 [→ Reddit Ads Setup Guide](https://business.reddithelp.com/helpcenter/s/article/Add-users-to-a-Reddit-Ads-account)
 
-![Reddit Ads Setup](../../assets/marketinganalytics_reddit.png)
+<figure markdown="span">
+  ![Reddit Ads — Business Member invite](../../assets/marketinganalytics_reddit.png)
+  <figcaption>Business Member invite with Ad Account Editor + Conversions + Reporting permissions</figcaption>
+</figure>
 
-![Reddit Ads Setup](../../assets/marketinganalytics_reddit_2.png)
+<figure markdown="span">
+  ![Reddit Ads — Destination URL with UTM parameters](../../assets/marketinganalytics_reddit_2.png)
+  <figcaption>Paste the Ad Ops Helper UTM link into Destination URL → tick "Add source parameter"</figcaption>
+</figure>

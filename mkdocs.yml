@@ -3,7 +3,7 @@ site_url: https://documentation.secondstage.io
 
 # Update version to force new CSS to load
 extra_css:
-  - stylesheets/extra.css?v=45
+  - stylesheets/extra.css?v=49
 
 extra_javascript:
   - javascripts/extra.js
@@ -94,6 +94,19 @@ markdown_extensions:
 
 plugins:
   - search
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: fade
+      slide_effect: none
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      skip_classes:
+        - tracks-footer__eu
+        - tracks-wordmark__img
+        - twemoji
 
 copyright: |
   &copy; 2025 <a href="https://secondstage.io"  target="_blank" rel="noopener">Second Stage GmbH</a>

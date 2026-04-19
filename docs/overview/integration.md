@@ -23,7 +23,10 @@ The TRACKS Attribution data source collects granular data for each web visit and
 
 Once the ELT (Extract-Load-Transform) pipeline is deployed, all data sources will be consolidated into a Google Cloud BigQuery database.
 
-![Integration](/assets/attribution_flow-1.png)
+<figure markdown="span">
+  ![TRACKS integration — data source flow](/assets/attribution_flow-1.png)
+  <figcaption>Data flow — media analytics, web, Steamworks, and Measurement API into BigQuery</figcaption>
+</figure>
 
 
 ## Integration Overview
@@ -57,7 +60,10 @@ The TRACKS data automation backend integrates seamlessly with various media plat
 The deployment approach for TRACKS is a "hybrid-hosted" solution, similar to an on-premise setup, where all granular data is processed and stored on the publisher or developer studio’s Google Cloud servers. This method can be considered as an enterprise level solution, and we are of the opinion that it is the optimal choice for the video game industry.
 This approach has been streamlined by the Second Stage team to maximize the effectiveness of performance media campaigns in gaming, without introducing latency or errors to game servers. It also ensures maximum data privacy and safeguards player data.
 
-![Deplyoment](/assets/attribution_deployment-1.png)
+<figure markdown="span">
+  ![TRACKS deployment topology](/assets/attribution_deployment-1.png)
+  <figcaption>Hybrid-hosted deployment — all granular data processes on your Google Cloud</figcaption>
+</figure>
 
 We do not recommend integrating the attribution measurement solution if your game does not have a backend server for telemetry and event logging—whether currently in place or planned. In this case, our team can assist you in setting up a suitable telemetry solution for Unity or Unreal Engine.
 Also, if you do have a telemetry backend server but are unable to use Google Cloud Platform for deployment, the Second Stage team can assist by hosting the attribution solution in a dedicated cloud environment for you.

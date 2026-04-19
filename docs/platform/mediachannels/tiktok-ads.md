@@ -6,4 +6,7 @@
 4. Follow the Campaign, Ad Set, and Ad naming conventions provided in the builder sheet shared by the Second Stage team.
 5. Ensure your ad creatives use a UTM-tagged link template.
 
-![TikTok Ads Setup](../../assets/marketinganalytics_tiktok.png)
+<figure markdown="span">
+  ![TikTok for Business — Members → Invite](../../assets/marketinganalytics_tiktok.png)
+  <figcaption>Business Manager → Members → Invite Member</figcaption>
+</figure>

@@ -887,15 +887,181 @@ body, .md-typeset { font-size-adjust: none; }
 /* 7. IMAGES, CODE, GRID CARDS                                                */
 /* ========================================================================= */
 
-/* Only style standalone screenshot-style images — not inline icons/emoji */
+/* Screenshots — standalone images inside a paragraph or figure.
+   Selectors cover both plain <img> and glightbox-wrapped <a><img>.
+   Layered shadow gives more atmospheric depth than a single blur. */
 .md-typeset p > img:only-child,
-.md-typeset figure > img {
+.md-typeset p > a.glightbox:only-child > img,
+.md-typeset figure > img,
+.md-typeset figure > a.glightbox > img {
   border: 1px solid var(--md-rule-color);
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  box-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.02),
+    0 4px 8px rgba(0, 0, 0, 0.04),
+    0 16px 32px rgba(0, 0, 0, 0.03);
   max-width: 100%;
   display: block;
   margin: 1rem auto;
+  transition: filter 0.2s;
+}
+
+/* Architecture / flow / deployment diagrams: no UI-screenshot frame */
+.md-typeset img[src*="architecture"],
+.md-typeset img[src*="_flow"],
+.md-typeset img[src*="deployment"],
+.md-typeset img[src*="datasources"] {
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 0.5rem 0;
+}
+
+/* Dark mode: gently dim light-UI screenshots so they don't glare against
+   the dark body. Hover restores full brightness for detail-reading. */
+[data-md-color-scheme="slate"] .md-typeset p > img:only-child,
+[data-md-color-scheme="slate"] .md-typeset p > a.glightbox:only-child > img,
+[data-md-color-scheme="slate"] .md-typeset figure > img,
+[data-md-color-scheme="slate"] .md-typeset figure > a.glightbox > img {
+  filter: brightness(0.88) contrast(1.04);
+}
+[data-md-color-scheme="slate"] .md-typeset p > img:only-child:hover,
+[data-md-color-scheme="slate"] .md-typeset p > a.glightbox:only-child > img:hover,
+[data-md-color-scheme="slate"] .md-typeset figure > img:hover,
+[data-md-color-scheme="slate"] .md-typeset figure > a.glightbox > img:hover {
+  filter: none;
+}
+
+/* Glightbox visual polish to match the site */
+.glightbox-clean .gcontainer {
+  background: rgba(0, 0, 0, 0.88);
+}
+
+/* --- Figure / figcaption ----------------------------------------------- */
+.md-typeset figure {
+  margin: 1.5rem 0;
+}
+.md-typeset figure > img,
+.md-typeset figure > a.glightbox > img {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+.md-typeset figure > a.glightbox {
+  display: block;
+  line-height: 0;      /* kill baseline gap under the linked image */
+}
+.md-typeset figcaption {
+  font-size: 0.78rem;
+  font-weight: 400;
+  color: var(--md-text-color--muted);
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+  padding: 0 1rem;
+}
+
+/* --- Browser-chrome frame (opt-in via .browser-frame on <figure>) ------- */
+.md-typeset figure.browser-frame {
+  border: 1px solid var(--md-rule-color);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.02),
+    0 4px 8px rgba(0, 0, 0, 0.04),
+    0 16px 32px rgba(0, 0, 0, 0.03);
+  padding: 0;
+  background: var(--md-primary-bg-color);
+}
+.md-typeset figure.browser-frame::before {
+  content: "";
+  display: block;
+  height: 26px;
+  background: var(--md-primary-bg-color--light);
+  border-bottom: 1px solid var(--md-rule-color);
+  background-image:
+    radial-gradient(circle at 14px 13px, #ff5f57 5px, transparent 6px),
+    radial-gradient(circle at 34px 13px, #febc2e 5px, transparent 6px),
+    radial-gradient(circle at 54px 13px, #28c840 5px, transparent 6px);
+}
+.md-typeset figure.browser-frame > img,
+.md-typeset figure.browser-frame > a.glightbox > img {
+  display: block;
+  width: 100%;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+}
+.md-typeset figure.browser-frame > a.glightbox {
+  display: block;
+  line-height: 0;
+}
+.md-typeset figure.browser-frame > figcaption {
+  padding: 0.4rem 1rem 0.45rem;
+  background: var(--md-primary-bg-color);
+  border-top: 1px solid var(--md-rule-color);
+  margin-top: 0;
+  line-height: 1.4;
+}
+[data-md-color-scheme="slate"] .md-typeset figure.browser-frame {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+[data-md-color-scheme="slate"] .md-typeset figure.browser-frame::before {
+  background-color: rgba(255, 255, 255, 0.04);
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+/* --- Setup-step list (numbered procedure with inline figures) ---------- */
+.md-typeset ol.setup-steps {
+  counter-reset: setup-step;
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.md-typeset ol.setup-steps > li {
+  counter-increment: setup-step;
+  position: relative;
+  padding-left: 2.5rem;
+  margin: 0;
+}
+.md-typeset ol.setup-steps > li::before {
+  content: counter(setup-step);
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--md-primary-fg-color);
+  background: rgba(255, 2, 73, 0.08);
+  border: 1px solid rgba(255, 2, 73, 0.2);
+  border-radius: 50%;
+  line-height: 1;
+}
+.md-typeset ol.setup-steps > li > :first-child {
+  margin-top: 0;
+}
+.md-typeset ol.setup-steps > li h3,
+.md-typeset ol.setup-steps > li h4 {
+  margin: 0.1rem 0 0.4rem;
+  font-size: 0.95rem;
+  letter-spacing: -0.005em;
+}
+.md-typeset ol.setup-steps > li > figure:last-child,
+.md-typeset ol.setup-steps > li > p:last-child {
+  margin-bottom: 0;
+}
+[data-md-color-scheme="slate"] .md-typeset ol.setup-steps > li::before {
+  background: rgba(255, 56, 100, 0.1);
+  border-color: rgba(255, 56, 100, 0.3);
 }
 
 /* Explicitly reset inline emoji / icon images */

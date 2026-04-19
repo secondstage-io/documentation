@@ -1,25 +1,85 @@
 # Meta Ads Integration
 
-Go to Meta Business Manager and navigate to the Users section. Add the email address analytics@secondstage.io and click "Next".
+Grant the Second Stage analytics team access to your Meta Business Manager so TRACKS can read campaign, ad account, and pixel data. Follow the six steps below.
 
-![Meta Ads Setup](../../assets/marketinganalytics_meta_1.png)
+<ol class="setup-steps" markdown>
 
-Assign Partial (Basic) Access to the user and click "Next".
+<li markdown>
 
-![Meta Ads Setup](../../assets/marketinganalytics_meta_2.png)
+### Add the user
 
-Select your business page and provide Partial access (business tools and Facebook), then click "Next".
+Go to Meta Business Manager and navigate to the **Users** section. Add the email address `analytics@secondstage.io` and click **Next**.
 
-![Meta Ads Setup](../../assets/marketinganalytics_meta_3-1.png)
+<figure markdown="span">
+  ![Meta Business Manager — Users → Add a new user](../../assets/marketinganalytics_meta_1.png)
+  <figcaption>Business Manager → Users → Add → enter <code>analytics@secondstage.io</code></figcaption>
+</figure>
 
-Select your ad account and provide Manage campaigns (ads) access, then click "Next".
+</li>
 
-![Meta Ads Setup](../../assets/marketinganalytics_meta_3-2.png)
+<li markdown>
 
-Select pixels if any exists, and assign access. Then click "Next"
+### Assign access level
 
-![Meta Ads Setup](../../assets/marketinganalytics_meta_3-3.png)
+Assign **Partial (Basic) Access** to the user and click **Next**.
 
-Review the invitation, then click on "Send invitation".
+<figure markdown="span">
+  ![Assign Partial (Basic) Access](../../assets/marketinganalytics_meta_2.png)
+  <figcaption>Partial (Basic) Access is the correct level for analytics</figcaption>
+</figure>
 
-![Meta Ads Setup](../../assets/marketinganalytics_meta_4.png)
+</li>
+
+<li markdown>
+
+### Share business-page access
+
+Select your business page and grant **Partial access** (business tools and Facebook), then click **Next**.
+
+<figure markdown="span">
+  ![Partial access to business tools and Facebook page](../../assets/marketinganalytics_meta_3-1.png)
+  <figcaption>Business page → Partial access → business tools + Facebook</figcaption>
+</figure>
+
+</li>
+
+<li markdown>
+
+### Grant ad account access
+
+Select your ad account and grant **Manage campaigns (ads)** access, then click **Next**.
+
+<figure markdown="span">
+  ![Ad account access level — Manage campaigns](../../assets/marketinganalytics_meta_3-2.png)
+  <figcaption>Ad account → Manage campaigns access</figcaption>
+</figure>
+
+</li>
+
+<li markdown>
+
+### Grant pixel access (optional)
+
+Select any pixels that exist on the account and assign access, then click **Next**.
+
+<figure markdown="span">
+  ![Pixel access assignment](../../assets/marketinganalytics_meta_3-3.png)
+  <figcaption>Pixel access — required only if you already run Meta conversion events</figcaption>
+</figure>
+
+</li>
+
+<li markdown>
+
+### Review and send
+
+Review the invitation summary, then click **Send invitation**.
+
+<figure markdown="span">
+  ![Invitation summary review](../../assets/marketinganalytics_meta_4.png)
+  <figcaption>Review all selected permissions before sending</figcaption>
+</figure>
+
+</li>
+
+</ol>
