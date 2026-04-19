@@ -3,7 +3,7 @@ site_url: https://documentation.secondstage.io
 
 # Update version to force new CSS to load
 extra_css:
-  - stylesheets/extra.css?v=52
+  - stylesheets/extra.css?v=56
 
 extra_javascript:
   - javascripts/extra.js
@@ -115,6 +115,9 @@ plugins:
   - redirects:
       redirect_maps:
         overview/adopshelper.md: support/adopshelper.md
+        attribution/cloud.md: platform/cloud.md
+        platform/postbacks.md: attribution/postbacks/index.md
+        platform/trackinglinks.md: support/trackinglinks.md
 
 copyright: |
   &copy; 2025 <a href="https://secondstage.io"  target="_blank" rel="noopener">Second Stage GmbH</a>
@@ -129,6 +132,7 @@ nav:
     - Integration: overview/integration.md
   - Platform:
     - Overview: platform/overview.md
+    - Cloud Setup: platform/cloud.md
     - Media Platform Access:
       - Overview: platform/mediachannels/index.md
       - Google Ads: platform/mediachannels/google-ads.md
@@ -141,16 +145,21 @@ nav:
     - Landing Page Integration: platform/landingpages.md
     - Steamworks Integration: platform/steamworks.md
     - Custom Domains: platform/domains.md
-    - Postbacks: platform/postbacks.md
-    - Tracking Links: platform/trackinglinks.md
   - Attribution:
     - Overview: attribution/overview.md
-    - Cloud Setup: attribution/cloud.md
     - TRACKS Measurement API: attribution/measurementapi.md
     - Telemetry Setup: attribution/telemetry.md
+    - Postbacks:
+      - Overview: attribution/postbacks/index.md
+      - Meta: attribution/postbacks/meta.md
+      - Google Ads: attribution/postbacks/google.md
+      - TikTok: attribution/postbacks/tiktok.md
+      - Reddit: attribution/postbacks/reddit.md
+      - X Ads: attribution/postbacks/x.md
     - GDPR API: attribution/gdprapi.md
   - Operations:
     - Ad Ops Guide: support/adopshelper.md
+    - Tracking Links: support/trackinglinks.md
   - Guides:
     - Overview: support/overview.md
     - Attribution Tracking: support/attribution.md

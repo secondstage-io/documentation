@@ -60,7 +60,7 @@ Select your ad account and grant **Manage campaigns (ads)** access, then click *
 
 ### Grant pixel access (optional)
 
-Select any pixels that exist on the account and assign access, then click **Next**.
+Select any pixels that exist on the account and assign access, then click **Next**. This step is only required if you already run Meta conversion events — skip it if no pixel has been created yet.
 
 <figure markdown="span">
   ![Pixel access assignment](../../assets/marketinganalytics_meta_3-3.png)

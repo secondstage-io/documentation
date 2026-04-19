@@ -2,7 +2,7 @@
 
 !!! tip "Important:"
 
-    Required for Modeled Attribution Tracking, Measured Attribution Tracking, Measured Attribution Tracking + Modeling.
+    Required for Modeled Attribution Tracking, Measured Attribution Tracking, Measured Attribution Tracking + Modeling. See [Methodologies](../support/attribution/#methodologies) for what each tracking mode means.
     By linking TRACKS with Steamworks, Google Analytics 4 and Google Tag Manager access, you will be able to use the Modeled Installs reporting feature. Please note that postbacks only work if you are using the Measured Attribution Tracking or Measured Attribution Tracking + Modeling solution. 
 
 By embedding the TRACKS JavaScript code into your landing page, minimal technical data — such as IP address and user-agent — is passively collected as part of the standard HTTP request. No cookies, LocalStorage, or other client-side storage mechanisms are used. This data is pseudonymized (e.g., through salted hashing of IP addresses), retained temporarily (e.g., for 30 days), and only becomes relevant when the second measurement point is triggered. Any actual fingerprinting or attribution is based on the combination of both signals, with consent requirements potentially applying at that later stage, depending on the implementation and legal basis selected by the data controller.
@@ -29,7 +29,7 @@ If GA4 is not already set up on your site, provide us with access to Google Tag 
 - **Media platform web pixel tagging**: 
     By granting Google Tag Manager and media platform access to analytics@secondstage.io, TRACKS can set up a web conversion event or pixel if one is not already in place. You can use this event to optimize your media platform campaigns in addition to Install Postbacks. Since web conversion events provide valuable insights into user behavior, it’s recommended to include them in your conversion objective campaigns. When used alongside the Installs (game_opens) event, this creates an optimized conversion funnel, helping you achieve the best possible campaign performance.
 
-Here is an example of source code for your reference:
+The code snippet below is what the Second Stage team deploys on your behalf through GTM — you don't need to paste it yourself. It's included here for reference so you can see what ends up in your container.
 
 ??? abstract "Pseudo-code example"
     ```json
@@ -74,14 +74,60 @@ In Google Tag Manager, please grant Publish access to analytics@secondstage.io. 
 
 If you don't already have Google Tag Manager installed on your website, follow these steps to set it up. For the full official walkthrough, refer to the Google documentation [here](https://support.google.com/tagmanager/answer/14842164).
 
-1. **Create an Account:** Go to [tagmanager.google.com](https://tagmanager.google.com), sign in with your Google account, and click **Create Account**.
-2. **Set Up Container:** Enter a name (e.g., your business name), select the country, name your container (e.g., website domain), and choose **Web** as the target platform.
-3. **Accept Terms:** Agree to the Data Processing Terms.
-4. **Install the Code:** GTM will provide two code snippets.
-    - **Snippet 1:** Paste this into the `<head>` of your website as high as possible.
-    - **Snippet 2:** Paste this immediately after the opening `<body>` tag.
-5. **Verify Installation:** Use the **Preview** button in GTM to enter your website URL and confirm the container is loading correctly.
-6. **Publish:** Click **Submit** in the top right corner to publish your container, making the changes live.
+<ol class="setup-steps" markdown="1">
+
+<li markdown="block">
+
+### Create an Account
+
+Go to [tagmanager.google.com](https://tagmanager.google.com), sign in with your Google account, and click **Create Account**.
+
+</li>
+
+<li markdown="block">
+
+### Set Up Container
+
+Enter a name (e.g., your business name), select the country, name your container (e.g., website domain), and choose **Web** as the target platform.
+
+</li>
+
+<li markdown="block">
+
+### Accept Terms
+
+Agree to the Data Processing Terms.
+
+</li>
+
+<li markdown="block">
+
+### Install the Code
+
+GTM will provide two code snippets.
+
+- **Snippet 1:** Paste this into the `<head>` of your website as high as possible.
+- **Snippet 2:** Paste this immediately after the opening `<body>` tag.
+
+</li>
+
+<li markdown="block">
+
+### Verify Installation
+
+Use the **Preview** button in GTM to enter your website URL and confirm the container is loading correctly.
+
+</li>
+
+<li markdown="block">
+
+### Publish
+
+Click **Submit** in the top right corner to publish your container, making the changes live.
+
+</li>
+
+</ol>
 
 Below is a sample image of the Google Tag Manager integration code that needs to be implemented on your landing page.
 

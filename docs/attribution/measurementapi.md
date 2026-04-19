@@ -65,6 +65,12 @@ For each game added, the Second Stage Analytics team provides comprehensive supp
 
 To track media channel acquisition sources, you need to implement the API endpoints that record acquisition events.
 
+!!! note "Which endpoint do I implement?"
+
+    `/collect` is triggered client-side from your landing page. The Second Stage team deploys it for you via Google Tag Manager — see [Landing Page Integration](../platform/landingpages/). You do **not** need to call it from your backend.
+
+    `/measure` is triggered server-side when a game-open (session start) event is logged. This is the endpoint you need to implement in your own telemetry backend using the pseudo-code example above.
+
 ### `POST /collect` — Record web acquisition events
 
 | Field | Value |
@@ -90,7 +96,7 @@ To track media channel acquisition sources, you need to implement the API endpoi
            'Content-Type': 'application/json'
        }
        try:
-           response = requests.post(f"{https://tracks.yourgame.com/v1/collect", json=data, headers=headers)
+           response = requests.post("https://tracks.yourgame.com/v1/collect", json=data, headers=headers)
            response.raise_for_status()
            print('Acquisition event recorded:', response.json())
        except requests.exceptions.HTTPError as err:
@@ -167,3 +173,13 @@ To track media channel acquisition sources, you need to implement the API endpoi
 - **Invalid Credentials:** Confirm that your API key and secret are correct and have the necessary permissions.
 - **Network Errors:** Review your server’s network configuration and API base URL.
 - **Data Mismatches:** Ensure the event payload matches the required schema and that timestamp formats are correct.
+
+### HTTP status codes
+
+- **200 / 204** — Request accepted. Event is queued for processing.
+- **400** — Malformed payload. Check the required fields (`user_id`, `event_name`, `ip`, `timestamp`, `platform`, `storefront`) and the timestamp format.
+- **401** — Missing or invalid `Authorization` header. Verify the bearer token is sent exactly as `Bearer <API_KEY>`.
+- **403** — Credentials are valid but don't have permission for this endpoint. Contact the Second Stage team to confirm API key scope.
+- **5xx** — Transient server-side error. Retry with exponential backoff; if it persists, contact the Second Stage team.
+
+If problems persist after checking the above, reach out via the [support channels](../overview/integration/#customer-support).

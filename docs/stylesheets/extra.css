@@ -476,6 +476,22 @@ body, .md-typeset { font-size-adjust: none; }
   background-color: transparent;
 }
 
+/* Nested items wrap their link in a .md-nav__container that ALSO has
+   .md-nav__link; without this override the padding compounds and the
+   inner link + toggle label split the width evenly, clipping the text. */
+.md-nav__link.md-nav__container {
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.md-nav__link.md-nav__container > a.md-nav__link {
+  flex: 1 1 auto;
+  min-width: 0;   /* allow the text to consume full flex basis */
+}
+.md-nav__link.md-nav__container > label.md-nav__link {
+  flex: 0 0 auto;
+}
+
 /* Top-level section toggles (e.g., "Get Started", "Platform") render
    as slightly heavier labels */
 .md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link,
@@ -1176,6 +1192,14 @@ body, .md-typeset { font-size-adjust: none; }
   max-width: 60ch;
   font-size: 0.95rem;
   line-height: 1.6;
+  color: var(--md-text-color--muted);
+}
+
+.md-typeset .docs-home__lede {
+  max-width: 68ch;
+  margin: 0 0 1.25rem !important;
+  font-size: 0.875rem;
+  line-height: 1.55;
   color: var(--md-text-color--muted);
 }
 

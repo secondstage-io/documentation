@@ -8,7 +8,11 @@ Grant Second Stage access to your Reddit Ads account and configure UTM destinati
 
 ### Whitelist your ad account for the API
 
-Contact the Reddit team to have your ad account whitelisted for using the Reddit Ads API.
+!!! warning "Start this first"
+
+    Whitelisting is handled by Reddit on their side and can introduce a wait. Kick it off before the remaining steps so your integration isn't blocked.
+
+Contact the Reddit team to have your ad account whitelisted for using the Reddit Ads API. TRACKS can't pull campaign data without API whitelisting, which is why this step comes first.
 
 </li>
 

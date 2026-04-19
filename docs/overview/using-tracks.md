@@ -79,3 +79,9 @@ Once the form is submitted, our team will get back to you within 24 hours with a
 ## Game / Campaign Settings
 
 In an upcoming TRACKS update, you will be able to edit a game's title, change the cover image, and invite additional users to your dashboard. Until these features are available on the platform, please contact us directly to request any of these changes.
+
+## Next
+
+- Start connecting ad platforms — see [Platform Integration](../../platform/overview/).
+- Understand what TRACKS reports — see [Attribution Tracking](../../support/attribution/) and [Marketing Analytics](../../support/marketinganalytics/).
+- Need hands-on support? Our team's hours and contact details are under [Integration → Customer Support](../integration/#customer-support).

@@ -31,6 +31,14 @@ Once the ELT (Extract-Load-Transform) pipeline is deployed, all data sources wil
 
 ## Integration Overview
 
+!!! info "Before you start"
+
+    The TRACKS Attribution integration assumes three things are in place. Second Stage helps set each one up — but knowing the scope up front avoids surprises:
+
+    - **A Google Cloud Platform project** that will host the TRACKS backend services ([Cloud Setup](../platform/cloud/)).
+    - **A telemetry backend server** capable of logging game-open events and reaching the public internet ([Telemetry Setup](../attribution/telemetry/)).
+    - **Access to your Google Tag Manager and media-platform accounts** so TRACKS can deploy the web snippet and pull campaign data ([Landing Page Integration](../platform/landingpages/) and [Media Platform Access](../platform/mediachannels/)).
+
 **Integration TRACKS Attribution**
 
 The Second Stage team will assist in setting up a Google Cloud Platform (GCP) project for deployment on your side. If you already have an existing GCP account, start by creating a new project and grant Project Owner access to analytics@secondstage.io.

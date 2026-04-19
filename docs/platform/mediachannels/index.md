@@ -6,7 +6,15 @@ This section outlines the integration of major media channels for media analytic
 
     Once a channel is integrated, there's no need to return to this step for future campaigns. This one-time platform configuration will enable comprehensive marketing analytics reporting for TRACKS. With the ad operations guide, you can easily launch new campaigns without further assistance.
 
-Each ad platform integration is independent — jump straight to the one you need.
+!!! info "Before you begin"
+
+    Every platform integration in this section assumes:
+
+    - You have **admin-level access** to the ad account you're connecting.
+    - You have the **naming conventions sheet** from your [Ad Ops Helper](../../support/adopshelper/) (shared by the Second Stage team during kickoff).
+    - You use **UTM-tagged link templates** in your ad creatives — the [Tracking Link Builders](../../support/trackinglinks/) generate these for you.
+
+Each ad platform integration is independent — jump straight to the one you need. Most customers start with the one or two platforms that carry the majority of their spend; the Second Stage team will advise on the right order during your kickoff call.
 
 <div class="grid cards" markdown>
 

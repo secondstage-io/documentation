@@ -2,6 +2,10 @@
 
 Learn more about TRACKS iterations here.
 
+## V1.5 18th February 2026
+
+Player Lifecycle Dashboard for retention, churn and reactivation data.
+
 ## V1.4 19th November 2025
 
 Added additional settings and manage user functionality.

@@ -7,6 +7,8 @@
 
 <h2 id="start-a-journey" class="docs-home__label">Start a journey</h2>
 
+<p class="docs-home__lede">Most customers move through these in order: <strong>Set up</strong> provisions the cloud environment and connects your ad platforms, landing page, and storefronts; <strong>Configure</strong> wires attribution and postbacks; <strong>Operate</strong> covers day-to-day campaign work. If you're not sure where you are, start with "Set up TRACKS".</p>
+
 <section class="docs-home__journeys" aria-label="Pick a journey">
 
   <div class="journey-card">
@@ -16,9 +18,9 @@
       <p class="journey-card__audience">For new customers integrating TRACKS for the first time.</p>
     </div>
     <ol class="journey-card__steps">
+      <li><a href="platform/cloud/">Cloud setup</a></li>
       <li><a href="platform/mediachannels/">Media platform access</a></li>
       <li><a href="platform/landingpages/">Landing page integration</a></li>
-      <li><a href="attribution/overview/">Attribution endpoint</a></li>
     </ol>
     <div class="journey-card__foot">
       <a class="journey-card__primary" href="overview/overview/">Start here →</a>
@@ -30,11 +32,11 @@
     <div class="journey-card__head">
       <span class="journey-card__eyebrow">02 · Configure</span>
       <h2 class="journey-card__title"><a href="attribution/overview/">Configure attribution</a></h2>
-      <p class="journey-card__audience">For technical implementers wiring up measurement and compliance.</p>
+      <p class="journey-card__audience">For technical implementers wiring up measurement, postbacks, and compliance.</p>
     </div>
     <ol class="journey-card__steps">
-      <li><a href="attribution/cloud/">Cloud setup</a></li>
       <li><a href="attribution/measurementapi/">Measurement API</a></li>
+      <li><a href="attribution/postbacks/">Postbacks</a></li>
       <li><a href="attribution/gdprapi/">GDPR API</a></li>
     </ol>
     <div class="journey-card__foot">
@@ -51,8 +53,8 @@
     </div>
     <ol class="journey-card__steps">
       <li><a href="support/adopshelper/">Ad Ops Guide</a></li>
+      <li><a href="support/trackinglinks/">Tracking Links</a></li>
       <li><a href="platform/mediachannels/">Media channels</a></li>
-      <li><a href="platform/postbacks/">Postbacks</a></li>
     </ol>
     <div class="journey-card__foot">
       <a class="journey-card__primary" href="support/overview/">Start here →</a>
@@ -80,12 +82,11 @@
     <p class="docs-sitemap__heading">Platform</p>
     <ul>
       <li><a href="platform/overview/">Overview</a></li>
+      <li><a href="platform/cloud/">Cloud Setup</a></li>
       <li><a href="platform/mediachannels/">Media Platform Access</a></li>
       <li><a href="platform/landingpages/">Landing Page Integration</a></li>
       <li><a href="platform/steamworks/">Steamworks Integration</a></li>
       <li><a href="platform/domains/">Custom Domains</a></li>
-      <li><a href="platform/postbacks/">Postbacks</a></li>
-      <li><a href="platform/trackinglinks/">Tracking Links</a></li>
     </ul>
   </div>
 
@@ -93,9 +94,9 @@
     <p class="docs-sitemap__heading">Attribution</p>
     <ul>
       <li><a href="attribution/overview/">Overview</a></li>
-      <li><a href="attribution/cloud/">Cloud Setup</a></li>
       <li><a href="attribution/measurementapi/">Measurement API</a></li>
       <li><a href="attribution/telemetry/">Telemetry Setup</a></li>
+      <li><a href="attribution/postbacks/">Postbacks</a></li>
       <li><a href="attribution/gdprapi/">GDPR API</a></li>
     </ul>
   </div>
@@ -104,6 +105,7 @@
     <p class="docs-sitemap__heading">Operations</p>
     <ul>
       <li><a href="support/adopshelper/">Ad Ops Guide</a></li>
+      <li><a href="support/trackinglinks/">Tracking Links</a></li>
     </ul>
   </div>
 

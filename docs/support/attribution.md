@@ -1,5 +1,9 @@
 # Attribution Tracking
 
+!!! tip "Also see"
+
+    This page explains **what** attribution is and the three TRACKS methodologies. For the **step-by-step integration**, see [Integration](../overview/integration/) and [Measurement API](../attribution/measurementapi/). For **attribution modes** referenced across other pages, jump to [Methodologies](#methodologies).
+
 A proper attribution setup can shine a light into the "black box" of where valuable game purchases, activations or installs are coming from. Once an attribution solution is integrated, whether it's TRACKS or a third-party solution, the dashboard will display key lower-funnel metrics.
 
 If you're using TRACKS Attribution, the default dashboard will show install metrics, including Paid and Organic installs. It's important to note that "installs" refer to the first activation of the game (when the player starts the game for the first time), not purchases.

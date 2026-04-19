@@ -1,51 +1,50 @@
 # Platform Integration
 
-Integrate TRACKS with the surfaces your players arrive from — advertising platforms, your own landing pages and domains, and game storefronts.
+Integrate TRACKS with the surfaces your players arrive from — starting with the cloud environment that hosts TRACKS, then advertising platforms, your own landing pages and domains, and game storefronts.
 
 <section class="docs-home__journeys" aria-label="Platform integration paths">
 
   <div class="journey-card">
     <div class="journey-card__head">
-      <span class="journey-card__eyebrow">01 · Advertising</span>
-      <h2 class="journey-card__title"><a href="../mediachannels/">Connect ad platforms</a></h2>
-      <p class="journey-card__audience">Set up account access, conversion sync, and tracking links across your paid media stack.</p>
+      <span class="journey-card__eyebrow">01 · Foundation</span>
+      <h2 class="journey-card__title"><a href="../cloud/">Set up the cloud environment</a></h2>
+      <p class="journey-card__audience">Provision the Google Cloud project that hosts the TRACKS backend services. Start here before the rest of the integration.</p>
     </div>
     <ol class="journey-card__steps">
-      <li><a href="../mediachannels/">Media Platform Access</a></li>
-      <li><a href="../postbacks/">Postbacks</a></li>
-      <li><a href="../trackinglinks/">Tracking Links</a></li>
+      <li><a href="../cloud/">Cloud Setup</a></li>
     </ol>
     <div class="journey-card__foot">
-      <a class="journey-card__primary" href="../mediachannels/">Start with Media Access →</a>
+      <a class="journey-card__primary" href="../cloud/">Start with Cloud Setup →</a>
     </div>
   </div>
 
   <div class="journey-card">
     <div class="journey-card__head">
-      <span class="journey-card__eyebrow">02 · First-party surfaces</span>
-      <h2 class="journey-card__title"><a href="../landingpages/">Wire up your own pages</a></h2>
-      <p class="journey-card__audience">Instrument the landing pages and domains you control so TRACKS can collect first-party signals.</p>
+      <span class="journey-card__eyebrow">02 · Advertising</span>
+      <h2 class="journey-card__title"><a href="../mediachannels/">Connect ad platforms</a></h2>
+      <p class="journey-card__audience">Grant the Second Stage analytics user access to each ad platform so TRACKS can collect campaign performance data.</p>
+    </div>
+    <ol class="journey-card__steps">
+      <li><a href="../mediachannels/">Media Platform Access</a></li>
+    </ol>
+    <div class="journey-card__foot">
+      <a class="journey-card__primary" href="../mediachannels/">Go to Media Access →</a>
+    </div>
+  </div>
+
+  <div class="journey-card">
+    <div class="journey-card__head">
+      <span class="journey-card__eyebrow">03 · Surfaces</span>
+      <h2 class="journey-card__title"><a href="../landingpages/">Wire up your pages and stores</a></h2>
+      <p class="journey-card__audience">Instrument landing pages, custom domains, and storefronts so TRACKS can collect first-party signals.</p>
     </div>
     <ol class="journey-card__steps">
       <li><a href="../landingpages/">Landing Page Integration</a></li>
       <li><a href="../domains/">Custom Domains</a></li>
-    </ol>
-    <div class="journey-card__foot">
-      <a class="journey-card__primary" href="../landingpages/">Set up landing pages →</a>
-    </div>
-  </div>
-
-  <div class="journey-card">
-    <div class="journey-card__head">
-      <span class="journey-card__eyebrow">03 · Storefronts</span>
-      <h2 class="journey-card__title"><a href="../steamworks/">Connect storefronts</a></h2>
-      <p class="journey-card__audience">Link your Steamworks account to bring storefront analytics and wishlist insights into TRACKS.</p>
-    </div>
-    <ol class="journey-card__steps">
       <li><a href="../steamworks/">Steamworks Integration</a></li>
     </ol>
     <div class="journey-card__foot">
-      <a class="journey-card__primary" href="../steamworks/">Set up Steamworks →</a>
+      <a class="journey-card__primary" href="../landingpages/">Set up landing pages →</a>
     </div>
   </div>
 

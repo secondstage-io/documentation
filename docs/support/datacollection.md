@@ -3,6 +3,11 @@
 ## Purpose and Scope
 This document describes how the Second Stage TRACKS platform collects and processes data through its two API endpoints: `/collect` and `/measure`. It explains what information is gathered, how it is stored, and how long it is retained.
 
+!!! tip "Related"
+
+    - **Integrating** the endpoints: see [Measurement API](../attribution/measurementapi/).
+    - **Privacy and security** posture: see [Data Handling & Security](datasecurity.md).
+
 ## Data Flow Overview
 
 ### /collect Endpoint

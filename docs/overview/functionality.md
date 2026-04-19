@@ -2,7 +2,11 @@
 
 TRACKS delivers *marketing intelligence for gaming* by the process of gathering, analyzing, and applying data to optimize marketing strategies all within a single platform.
 
-TRACKS combines in-depth **marketing analytics** and **attribution tracking** to deliver actionable insights. By tracking user behavior, media performance, and campaign effectiveness at every stage of the funnel, gaming companies can identify high-impact audiences, optimize ad placements, and make data-driven decisions. This approach ensures that marketing efforts are not only measurable but also strategically targeted, maximizing Return on Ad Spend (ROAS) and overall campaign success. 
+TRACKS combines in-depth **marketing analytics** and **attribution tracking** to deliver actionable insights. By tracking user behavior, media performance, and campaign effectiveness at every stage of the funnel, gaming companies can identify high-impact audiences, optimize ad placements, and make data-driven decisions. This approach ensures that marketing efforts are not only measurable but also strategically targeted, maximizing Return on Ad Spend (ROAS) and overall campaign success.
+
+!!! tip "Acronyms on this page"
+
+    Terms like CPI, ROAS, UTM, CAPI, and ELT are defined in the [Glossary](../../glossary/).
 
 !!! info "Why use TRACKS"
 
@@ -74,5 +78,11 @@ TRACKS continues to analyze the effectiveness of media campaigns, providing insi
 !!! info "Customer Journey"
 
     Throughout the entire customer journey, TRACKS empowers gaming companies with the marketing intelligence needed to make data-driven decisions. From the initial announcement to long after launch, it integrates media analytics, PC & console attribution, install and purchase tracking, and web analytics to provide a full-funnel view of campaign performance. This holistic approach ensures that every stage of the customer journey is optimized for maximum impact and revenue growth.
+
+## Next
+
+- Ready to explore the product? See [Using TRACKS](../using-tracks/).
+- Ready to integrate? See [Integration](../integration/).
+- Need hands-on support? Our team's hours and contact details are under [Integration → Customer Support](../integration/#customer-support).
 
 
