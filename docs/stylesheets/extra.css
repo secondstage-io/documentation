@@ -536,6 +536,8 @@ body, .md-typeset { font-size-adjust: none; }
 
 /* --- Custom footer (5-column sitemap) ---------------------------------- */
 .md-footer.tracks-footer {
+  position: relative;
+  z-index: 10;                /* sit above sticky sidebars at overlap seam */
   margin-top: 5rem;
   background-color: var(--md-primary-bg-color);
   border-top: 1px solid var(--md-rule-color);
