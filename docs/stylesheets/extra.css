@@ -102,6 +102,19 @@ body, .md-typeset { font-size-adjust: none; }
   color: var(--md-text-color);
 }
 
+/* Horizontal gutter so content doesn't touch the viewport edge,
+   especially on narrow / mobile viewports. */
+.md-content__inner {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media screen and (min-width: 60em) {
+  .md-content__inner {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
 /* Vertical separator only when primary sidebar is visible */
 @media screen and (min-width: 76.25em) {
   .md-main__inner:has(.md-sidebar--primary:not([hidden])) .md-content {
@@ -218,48 +231,92 @@ body, .md-typeset { font-size-adjust: none; }
 /* 5. HEADER, TABS, FOOTER — aligned with secondstage.io navbar               */
 /* ========================================================================= */
 
-/* White/blurred sticky header (replaces red bar) */
+/* White/blurred sticky header (replaces red bar).
+   IMPORTANT: backdrop-filter creates a containing block for fixed descendants,
+   which breaks Material's mobile search overlay (the search inner tries to
+   be position: fixed; width: 100%; height: 100% and instead renders tiny
+   inside the header). Scope the blur to desktop only. */
 .md-header.md-header--tracks {
   background-color: rgba(255, 255, 255, 0.85);
   color: var(--md-text-color);
-  backdrop-filter: blur(20px) saturate(1.2);
-  -webkit-backdrop-filter: blur(20px) saturate(1.2);
   box-shadow: none;
   border-bottom: 1px solid var(--md-rule-color);
   height: auto;
 }
+@media screen and (min-width: 60em) {
+  .md-header.md-header--tracks {
+    backdrop-filter: blur(20px) saturate(1.2);
+    -webkit-backdrop-filter: blur(20px) saturate(1.2);
+  }
+}
+/* Header height: 2.4rem floor on mobile (Material's expected size, so its
+   search overlay positioning aligns); bump on desktop. */
 .md-header.md-header--tracks .md-header__inner {
-  min-height: 3.5rem;      /* 56px — taller than Material default 48px */
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
+  min-height: 2.4rem;
+  padding: 0 1rem;
   gap: 0.75rem;
 }
+@media screen and (min-width: 60em) {
+  .md-header.md-header--tracks .md-header__inner {
+    min-height: 3.5rem;
+    padding: 0.4rem 1.5rem;
+  }
+}
+
+/* Mobile icon order: burger first (leftmost), wordmark next,
+   flex spacer, right cluster (palette, CTA, search overlay trigger) */
+.md-header__button.md-icon[for="__drawer"] { order: -1; }
+.md-header__title--empty { order: 1; }
 
 [data-md-color-scheme="slate"] .md-header.md-header--tracks {
   background-color: rgba(10, 11, 16, 0.75);
   border-bottom-color: rgba(255, 255, 255, 0.08);
 }
 
-/* Wordmark — replaces the logo image with brand-red text */
-.tracks-wordmark {
-  display: inline-flex;
+/* Wordmark — TRACKS logo + "Documentation" text */
+.md-header__button.tracks-wordmark {
+  display: inline-flex !important;
   align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0.15rem;
+  width: auto;
   height: auto;
   padding: 0 0.25rem;
   margin: 0;
-  font-size: 0.95rem;
-  font-weight: 600;
-  letter-spacing: -0.015em;
-  color: var(--md-primary-fg-color);
   text-decoration: none;
+  transition: opacity 0.15s;
+  line-height: 1;
+}
+.md-header__button.tracks-wordmark:hover { opacity: 0.85; }
+
+.tracks-wordmark__img {
+  height: 1.5rem;
+  width: auto;
+  display: block;
+  border: 0;
+  box-shadow: none;
+  background: transparent;
+  margin: 0;
+  border-radius: 0;
+}
+
+.tracks-wordmark__text {
+  display: inline-flex;
+  align-items: center;
+  height: 1.5rem;                    /* match logo height */
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: -0.005em;
+  color: var(--md-text-color);
   white-space: nowrap;
-  transition: color 0.15s;
+  line-height: 1;
 }
-.tracks-wordmark:hover {
-  color: var(--md-primary-fg-color--dark);
-}
-[data-md-color-scheme="slate"] .tracks-wordmark:hover {
-  color: #ff5c8a;
+
+/* Hide the "Documentation" text on very narrow viewports so the header
+   doesn't get crowded between the burger and the right-hand controls */
+@media screen and (max-width: 30em) {
+  .tracks-wordmark__text { display: none; }
 }
 
 /* Empty title grows to fill left-of-right-cluster space */
@@ -317,28 +374,50 @@ body, .md-typeset { font-size-adjust: none; }
   color: var(--md-text-color) !important;
 }
 
-/* Search — restyle the slide-in overlay form so it's readable in both themes */
-.md-search__form {
-  background-color: var(--md-primary-bg-color--light);
-  border: 1px solid var(--md-rule-color);
-  border-radius: var(--tracks-radius);
-}
-.md-search__input {
-  background-color: transparent;
-  color: var(--md-text-color);
-  caret-color: var(--md-primary-fg-color);
-}
-.md-search__input::placeholder {
-  color: var(--md-text-color--muted);
+/* Search — desktop only: restyle the inline form to match our header tokens.
+   Mobile uses Material's default fullscreen overlay untouched. */
+@media screen and (min-width: 60em) {
+  .md-search__form {
+    background-color: var(--md-primary-bg-color--light);
+    border: 1px solid var(--md-rule-color);
+    border-radius: var(--tracks-radius);
+  }
+  .md-search__input {
+    background-color: transparent;
+    color: var(--md-text-color);
+    caret-color: var(--md-primary-fg-color);
+  }
+  .md-search__input::placeholder {
+    color: var(--md-text-color--muted);
+  }
+
+  [data-md-color-scheme="slate"] .md-search__form {
+    background-color: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.12);
+  }
+  [data-md-color-scheme="slate"] .md-search__input {
+    color: var(--md-text-color);
+  }
 }
 
-[data-md-color-scheme="slate"] .md-search__form {
-  background-color: rgba(255, 255, 255, 0.06);
-  border-color: rgba(255, 255, 255, 0.12);
+/* Mobile: undo my desktop nav overrides so Material's slide-in drawer
+   behaves correctly. */
+@media screen and (max-width: 76.24em) {
+  .md-nav--primary .md-nav__link {
+    padding: 0.55rem 0.8rem;
+    color: var(--md-text-color);
+    font-weight: 400;
+  }
+  .md-nav--primary .md-nav__item .md-nav__link--active {
+    background: transparent;
+    color: var(--md-primary-fg-color);
+    font-weight: 500;
+    border-left: 0;
+    padding-left: 0.8rem;
+    border-radius: 0;
+  }
 }
-[data-md-color-scheme="slate"] .md-search__input {
-  color: var(--md-text-color);
-}
+
 
 /* --- "Access TRACKS" CTA in the header --------------------------------- */
 .tracks-header-cta {
@@ -376,8 +455,11 @@ body, .md-typeset { font-size-adjust: none; }
 }
 
 /* --- Sidebar nav — full collapsible tree -------------------------------- */
-.md-nav--primary .md-nav__title {
-  display: none;   /* hide the redundant "TRACKS Documentation" inside the sidebar */
+/* On desktop the header wordmark already says "TRACKS Documentation",
+   so suppress the duplicate inside the sidebar. On mobile the drawer
+   needs this row (it contains the close-arrow), so keep it visible. */
+@media screen and (min-width: 76.25em) {
+  .md-nav--primary .md-nav__title { display: none; }
 }
 
 .md-nav__link {
@@ -412,12 +494,14 @@ body, .md-typeset { font-size-adjust: none; }
   padding-left: 8px;
 }
 
-/* Nested items get a subtle left rule for visual grouping */
-.md-nav__item--nested > .md-nav {
-  position: relative;
-  padding-left: 0.25rem;
-  margin-left: 0.65rem;
-  border-left: 1px solid var(--md-rule-color);
+/* Nested items get a subtle left rule for visual grouping (desktop only —
+   on mobile Material uses position:absolute to slide nested panels in). */
+@media screen and (min-width: 76.25em) {
+  .md-nav__item--nested > .md-nav {
+    padding-left: 0.25rem;
+    margin-left: 0.65rem;
+    border-left: 1px solid var(--md-rule-color);
+  }
 }
 
 /* Collapse chevron (Material's default) — recolor to muted */
