@@ -19,14 +19,25 @@ TRACKS using TRACKS Attribution consists of four primary data source components:
   
 Media platforms, Google Analytics (via Google Tag Manager), and Steamworks integrate by providing access to our service account. However, the TRACKS Attribution Measurement API must be deployed into your Google Cloud Platform (GCP) account (a new account will be created if one doesn't exist).
 
-The TRACKS Attribution data source collects granular data for each web visit and game open event. This data is funneled into the partitioned tracks_attribution dataset. More information regarding data retention, GDPR compliance, and the Data Processing Agreement is available in the [Data Handling & Security](/support/datasecurity/) section.
+The TRACKS Attribution data source collects granular data for each web visit and game open event. This data is funneled into the partitioned tracks_attribution dataset. More information regarding data retention, GDPR compliance, and the Data Processing Agreement is available in the [Data Handling & Security](../support/datasecurity.md) section.
 
 Once the ELT (Extract-Load-Transform) pipeline is deployed, all data sources will be consolidated into a Google Cloud BigQuery database.
 
-![Integration](/assets/attribution_flow-1.png)
+<figure markdown="span">
+  ![TRACKS integration — data source flow](../assets/attribution_flow-1.png)
+  <figcaption>Data flow — media analytics, web, Steamworks, and Measurement API into BigQuery</figcaption>
+</figure>
 
 
 ## Integration Overview
+
+!!! info "Before you start"
+
+    The TRACKS Attribution integration assumes three things are in place. Second Stage helps set each one up — but knowing the scope up front avoids surprises:
+
+    - **A Google Cloud Platform project** that will host the TRACKS backend services ([Cloud Setup](../platform/cloud.md)).
+    - **A telemetry backend server** capable of logging game-open events and reaching the public internet ([Telemetry Setup](../attribution/telemetry.md)).
+    - **Access to your Google Tag Manager and media-platform accounts** so TRACKS can deploy the web snippet and pull campaign data ([Landing Page Integration](../platform/landingpages.md) and [Media Platform Access](../platform/mediachannels/index.md)).
 
 **Integration TRACKS Attribution**
 
@@ -57,7 +68,10 @@ The TRACKS data automation backend integrates seamlessly with various media plat
 The deployment approach for TRACKS is a "hybrid-hosted" solution, similar to an on-premise setup, where all granular data is processed and stored on the publisher or developer studio’s Google Cloud servers. This method can be considered as an enterprise level solution, and we are of the opinion that it is the optimal choice for the video game industry.
 This approach has been streamlined by the Second Stage team to maximize the effectiveness of performance media campaigns in gaming, without introducing latency or errors to game servers. It also ensures maximum data privacy and safeguards player data.
 
-![Deplyoment](/assets/attribution_deployment-1.png)
+<figure markdown="span">
+  ![TRACKS deployment topology](../assets/attribution_deployment-1.png)
+  <figcaption>Hybrid-hosted deployment — all granular data processes on your Google Cloud</figcaption>
+</figure>
 
 We do not recommend integrating the attribution measurement solution if your game does not have a backend server for telemetry and event logging—whether currently in place or planned. In this case, our team can assist you in setting up a suitable telemetry solution for Unity or Unreal Engine.
 Also, if you do have a telemetry backend server but are unable to use Google Cloud Platform for deployment, the Second Stage team can assist by hosting the attribution solution in a dedicated cloud environment for you.
@@ -66,23 +80,23 @@ Also, if you do have a telemetry backend server but are unable to use Google Clo
 
 Once the TRACKS backend is deployed in your Google Cloud Platform instance, you'll have the option to whitelabel the Measurement API endpoint domain. This feature is not only for branding purposes but also provides greater control over privacy and compliance with client-side CORS (Cross-Origin Resource Sharing) policies.
 
-## Roadmap
+## What Second Stage provides during integration
 
-Your **TRACKS Integration Plan** is a personalized roadmap that outlines all the key steps required to set up TRACKS, including **TRACKS attribution**. It’s designed to guide you through the process with clarity and confidence.
+During integration, Second Stage sets up and manages the following on your behalf so your team always knows what to expect:
 
-Each task in the plan includes:
+- **A personalized Integration Plan** — a live roadmap covering every setup task across attribution, media, and operations. For each task you'll see:
+    - **Task name**: what needs to be done
+    - **Status**: live progress
+    - **Owner**: who's responsible (your side or ours)
+    - **Category & section**: where the task fits in the overall setup
+    - **Due date**: when it's expected to be completed
+    - **Notes**: additional context or links
+- **Email notifications** when key milestones are completed.
+- **A shared Discord group** with all stakeholders (optional).
+- **Scheduled support meetings** — you can book time with the TRACKS team at any point during the integration.
 
-- **Task name**: What needs to be done  
-- **Status**: Live updates on progress  
-- **Owner**: Who is responsible  
-- **Category & section**: Where the task fits in the overall setup  
-- **Due date**: When it's expected to be completed  
-- **Notes**: Additional context or links
+This gives your technical and marketing teams full visibility and coordination throughout.
 
-To support your team during setup:
+## Customer Support
 
-- You’ll receive **email notifications** when key milestones are completed.  
-- We offer the option to join a **shared Discord group** with all stakeholders.  
-- Meetings can be scheduled at any time for **direct support** from the TRACKS team.
-
-This plan ensures full visibility and coordination across technical and marketing teams during integration.
+Second Stage offers customer support through email or our contact form from Monday to Friday, excluding public holidays in Berlin. Customer support is provided from 9:00 a.m. to 6:00 p.m. (CET) at Second Stage business hours. Second Stage will respond by email within 24 hours.

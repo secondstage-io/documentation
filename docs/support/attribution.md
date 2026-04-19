@@ -1,6 +1,8 @@
 # Attribution Tracking
 
-## Overview
+!!! tip "Also see"
+
+    This page explains **what** attribution is and the three TRACKS methodologies. For the **step-by-step integration**, see [Integration](../overview/integration.md) and [Measurement API](../attribution/measurementapi.md). For **attribution modes** referenced across other pages, jump to [Methodologies](#methodologies).
 
 A proper attribution setup can shine a light into the "black box" of where valuable game purchases, activations or installs are coming from. Once an attribution solution is integrated, whether it's TRACKS or a third-party solution, the dashboard will display key lower-funnel metrics.
 

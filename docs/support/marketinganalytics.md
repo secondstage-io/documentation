@@ -1,7 +1,5 @@
 # Marketing Analytics
 
-## Overview
-
 TRACKS seamlessly integrates advertising, website, and attribution data into a comprehensive, unified view. This holistic approach enables users to effortlessly compare performance across multiple dimensions such as channels, geographies (GEOs), campaign beats, and more—all at a glance.
 
 Built on years of combined expertise in performance marketing and gaming, TRACKS delivers analytics reports that break down every relevant dimension and combination. This design provides a crystal-clear picture of campaign effectiveness, empowering teams to:

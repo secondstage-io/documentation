@@ -1,71 +1,138 @@
----
-hide:
-  - navigation
-  - toc
----
+<div class="docs-home">
 
-<div class="landing-page">
+<section class="docs-home__header">
+  <h1>TRACKS Documentation</h1>
+  <p>Integration guides, API references, and operational playbooks for the TRACKS attribution and marketing-intelligence platform for PC and console games.</p>
+</section>
 
-  <section class="landing-hero">
-    <h1>Welcome to the TRACKS Documentation</h1>
-  </section>
+<h2 id="start-a-journey" class="docs-home__label">Start a journey</h2>
 
-  <section class="landing-intro">
-    <p class="lead-text">
-      <strong>TRACKS</strong> is a marketing analytics and attribution platform built for PC and console games. Created by <strong>Second Stage</strong>, it provides clear insight into campaign performance while maintaining user privacy and platform compliance.
-    </p>
-    <p class="sub-text">
-      This guide walks you through integrating TRACKS into your game and marketing workflow. TRACKS is delivered as a managed service, so if you need help at any step, our team is here to support you.
-    </p>
-  </section>
+<p class="docs-home__lede">Most customers move through these in order: <strong>Set up</strong> provisions the cloud environment and connects your ad platforms, landing page, and storefronts; <strong>Configure</strong> wires attribution and postbacks; <strong>Operate</strong> covers day-to-day campaign work. If you're not sure where you are, start with "Set up TRACKS".</p>
 
-  <section class="landing-actions">
-    <a href="/overview/overview/" class="btn btn-primary">
-      Start Here: Overview
-    </a>
-    <a href="https://tracks.secondstage.io/" target="_blank" class="btn btn-secondary">
-      Access Platform
-    </a>
-  </section>
+<section class="docs-home__journeys" aria-label="Pick a journey">
 
-</div>
+  <div class="journey-card">
+    <div class="journey-card__head">
+      <span class="journey-card__eyebrow">01 · Set up</span>
+      <h2 class="journey-card__title"><a href="overview/overview/">Set up TRACKS</a></h2>
+      <p class="journey-card__audience">For new customers integrating TRACKS for the first time.</p>
+    </div>
+    <ol class="journey-card__steps">
+      <li><a href="platform/cloud/">Cloud setup</a></li>
+      <li><a href="platform/mediachannels/">Media platform access</a></li>
+      <li><a href="platform/landingpages/">Landing page integration</a></li>
+    </ol>
+    <div class="journey-card__foot">
+      <a class="journey-card__primary" href="overview/overview/">Start here →</a>
+      <a class="journey-card__secondary" href="overview/overview/">See all topics</a>
+    </div>
+  </div>
 
-<div class="grid cards home-grid" markdown>
+  <div class="journey-card">
+    <div class="journey-card__head">
+      <span class="journey-card__eyebrow">02 · Configure</span>
+      <h2 class="journey-card__title"><a href="attribution/overview/">Configure attribution</a></h2>
+      <p class="journey-card__audience">For technical implementers wiring up measurement, postbacks, and compliance.</p>
+    </div>
+    <ol class="journey-card__steps">
+      <li><a href="attribution/measurementapi/">Measurement API</a></li>
+      <li><a href="attribution/postbacks/">Postbacks</a></li>
+      <li><a href="attribution/gdprapi/">GDPR API</a></li>
+    </ol>
+    <div class="journey-card__foot">
+      <a class="journey-card__primary" href="attribution/overview/">Start here →</a>
+      <a class="journey-card__secondary" href="attribution/overview/">See all topics</a>
+    </div>
+  </div>
 
--   :material-link-variant:{ .lg } __Platform Integration__
+  <div class="journey-card">
+    <div class="journey-card__head">
+      <span class="journey-card__eyebrow">03 · Operate</span>
+      <h2 class="journey-card__title"><a href="support/overview/">Operate campaigns</a></h2>
+      <p class="journey-card__audience">For marketing and ad-ops teams running live campaigns.</p>
+    </div>
+    <ol class="journey-card__steps">
+      <li><a href="support/adopshelper/">Ad Ops Guide</a></li>
+      <li><a href="support/trackinglinks/">Tracking Links</a></li>
+      <li><a href="platform/mediachannels/">Media channels</a></li>
+    </ol>
+    <div class="journey-card__foot">
+      <a class="journey-card__primary" href="support/overview/">Start here →</a>
+      <a class="journey-card__secondary" href="support/overview/">See all topics</a>
+    </div>
+  </div>
 
-    ---
+</section>
 
-    Set up TRACKS with your media channels, landing page or Steam to begin collecting actionable marketing data.
+<h2 id="all-topics" class="docs-home__label">All topics</h2>
 
-    [:octicons-arrow-right-24: Integrate Media & Ad Platforms](/platform/overview/)
+<section class="docs-home__sitemap" aria-label="All topics">
 
--   :material-target-variant:{ .lg } __Attribution Integration__
+  <div class="docs-sitemap__col">
+    <p class="docs-sitemap__heading">Get Started</p>
+    <ul>
+      <li><a href="overview/overview/">Overview</a></li>
+      <li><a href="overview/functionality/">Functionality</a></li>
+      <li><a href="overview/using-tracks/">Using TRACKS</a></li>
+      <li><a href="overview/integration/">Integration</a></li>
+    </ul>
+  </div>
 
-    ---
+  <div class="docs-sitemap__col">
+    <p class="docs-sitemap__heading">Platform</p>
+    <ul>
+      <li><a href="platform/overview/">Overview</a></li>
+      <li><a href="platform/cloud/">Cloud Setup</a></li>
+      <li><a href="platform/mediachannels/">Media Platform Access</a></li>
+      <li><a href="platform/landingpages/">Landing Page Integration</a></li>
+      <li><a href="platform/steamworks/">Steamworks Integration</a></li>
+      <li><a href="platform/domains/">Custom Domains</a></li>
+    </ul>
+  </div>
 
-    Implement TRACKS Attribution and connect your marketing campaigns to in-game actions.
+  <div class="docs-sitemap__col">
+    <p class="docs-sitemap__heading">Attribution</p>
+    <ul>
+      <li><a href="attribution/overview/">Overview</a></li>
+      <li><a href="attribution/measurementapi/">Measurement API</a></li>
+      <li><a href="attribution/telemetry/">Telemetry Setup</a></li>
+      <li><a href="attribution/postbacks/">Postbacks</a></li>
+      <li><a href="attribution/gdprapi/">GDPR API</a></li>
+    </ul>
+  </div>
 
-    [:octicons-arrow-right-24: Integrate TRACKS Attribution](/attribution/overview/)
+  <div class="docs-sitemap__col">
+    <p class="docs-sitemap__heading">Operations</p>
+    <ul>
+      <li><a href="support/adopshelper/">Ad Ops Guide</a></li>
+      <li><a href="support/trackinglinks/">Tracking Links</a></li>
+    </ul>
+  </div>
 
--   :material-school:{ .lg } __Knowledge Base__
+  <div class="docs-sitemap__col">
+    <p class="docs-sitemap__heading">Guides</p>
+    <ul>
+      <li><a href="support/overview/">Overview</a></li>
+      <li><a href="support/attribution/">Attribution Tracking</a></li>
+      <li><a href="support/marketinganalytics/">Marketing Analytics</a></li>
+      <li><a href="support/datacollection/">Data Collection</a></li>
+      <li><a href="support/datasecurity/">Data Handling &amp; Security</a></li>
+      <li><a href="support/furtherreading/">Further Reading</a></li>
+    </ul>
+  </div>
 
-    ---
+  <div class="docs-sitemap__col">
+    <p class="docs-sitemap__heading">Reference</p>
+    <ul>
+      <li><a href="glossary/">Glossary</a></li>
+      <li><a href="changelog/">Changelog</a></li>
+    </ul>
+  </div>
 
-    Browse helpful how-to guides on TRACKS, data collection, and answers to common questions.
+</section>
 
-    [:octicons-arrow-right-24: Explore the Knowledge Base](/support/overview/)
+<h2 id="recently-updated" class="docs-home__label">Recently updated</h2>
 
--   :material-bookmark-multiple:{ .lg } __Glossary & Changelog__
+<!-- RECENT_UPDATES -->
 
-    ---
-
-    Understand key terms used across the documentation and see the latest feature updates.
-
-    [:octicons-arrow-right-24: Glossary](/glossary/) &nbsp; [:octicons-arrow-right-24: Changelog](/changelog/)
-
-</div>
-
-<div class="landing-footer">
-  For more information visit <a href="https://secondstage.io">secondstage.io</a> or <a href="https://secondstage.io/contact/">get in touch</a>.
 </div>

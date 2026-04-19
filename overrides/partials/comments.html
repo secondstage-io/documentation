@@ -1,0 +1,25 @@
+{#
+  "Was this page helpful?" feedback widget — rendered at the end of
+  every content page by Material's default template. Opts out when a
+  page sets `hide: [feedback]` in its frontmatter.
+#}
+{% set hide_feedback = page.meta and page.meta.hide and "feedback" in page.meta.hide %}
+{% set skip_pages = ["index.md", "glossary.md", "changelog.md"] %}
+{% if not hide_feedback and page.file.src_path not in skip_pages %}
+<aside class="tracks-feedback" data-page-title="{{ page.title | e }}">
+  <p class="tracks-feedback__prompt">Was this page helpful?</p>
+  <div class="tracks-feedback__actions">
+    <button type="button" class="tracks-feedback__btn" data-tracks-feedback="yes">
+      Yes
+    </button>
+    <button type="button" class="tracks-feedback__btn" data-tracks-feedback="no">
+      No
+    </button>
+  </div>
+  <p class="tracks-feedback__thanks" hidden>Thanks — that's logged.</p>
+  <p class="tracks-feedback__followup" hidden>
+    Let's fix it —
+    <a href="#" data-tracks-feedback-contact>open a support chat</a>.
+  </p>
+</aside>
+{% endif %}

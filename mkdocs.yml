@@ -1,9 +1,9 @@
 site_name: TRACKS Documentation
 site_url: https://documentation.secondstage.io
 
-# 1. Update version number to force new CSS to load
+# Update version to force new CSS to load
 extra_css:
-  - stylesheets/extra.css?v=3 
+  - stylesheets/extra.css?v=57
 
 extra_javascript:
   - javascripts/extra.js
@@ -14,18 +14,15 @@ theme:
   logo: assets/2s-logo.png
   favicon: assets/favicon.png
   font:
-    text: Inter          # Perfect choice for modern SaaS look
-    code: JetBrains Mono # Excellent readability
+    text: Geist
+    code: Geist Mono
   features:
-    - navigation.tabs
-    - navigation.sections
-    - navigation.expand
     - navigation.top
     - navigation.instant
-    # 2. Add 'tracking' so the sidebar highlights as you scroll (Gamesight style)
-    - navigation.tracking 
+    - navigation.tracking
     - navigation.path
     - navigation.indexes
+    - navigation.footer
     - search.suggest
     - search.highlight
     - content.tabs.link
@@ -33,30 +30,30 @@ theme:
     - content.code.copy
   language: en
   palette:
-    # Palette toggle for automatic mode
+    # Automatic mode (follows system preference)
     - media: "(prefers-color-scheme)"
       toggle:
         icon: material/brightness-auto
         name: Switch to light mode
-      primary: root  # KEEP THIS: Crucial for our custom CSS variables
+      primary: custom
       accent: red
 
-    # Palette toggle for light mode
+    # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
-      primary: root
+      primary: custom
       accent: red
 
-    # Palette toggle for dark mode
+    # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       toggle:
         icon: material/weather-night
         name: Switch to system preference
-      primary: root
+      primary: custom
       accent: red
 
 extra:
@@ -95,35 +92,75 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
 
+hooks:
+  - hooks/recent_updates.py
+
 plugins:
   - search
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: fade
+      slide_effect: none
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      skip_classes:
+        - tracks-footer__eu
+        - tracks-wordmark__img
+        - twemoji
+  # 301-style redirects for URLs that moved during the layout-improvements
+  # restructure. Keeps old external links (emails, bookmarks) working.
+  - redirects:
+      redirect_maps:
+        overview/adopshelper.md: support/adopshelper.md
+        attribution/cloud.md: platform/cloud.md
+        platform/postbacks.md: attribution/postbacks/index.md
+        platform/trackinglinks.md: support/trackinglinks.md
 
 copyright: |
   &copy; 2025 <a href="https://secondstage.io"  target="_blank" rel="noopener">Second Stage GmbH</a>
 
-# Page tree 
+# Page tree
 nav:
   - Home: index.md
-  - TRACKS Overview:
+  - Get Started:
     - Overview: overview/overview.md
     - Functionality: overview/functionality.md
+    - Using TRACKS: overview/using-tracks.md
     - Integration: overview/integration.md
-    - Ad Ops Guide: overview/adopshelper.md 
-  - Platform Integration: 
+  - Platform:
     - Overview: platform/overview.md
-    - Media Platform Access: platform/mediachannels.md
+    - Cloud Setup: platform/cloud.md
+    - Media Platform Access:
+      - Overview: platform/mediachannels/index.md
+      - Google Ads: platform/mediachannels/google-ads.md
+      - Meta Ads: platform/mediachannels/meta-ads.md
+      - TikTok Ads: platform/mediachannels/tiktok-ads.md
+      - X Ads: platform/mediachannels/x-ads.md
+      - Snapchat Ads: platform/mediachannels/snapchat-ads.md
+      - Reddit Ads: platform/mediachannels/reddit-ads.md
+      - DV360: platform/mediachannels/dv360.md
     - Landing Page Integration: platform/landingpages.md
     - Steamworks Integration: platform/steamworks.md
     - Custom Domains: platform/domains.md
-    - Postbacks: platform/postbacks.md
-    - Tracking Links: platform/trackinglinks.md
-  - Attribution Integration: 
+  - Attribution:
     - Overview: attribution/overview.md
-    - Cloud Setup: attribution/cloud.md
     - TRACKS Measurement API: attribution/measurementapi.md
     - Telemetry Setup: attribution/telemetry.md
+    - Postbacks:
+      - Overview: attribution/postbacks/index.md
+      - Meta: attribution/postbacks/meta.md
+      - Google Ads: attribution/postbacks/google.md
+      - TikTok: attribution/postbacks/tiktok.md
+      - Reddit: attribution/postbacks/reddit.md
+      - X Ads: attribution/postbacks/x.md
     - GDPR API: attribution/gdprapi.md
-  - Knowledge Base:
+  - Operations:
+    - Ad Ops Guide: support/adopshelper.md
+    - Tracking Links: support/trackinglinks.md
+  - Guides:
     - Overview: support/overview.md
     - Attribution Tracking: support/attribution.md
     - Marketing Analytics: support/marketinganalytics.md

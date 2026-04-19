@@ -1,5 +1,34 @@
 # Glossary
 
+<nav class="glossary-jump" aria-label="Jump to letter">
+  <a href="#a">A</a>
+  <a href="#b">B</a>
+  <a href="#c">C</a>
+  <a href="#d">D</a>
+  <a href="#e">E</a>
+  <a href="#f">F</a>
+  <a href="#g">G</a>
+  <a href="#h">H</a>
+  <a href="#i">I</a>
+  <a href="#j">J</a>
+  <a href="#k">K</a>
+  <a href="#l">L</a>
+  <a href="#m">M</a>
+  <a href="#n">N</a>
+  <a href="#o">O</a>
+  <a href="#p">P</a>
+  <a href="#q">Q</a>
+  <a href="#r">R</a>
+  <a href="#s">S</a>
+  <a href="#t">T</a>
+  <a href="#u">U</a>
+  <a href="#v">V</a>
+  <a href="#w">W</a>
+  <a href="#x">X</a>
+  <a href="#y">Y</a>
+  <a href="#z">Z</a>
+</nav>
+
 ## A
 
 **Ad Fatigue**  
@@ -26,7 +55,7 @@ Metrics that measure the effectiveness of marketing efforts in generating awaren
 Metrics that assess the overall health and perception of a brand, including aspects such as brand sentiment or brand equity. These metrics are categorized by source:
 
 - Videos: Mentions in video content on platforms like YouTube or Twitch.
-- Facebook, TikTok, Facebook, Twitter, Reddit: Mentions from major social media platforms.
+- Facebook, TikTok, Twitter, Reddit: Mentions from major social media platforms.
 - Podcasts: Mentions within podcast episodes on platforms like Spotify or Apple iTunes.  
 - Blogs: Mentions from personal and professional blog articles.
 - News: Mentions in online news articles and press releases.
@@ -43,7 +72,7 @@ The day an ad is shown to a user. If a table is sorted by Campaign Date, the ins
 **Campaign Objective**  
 The specific measurable outcome a campaign is aiming to achieve, such as generating installs, purchases, leads, or website visits. Objectives define what success looks like and are used to measure performance.
 
-**Campaign Startegy**  
+**Campaign Strategy**  
 The overarching approach used to guide an ad campaign toward its objective. Most strategies fall into three categories: Awareness (maximizing visibility), Consideration (encouraging users to engage or learn more), and Conversion (driving users to take specific actions like installing or purchasing).
 
 **Channel**  
@@ -252,7 +281,7 @@ Urchin Tracking Module; parameters added to URLs to track the performance of mar
 **View**  
 An instance in which a user sees content such as a video ad, page, or media asset. A 'view' typically implies that the content was rendered and visible on the user’s screen, and in the case of video, often meets minimum playtime and audibility criteria: 
 
-* Dv360: 25% video watched
+* DV360: 25% video watched
 * Gateway: 25% video watched
 * Google: 5 sec video plays
 * Meta: 3 sec video plays

@@ -1,5 +1,7 @@
 # Ad Ops Helper
 
+<p class="docs-audience">For: Marketing / Ad ops</p>
+
 To simplify your campaign setup, **Second Stage** provides every client with an **Ad Ops Helper Sheet**. This resource is designed to support your marketing and UA teams in:
 
 - Establishing consistent **naming conventions** across campaigns
@@ -12,7 +14,7 @@ This ensures your campaigns are fully aligned with TRACKS attribution and media 
 
 After integrating an ad account, the Second Stage team will guide you through the Ad Operations aspect of the integration. This includes applying a specific taxonomy for media data analytics, mapping, and consolidation. An example of the builder sheet is provided below:
 
-![Naming Conventions](/assets/marketinganalytics_namingconventions.png "Naming Conventions")
+![Naming Conventions](../assets/marketinganalytics_namingconventions.png "Naming Conventions")
 
 If you already have a Campaign Naming Convention in place, you can provide your taxonomy to TRACKS for automatic mapping.
 
@@ -23,6 +25,8 @@ For each integrated media platform, UTM-tagged link templates will be provided t
 ``
 https://landingpage.mygame.com/?utm_source=2S_socialmedia&utm_medium=meta&utm_campaign={{campaign.name}}&utm_content={{adset.name}}&utm_term={{ad.name}}
 ``
+
+For influencer, media-house and organic campaigns, see the [Tracking Link Builders](trackinglinks.md) — sheet-based tools that generate branded vanity URLs (e.g. `connect.yourgame.com/creator`) alongside the standard UTM parameters.
 
 ## Other Media Platforms and Ad Networks
 
