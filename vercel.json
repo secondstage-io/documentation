@@ -1,6 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "pip install -r requirements.txt && mkdocs build --clean",
+  "buildCommand": "python3 -m venv .venv && .venv/bin/pip install -r requirements.txt && .venv/bin/mkdocs build --clean",
   "outputDirectory": "site",
   "installCommand": "echo 'skip npm install'",
   "framework": null,
