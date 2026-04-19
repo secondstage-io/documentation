@@ -131,28 +131,6 @@
 
 <h2 id="recently-updated" class="docs-home__label">Recently updated</h2>
 
-<section class="docs-home__updates" aria-label="Recent updates">
-  <div class="docs-updates__head">
-    <p class="docs-updates__heading">Recent updates</p>
-    <a class="docs-updates__link" href="changelog/">View full changelog →</a>
-  </div>
-  <ul class="docs-updates__list">
-    <li>
-      <span class="docs-updates__tag">V1.4</span>
-      <span class="docs-updates__date">Nov 19, 2025</span>
-      <span class="docs-updates__text">Additional settings and manage-user functionality.</span>
-    </li>
-    <li>
-      <span class="docs-updates__tag">V1.3</span>
-      <span class="docs-updates__date">Oct 29, 2025</span>
-      <span class="docs-updates__text">AI chatbot and customer support.</span>
-    </li>
-    <li>
-      <span class="docs-updates__tag">V1.2</span>
-      <span class="docs-updates__date">Jul 1, 2025</span>
-      <span class="docs-updates__text">Organic, influencer and community tracking.</span>
-    </li>
-  </ul>
-</section>
+<!-- RECENT_UPDATES -->
 
 </div>

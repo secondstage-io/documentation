@@ -2,9 +2,9 @@
 
 Grant the Second Stage analytics team access to your Meta Business Manager so TRACKS can read campaign, ad account, and pixel data. Follow the six steps below.
 
-<ol class="setup-steps" markdown>
+<ol class="setup-steps" markdown="1">
 
-<li markdown>
+<li markdown="block">
 
 ### Add the user
 
@@ -17,7 +17,7 @@ Go to Meta Business Manager and navigate to the **Users** section. Add the email
 
 </li>
 
-<li markdown>
+<li markdown="block">
 
 ### Assign access level
 
@@ -30,7 +30,7 @@ Assign **Partial (Basic) Access** to the user and click **Next**.
 
 </li>
 
-<li markdown>
+<li markdown="block">
 
 ### Share business-page access
 
@@ -43,7 +43,7 @@ Select your business page and grant **Partial access** (business tools and Faceb
 
 </li>
 
-<li markdown>
+<li markdown="block">
 
 ### Grant ad account access
 
@@ -56,7 +56,7 @@ Select your ad account and grant **Manage campaigns (ads)** access, then click *
 
 </li>
 
-<li markdown>
+<li markdown="block">
 
 ### Grant pixel access (optional)
 
@@ -69,7 +69,7 @@ Select any pixels that exist on the account and assign access, then click **Next
 
 </li>
 
-<li markdown>
+<li markdown="block">
 
 ### Review and send
 

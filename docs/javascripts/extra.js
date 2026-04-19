@@ -93,11 +93,67 @@ function tracksBuildTabDropdowns() {
 }
 
 /* ---------------------------------------------------------------------------
+   3. "Was this page helpful?" feedback widget
+   Yes → "Thanks — that's logged." (stored in localStorage for basic metrics)
+   No  → offers a one-click open of the Helpscout Beacon with page context.
+--------------------------------------------------------------------------- */
+function tracksFeedback() {
+  const widget = document.querySelector('.tracks-feedback');
+  if (!widget || widget.dataset.tracksWired) return;
+  widget.dataset.tracksWired = '1';
+
+  const actions = widget.querySelector('.tracks-feedback__actions');
+  const thanks = widget.querySelector('.tracks-feedback__thanks');
+  const followup = widget.querySelector('.tracks-feedback__followup');
+  const contactLink = widget.querySelector('[data-tracks-feedback-contact]');
+  const pageTitle = widget.dataset.pageTitle || document.title;
+  const pageUrl = window.location.pathname;
+
+  const record = (rating) => {
+    try {
+      const key = 'tracksFeedback';
+      const log = JSON.parse(localStorage.getItem(key) || '[]');
+      log.push({ rating, pageTitle, pageUrl, t: Date.now() });
+      localStorage.setItem(key, JSON.stringify(log.slice(-50)));
+    } catch (_) { /* private mode — ignore */ }
+  };
+
+  widget.querySelectorAll('[data-tracks-feedback]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const rating = btn.getAttribute('data-tracks-feedback');
+      record(rating);
+      actions.hidden = true;
+      if (rating === 'yes') {
+        thanks.hidden = false;
+      } else {
+        followup.hidden = false;
+      }
+    });
+  });
+
+  if (contactLink) {
+    contactLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (typeof window.Beacon === 'function') {
+        window.Beacon('prefill', {
+          subject: `Docs feedback: ${pageTitle}`,
+          text: `I found the page "${pageTitle}" (${pageUrl}) unhelpful. Specifically:\n\n`,
+        });
+        window.Beacon('open');
+      } else {
+        window.location.href = 'https://secondstage.io/contact/';
+      }
+    });
+  }
+}
+
+/* ---------------------------------------------------------------------------
    Wire setup into page lifecycle — runs on first load AND on every
    navigation.instant page transition via Material's document$ observable.
 --------------------------------------------------------------------------- */
 function tracksSetup() {
   tracksBuildTabDropdowns();
+  tracksFeedback();
 }
 
 if (window.document$ && typeof window.document$.subscribe === 'function') {

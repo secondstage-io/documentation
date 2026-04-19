@@ -43,7 +43,7 @@ Attribution tracking is the process of identifying and measuring which marketing
 ## Use Cases
 
 <figure markdown="span">
-  ![Marketing timeline — announcement, pre-launch, launch, post-launch](/assets/overview_timeline.png)
+  ![Marketing timeline — announcement, pre-launch, launch, post-launch](../assets/overview_timeline.png)
   <figcaption>TRACKS across the game marketing timeline — announcement → pre-launch → launch → post-launch</figcaption>
 </figure>
 

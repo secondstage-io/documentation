@@ -19,12 +19,12 @@ TRACKS using TRACKS Attribution consists of four primary data source components:
   
 Media platforms, Google Analytics (via Google Tag Manager), and Steamworks integrate by providing access to our service account. However, the TRACKS Attribution Measurement API must be deployed into your Google Cloud Platform (GCP) account (a new account will be created if one doesn't exist).
 
-The TRACKS Attribution data source collects granular data for each web visit and game open event. This data is funneled into the partitioned tracks_attribution dataset. More information regarding data retention, GDPR compliance, and the Data Processing Agreement is available in the [Data Handling & Security](/support/datasecurity/) section.
+The TRACKS Attribution data source collects granular data for each web visit and game open event. This data is funneled into the partitioned tracks_attribution dataset. More information regarding data retention, GDPR compliance, and the Data Processing Agreement is available in the [Data Handling & Security](../support/datasecurity/) section.
 
 Once the ELT (Extract-Load-Transform) pipeline is deployed, all data sources will be consolidated into a Google Cloud BigQuery database.
 
 <figure markdown="span">
-  ![TRACKS integration — data source flow](/assets/attribution_flow-1.png)
+  ![TRACKS integration — data source flow](../assets/attribution_flow-1.png)
   <figcaption>Data flow — media analytics, web, Steamworks, and Measurement API into BigQuery</figcaption>
 </figure>
 
@@ -61,7 +61,7 @@ The deployment approach for TRACKS is a "hybrid-hosted" solution, similar to an 
 This approach has been streamlined by the Second Stage team to maximize the effectiveness of performance media campaigns in gaming, without introducing latency or errors to game servers. It also ensures maximum data privacy and safeguards player data.
 
 <figure markdown="span">
-  ![TRACKS deployment topology](/assets/attribution_deployment-1.png)
+  ![TRACKS deployment topology](../assets/attribution_deployment-1.png)
   <figcaption>Hybrid-hosted deployment — all granular data processes on your Google Cloud</figcaption>
 </figure>
 

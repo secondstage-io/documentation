@@ -10,7 +10,7 @@ By embedding the TRACKS JavaScript code into your landing page, minimal technica
 To ensure accurate attribution when using your website as the attribution source, it’s important to correctly implement UTM tagging in your paid media or content creator campaigns. We recommend using the TRACKS UTM builder sheet to properly generate tracking links for your landing page (please refer to Marketing Analytics > Setup for more information).
 
 <figure markdown="span">
-  ![Landing-page attribution flow](/assets/attribution_landingpage.png)
+  ![Landing-page attribution flow](../assets/attribution_landingpage.png)
   <figcaption>How web visits and storefront click-throughs flow into TRACKS attribution</figcaption>
 </figure>
 
@@ -57,12 +57,12 @@ Each game will be assigned a unique token to replace "2S-XXXXX." After granting 
 *Example*
 
 <figure markdown="span">
-  ![TRACKS web snippet deployed via Google Tag Manager](/assets/attribution_gtmwebsnippet.png)
+  ![TRACKS web snippet deployed via Google Tag Manager](../assets/attribution_gtmwebsnippet.png)
   <figcaption>The TRACKS JavaScript snippet as it appears in a GTM container</figcaption>
 </figure>
 
 <figure markdown="span">
-  ![Connected data sources in TRACKS](/assets/attribution_datasources.png)
+  ![Connected data sources in TRACKS](../assets/attribution_datasources.png)
   <figcaption>Data sources TRACKS will ingest once GTM, GA4, and Steamworks are connected</figcaption>
 </figure>
 
@@ -86,7 +86,7 @@ If you don't already have Google Tag Manager installed on your website, follow t
 Below is a sample image of the Google Tag Manager integration code that needs to be implemented on your landing page.
 
 <figure markdown="span">
-  ![Google Tag Manager installation snippets](/assets/marketing-analytics_gtm.png)
+  ![Google Tag Manager installation snippets](../assets/marketing-analytics_gtm.png)
   <figcaption>GTM install — paste snippet 1 in <code>&lt;head&gt;</code>, snippet 2 right after <code>&lt;body&gt;</code></figcaption>
 </figure>
 
@@ -95,11 +95,11 @@ Below is a sample image of the Google Tag Manager integration code that needs to
 In Google Analytics (GA4), please grant Editor access to analytics@secondstage.io. For guidance on creating a GA4 account, refer to the documentation [here](https://support.google.com/analytics/answer/9304153). Alternatively, the Second Stage team can create one for you if needed.
 
 <figure markdown="span">
-  ![Google Analytics 4 — grant Editor access](/assets/marketinganalytics_g4access-1.png)
+  ![Google Analytics 4 — grant Editor access](../assets/marketinganalytics_g4access-1.png)
   <figcaption>GA4 access management — add analytics@secondstage.io with Editor role</figcaption>
 </figure>
 
 <figure markdown="span">
-  ![Google Analytics 4 — role confirmation](/assets/marketinganalytics_g4access-2.png)
+  ![Google Analytics 4 — role confirmation](../assets/marketinganalytics_g4access-2.png)
   <figcaption>Confirm Editor access so TRACKS can audit and configure conversion events</figcaption>
 </figure>

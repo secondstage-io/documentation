@@ -8,7 +8,7 @@ TRACKS is designed to be deployed using a “hybrid-hosted” model, where all g
 If your organization does not use Google Workspace (Gsuite email account), you can link your email following these steps: https://support.google.com/accounts/answer/27441)
 
 <figure markdown="span">
-  ![Google Cloud Console — create new project](/assets/attribution_GCP.png)
+  ![Google Cloud Console — create new project](../assets/attribution_GCP.png)
   <figcaption>Google Cloud Console → New Project → "TRACKS - yourgame"</figcaption>
 </figure>
 

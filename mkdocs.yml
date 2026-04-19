@@ -3,7 +3,7 @@ site_url: https://documentation.secondstage.io
 
 # Update version to force new CSS to load
 extra_css:
-  - stylesheets/extra.css?v=49
+  - stylesheets/extra.css?v=52
 
 extra_javascript:
   - javascripts/extra.js
@@ -92,6 +92,9 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
 
+hooks:
+  - hooks/recent_updates.py
+
 plugins:
   - search
   - glightbox:
@@ -107,6 +110,11 @@ plugins:
         - tracks-footer__eu
         - tracks-wordmark__img
         - twemoji
+  # 301-style redirects for URLs that moved during the layout-improvements
+  # restructure. Keeps old external links (emails, bookmarks) working.
+  - redirects:
+      redirect_maps:
+        overview/adopshelper.md: support/adopshelper.md
 
 copyright: |
   &copy; 2025 <a href="https://secondstage.io"  target="_blank" rel="noopener">Second Stage GmbH</a>

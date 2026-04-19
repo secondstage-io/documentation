@@ -1489,14 +1489,129 @@ body, .md-typeset { font-size-adjust: none; }
 }
 
 /* ========================================================================= */
-/* 9. FOCUS STATES                                                            */
+/* 9. GLOSSARY JUMP NAV                                                       */
+/* ========================================================================= */
+
+.md-typeset nav.glossary-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 0.75rem 0 2rem;
+  padding: 0.6rem 0.75rem;
+  background-color: var(--md-primary-bg-color);
+  border: 1px solid var(--md-rule-color);
+  border-radius: var(--tracks-radius);
+  position: sticky;
+  top: calc(3.5rem + 0.5rem);
+  z-index: 3;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+[data-md-color-scheme="slate"] .md-typeset nav.glossary-jump {
+  background-color: #14161b;
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Glossary H2s: give them scroll-margin so they're not clipped by the
+   sticky header + jump nav when linked to via #a, #b, etc. */
+.md-typeset h2[id]:is(#a,#b,#c,#d,#e,#f,#g,#h,#i,#j,#k,#l,#m,
+                     #n,#o,#p,#q,#r,#s,#t,#u,#v,#w,#x,#y,#z) {
+  scroll-margin-top: calc(3.5rem + 4rem);
+}
+.md-typeset nav.glossary-jump a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.75rem;
+  height: 1.75rem;
+  padding: 0 0.25rem;
+  font-family: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--md-text-color--muted);
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  text-decoration: none;
+  text-align: center;
+  transition: color 0.12s, background-color 0.12s, border-color 0.12s;
+}
+.md-typeset nav.glossary-jump a:hover {
+  color: var(--md-primary-fg-color);
+  background-color: rgba(255, 2, 73, 0.06);
+  border-color: rgba(255, 2, 73, 0.18);
+}
+
+/* ========================================================================= */
+/* 10. FEEDBACK WIDGET                                                        */
+/* ========================================================================= */
+
+.tracks-feedback {
+  margin: 3rem 0 1rem;
+  padding: 1.25rem 1.25rem 1rem;
+  background-color: var(--md-primary-bg-color--light);
+  border: 1px solid var(--md-rule-color);
+  border-radius: var(--tracks-radius-lg);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+}
+[data-md-color-scheme="slate"] .tracks-feedback {
+  background-color: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+.tracks-feedback__prompt {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--md-text-color);
+}
+.tracks-feedback__actions {
+  display: flex;
+  gap: 0.4rem;
+}
+.tracks-feedback__btn {
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--md-text-color);
+  background-color: var(--md-primary-bg-color);
+  border: 1px solid var(--md-rule-color);
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+  cursor: pointer;
+  transition: color 0.12s, background-color 0.12s, border-color 0.12s;
+}
+.tracks-feedback__btn:hover {
+  color: var(--md-primary-fg-color);
+  border-color: var(--md-primary-fg-color);
+}
+[data-md-color-scheme="slate"] .tracks-feedback__btn {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+.tracks-feedback__thanks,
+.tracks-feedback__followup {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--md-text-color--muted);
+}
+.tracks-feedback__followup a {
+  color: var(--md-primary-fg-color);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ========================================================================= */
+/* 11. FOCUS STATES                                                           */
 /* ========================================================================= */
 
 .md-typeset a:focus-visible,
 .md-nav__link:focus-visible,
 .md-tabs__link:focus-visible,
 .journey-card:focus-within,
-.tracks-tabs-cta:focus-visible {
+.tracks-header-cta:focus-visible,
+.tracks-feedback__btn:focus-visible {
   outline: 2px solid var(--md-primary-fg-color);
   outline-offset: 2px;
   border-radius: 4px;

@@ -12,7 +12,7 @@ This ensures your campaigns are fully aligned with TRACKS attribution and media 
 
 After integrating an ad account, the Second Stage team will guide you through the Ad Operations aspect of the integration. This includes applying a specific taxonomy for media data analytics, mapping, and consolidation. An example of the builder sheet is provided below:
 
-![Naming Conventions](/assets/marketinganalytics_namingconventions.png "Naming Conventions")
+![Naming Conventions](../assets/marketinganalytics_namingconventions.png "Naming Conventions")
 
 If you already have a Campaign Naming Convention in place, you can provide your taxonomy to TRACKS for automatic mapping.
 
