@@ -5,7 +5,7 @@
   <p>Integration guides, API references, and operational playbooks for the TRACKS attribution and marketing-intelligence platform for PC and console games.</p>
 </section>
 
-<h2 id="start-a-journey" class="docs-home__label">Start a journey</h2>
+<h2 id="start-your-journey" class="docs-home__label">Start your journey</h2>
 
 <p class="docs-home__lede">Most customers move through these in order: <strong>Set up</strong> provisions the cloud environment and connects your ad platforms, landing page, and storefronts; <strong>Configure</strong> wires attribution and postbacks; <strong>Operate</strong> covers day-to-day campaign work. If you're not sure where you are, start with "Set up TRACKS".</p>
 
