@@ -108,10 +108,17 @@ body, .md-typeset { font-size-adjust: none; }
   padding-left: 1rem;
   padding-right: 1rem;
 }
+/* Desktop: move the gutter up to .md-main__inner so the header logo,
+   the sidebar, and the content column all share the same left/right
+   inset as the header inner (1.5rem). Avoids double-padding. */
 @media screen and (min-width: 60em) {
-  .md-content__inner {
+  .md-main__inner {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+  .md-content__inner {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -282,7 +289,7 @@ body, .md-typeset { font-size-adjust: none; }
   gap: 0.15rem;
   width: auto;
   height: auto;
-  padding: 0 0.25rem;
+  padding: 0;
   margin: 0;
   text-decoration: none;
   transition: opacity 0.15s;
