@@ -108,10 +108,17 @@ body, .md-typeset { font-size-adjust: none; }
   padding-left: 1rem;
   padding-right: 1rem;
 }
+/* Desktop: move the gutter up to .md-main__inner so the header logo,
+   the sidebar, and the content column all share the same left/right
+   inset as the header inner (1.5rem). Avoids double-padding. */
 @media screen and (min-width: 60em) {
-  .md-content__inner {
+  .md-main__inner {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+  .md-content__inner {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -282,7 +289,7 @@ body, .md-typeset { font-size-adjust: none; }
   gap: 0.15rem;
   width: auto;
   height: auto;
-  padding: 0 0.25rem;
+  padding: 0;
   margin: 0;
   text-decoration: none;
   transition: opacity 0.15s;
@@ -335,16 +342,26 @@ body, .md-typeset { font-size-adjust: none; }
   }
 }
 
+/* Mobile: group the search icon with the right cluster, left of the
+   palette toggle. Orders: burger=-1, wordmark=0, spacer=1, search=3,
+   palette=4, CTA=5. */
+@media screen and (max-width: 59.99em) {
+  .md-header__button.md-icon[for="__search"] { order: 3; }
+}
+
 /* Right cluster: palette → CTA, pushed to the edge */
 .md-header .md-header__option,
 .md-header form.md-header__option { order: 4; }
 .md-header .tracks-header-cta { order: 5; }
 
-/* Search icon — full foreground color for clear visibility in both schemes */
+/* Search trigger — on desktop, render as a pill with a visible surface
+   and border so it stays legible over the translucent blurred header
+   regardless of what content scrolls behind. Mobile stays as a plain
+   icon since it sits in the right cluster with the other icon buttons. */
 .md-header__button.md-icon[for="__search"] {
   color: var(--md-text-color) !important;
   border-radius: 999px;
-  transition: background-color 0.15s, color 0.15s;
+  transition: background-color 0.15s, color 0.15s, border-color 0.15s;
 }
 .md-header__button.md-icon[for="__search"] svg,
 .md-header__button.md-icon[for="__search"] svg * {
@@ -353,9 +370,29 @@ body, .md-typeset { font-size-adjust: none; }
   width: 1.1rem;
   height: 1.1rem;
 }
+@media screen and (min-width: 60em) {
+  .md-header__button.md-icon[for="__search"] {
+    background-color: var(--md-primary-bg-color);
+    border: 1px solid var(--md-rule-color);
+    padding: 0.3rem 0.55rem;
+    height: 1.85rem;
+    width: auto;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+  }
+  [data-md-color-scheme="slate"] .md-header__button.md-icon[for="__search"] {
+    background-color: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: none;
+  }
+}
 .md-header__button.md-icon[for="__search"]:hover {
   background-color: rgba(0, 0, 0, 0.05);
   color: var(--md-primary-fg-color) !important;
+}
+@media screen and (min-width: 60em) {
+  .md-header__button.md-icon[for="__search"]:hover {
+    border-color: var(--md-primary-fg-color);
+  }
 }
 .md-header__button.md-icon[for="__search"]:hover svg,
 .md-header__button.md-icon[for="__search"]:hover svg * {
@@ -455,12 +492,11 @@ body, .md-typeset { font-size-adjust: none; }
 }
 
 /* --- Sidebar nav — full collapsible tree -------------------------------- */
-/* On desktop the header wordmark already says "TRACKS Documentation",
-   so suppress the duplicate inside the sidebar. On mobile the drawer
-   needs this row (it contains the close-arrow), so keep it visible. */
-@media screen and (min-width: 76.25em) {
-  .md-nav--primary .md-nav__title { display: none; }
-}
+/* The header wordmark already says "TRACKS Documentation"; suppress the
+   duplicate title row in both the desktop sidebar and the mobile drawer.
+   The site uses no navigation.sections, so there's no drill-in panel
+   stack that would need a back-arrow in this row. */
+.md-nav--primary .md-nav__title { display: none; }
 
 .md-nav__link {
   font-size: var(--nav-item-font-size);
