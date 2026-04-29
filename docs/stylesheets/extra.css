@@ -821,23 +821,25 @@ body, .md-typeset { font-size-adjust: none; }
 /* --- Admonitions: unified styling across all types ----------------------- */
 
 .md-typeset .admonition,
-.md-typeset details.admonition {
+.md-typeset details {
   border-radius: var(--tracks-radius);
   border: 1px solid var(--md-rule-color);
   border-left-width: 3px;
   background-color: var(--md-primary-bg-color--light);
   box-shadow: none;
   margin: 1.25em 0;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 .md-typeset .admonition > .admonition-title,
-.md-typeset details.admonition > summary.admonition-title {
+.md-typeset details > summary {
   background-color: transparent;
   font-weight: 700;
+  font-size: 1rem;
   border-bottom: 1px solid var(--md-rule-color);
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0.55rem;
+  padding-bottom: 0.55rem;
 }
 
 /* Type-specific accent colors (border-left + title color) */
@@ -1237,6 +1239,284 @@ body, .md-typeset { font-size-adjust: none; }
   font-size: 0.875rem;
   line-height: 1.55;
   color: var(--md-text-color--muted);
+}
+
+.docs-home__signpost {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  align-items: flex-start;
+  margin: 0 0 1.75rem;
+  padding: 1rem 1.125rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-left: 3px solid var(--md-primary-fg-color);
+  border-radius: 6px;
+  background: var(--md-default-bg-color);
+}
+
+@media screen and (min-width: 48em) {
+  .docs-home__signpost {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+}
+
+.docs-home__signpost-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 0;
+}
+
+.docs-home__signpost-eyebrow {
+  font-family: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--md-primary-fg-color);
+}
+
+.md-typeset .docs-home__signpost-title {
+  margin: 0 !important;
+  font-size: 0.925rem;
+  line-height: 1.5;
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset .docs-home__signpost-title a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.md-typeset .docs-home__signpost-title a:hover {
+  color: var(--md-primary-fg-color);
+}
+
+.docs-home__signpost-cta {
+  flex: 0 0 auto;
+  padding: 0.5rem 0.875rem;
+  border-radius: 4px;
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color) !important;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: filter 0.15s ease;
+}
+
+.docs-home__signpost-cta:hover {
+  filter: brightness(1.08);
+}
+
+[data-md-color-scheme="slate"] .docs-home__signpost {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* Force a 2-column grid for opt-in pages (e.g. What to Expect).
+   Falls back to a single column on narrow viewports. */
+.md-typeset .grid.cards.grid--two-cols {
+  grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 48em) {
+  .md-typeset .grid.cards.grid--two-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Conditional / scope note rendered as a leading paragraph that only
+   contains italic text — e.g. "*Optional — only if you ship on Steam.*"
+   Styled as a small muted callout so it reads as an applicability tag. */
+.md-typeset .grid.cards.grid--two-cols > ul > li > p > em:only-child {
+  display: block;
+  margin: -0.25rem 0 0.5rem;
+  padding: 0.4rem 0.625rem;
+  border-radius: 4px;
+  background: var(--md-default-fg-color--lightest);
+  font-style: normal;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: var(--md-default-fg-color);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards.grid--two-cols > ul > li > p > em:only-child {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/* "Who you'll need" — compact role cards. */
+.md-typeset .roles-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  margin: 0.75rem 0 1.75rem;
+}
+
+@media screen and (min-width: 48em) {
+  .md-typeset .roles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.md-typeset .roles-grid > ul {
+  display: contents;
+}
+
+.md-typeset .roles-grid li {
+  list-style: none;
+  margin: 0;
+  padding: 0.875rem 1rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 6px;
+  background: var(--md-default-bg-color);
+}
+
+.md-typeset .roles-grid li > p {
+  margin: 0.4rem 0 0 !important;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset .roles-grid li > p > em {
+  display: block;
+  margin-top: 0.4rem;
+  font-style: normal;
+  font-family: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  color: var(--md-text-color--muted);
+}
+
+.md-typeset .roles-grid li hr {
+  margin: 0.5rem 0;
+  border: 0;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .roles-grid li {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* Setup flow — vertical flowchart used on the What to Expect page. */
+.md-typeset figure.setup-flow {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+  width: 100%;
+  max-width: none;
+  margin: 1rem 0 1.75rem;
+  padding: 0;
+}
+
+.setup-flow__stage {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: 1fr;
+}
+
+.setup-flow__stage--parallel {
+  grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 48em) {
+  .setup-flow__stage--parallel {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.setup-flow__node {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.875rem 1rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-left: 3px solid var(--md-primary-fg-color);
+  border-radius: 6px;
+  background: var(--md-default-bg-color);
+  text-align: left;
+}
+
+.setup-flow__node--final {
+  border-left-color: var(--md-accent-fg-color);
+}
+
+.md-typeset .setup-flow__node strong {
+  font-size: 0.95rem;
+  color: var(--md-default-fg-color);
+}
+
+.setup-flow__eyebrow {
+  font-family: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--md-primary-fg-color);
+}
+
+.setup-flow__node--final .setup-flow__eyebrow {
+  color: var(--md-accent-fg-color);
+}
+
+.setup-flow__when {
+  font-size: 0.78rem;
+  color: var(--md-text-color--muted);
+}
+
+.setup-flow__connector {
+  align-self: center;
+  width: 2px;
+  height: 1.75rem;
+  margin: 0.5rem 0;
+  background: var(--md-default-fg-color--lighter);
+  position: relative;
+}
+
+.setup-flow__connector::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 9px solid var(--md-default-fg-color--lighter);
+}
+
+.setup-flow__connector--dashed {
+  background: transparent;
+  background-image: linear-gradient(
+    to bottom,
+    var(--md-default-fg-color--lighter) 50%,
+    transparent 50%
+  );
+  background-size: 2px 7px;
+  background-repeat: repeat-y;
+}
+
+.md-typeset figure.setup-flow > figcaption.setup-flow__caption {
+  display: block;
+  width: 100%;
+  max-width: none;
+  align-self: stretch;
+  margin: 0.875rem 0 0 !important;
+  padding: 0;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--md-text-color--muted);
+  text-align: center;
+}
+
+[data-md-color-scheme="slate"] .setup-flow__node {
+  background: rgba(255, 255, 255, 0.02);
 }
 
 /* Hide the generated markdown H2s that exist purely for TOC anchors;

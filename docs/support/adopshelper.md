@@ -18,6 +18,19 @@ After integrating an ad account, the Second Stage team will guide you through th
 
 If you already have a Campaign Naming Convention in place, you can provide your taxonomy to TRACKS for automatic mapping.
 
+## Landing-page notation & wishlist metrics
+
+Wishlist attribution is **Steamworks-only** — TRACKS can match wishlist additions back to campaigns when traffic lands on Steam, but not when ads point to PlayStation, Xbox, or Nintendo. Without filtering, ad spend on non-Steam landing pages would inflate wishlist KPIs like **Cost Per Wishlist (CPWL)** even though those campaigns can't physically generate a wishlist add.
+
+The Ad Ops Helper supports a **landing-page notation** in ad-creative names that tags each campaign with its target storefront. Spend on non-Steam landing pages is then automatically filtered out of wishlist metrics, so CPWL reflects only the campaigns that could realistically drive a wishlist.
+
+<figure markdown="span">
+  ![Landing-page notation in the Ad Ops Helper sheet — used to filter non-Steam ad spend from wishlist metrics like CPWL](../assets/marketinganalytics_landingpagenotation.jpg)
+  <figcaption>Landing-page notation in the Ad Ops Helper — non-Steam spend gets filtered out of wishlist KPIs</figcaption>
+</figure>
+
+Apply the notation consistently in every ad's name and the filtering happens downstream. The Second Stage team walks through where to add it during ad-ops onboarding.
+
 ## UTM-tagged Links
 
 For each integrated media platform, UTM-tagged link templates will be provided through the Ad Ops guide. These templates will include copy-and-paste-ready UTM tracking landing pages for use in your ads and assets.

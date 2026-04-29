@@ -1,88 +1,35 @@
 # Platform Functionality
 
-TRACKS delivers *marketing intelligence for gaming* by the process of gathering, analyzing, and applying data to optimize marketing strategies all within a single platform.
-
-TRACKS combines in-depth **marketing analytics** and **attribution tracking** to deliver actionable insights. By tracking user behavior, media performance, and campaign effectiveness at every stage of the funnel, gaming companies can identify high-impact audiences, optimize ad placements, and make data-driven decisions. This approach ensures that marketing efforts are not only measurable but also strategically targeted, maximizing Return on Ad Spend (ROAS) and overall campaign success.
+TRACKS combines **marketing analytics** and **attribution tracking** for PC and console games into one platform — covering the full funnel from awareness through install through retention. This page is a feature overview; the conceptual deep-dives live on [Attribution Tracking](../support/attribution.md) and [Marketing Analytics](../support/marketinganalytics.md).
 
 !!! tip "Acronyms on this page"
 
-    Terms like CPI, ROAS, UTM, CAPI, and ELT are defined in the [Glossary](../glossary.md).
+    Terms like CPI, ROAS, UTM, and ELT are defined in the [Glossary](../glossary.md).
 
-!!! info "Why use TRACKS"
+## What TRACKS reports
 
-    By leveraging data-driven insights, TRACKS empowers publishers, developers, and advertisers to seamlessly integrate marketing intelligence into their gaming campaigns, driving superior results and enhancing overall marketing strategy.
+- **Marketing analytics** — aggregates ad spend, impressions, clicks, web sessions, and storefront events across every channel into one dashboard. Sliceable by date, channel, GEO, campaign, creative, audience, and player cohort. See [Marketing Analytics](../support/marketinganalytics.md).
+- **Attribution tracking** — matches installs back to the campaigns that drove them via measured deterministic attribution + probabilistic Markov-chain modelling. Reaches up to 96% accuracy on PC/console. See [Attribution Tracking](../support/attribution.md).
+- **Awareness & brand health** — CPM, CPQ, view rate, wishlist additions, brand sentiment signals — first-class KPIs for PC/console where the consideration window is long.
+- **Postbacks** — server-to-server conversion signals back to Meta, Google, TikTok, Reddit, X, Snapchat, and Discord, so ad-network algorithms optimize on real installs rather than proxy events. See [Postbacks](../attribution/postbacks/index.md).
 
-## Marketing Analytics
-
-Marketing analytics refers to the process of collecting, measuring, and analyzing data from various marketing efforts to evaluate their effectiveness. For gaming companies, it provides a clear understanding of how well their campaigns are performing and where improvements can be made. In short, it enables gaming companies to run data-driven, highly effective marketing campaigns that maximize user acquisition and return on investment.
-
-**Why it’s important**:
-
-- [x] **Optimizes Spend**: Helps allocate budget to the most effective campaigns and creative assets.
-
-- [x] **Improves Targeting**: By understanding which ads work for specific audiences, gaming companies can sharpen their user acquisition strategies.
-
-- [x] **Increases Engagement**: Marketing analytics helps ensure that campaigns are not only driving installs but also leading to long-term engagement and in-game purchases. 
-
-!!! info "Customized Dashboards"
-
-    TRACKS provides customized dashboards for gaming campaigns that details media performance by GEO and channel, creative performance, awareness, brand health and more.
-
-## Attribution Tracking
-
-Attribution tracking is the process of identifying and measuring which marketing efforts (such as ads, social media, or influencer campaigns) lead to specific actions, like game installs or in-game purchases. It helps gaming companies understand which channels, ads, or influencers are driving the most value, allowing them to optimize their marketing spend. It ultimately ensures that marketing budgets are used efficiently to drive installs and revenue growth.
-
-**Why it’s important**:
-
-- [x] **Maximizes ROAS**: It helps allocate resources to the most effective campaigns.
-
-- [x] **Optimizes User Acquisition**: By knowing which sources bring in high-quality players, companies can focus on attracting more of them.
-
-- [x] **Informs Strategy**: Data-driven insights from attribution tracking help improve future marketing efforts and boost overall performance. 
-
-!!! info "TRACKS Attribution:"
-
-    Using TRACKS Attribution, our inhouse solution to track full-funnel attribution, we can measure Cost-per-Install and ROAS effectively and improve targeting algorithms towards valuable in-game activated segments.
-
-## Use Cases
+## Across the marketing timeline
 
 <figure markdown="span">
   ![Marketing timeline — announcement, pre-launch, launch, post-launch](../assets/overview_timeline.png)
   <figcaption>TRACKS across the game marketing timeline — announcement → pre-launch → launch → post-launch</figcaption>
 </figure>
 
-**Announcement Phase**  
+**Announcement.** Awareness-led work — building hype across paid, social, and influencers. TRACKS measures campaign reach, creative performance, and brand-health signals, so early marketing beats can be evaluated even before any installs exist.
 
-During the announcement phase, publishers and developers aim to build awareness and excitement for their upcoming game. TRACKS helps monitor media analytics to assess the reach and impact of campaigns across multiple channels — paid advertising, social media or influencers.
+**Pre-launch.** Upper-funnel awareness continues, but the focus shifts to demand capture — landing-page traffic, wishlists, pre-orders. TRACKS connects each visit and conversion back to the campaign that drove it, including wishlist attribution for Steam.
 
-At this stage of the campaign, TRACKS can measure the impact of media campaigns and creative assets, track performance in the awareness funnel, and provide helpful brand health insights to support critical decision making on key marketing beats.
+**Launch.** Real-time install tracking, attribution, and ROAS. TRACKS blends media, web, and attribution data so you can see which campaigns drove which sales across PC and console — not just clicks.
 
-**Pre Launch**  
-
-In the pre launch phase, upper funnel activations that drive brand recognition are still important. This stage also puts significant emphasize on measuring website traffic and optimizing conversion rates through detailed web analytics, ensuring that campaigns are reaching high quality users and delivering on wishlists or pre-purchases.
-
-TRACKS enables precise tracking of where users are coming from — whether through web traffic, referrals, paid ads, or influencer promotions. It connects campaign data with wishlists, preorders or installs, helping gaming companies identify which platforms or channels are key to create demand. 
-
-**Launch Phase**  
-
-When the game launches, TRACKS provides real-time insights into user acquisition. Here, attribution tracking becomes critical.
-
-TRACKS blends data from all sources - media, website and attribution - enabling us to identify which campaigns lead to the most sales across PC and console. This granular data allows companies to understand which players are not only visiting a storefront, but actually purchasing the game.
-
-**Post Launch**  
-
-Beyond launch, ongoing marketing campaigns focus on retention and maximizing in-game purchases. 
-
-TRACKS continues to analyze the effectiveness of media campaigns, providing insights on how to re-engage lapsed players or drive additional in-game purchases through targeted advertising. Web analytics provide deeper insight into how players interact with updates, events, or expansions on the game's website. With postbacks enabled, attribution tracking can provide valuable data on in-game segments, allowing us to optimize for DLC sales and other events.
-
-!!! info "Customer Journey"
-
-    Throughout the entire customer journey, TRACKS empowers gaming companies with the marketing intelligence needed to make data-driven decisions. From the initial announcement to long after launch, it integrates media analytics, PC & console attribution, install and purchase tracking, and web analytics to provide a full-funnel view of campaign performance. This holistic approach ensures that every stage of the customer journey is optimized for maximum impact and revenue growth.
+**Post-launch.** Retention, re-engagement, and DLC. Cohort analysis surfaces which acquisition sources produce long-term players; postbacks feed conversion data back to ad networks; web analytics shows how players engage with updates and events.
 
 ## Next
 
 - Ready to explore the product? See [Using TRACKS](using-tracks.md).
-- Ready to integrate? See [Integration](integration.md).
-- Need hands-on support? Our team's hours and contact details are under [Integration → Customer Support](integration.md#customer-support).
-
-
+- Ready to integrate? See [What to Expect](what-to-expect.md) for the journey, or [Architecture](../support/architecture.md) for the technical setup.
+- Need hands-on support? See [Contact & Support](../support/contact.md).

@@ -1,4 +1,4 @@
-# TRACKS Attribution Measurement API
+# TRACKS Measurement API
 
 <p class="docs-audience">For: Backend engineer</p>
 
@@ -184,4 +184,4 @@ To track media channel acquisition sources, you need to implement the API endpoi
 - **403** — Credentials are valid but don't have permission for this endpoint. Contact the Second Stage team to confirm API key scope.
 - **5xx** — Transient server-side error. Retry with exponential backoff; if it persists, contact the Second Stage team.
 
-If problems persist after checking the above, reach out via the [support channels](../overview/integration.md#customer-support).
+If problems persist after checking the above, reach out via the [support channels](../support/contact.md).

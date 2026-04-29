@@ -1,7 +1,6 @@
-# TRACKS Data Collection and Processing
+# Data Collection and Processing
 
-## Purpose and Scope
-This document describes how the Second Stage TRACKS platform collects and processes data through its two API endpoints: `/collect` and `/measure`. It explains what information is gathered, how it is stored, and how long it is retained.
+This page describes how TRACKS collects and processes data through its two API endpoints — `/collect` and `/measure` — covering what is gathered, how it is stored, and how long it is retained.
 
 !!! tip "Related"
 

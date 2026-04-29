@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 720" width="100%" height="auto" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif">
+  <style>
+    .fg { fill: #1d1d20; }
+    .muted { fill: #65656b; }
+    .card { fill: #ffffff; stroke: #e3e3e6; stroke-width: 1; }
+    .muted-card { fill: #f5f5f7; stroke: #d8d8dc; stroke-width: 1; stroke-dasharray: 5 4; }
+    .primary { fill: #dc2626; }
+    .primary-card { fill: #fef2f2; stroke: #fecaca; stroke-width: 1; }
+    .amber { fill: #b45309; }
+    .amber-card { fill: #fffbeb; stroke: #fde68a; stroke-width: 1; }
+    .green { fill: #047857; }
+    .green-card { fill: #ecfdf5; stroke: #a7f3d0; stroke-width: 1; }
+    .blue { fill: #1d4ed8; }
+    .blue-card { fill: #eff6ff; stroke: #bfdbfe; stroke-width: 1; }
+    .arrow { stroke: #65656b; stroke-width: 2; fill: none; }
+    .arrow-tip { fill: #65656b; }
+    .arrow-primary { stroke: #dc2626; stroke-width: 2; fill: none; }
+    .arrow-tip-primary { fill: #dc2626; }
+    text { font-size: 13px; }
+    .label { font-size: 10px; font-weight: 600; letter-spacing: 0.06em; }
+    .title { font-size: 14px; font-weight: 600; }
+    .small { font-size: 11px; }
+    .tiny { font-size: 10px; }
+    .pct { font-size: 32px; font-weight: 700; }
+  </style>
+
+  <!-- SECTION 1: The Problem -->
+  <g transform="translate(80, 30)">
+    <rect class="card" x="0" y="0" width="600" height="200" rx="14"/>
+    <text class="label muted" x="300" y="26" text-anchor="middle">THE INDUSTRY PROBLEM</text>
+
+    <!-- Three input chips -->
+    <g transform="translate(60, 50)">
+      <rect class="green-card" x="0" y="0" width="130" height="24" rx="12"/>
+      <text class="small green" x="65" y="16" text-anchor="middle">Ad Impressions</text>
+      <rect class="blue-card" x="155" y="0" width="150" height="24" rx="12"/>
+      <text class="small blue" x="230" y="16" text-anchor="middle">Influencer Traffic</text>
+      <rect class="amber-card" x="320" y="0" width="135" height="24" rx="12"/>
+      <text class="small amber" x="387" y="16" text-anchor="middle">Organic Search</text>
+    </g>
+
+    <!-- Arrow down -->
+    <line class="arrow" x1="300" y1="86" x2="300" y2="106"/>
+    <polygon class="arrow-tip" points="294,104 306,104 300,114"/>
+
+    <!-- Black box -->
+    <rect class="muted-card" x="170" y="118" width="260" height="62" rx="10"/>
+    <text class="title fg" x="300" y="140" text-anchor="middle">Storefront black box</text>
+    <text class="tiny muted" x="300" y="160" text-anchor="middle">Steam · Epic · PSN · Xbox · Nintendo</text>
+    <text class="tiny muted" x="300" y="174" text-anchor="middle">Zero attribution data shared — tracking stripped</text>
+  </g>
+
+  <!-- Connector + bridge label -->
+  <line class="arrow-primary" x1="380" y1="240" x2="380" y2="266"/>
+  <polygon class="arrow-tip-primary" points="374,264 386,264 380,274"/>
+  <rect class="primary-card" x="280" y="278" width="200" height="26" rx="13"/>
+  <text class="label primary" x="380" y="295" text-anchor="middle">TRACKS ATTRIBUTION SOLVES THIS</text>
+  <line class="arrow-primary" x1="380" y1="312" x2="380" y2="336"/>
+  <polygon class="arrow-tip-primary" points="374,334 386,334 380,344"/>
+
+  <!-- SECTION 2: Two-pronged solution -->
+  <g transform="translate(40, 360)">
+    <!-- Card 1: Measured -->
+    <rect class="card" x="0" y="0" width="335" height="190" rx="14"/>
+    <circle class="primary-card" cx="24" cy="26" r="12"/>
+    <text class="primary" x="24" y="30" text-anchor="middle" font-weight="700">1</text>
+    <text class="title fg" x="44" y="31">Measured Attribution</text>
+    <text class="small muted" x="20" y="60">Click ID assigned at the campaign link, followed</text>
+    <text class="small muted" x="20" y="76">through landing page → storefront → install.</text>
+    <text class="small muted" x="20" y="92">Match is deterministic.</text>
+    <g class="small fg">
+      <circle class="primary" cx="28" cy="120" r="2.5"/>
+      <text x="38" y="124">Server-side, no SDK</text>
+      <circle class="primary" cx="28" cy="142" r="2.5"/>
+      <text x="38" y="146">Unique click IDs per campaign</text>
+      <circle class="primary" cx="28" cy="164" r="2.5"/>
+      <text x="38" y="168">Real-time match across storefronts</text>
+    </g>
+
+    <!-- Card 2: Probabilistic -->
+    <rect class="card" x="345" y="0" width="335" height="190" rx="14"/>
+    <circle class="primary-card" cx="369" cy="26" r="12"/>
+    <text class="primary" x="369" y="30" text-anchor="middle" font-weight="700">2</text>
+    <text class="title fg" x="389" y="31">Probabilistic Modelling</text>
+    <text class="small muted" x="365" y="60">Untracked installs are redistributed across</text>
+    <text class="small muted" x="365" y="76">campaigns using statistical models — the same</text>
+    <text class="small muted" x="365" y="92">class used in econometrics research.</text>
+    <g class="small fg">
+      <circle class="primary" cx="373" cy="120" r="2.5"/>
+      <text x="383" y="124">Markov chain on observed exposure</text>
+      <circle class="primary" cx="373" cy="142" r="2.5"/>
+      <text x="383" y="146">Fills the untracked gap proportionally</text>
+      <circle class="primary" cx="373" cy="164" r="2.5"/>
+      <text x="383" y="168">Improves as data accumulates</text>
+    </g>
+  </g>
+
+  <!-- Merge arrows -->
+  <path class="arrow-primary" d="M 200 560 Q 200 580 380 580"/>
+  <path class="arrow-primary" d="M 560 560 Q 560 580 380 580"/>
+  <line class="arrow-primary" x1="380" y1="580" x2="380" y2="600"/>
+  <polygon class="arrow-tip-primary" points="374,598 386,598 380,608"/>
+
+  <!-- SECTION 3: Combined result -->
+  <g transform="translate(220, 614)">
+    <rect class="primary-card" x="0" y="0" width="320" height="92" rx="14"/>
+    <text class="label primary" x="160" y="22" text-anchor="middle">COMBINED RESULT</text>
+    <text class="pct primary" x="160" y="62" text-anchor="middle">up to 96%</text>
+    <text class="small muted" x="160" y="82" text-anchor="middle">attribution accuracy on PC &amp; Console</text>
+  </g>
+
+</svg>

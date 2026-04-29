@@ -4,17 +4,7 @@ How to set up your TRACKS account, navigate the platform, and register your game
 
 ## User Account Setup
 
-TRACKS uses Magic Link technology to simplify the account setup process, eliminating the need for passwords. Here's how it works:
-
-1. **Sign-Up/Sign-In**: When you enter your email address on the TRACKS login or sign-up page, a unique, secure link is sent to your inbox.
-
-2. **Access Your Email**: Check your email for a message from TRACKS. This email will contain the Magic Link—a one-time-use URL that provides access to your account.
-
-3. **Click the Magic Link**: Simply click the link in the email, and you’ll be automatically logged into your account without needing to enter a password.
-
-4. **One-Time Use**: The Magic Link is valid for a limited time and can only be used once for security purposes. If the link expires or is used, you can request a new one by entering your email again.
-
-This streamlined process enhances both security and user experience by avoiding the need for traditional passwords while ensuring account access remains secure.
+TRACKS uses **Magic Link** sign-in — no passwords. Enter your email on the login page and you'll receive a one-time, time-limited link that signs you straight in. If a link expires or has already been used, request a new one from the same screen.
 
 ## Navigation
 
@@ -72,16 +62,16 @@ To add a new game to your TRACKS account, select the "Add a New Game" option on 
 
 In the next step, enter basic information such as the game's title, intended platforms, release date, and Steam ID, if available. You can also upload a cover image, such as keyart from the game. If no cover image is selected, TRACKS will temporarily display a placeholder image.
 
-Next, please select a plan from the available tiers based on the features you need. If you have any questions about the different plans, please visit our [product website](https://secondstage.io/tracks/) or contact us directly.
+Next, select a plan from the available tiers based on the features you need. For details on what each plan includes, see the [product website](https://secondstage.io/tracks/){:target="_blank"}; for plan-fit questions, [Contact & Support](../support/contact.md).
 
 Once the form is submitted, our team will get back to you within 24 hours with a quote and assist you with the full setup.
 
 ## Game / Campaign Settings
 
-In an upcoming TRACKS update, you will be able to edit a game's title, change the cover image, and invite additional users to your dashboard. Until these features are available on the platform, please contact us directly to request any of these changes.
+Editing a game's title, changing the cover image, and inviting additional users to your dashboard are coming to the TRACKS platform in a future update. Until then, [Contact & Support](../support/contact.md) to request any of these changes.
 
 ## Next
 
 - Start connecting ad platforms — see [Platform Integration](../platform/overview.md).
 - Understand what TRACKS reports — see [Attribution Tracking](../support/attribution.md) and [Marketing Analytics](../support/marketinganalytics.md).
-- Need hands-on support? Our team's hours and contact details are under [Integration → Customer Support](integration.md#customer-support).
+- Need hands-on support? Our team's hours and contact details are on the [Contact & Support](../support/contact.md) page.

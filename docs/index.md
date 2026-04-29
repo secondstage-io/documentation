@@ -5,9 +5,17 @@
   <p>Integration guides, API references, and operational playbooks for the TRACKS attribution and marketing-intelligence platform for PC and console games.</p>
 </section>
 
-<h2 id="start-your-journey" class="docs-home__label">Start your journey</h2>
+<aside class="docs-home__signpost" aria-label="New customer signpost">
+  <div class="docs-home__signpost-body">
+    <span class="docs-home__signpost-eyebrow">New here?</span>
+    <p class="docs-home__signpost-title">Start with <a href="overview/what-to-expect/"><strong>What to Expect</strong></a> — a one-page overview of the setup, what we handle for you, and which tracks apply to your game right now.</p>
+  </div>
+  <a class="docs-home__signpost-cta" href="overview/what-to-expect/">See what to expect →</a>
+</aside>
 
-<p class="docs-home__lede">Most customers move through these in order: <strong>Set up</strong> provisions the cloud environment and connects your ad platforms, landing page, and storefronts; <strong>Configure</strong> wires attribution and postbacks; <strong>Operate</strong> covers day-to-day campaign work. If you're not sure where you are, start with "Set up TRACKS".</p>
+<h2 id="common-workflows" class="docs-home__label">Common workflows</h2>
+
+<p class="docs-home__lede">Three workflows cover most of what teams do with TRACKS. <strong>Set up</strong> provisions the cloud environment and connects your ad platforms, landing page, and storefronts; <strong>Configure</strong> wires attribution and postbacks; <strong>Operate</strong> covers day-to-day campaign work. Pick the one that matches your role today.</p>
 
 <section class="docs-home__journeys" aria-label="Pick a journey">
 
@@ -72,9 +80,9 @@
     <p class="docs-sitemap__heading">Get Started</p>
     <ul>
       <li><a href="overview/overview/">Overview</a></li>
+      <li><a href="overview/what-to-expect/">What to Expect</a></li>
       <li><a href="overview/functionality/">Functionality</a></li>
       <li><a href="overview/using-tracks/">Using TRACKS</a></li>
-      <li><a href="overview/integration/">Integration</a></li>
     </ul>
   </div>
 
@@ -113,11 +121,13 @@
     <p class="docs-sitemap__heading">Guides</p>
     <ul>
       <li><a href="support/overview/">Overview</a></li>
+      <li><a href="support/architecture/">Architecture</a></li>
       <li><a href="support/attribution/">Attribution Tracking</a></li>
       <li><a href="support/marketinganalytics/">Marketing Analytics</a></li>
       <li><a href="support/datacollection/">Data Collection</a></li>
       <li><a href="support/datasecurity/">Data Handling &amp; Security</a></li>
       <li><a href="support/furtherreading/">Further Reading</a></li>
+      <li><a href="support/contact/">Contact &amp; Support</a></li>
     </ul>
   </div>
 
