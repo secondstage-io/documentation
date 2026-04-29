@@ -1,4 +1,4 @@
-# TRACKS GDPR API
+# GDPR API
 
 <p class="docs-audience">For: Backend engineer / Privacy team</p>
 

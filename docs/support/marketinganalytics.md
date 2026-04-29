@@ -1,59 +1,58 @@
 # Marketing Analytics
 
-TRACKS seamlessly integrates advertising, website, and attribution data into a comprehensive, unified view. This holistic approach enables users to effortlessly compare performance across multiple dimensions such as channels, geographies (GEOs), campaign beats, and more—all at a glance.
+Marketing analytics covers the wider performance picture beyond attribution: awareness, acquisition, retention, and lifetime value. Where attribution answers *which campaign drove this install*, marketing analytics answers *which campaigns build profitable players over time*. TRACKS combines media, web, and attribution data into a single reporting surface so the same dashboards cover both questions.
 
-Built on years of combined expertise in performance marketing and gaming, TRACKS delivers analytics reports that break down every relevant dimension and combination. This design provides a crystal-clear picture of campaign effectiveness, empowering teams to:
+## Why marketing analytics is different in gaming
 
-- Identify top-performing channels and markets  
-- Optimize budget allocation based on real insights  
-- Detect trends and anomalies across campaign beats  
-- Make data-driven decisions faster and with confidence  
+Games rely on a longer consideration window than most consumer products — players research, watch streams, wishlist, and let reviews settle before buying. Awareness and brand health are leading indicators of sell-through, not vanity metrics. Acquisition cost is only part of the picture: a "cheap" channel with poor D30 retention often loses to an "expensive" one with loyal players. And the funnel spans web, storefront, and game — three places attribution and analytics tools have to stitch together.
 
+For a deeper conceptual primer, see the Academy's [How game marketing differs](https://secondstage.io/academy/fundamentals/how-game-marketing-differs){:target="_blank"} and [The marketing funnel](https://secondstage.io/academy/fundamentals/the-marketing-funnel){:target="_blank"} modules.
 
-???+ question "What type of data is tracked?"
+## Key KPIs
 
-    TRACKS combines Media Performance, Website and Attribution Data.
+Because games span a long funnel, it pays to think of metrics in three buckets: **awareness**, **acquisition**, and **post-launch**.
 
-## What is Marketing Analytics in Gaming?
+### Awareness metrics
 
-Marketing analytics involves collecting, measuring, analyzing, and interpreting data from marketing campaigns to understand their effectiveness and optimize future efforts. In gaming, marketing analytics is crucial due to the highly competitive and rapidly evolving nature of the market, where player acquisition, engagement, and retention directly impact revenue and growth.
+For PC and console games, awareness is a first-class KPI — not a vanity metric. Players who never hear about your game can't convert later, and discoverability on storefronts compounds with off-storefront awareness.
 
-Unlike traditional marketing, gaming campaigns often require deep integration with user behavior data, in-game events, and platform-specific metrics to capture the full player journey—from initial ad exposure to gameplay milestones and monetization.
+- [**Cost Per Mille (CPM)**](../glossary.md#c)**:** Cost per 1,000 ad impressions — the baseline efficiency metric for awareness campaigns.
+- **View Rate:** Percentage of video ad impressions that meet the platform's viewability threshold.
+- [**Cost Per Qualified View (CPQ)**](../glossary.md#c)**:** A modeled refinement of CPM that counts only views with sustained engagement or downstream action — closer to "real" awareness than raw impressions.
+- **Wishlist additions** *(Steam)* — wishlist activity is a strong leading indicator for sell-through, and TRACKS attributes wishlists back to the campaigns that drove them. See [Steamworks Integration](../platform/steamworks.md).
+- **Brand health signals** — search volume, social mentions, and sentiment, when available.
 
-## Why Is Marketing Analytics Important for Games?
+For more on why awareness is foundational for PC/console marketing, see the Academy's [Brand Health module](https://secondstage.io/academy/fundamentals/brand-health){:target="_blank"} or the blog post [The Hidden Power of Awareness in Video Game Marketing](https://secondstage.io/2025/01/awareness-funnel-in-video-game-marketing/){:target="_blank"}.
 
-- **Performance Measurement:** Understand which campaigns, channels, and creatives drive installs, registrations, and purchases.  
-- **Budget Optimization:** Allocate marketing spend efficiently by investing more in high-ROI channels and cutting underperforming ones.  
-- **Audience Segmentation:** Identify valuable player segments for targeted messaging and personalized offers.  
-- **Player Retention Insights:** Track how marketing impacts long-term player engagement and lifetime value (LTV).  
-- **Fraud Detection & Quality Control:** Spot irregular patterns to mitigate install fraud or low-quality user acquisition.  
-- **Cross-Channel Attribution:** Attribute player actions to the right marketing touchpoints, even when users interact across multiple devices or platforms.  
+### Acquisition metrics
 
-## Key KPIs in Gaming Marketing Analytics
+Once a campaign moves from awareness to conversion-focused, attribution unlocks the full set of acquisition KPIs.
 
-TRACKS focuses on the critical Key Performance Indicators (KPIs) that gaming marketers rely on to evaluate campaign success:
+- **Installs:** Total new players acquired from marketing efforts (first game launch, not purchase).
+- [**Cost Per Install (CPI)**](../glossary.md#c)**:** Average cost to acquire one new player.
+- **Click-Through Rate (CTR):** Percentage of impressions that resulted in a click.
+- [**Conversion Rate (CR%)**](../glossary.md#c)**:** Percentage of users who took a desired action (install, purchase) after clicking or viewing an ad.
+- [**Effective CPI (eCPI)**](../glossary.md#e)**:** CPI adjusted to reflect modeled installs in addition to measured ones — useful when probabilistic attribution fills gaps left by deterministic tracking.
 
-- **Installs:** The total number of new players acquired from marketing efforts.  
-- **Cost Per Install (CPI):** Average cost to acquire a new player through paid campaigns.  
-- **Return on Ad Spend (ROAS):** Revenue generated per dollar spent on advertising, often measured over specific time windows (e.g., Day 1, Day 7, Day 30).  
-- **Click-Through Rate (CTR):** Percentage of users who clicked on an ad out of total impressions, indicating ad engagement.  
-- **Conversion Rate:** Percentage of users who took a desired action (install, purchase) after clicking or viewing an ad.  
-- **Cost Per Mille (CPM):** Cost per 1,000 ad impressions, useful for measuring the efficiency of awareness campaigns.  
-- **View Rate:** Percentage of video ad impressions that are actually viewed (based on platform viewability standards), important for evaluating creative performance and engagement.  
-- **Cost Per Qualified View (CPQ):** A modeled version of CPM that reflects only meaningful or qualified views—such as ads that resulted in a user action or sustained engagement—providing a deeper look into campaign quality beyond raw impressions.
+For how to read acquisition data when planning campaigns, see the Academy's [Measuring what matters](https://secondstage.io/academy/fundamentals/measuring-what-matters){:target="_blank"} module.
 
-Learn more about the the key KPIs in our Glossary.
+### Post-launch & lifetime value
 
-## How TRACKS Empowers Gaming Marketers
+Acquisition metrics tell you who came in. Post-launch metrics tell you whether they were *worth* acquiring — and they often reshuffle which channels look profitable.
 
-TRACKS aggregates data from ad platforms, web analytics, and attribution providers into a single dashboard, enabling gaming studios and publishers to:
+- [**Return on Ad Spend (ROAS)**](../glossary.md#r)**:** Revenue per ad dollar, typically reported over fixed windows: **D1, D7, and D30**. Different game genres mature at different rates — some break even at D7, others not until D30 or later.
+- **Lifetime Value (LTV):** Projected total revenue from a player cohort, accounting for ongoing monetization (DLC, in-game purchases, season passes). LTV-driven budgeting is what separates teams that scale spend profitably from those that don't.
+- [**Retention curves**](../glossary.md#d)**:** D1 / D7 / D30 retention rates, segmented by acquisition source. A channel with high CPI but high D30 retention often beats a "cheap" channel with poor retention.
+- [**Cohort analysis**](../glossary.md#c)**:** Slicing players by acquisition campaign to compare quality across creative, audience, and channel.
 
-- **Compare performance by channel:** Easily see which ad networks or platforms (e.g., Facebook Ads, Google Ads, TikTok, Steam) deliver the best players.  
-- **Analyze by geography (GEO):** Understand regional performance differences to tailor localization and marketing spend.  
-- **Track campaign beats:** Monitor specific time-bound campaigns or creative refreshes to optimize timing and messaging.  
-- **Drill down by player cohorts:** Segment players based on acquisition date, campaign source, or behavior to analyze retention and monetization patterns.  
-- **Generate actionable reports:** Share insights with stakeholders and inform creative, budget, and targeting decisions.  
+For LTV math and how lifecycle data should feed back into acquisition decisions, see the Academy's [Calculating lifetime value](https://secondstage.io/academy/player-lifecycle/calculating-lifetime-value){:target="_blank"} and [Lifecycle-informed marketing](https://secondstage.io/academy/player-lifecycle/lifecycle-informed-marketing){:target="_blank"} modules — or the full [Player Lifecycle path](https://secondstage.io/academy/player-lifecycle){:target="_blank"} for end-to-end coverage.
 
-## Ensuring Data Privacy and Accuracy
+## What you can slice and compare
 
-In gaming, player privacy and data accuracy are paramount. TRACKS is designed to process granular data securely, respecting user consent and compliance frameworks like GDPR and CCPA. Our hybrid-hosted deployment ensures sensitive data remains controlled by the client while enabling powerful analytics.
+Reporting can be sliced across channel, geography (GEO), campaign beat, ad group, creative, audience, and player cohort — combined with any of the metrics above. Dashboards aggregate media, web, and attribution data in one place so cross-channel comparisons are possible without separate exports. Term definitions for every KPI live in the [Glossary](../glossary.md).
+
+## Next
+
+- For the **acquisition-funnel deep dive** (measured + probabilistic attribution, postbacks), see [Attribution Tracking](attribution.md).
+- For **awareness, brand health, and LTV** background, follow the [Game marketing fundamentals](https://secondstage.io/academy/fundamentals){:target="_blank"} and [Player Lifecycle](https://secondstage.io/academy/player-lifecycle){:target="_blank"} paths in the Academy.
+- For data handling, GDPR specifics, and the hybrid-hosted deployment that keeps granular data on your infrastructure, see [Architecture](architecture.md) and [Data Handling & Security](datasecurity.md).

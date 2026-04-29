@@ -6,7 +6,18 @@ Explore the core features, setup, and capabilities of TRACKS, Second Stage's mar
 
   <div class="journey-card">
     <div class="journey-card__head">
-      <span class="journey-card__eyebrow">01 · Functionality</span>
+      <span class="journey-card__eyebrow">01 · What to Expect</span>
+      <h2 class="journey-card__title"><a href="../what-to-expect/">Setup at a high level</a></h2>
+      <p class="journey-card__audience">A bird's-eye view of the four setup tracks, who does what, and which parts apply to you.</p>
+    </div>
+    <div class="journey-card__foot">
+      <a class="journey-card__primary" href="../what-to-expect/">See what to expect →</a>
+    </div>
+  </div>
+
+  <div class="journey-card">
+    <div class="journey-card__head">
+      <span class="journey-card__eyebrow">02 · Functionality</span>
       <h2 class="journey-card__title"><a href="../functionality/">What TRACKS does</a></h2>
       <p class="journey-card__audience">The core features, dashboards, and tools available in the platform.</p>
     </div>
@@ -17,7 +28,7 @@ Explore the core features, setup, and capabilities of TRACKS, Second Stage's mar
 
   <div class="journey-card">
     <div class="journey-card__head">
-      <span class="journey-card__eyebrow">02 · Using TRACKS</span>
+      <span class="journey-card__eyebrow">03 · Using TRACKS</span>
       <h2 class="journey-card__title"><a href="../using-tracks/">Around the platform</a></h2>
       <p class="journey-card__audience">Set up your account, navigate the dashboards, and register a game.</p>
     </div>
@@ -26,19 +37,8 @@ Explore the core features, setup, and capabilities of TRACKS, Second Stage's mar
     </div>
   </div>
 
-  <div class="journey-card">
-    <div class="journey-card__head">
-      <span class="journey-card__eyebrow">03 · Integration</span>
-      <h2 class="journey-card__title"><a href="../integration/">How TRACKS fits in</a></h2>
-      <p class="journey-card__audience">The high-level integration flow, architecture, and data touchpoints across your stack.</p>
-    </div>
-    <div class="journey-card__foot">
-      <a class="journey-card__primary" href="../integration/">See the integration flow →</a>
-    </div>
-  </div>
-
 </section>
 
 ## Ready to integrate?
 
-Once you've got the lay of the land, jump into the actual setup: **[Platform → Cloud Setup](../platform/cloud.md)** is the first practical step.
+Once you've got the lay of the land, jump into the actual setup: **[Platform → Cloud Setup](../platform/cloud.md)** is the first practical step. For the technical architecture (data flow, hybrid deployment, branded domains), see **[Guides → Architecture](../support/architecture.md)**.
